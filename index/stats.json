@@ -5,11 +5,12 @@
   "overlap": 50,
   "min_quality": 0.45
  },
- "docs": 348,
- "chunks": 3311,
+ "docs": 357,
+ "chunks": 4049,
  "chars": 6502139,
  "docs_empty_text": 1,
  "docs_low_quality": 1,
  "embedding_model_target": "text-embedding-004 (Gemini, dim 768)",
- "out": "index/chunks.jsonl"
+ "out": "index/chunks.jsonl",
+ "note": "348 AQC + 9 Reco Pro RAGE (corpus/rage). Tous embeddés dans Supabase maestro_norms_chunks."
 }
