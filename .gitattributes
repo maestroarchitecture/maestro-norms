@@ -1,0 +1,7 @@
+# PDF corpus — treat as binary (no EOL conversion, no diff)
+*.pdf binary
+corpus/** -text
+
+# Generated inventory
+manifest.json text eol=lf
+corpus/** filter=lfs diff=lfs merge=lfs -text
