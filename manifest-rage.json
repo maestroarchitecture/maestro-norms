@@ -1,9 +1,21 @@
 {
  "name": "Corpus RAGE/PACTE Reco Pro — ciblé (justification par lot)",
- "generated_at": "2026-06-04T22:29:40Z",
- "note": "Sous-ensemble librement téléchargeable (xpair/jurad-bat). Les autres Reco Pro (chaudières & appareils granulés conception/installation, FCBA bois) sont cataloguées mais gâtées : Pro'Réno (SPA JS), programmepacte (→HTML), COSTIC (login), FCBA (cert TLS).",
+ "generated_at": "2026-06-04T23:00:32Z",
+ "note": "Sous-ensemble librement téléchargeable (xpair/jurad-bat/cndb). Lots 03/06/08/09/10 : investigués → pas de Reco Pro RAGE gratuite (DTU/CSTB citation ; ex. SPEC/SEL = CSTB Cahier 3756). Reste gâté : trilogie chaudières granulés, FCBA direct.",
  "schema": "{path,basename,type,lot,dtu_refs[],url_source,sha256,taille}",
  "files": [
+  {
+   "path": "corpus/rage/RAGE-pac-air-eau-habitat-individuel-conception-reno.pdf",
+   "basename": "RAGE-pac-air-eau-habitat-individuel-conception-reno.pdf",
+   "type": "reco_pro",
+   "lot": "04",
+   "dtu_refs": [
+    "DTU 65.x"
+   ],
+   "url_source": "https://media.xpair.com/pdf/pompe-a-chaleur/RAGE-pac-air-eau-habitat-individuel-conception-reno.pdf",
+   "sha256": "ab3c20e15031d06bc5754e4553f6c25bb06eb046cd0656d1c8ea21fc8a9cdbd6",
+   "taille": 6848533
+  },
   {
    "path": "corpus/rage/VMC_simple_flux_habitat_individuel.pdf",
    "basename": "VMC_simple_flux_habitat_individuel.pdf",
@@ -17,6 +29,18 @@
    "taille": 2917180
   },
   {
+   "path": "corpus/rage/guide-rage-schematheque-pac-habitat-individuel.pdf",
+   "basename": "guide-rage-schematheque-pac-habitat-individuel.pdf",
+   "type": "guide",
+   "lot": "04",
+   "dtu_refs": [
+    "DTU 65.x"
+   ],
+   "url_source": "https://media.xpair.com/pdf/pompe-a-chaleur/guide-rage-schematheque-pac-habitat-individuel.pdf",
+   "sha256": "27b731e03d17056b29eefb583b5e461e69f93d17e02bfbce5efabb47dffc09f9",
+   "taille": 6430381
+  },
+  {
    "path": "corpus/rage/recommandation-pro-rage-appareils-chauffage-divise-granules-habitat-individuel-entretien-reno-neuf.pdf",
    "basename": "recommandation-pro-rage-appareils-chauffage-divise-granules-habitat-individuel-entretien-reno-neuf.pdf",
    "type": "reco_pro",
@@ -27,6 +51,18 @@
    "url_source": "https://media.xpair.com/pdf/chauffage/recommandation-pro-rage-appareils-chauffage-divise-granules-habitat-individuel-entretien-reno-neuf.pdf",
    "sha256": "2357df5d442a454e9879ee2a5bec1956b5deceddc84bbfe3af34db8aa12b038c",
    "taille": 1592313
+  },
+  {
+   "path": "corpus/rage/recommandation-pro-rage-facades-ossatures-bois-non-porteuses-neuf-2013-07.pdf",
+   "basename": "recommandation-pro-rage-facades-ossatures-bois-non-porteuses-neuf-2013-07.pdf",
+   "type": "reco_pro",
+   "lot": "transversal",
+   "dtu_refs": [
+    "DTU 31.2"
+   ],
+   "url_source": "https://www.cndb.org/site/wp-content/uploads/2019/06/recommandation-pro-rage-facades-ossatures-bois-non-porteuses-neuf-2013-07.pdf",
+   "sha256": "be4a04af96e61e8ad04f9d36c40d65aa140b8a107a18478abb4f6c2f2218884f",
+   "taille": 25146634
   },
   {
    "path": "corpus/rage/recommandation-pro-rage-isolation-thermique-sousfaces-toitures.pdf",

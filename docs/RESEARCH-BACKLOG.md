@@ -15,21 +15,21 @@ Statut détaillé dans `manifest-rage.json › a_recuperer`.
 |---|---|---|---|---|
 | **Chaudières à granulés MI** — conception / mise en œuvre / entretien (trilogie COSTIC) | 04 | Pro'Réno, programmepacte, COSTIC, REX‑BP | Pro'Réno = SPA JS ; programmepacte → HTML ; COSTIC = login | Compte COSTIC, ou URL PDF directe, ou machine sans proxy strict |
 | Appareils divisé **granulés/bûches** — conception / installation | 04 | programmepacte, Pro'Réno (storage 00404…) | URLs périmées → 404/HTML | idem ; chercher slug exact via cache moteur |
-| **Ossature bois / CLT** (FCBA) | 07 | fcba.fr | Certificat TLS rejeté par le proxy egress | Corriger chaîne cert fcba, ou CA côté proxy, ou miroir |
+| Ossature bois ✅ / **CLT** (FCBA) | 07 | fcba.fr, **cndb.org** | fcba = cert TLS ; façade ossature bois **obtenue via cndb.org** | CLT : miroir / cndb |
 | **ITE enduit sur PSE / sur isolant** | transversal | programmepacte, PROFEEL | programmepacte PDF → HTML | Page PROFEEL « ITE par enduit sur isolant » |
 | **GTB — G3090** | 05 | enviroboite.net | Host 503 (egress) | Miroir / autre hub |
 | **Verrières 2013‑09** | 07 | reglesdelart‑…fr | Domaine d'origine parqué | web.archive.org (cf. §5) |
 
-## 2. Lots sans Reco Pro mappée — à investiguer
+## 2. Lots sans Reco Pro — investigué ✅ (conclusion)
 
-Existe‑t‑il des Reco Pro RAGE/PACTE/PROFEEL (ou guides gratuits) pour ces lots,
-aujourd'hui en **DTU citation seule** ?
+Recherche faite (RAGE/PACTE/PROFEEL) : **pas de Reco Pro gratuite dédiée** pour
+ces lots → **DTU/CSTB citation seule** (classification du mapping confirmée).
 
-- **03 Plomberie / Sanitaires** (DTU 60.1/60.11) — ex. réseaux d'eau, ECS.
-- **06 Menuiseries intérieures** (DTU 36.1/36.5).
-- **08 Carrelage / Faïence** (DTU 52.x, 55.2) — étanchéité sous carrelage (SPEC/SEL).
-- **09 Revêtements de sol** (DTU 51.x/53.x).
-- **10 Peinture / Ravalement** (NF DTU 59.1, 59.4) — ravalement façade.
+- **03 Plomberie / Sanitaires** (DTU 60.1/60.11) — le corpus « eau » RAGE est côté chauffage/ECS (lot 04), pas plomberie sanitaire.
+- **06 Menuiseries intérieures** (DTU 36.1/36.5) — rien de spécifique.
+- **08 Carrelage / Faïence** (DTU 52.x, 55.2) — étanchéité pièces humides = **SPEC/SEL → CSTB Cahier 3756** (CPT, citation) ; pas de Reco Pro RAGE.
+- **09 Revêtements de sol** (DTU 51.x/53.x) — rien.
+- **10 Peinture / Ravalement** (NF DTU 59.1, 59.4) — rien.
 
 ## 3. FFB — citation seule (pas de copie)
 
