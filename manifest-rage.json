@@ -1,0 +1,74 @@
+{
+ "name": "Corpus RAGE/PACTE Reco Pro — ciblé (justification par lot)",
+ "generated_at": "2026-06-04T17:22:14Z",
+ "note": "Sous-ensemble joignable (xpair/jurad-bat/enviroboite/programmepacte). Catalogue complet bloqué tant que fcba.fr/costic.com ne sont pas autorisés.",
+ "schema": "{path,basename,type,lot,dtu_refs[],url_source,sha256,taille}",
+ "files": [
+  {
+   "path": "corpus/rage/VMC_simple_flux_habitat_individuel.pdf",
+   "basename": "VMC_simple_flux_habitat_individuel.pdf",
+   "type": "reco_pro",
+   "lot": "04",
+   "dtu_refs": [
+    "NF DTU 68.3"
+   ],
+   "url_source": "https://jurad-bat.net/sites/default/files/VMC_simple_flux_habitat_individuel.pdf",
+   "sha256": "f54a863bcaa1e645a2f16c17950466bd21d954488a8c344fc71b315c758450b8",
+   "taille": 2917180,
+   "downloaded_at": "2026-06-04T17:21:45Z"
+  },
+  {
+   "path": "corpus/rage/recommandation-pro-rage-maconnerie2.pdf",
+   "basename": "recommandation-pro-rage-maconnerie2.pdf",
+   "type": "reco_pro",
+   "lot": "02",
+   "dtu_refs": [
+    "DTU 20.1"
+   ],
+   "url_source": "https://media.xpair.com/pdf/basse-consommation/recommandation-pro-rage-maconnerie2.pdf",
+   "sha256": "fcaa70c0248f2338df3b63993aa4cb61d2a9c5624d94d10bcc2b39a3432bd5a5",
+   "taille": 18885053,
+   "downloaded_at": "2026-06-04T17:21:49Z"
+  },
+  {
+   "path": "corpus/rage/recommandation-pro-rage-vmc-simple-flux-collectif-reno-2013-02.pdf",
+   "basename": "recommandation-pro-rage-vmc-simple-flux-collectif-reno-2013-02.pdf",
+   "type": "reco_pro",
+   "lot": "04",
+   "dtu_refs": [
+    "NF DTU 68.3"
+   ],
+   "url_source": "https://media.xpair.com/pdf/reglementation/recommandation-pro-rage-vmc-simple-flux-collectif-reno-2013-02.pdf",
+   "sha256": "7a401e1de5548768e8dc03306231f8d77e79cfeed7e8dc2067da38eeed369e36",
+   "taille": 4514884,
+   "downloaded_at": "2026-06-04T17:21:50Z"
+  },
+  {
+   "path": "corpus/rage/recommandation-pro-rage-vmc-double-flux-habitat-collectif-neuf.pdf",
+   "basename": "recommandation-pro-rage-vmc-double-flux-habitat-collectif-neuf.pdf",
+   "type": "reco_pro",
+   "lot": "04",
+   "dtu_refs": [
+    "NF DTU 68.3"
+   ],
+   "url_source": "https://media.xpair.com/pdf/ventilation/recommandation-pro-rage-vmc-double-flux-habitat-collectif-neuf.pdf",
+   "sha256": "1b46c2eaad6a1b713dfba4f603361e021cda2b51178e494cae0228fd9a61c14e",
+   "taille": 3527786,
+   "downloaded_at": "2026-06-04T17:21:52Z"
+  }
+ ],
+ "unavailable": [
+  {
+   "basename": "guide-rage-g3090.pdf",
+   "lot": "05",
+   "url_source": "https://www.enviroboite.net/IMG/pdf/guide-rage-g3090.pdf",
+   "reason": "enviroboite.net HTTP 503 (host non joignable via egress)"
+  },
+  {
+   "basename": "recommandation-pro-rage-procedes-ite-enduit-polystyrene-expanse-2014-07_1.pdf",
+   "lot": "transversal",
+   "url_source": "https://www.programmepacte.fr/sites/default/files/pdf/recommandation-pro-rage-procedes-ite-enduit-polystyrene-expanse-2014-07_1.pdf",
+   "reason": "URL redirige vers HTML (PDF déplacé) — retrouver le nouveau chemin sur programmepacte"
+  }
+ ]
+}
