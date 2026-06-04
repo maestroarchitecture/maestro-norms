@@ -21,6 +21,15 @@ L'inventaire complet, horodaté et vérifiable, est dans [`manifest.json`](manif
 chaque entrée porte le chemin, l'URL source, le titre, la date d'origine, le
 type MIME, la date de téléchargement et l'**empreinte SHA-256**.
 
+> 📦 **Les PDF (`corpus/**`) sont stockés via [git-LFS](https://git-lfs.com/).**
+> L'`oid` LFS de chaque fichier est son SHA-256 (= valeur du `manifest.json`).
+> Pour cloner avec le contenu :
+> ```bash
+> git lfs install
+> git clone <url> && cd maestro-norms   # récupère les pointeurs
+> git lfs pull                          # télécharge les PDF
+> ```
+
 ## Critères de sélection
 
 Seul le **sous-ensemble technique/normatif** est collecté. Sont **exclus** :
