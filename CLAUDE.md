@@ -6,7 +6,7 @@
 > applicable. PDF stockés en **git‑LFS** (`corpus/**`).
 
 ## État (fait)
-- `corpus/aqc/` (334) + `corpus/profeel/` (14) + `corpus/rage/` (6 Reco Pro) ; `manifest.json` + `manifest-rage.json` (SHA‑256).
+- `corpus/aqc/` (334) + `corpus/profeel/` (14) + `corpus/rage/` (9 Reco Pro) ; `manifest.json` + `manifest-rage.json` (SHA‑256).
 - Mapping lot↔DTU↔Reco Pro : `docs/lot-norms-mapping.{md,yaml}`.
 - Index sémantique : Supabase **« Maestro Platform V2 »** (`ppvuecbtfsyggnoompbq`), table `maestro_norms_chunks` (3 311 chunks, HNSW cosine, RLS).
 - Code (repo `maestro-platform`, branche `claude/trusting-ramanujan-pFULL`) :
@@ -19,7 +19,7 @@
 - [ ] **Embeddings du `corpus/rage/`** dans `maestro_norms_chunks` — nécessite une **clé Gemini**
       (`tools/extract_chunks.py` puis embed `gemini-embedding-001` 768d). Actuellement seuls les 348 AQC sont indexés.
 - [ ] **OCR** du PDF image `Fiche-Attestations-VDI-PE01-…` (texte non extractible).
-- [ ] **Lots en DTU‑citation‑seule** à investiguer (Reco Pro existantes ?) : 03, 06, 08, 09, 10.
+- [x] **Lots DTU‑citation‑seule** investigués (03/06/08/09/10) → pas de Reco Pro RAGE gratuite (cf. RESEARCH-BACKLOG §2).
 - [ ] **FFB** : titres exacts des Calepins par lot (export adhérent) — citation seule.
 - [ ] **CI** : lancer la pytest `maestro-platform` (valider la section devis + `test_norms_by_lot`) — non lançable dans le sandbox (`pydantic` absent).
 - [ ] **Consolider la branche** `claude/trusting-ramanujan-pFULL` → `claude/weekly-recap-4PfeQ` / **PR #9**.
