@@ -30,6 +30,17 @@ type MIME, la date de téléchargement et l'**empreinte SHA-256**.
 > git lfs pull                          # télécharge les PDF
 > ```
 
+## Ingestion RAG
+
+Pipeline d'ingestion en 2 étapes dans [`tools/`](tools/) (voir
+[`tools/README.md`](tools/README.md)) :
+
+1. **Extraction + chunking** (fait) → [`index/chunks.jsonl`](index/) :
+   **348 docs → 3 311 chunks** avec métadonnées (titre, URL source, SHA-256…).
+2. **Embeddings + chargement** (`tools/embed_and_load.py`) → index `local`
+   (`.npy`) ou **Supabase pgvector**, via Gemini `text-embedding-004` (dim 768).
+   Nécessite `GEMINI_API_KEY` ; à lancer dans un environnement disposant de la clé.
+
 ## Critères de sélection
 
 Seul le **sous-ensemble technique/normatif** est collecté. Sont **exclus** :

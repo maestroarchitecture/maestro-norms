@@ -1,0 +1,15 @@
+{
+ "generated_at": "2026-06-04T16:02:21Z",
+ "params": {
+  "words": 300,
+  "overlap": 50,
+  "min_quality": 0.45
+ },
+ "docs": 348,
+ "chunks": 3311,
+ "chars": 6502139,
+ "docs_empty_text": 1,
+ "docs_low_quality": 1,
+ "embedding_model_target": "text-embedding-004 (Gemini, dim 768)",
+ "out": "index/chunks.jsonl"
+}

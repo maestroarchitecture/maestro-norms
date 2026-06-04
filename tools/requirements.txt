@@ -1,0 +1,6 @@
+# Dépendances de l'étape embeddings/chargement (tools/embed_and_load.py).
+# L'extraction (tools/extract_chunks.py) ne requiert que poppler-utils (pdftotext).
+google-genai>=0.3.0        # SDK Gemini (text-embedding-004) — aligné maestro-platform
+numpy>=1.24                # cible --target local
+psycopg[binary]>=3.1       # cible --target supabase
+pgvector>=0.2.5            # type vector() côté psycopg
