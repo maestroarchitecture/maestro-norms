@@ -4,29 +4,28 @@
 > RAGE/PACTE/PROFEEL (gratuit, plein texte) + DTU/NF (citation) **mappées par
 > lot**, branchées dans l'expert‑travaux/devis pour citer la règle de l'art
 > applicable. PDF stockés en **git‑LFS** (`corpus/**`).
+>
+> 👉 **Reprise demain = TESTS → `docs/HANDOFF-tests.md`.**
 
-## État (fait)
-- `corpus/aqc/` (334) + `corpus/profeel/` (14) + `corpus/rage/` (9 Reco Pro) ; `manifest.json` + `manifest-rage.json` (SHA‑256).
+## État (fait ✅, mergé)
+- `corpus/aqc/` (334) + `corpus/profeel/` (14) + `corpus/rage/` (9 Reco Pro) ; `manifest.json` + `manifest-rage.json` (SHA‑256). Repo : **`main`** officialisé.
 - Mapping lot↔DTU↔Reco Pro : `docs/lot-norms-mapping.{md,yaml}`.
-- Index sémantique : Supabase **« Maestro Platform V2 »** (`ppvuecbtfsyggnoompbq`), table `maestro_norms_chunks` (3 311 chunks, HNSW cosine, RLS).
-- Code (repo `maestro-platform`, branche `claude/trusting-ramanujan-pFULL`) :
-  `expert_travaux/norms_by_lot.py` (+ `norms_by_lot.yaml`), `compliance_agent.get_dtu_reference/get_norms_for_lot`,
-  section « Justification normative par lot » dans `maestro_document_agent` (devis).
+- Index sémantique : Supabase **« Maestro Platform V2 »** (`ppvuecbtfsyggnoompbq`), table `maestro_norms_chunks` (**4 049 chunks** — 348 AQC + 9 Reco Pro RAGE, HNSW cosine, RLS).
+- Code **mergé sur `main`** (maestro-platform, **PR #22**) : `expert_travaux/norms_by_lot.{py,yaml}`, `compliance_agent.get_dtu_reference/get_norms_for_lot`, section « Justification normative par lot » dans `maestro_document_agent` (devis). Tests verts (9 + 4 + 126).
 
 ## Tâches à faire (archive)
+- [ ] **Demain — TESTS** : figer la démo en `test_devis_norms_section.py`, suite complète, test recherche sémantique, cas limites (cf. `docs/HANDOFF-tests.md`).
 - [ ] **Compléter le corpus RAGE** (sources gâtées) — détail : `docs/RESEARCH-BACKLOG.md`
-      (chaudières granulés trilogie · FCBA bois cert TLS · ITE · GTB · verrières).
-- [ ] **Embeddings du `corpus/rage/`** dans `maestro_norms_chunks` — nécessite une **clé Gemini**
-      (`tools/extract_chunks.py` puis embed `gemini-embedding-001` 768d). Actuellement seuls les 348 AQC sont indexés.
+      (chaudières granulés trilogie · FCBA CLT cert TLS · ITE · GTB · verrières).
 - [ ] **OCR** du PDF image `Fiche-Attestations-VDI-PE01-…` (texte non extractible).
 - [x] **Lots DTU‑citation‑seule** investigués (03/06/08/09/10) → pas de Reco Pro RAGE gratuite (cf. RESEARCH-BACKLOG §2).
+- [x] **Embeddings du `corpus/rage/`** → faits (738 chunks, gemini‑embedding‑001 768d).
+- [x] **CI / tests** → lancés et verts (norms 9, devis 4/1skip, expert‑travaux 126).
+- [x] **Consolidation** → PR #22 mergée sur `main` ; `main` maestro-norms officialisé.
 - [ ] **FFB** : titres exacts des Calepins par lot (export adhérent) — citation seule.
-- [ ] **CI** : lancer la pytest `maestro-platform` (valider la section devis + `test_norms_by_lot`) — non lançable dans le sandbox (`pydantic` absent).
-- [ ] **Consolider la branche** `claude/trusting-ramanujan-pFULL` → `claude/weekly-recap-4PfeQ` / **PR #9**.
-- [ ] ⚠️ **Sécurité** : régénérer la **clé Gemini** exposée en chat ; révoquer le **token GitHub** (handoff §6).
 - [ ] Optionnel : `web.archive.org` (allowlist) pour les guides RAGE 2012 d'origine.
 
 ## Repères
-- Handoff complet : `maestro-platform/docs/HANDOFF-norms-corpus.md`.
-- Lots canoniques + `dtu_refs` : `maestro-platform/.../expert_travaux/knowledge.yaml`.
+- Handoff TESTS : `docs/HANDOFF-tests.md` · Handoff corpus : `maestro-platform/docs/HANDOFF-norms-corpus.md`.
+- Backlog recherche : `docs/RESEARCH-BACKLOG.md`. Lots + `dtu_refs` : `maestro-platform/.../expert_travaux/knowledge.yaml`.
 - Licence : RAGE/PACTE/PROFEEL = libre diffusion ; DTU/NF & FFB = citation seule (cf. `README.md`).
