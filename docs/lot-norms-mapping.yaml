@@ -1,0 +1,221 @@
+# Mapping normatif PAR LOT — base de justification du devis Maestro
+# ------------------------------------------------------------------
+# Relie chaque lot expert-travaux à : (a) ses DTU/NF de référence (citation seule),
+# (b) les Recommandations Professionnelles / Guides RAGE-PACTE-PROFEEL (gratuit, plein
+# texte) qui le justifient.
+#
+# Source des lots + dtu_refs :
+#   maestro-platform/packages/maestro/pro/backend/agents/skills/expert_travaux/knowledge.yaml
+# Statut sources :
+#   verifie     = URL testée ici (HTTP 200 + en-tête %PDF)
+#   liste       = référencée dans docs/norms-guides-index.md, non re-testée
+#   page        = page ressource (pas un PDF direct)
+#   indisponible= source d'origine morte/parquée (à récupérer via miroir/archive)
+#
+# Licence : RAGE/PACTE/PROFEEL = téléchargeable plein texte ; DTU/NF/FFB = citation seule.
+
+meta:
+  generated: "2026-06-04"
+  lots_source: "expert_travaux/knowledge.yaml"
+  download_done: false          # choix utilisateur : mapping/plan d'abord
+  licence:
+    rage_pacte_profeel: "gratuit_plein_texte"
+    dtu_nf_ffb: "citation_seule"
+
+# justification:
+#   reco_pro_gratuit    = au moins une Reco Pro/Guide RAGE gratuit mappé
+#   dtu_citation_seule  = pas de Reco Pro RAGE ; seuls DTU/NF en citation
+#   pratique_pro        = ni DTU ni Reco Pro (forfait / pratique professionnelle)
+
+lots:
+  "00":
+    name: "Installation de chantier"
+    dtu_refs: []
+    justification: pratique_pro
+    reco_pro: []
+
+  "01":
+    name: "Démolition / Dépose"
+    dtu_refs: []
+    justification: pratique_pro
+    reco_pro: []
+
+  "02":
+    name: "Plâtrerie / Cloisons"
+    dtu_refs: ["DTU 25.41", "DTU 25.42"]
+    justification: reco_pro_gratuit
+    reco_pro:
+      - titre: "Isolation thermique par l'intérieur (ITI) — doublages"
+        type: reco_pro
+        dtu: "DTU 25.41"
+        url: "https://qualiteconstruction.com/"          # ressource AQC
+        statut: page
+
+  "03":
+    name: "Plomberie / Sanitaires"
+    dtu_refs: ["DTU 60.1", "DTU 60.11"]
+    justification: dtu_citation_seule   # pas de Reco Pro RAGE dédiée plomberie
+    reco_pro: []
+
+  "04":
+    name: "Chauffage / VMC"
+    dtu_refs: ["DTU 65.10", "DTU 65.14", "NF DTU 68.3"]
+    justification: reco_pro_gratuit
+    reco_pro:
+      - titre: "VMC double flux habitat collectif (neuf)"
+        type: reco_pro
+        dtu: "NF DTU 68.3"
+        url: "https://media.xpair.com/pdf/ventilation/recommandation-pro-rage-vmc-double-flux-habitat-collectif-neuf.pdf"
+        statut: verifie
+      - titre: "VMC simple flux habitat individuel"
+        type: reco_pro
+        dtu: "NF DTU 68.3"
+        url: "https://jurad-bat.net/sites/default/files/VMC_simple_flux_habitat_individuel.pdf"
+        statut: verifie
+      - titre: "VMC simple flux habitat collectif (rénovation) 2013-02"
+        type: reco_pro
+        dtu: "NF DTU 68.3"
+        url: "https://media.xpair.com/pdf/reglementation/recommandation-pro-rage-vmc-simple-flux-collectif-reno-2013-02.pdf"
+        statut: liste
+      - titre: "VMC double flux habitat individuel (neuf)"
+        type: reco_pro
+        dtu: "NF DTU 68.3"
+        url: "https://programmeprofeel.fr/"
+        statut: page
+      - titre: "PAC < 50 kW — conception & mise en œuvre (2013)"
+        type: reco_pro
+        dtu: "DTU 65.x"
+        url: "https://www.afpac.org/Recommandations-RAGE_a138.html"
+        statut: page
+      - titre: "Chauffage & ECS en habitat individuel"
+        type: reco_pro
+        dtu: "DTU 65.10"
+        url: "https://conseils.xpair.com/analyse_reglementation/chauffage-habitat-individuel-rage.htm"
+        statut: page
+      - titre: "Chauffe-eau solaire individuel (CESI) — neuf & réno"
+        type: reco_pro
+        dtu: "DTU 65.x"
+        url: "https://www.dispositif-rexbp.com/"
+        statut: page
+      - titre: "Chauffe-eau solaires centralisés (collectif)"
+        type: reco_pro
+        dtu: "DTU 65.x"
+        url: "https://qualiteconstruction.com/ressource/batiment/solaire-collectif-des-recommandations-professionnelles-rage-pour-optimiser-la-performance-des-chauffe-eau-solaires-centralises/"
+        statut: page
+      - titre: "Schémathèque appareils de chauffage à granulés (hab. ind. neuf/réno) 2019"
+        type: guide
+        dtu: "DTU 24.1"
+        url: "https://www.proreno.fr/"
+        statut: page
+      - titre: "Planchers chauffants"
+        type: reco_pro
+        dtu: "DTU 65.14"
+        url: "https://qualiteconstruction.com/"
+        statut: page
+
+  "05":
+    name: "Électricité"
+    dtu_refs: ["NF C 15-100", "NF C 14-100"]
+    justification: reco_pro_gratuit
+    reco_pro:
+      - titre: "Systèmes photovoltaïques (RAGE 2012)"
+        type: guide
+        dtu: "NF C 15-100"
+        url: "https://www.batirama.com/article/10407-guide-rage-2012-les-systemes-photovoltaiques.html"
+        statut: page
+      - titre: "Gestion technique du bâtiment (GTB) 2014 — G3090"
+        type: guide
+        dtu: ""
+        url: "https://www.enviroboite.net/IMG/pdf/guide-rage-g3090.pdf"
+        statut: liste
+
+  "06":
+    name: "Menuiseries intérieures"
+    dtu_refs: ["DTU 36.1", "DTU 36.5"]
+    justification: dtu_citation_seule
+    reco_pro: []
+
+  "07":
+    name: "Menuiseries extérieures"
+    dtu_refs: ["DTU 36.5", "DTU 39"]
+    justification: reco_pro_gratuit
+    reco_pro:
+      - titre: "Menuiseries extérieures avec ITE (neuf & rénovation) 2014-11"
+        type: reco_pro
+        dtu: "DTU 36.5"
+        url: "https://qualiteconstruction.com/ressource/batiment/ite-un-guide-rage-pour-les-menuiseries-exterieures/"
+        statut: page
+      - titre: "Doubles fenêtres en rénovation"
+        type: guide
+        dtu: "DTU 36.5"
+        url: "https://www.capeb.fr/actualites/guide-rage-doubles-fenetres-renovation"
+        statut: page
+      - titre: "Verrières 2013-09"
+        type: reco_pro
+        dtu: "DTU 39"
+        url: "http://www.reglesdelart-grenelle-environnement-2012.fr/fileadmin/redacteurs/Regles_de_l_Art/Recommandations_Pro/Bati/recommandations-pro-rage-verrieres-2013-09.pdf"
+        statut: indisponible   # host d'origine parqué → récupérer via miroir/archive
+
+  "08":
+    name: "Carrelage / Faïence"
+    dtu_refs: ["DTU 52.1", "DTU 52.2", "NF DTU 55.2"]
+    justification: dtu_citation_seule
+    reco_pro: []
+
+  "09":
+    name: "Revêtements de sol (hors carrelage)"
+    dtu_refs: ["DTU 51.1", "DTU 51.2", "DTU 53.1", "DTU 53.2"]
+    justification: dtu_citation_seule
+    reco_pro: []
+
+  "10":
+    name: "Peinture / Revêtements muraux"
+    dtu_refs: ["NF DTU 59.1", "DTU 59.4"]
+    justification: dtu_citation_seule
+    reco_pro: []
+
+  "11":
+    name: "Cuisine / Salle de bain (forfaits)"
+    dtu_refs: []
+    justification: pratique_pro
+    reco_pro: []
+
+  "12":
+    name: "Nettoyage fin de chantier"
+    dtu_refs: []
+    justification: pratique_pro
+    reco_pro: []
+
+# Enveloppe / ITE / maçonnerie — guides RAGE existants mais SANS lot finition dédié
+# (lots 00-12 = rénovation/finition ; gros œuvre & façade = transversal).
+transversal_enveloppe:
+  note: "À rattacher si un lot 'isolation/façade/gros œuvre' est ajouté au pilote."
+  reco_pro:
+    - titre: "ITE par enduit sur PSE (Etics) 2014-07"
+      type: reco_pro
+      dtu: "CSTB Cahier 3035"
+      url: "https://www.programmepacte.fr/sites/default/files/pdf/recommandation-pro-rage-procedes-ite-enduit-polystyrene-expanse-2014-07_1.pdf"
+      statut: liste
+    - titre: "ITE par enduit sur isolant (mise à jour PROFEEL)"
+      type: reco_pro
+      dtu: "CSTB Cahier 3035"
+      url: "https://programmeprofeel.fr/journal/recommandations-professionnelles-procedes-disolation-thermique-exterieure-par-enduit-sur-isolant/"
+      statut: page
+    - titre: "Maçonnerie — recommandations 2014"
+      type: reco_pro
+      dtu: "DTU 20.1"
+      url: "https://media.xpair.com/pdf/basse-consommation/recommandation-pro-rage-maconnerie2.pdf"
+      statut: liste
+    - titre: "Façades à ossature bois non porteuses 2013"
+      type: reco_pro
+      dtu: "DTU 31.2"
+      url: "https://www.dispositif-rexbp.com/"
+      statut: page
+
+# Familles FFB — CITATION SEULE (réservé adhérents, pas de copie)
+ffb_citation_seule:
+  acces: "https://www.ffbatiment.fr/revues-guides/guides (login adhérent)"
+  familles:
+    - "Calepins de chantier® (mise en œuvre par corps d'état — tous lots)"
+    - "Guides pratiques FFB"
+    - "Fiches pratiques (technique / juridique / sécurité)"
