@@ -78,11 +78,12 @@ Accès **vérifié** en session. À prototyper.
 | **BDNB** | Bâtiment : `annee_construction`, classe **DPE**, inertie, commune/IRIS, **adresse BAN**, arrêté 2021… (400+ champs) | ✅ **API PostgREST OUVERTE** : `GET https://api.bdnb.io/v1/bdnb/donnees/batiment_groupe_complet?<filtre>` (ex. `code_departement_insee=eq.75`). Gratuit, sans clé. *Testé → renvoie un bâtiment réel.* | **`BDNBLookup`** (cf. `price_lookup.py`) → intake `profiler`/`collector` → pré‑remplir `ProjetUnifie` (adresse → année/type/DPE) |
 | **CSTB — Avis Techniques / Certificats / Ecoscale** | Validation **produits/procédés** (ATec, NF/QB) | Reachable (`database.cstb.fr` 302) ; **accès = recherche web** (pas d'API confirmée) → à scraper/cadrer | **`CSTBLookup`** → `compliance_agent`/`expert_travaux` : vérifier qu'un produit/procédé du devis est sous **ATec/certif** (assurabilité décennale) |
 | **BNTEC → Norminfo AFNOR** | Catalogue **NF/DTU** : réf, titre, statut *en vigueur*, remplacements (métadonnées) | Norminfo joignable (200) ; **pas d'API/URL propre trouvée** (recherche SPA) ; plein texte DTU **payant** | **Back‑office norms** (PAS un agent runtime) : valider/rafraîchir `knowledge.yaml › dtu_refs` + veille « travaux en cours » BNTEC |
+| **Batipedia / Reef** (CSTB) | Plein texte DTU/NF/réglementation + outil **Bati CCTP** | ❌ **login + abonnement payant**, « tous droits réservés », **pas d'API** | **Citation seule** — source à *citer* (≠ ingestion ; pas de scraping). Bati CCTP = *benchmark* de notre génération devis/CCTP |
 
 **Licences** : BDNB = open data · CSTB ATec/Certif = gratuit (consultation) · DTU plein texte = payant → **citation seule** (politique en place).
 
 **Prochaines actions** :
-1. **Prototyper `BDNBLookup`** (client API PostgREST) + injection à l'intake → `ProjetUnifie`. *(le plus mûr — API confirmée.)*
+1. ✅ **`BDNBLookup` prototypé** — API PostgREST + injection `orchestrator._trigger_fusion` (opt-in `ENABLE_BDNB_ENRICHMENT`), 9 tests → **PR #27**.
 2. Cadrer l'accès **CSTB** (ATec/Certif) → `CSTBLookup` pour l'**assurabilité** par lot/poste.
 3. Vérifier l'accès **Norminfo** (recherche/export) → script de validation des `dtu_refs`.
 
