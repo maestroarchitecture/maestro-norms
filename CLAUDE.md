@@ -5,7 +5,8 @@
 > lot**, branchées dans l'expert‑travaux/devis pour citer la règle de l'art
 > applicable. PDF stockés en **git‑LFS** (`corpus/**`).
 >
-> 👉 **Reprise demain = TESTS → `docs/HANDOFF-tests.md`.**
+> 👉 **Reprise = `docs/HANDOFF-SESSION-2026-06-18.md`** (pivot Markdown + archi
+> embeddings/Claude). Branche dev : `claude/trusting-ramanujan-pFULL`.
 
 ## État (fait ✅, mergé)
 - `corpus/aqc/` (334) + `corpus/profeel/` (14) + `corpus/rage/` (9 Reco Pro) ; `manifest.json` + `manifest-rage.json` (SHA‑256). Repo : **`main`** officialisé.
@@ -26,6 +27,11 @@
 - [ ] Optionnel : `web.archive.org` (allowlist) pour les guides RAGE 2012 d'origine.
 
 ## Repères
+- **Pivot Markdown** (PDF → `.md` structuré → chunks par section → Supabase) :
+  `tools/pdf_to_md.py` + `tools/chunk_md.py` (drop-in `embed_and_load.py`),
+  exemple `index/sample/`, doc `tools/README.md`. Archi : embeddings = Gemini/Voyage,
+  raisonnement = Claude (Anthropic n'a pas d'API d'embeddings).
+- Handoff session 2026-06-18 : `docs/HANDOFF-SESSION-2026-06-18.md`.
 - Handoff TESTS : `docs/HANDOFF-tests.md` · Handoff corpus : `maestro-platform/docs/HANDOFF-norms-corpus.md`.
 - Backlog recherche : `docs/RESEARCH-BACKLOG.md`. Lots + `dtu_refs` : `maestro-platform/.../expert_travaux/knowledge.yaml`.
 - Licence : RAGE/PACTE/PROFEEL = libre diffusion ; DTU/NF & FFB = citation seule (cf. `README.md`).
