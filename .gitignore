@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Embeddings / artefacts key-gated (volumineux, reproductibles)
+*.emb.jsonl
+index/embeddings.npy
+index/embeddings_ids.json
+
+# Secrets — ne JAMAIS committer de clé
+.env
+*.key
+probes.json
+
+# OS
+.DS_Store
