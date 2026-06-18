@@ -11,11 +11,20 @@
 
 ## TL;DR — état des 3 actions
 
+> **MAJ 2026-06-18 (session bis-2)** : Actions 2 et 3 **faites** (commits `d3b48b0`
+> et `0b06f13` sur `claude/trusting-ramanujan-pFULL`, poussés). **Seul bloqueur
+> restant : `GEMINI_API_KEY`** (Action 1, et l'embed du POC Action 3).
+
 | Action | État | Bloqueur restant |
 |---|---|---|
-| **1. Ré-ingestion RAGE section-aware** | Prep **finie** (9 `.md` + 9 chunks générés dans `index/rage/`). Mécanique de remplacement validée sur la vraie base. | `GEMINI_API_KEY` (embed) — voir §Action 1. |
-| **2. `dtu_rules.yaml` (étage 0)** | Loader + tests + doc d'intégration **écrits**. YAML **PAS encore rédigé** (workflow de vérif aborté). | Rédiger + **vérifier** les seuils — voir §Action 2. |
-| **3. Pivot DTU réel** | Runbook écrit. **Licence Reef Collection DTU acquise**, accès testé. | Reef = lecteur en ligne (pas de PDF en masse) + CGU — voir §Action 3. |
+| **1. Ré-ingestion RAGE section-aware** | Prep **finie** (9 `.md` + 9 chunks dans `index/rage/`). Mécanique de remplacement validée. | **`GEMINI_API_KEY`** (embed) — voir §Action 1. |
+| **2. `dtu_rules.yaml` (étage 0)** | ✅ **Fait** (`d3b48b0`) : **18 règles vérifiées**, 6 lots (03/04/05/08/09/10). Tests verts (13). Lot 04 = sources primaires (Arrêté 1982 + DTU Reef) ; lot 05 = NF C 15-100 recoupé web (secondaire). | — |
+| **3. Pivot DTU réel** | ✅ **POC fait** (`0b06f13`) : NF DTU 65.14 → pivot `.md` **interne** (`private/`, gitignoré) → 5 chunks `licence=dtu_payant`. `chunk_md.py` propage le flag licence. | Embeddings/insert = `GEMINI_API_KEY` (idem Action 1). |
+
+> **TODO plateforme** (PR séparée) : la couche de restitution doit **consommer**
+> le flag `licence=dtu_payant` pour exclure le `text` des chunks DTU des sorties
+> client. Aujourd'hui le flag est **posé** (chunk_md) mais **pas encore appliqué**
+> par un consommateur — pas de risque live (rien publié, embed gated).
 
 ## ⚠️ CORRECTION CRITIQUE — modèle d'embedding
 

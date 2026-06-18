@@ -110,9 +110,12 @@ Garde-fous techniques (implémentés) :
 - **Stockage gitignoré** : pivot `.md` + chunks d'un DTU payant sous `private/`
   (cf. `.gitignore`) → jamais publié dans ce repo public.
 - **Marquage des chunks** : `chunk_md.py` propage le front-matter `licence` sur
-  chaque chunk (`licence: dtu_payant`). La couche de restitution **exclut le `text`**
-  des chunks `dtu_payant` de toute sortie client (retrieval interne → l'agent cite
-  la réf, ne recopie pas la prose). Les chunks RAGE portent `licence: …libre…`.
+  chaque chunk (`licence: dtu_payant` ; les chunks RAGE portent `licence: …libre…`).
+  ⚠️ **Flag posé, pas encore appliqué** : la couche de restitution **devra exclure
+  le `text`** des chunks `dtu_payant` des sorties client (retrieval interne →
+  l'agent cite la réf, ne recopie pas la prose). **TODO plateforme** (PR séparée) :
+  implémenter ce consommateur. Aucun risque live tant que rien n'est publié et que
+  l'embed/insert reste gated.
 - **Front-matter** `usage: consultation interne — NE PAS injecter au LLM en entier`.
 
 > **POC réalisé** (2026-06-18) : `private/dtu/NF-DTU-65.14-P1-1-1.md` (slice borné
