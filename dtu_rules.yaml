@@ -1,0 +1,180 @@
+# dtu_rules.yaml — Étage 0 : règles normatives chiffrées déterministes par lot
+# ----------------------------------------------------------------------------
+# Lookup ~0 token (cf. tools/dtu_rules.py). Chaque règle = un FAIT paraphrasé
+# {exigence, seuil, condition, ref} — JAMAIS le texte verbatim du DTU/NF (droit
+# d'auteur). La `ref` est une CITATION (on cite la clause, on ne recopie pas sa
+# prose). Champs additionnels d'audit : `statut` (verifie | a_verifier) et
+# `source` (URL + clause lue) — non consommés par le devis (justification_rows
+# n'émet que les 4 champs), mais permettent de re-vérifier chaque seuil.
+#
+# GARDE-FOU : ne JAMAIS sortir un seuil de mémoire (risque client). Seules les
+# règles `statut: verifie` (source primaire lue + recoupée) figurent ici.
+
+meta:
+  generated: "2026-06-18"
+  licence: "Faits/seuils paraphrasés — AUCUN texte DTU/NF verbatim. ref = citation seule."
+  verification: >-
+    Lot 04 : sources PRIMAIRES lues verbatim — Arrêté du 24 mars 1982 (Legifrance,
+    réglementaire, art. 3 et 4) pour les débits de ventilation ; NF DTU 24.1 P1-1-1
+    (sept. 2020) et NF DTU 65.14 P1-1-1 (juil. 2023) lus dans le Reef (CSTB/AFNOR).
+    Lot 05 : NF C 15-100 (AFNOR, hors Reef) — valeurs recoupées sur ≥3 sources
+    autoritaires concordantes (Promotelec, repereelec, guide complet) ; édition A5.
+  sources_primaires:
+    arrete_24_03_1982: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000862344"
+    nf_dtu_24_1_p1_1_1: "Reef batipedia.com — code ALUF-1 (sept. 2020)"
+    nf_dtu_65_14_p1_1_1: "Reef batipedia.com — code ANVY-1 (juil. 2023)"
+
+rules:
+  # =====================================================================
+  # LOT 03 — Plomberie / Sanitaires  (NF DTU 60.11 — règles de calcul)
+  # =====================================================================
+  "03":
+    - exigence: "Débits minimaux de calcul et diamètres intérieurs minimum des canalisations d'alimentation par appareil sanitaire"
+      seuil: "Évier 0,20 l/s (Ø 12 mm) ; lavabo/bidet 0,20 (Ø 10) ; baignoire 0,33 (Ø 13) ; douche 0,20 (Ø 12) ; WC à réservoir 0,12 (Ø 10) ; lave-mains 0,10 (Ø 10) ; lave-linge 0,20 (Ø 10) ; lave-vaisselle 0,10 (Ø 10)"
+      condition: "Réseaux EFS/ECS, appareils pris individuellement (méthode générale)"
+      ref: "NF DTU 60.11 P1-1 (août 2013) §3.2.1, Tableau 1"
+      statut: verifie
+      source: "Reef AESP-1 §3.2.1 Tableau 1 — lu verbatim 2026-06-18"
+
+  # =====================================================================
+  # LOT 04 — Chauffage / VMC  (débits réglementaires + DTU fumisterie + PCBT)
+  # =====================================================================
+  "04":
+    # --- Ventilation : débits d'extraction (Arrêté 24/03/1982, source primaire) ---
+    - exigence: "Débit d'air extrait minimal en cuisine (ventilation générale et permanente)"
+      seuil: "75 / 90 / 105 / 120 / 135 m³/h pour 1 / 2 / 3 / 4 / 5 pièces principales et plus"
+      condition: "Logement ; débit plus faible admis si une hotte est raccordée à l'extraction"
+      ref: "Arrêté du 24 mars 1982, art. 3 (débits repris par le NF DTU 68.3)"
+      statut: verifie
+      source: "Legifrance LEGIARTI000006830557 (art. 3) — tableau lu verbatim 2026-06-18"
+
+    - exigence: "Débit d'air extrait minimal en salle de bains ou de douches"
+      seuil: "15 m³/h (logement de 1 à 2 pièces principales) ; 30 m³/h (3 pièces et plus)"
+      condition: "Autre salle d'eau : 15 m³/h quel que soit le nombre de pièces"
+      ref: "Arrêté du 24 mars 1982, art. 3"
+      statut: verifie
+      source: "Legifrance LEGIARTI000006830557 (art. 3) — tableau lu verbatim 2026-06-18"
+
+    - exigence: "Débit d'air extrait minimal au cabinet d'aisances (WC)"
+      seuil: "WC unique : 15 m³/h (1 à 3 pièces), 30 m³/h (4 pièces et plus) ; WC multiple : 15 m³/h"
+      condition: "Pièce de service ; logement 1 pièce : sortie commune SdB+WC contigus admise à 15 m³/h"
+      ref: "Arrêté du 24 mars 1982, art. 3"
+      statut: verifie
+      source: "Legifrance LEGIARTI000006830557 (art. 3) — tableau lu verbatim 2026-06-18"
+
+    - exigence: "Débit total extrait réduit minimal admis (ventilation à débit modulé)"
+      seuil: "Dispositif de réglage : 35→135 m³/h (1 à 7 pièces), cuisine réduite ≥ 20→45 m³/h ; modulation automatique : 10→35 m³/h (1 à 7 pièces)"
+      condition: "Modulation automatique soumise à autorisation ministérielle"
+      ref: "Arrêté du 24 mars 1982, art. 4 (modifié par arrêté du 28 oct. 1983)"
+      statut: verifie
+      source: "Legifrance LEGIARTI000006830558 (art. 4) — tableaux lus verbatim 2026-06-18"
+
+    # --- Fumisterie : conduit de fumée bois/granulés (NF DTU 24.1, source primaire) ---
+    - exigence: "Position du débouché du conduit de fumée au-dessus de la toiture (poêle/chaudière bois ou granulés)"
+      seuil: "≥ 0,40 m au-dessus de toute construction distante de moins de 8 m ; toiture-terrasse ou pente < 15° : ≥ 1,20 m au-dessus du point de sortie et ≥ 1 m au-dessus de l'acrotère (si acrotère > 0,20 m)"
+      condition: "Appareils à combustible solide ≤ 85 kW (puissance utile ≤ 70 kW)"
+      ref: "NF DTU 24.1 P1-1-1 (sept. 2020) §5.4.6 (renvoi arrêté 22 oct. 1969, art. 18)"
+      statut: verifie
+      source: "Reef ALUF-1 §5.4.6 — lu verbatim 2026-06-18"
+
+    # --- Plancher chauffant à eau basse température (NF DTU 65.14, source primaire) ---
+    - exigence: "Température maximale au contact du sol fini d'un plancher chauffant à eau"
+      seuil: "≤ 28 °C dans les conditions de base ; espacement entre tubes ≤ 35 cm"
+      condition: "Mode chauffage ; plancher chauffant ou chauffant réversible à eau"
+      ref: "NF DTU 65.14 P1-1-1 (juil. 2023) §7.5.1 (renvoi arrêté 23 juin 1978, art. 35)"
+      statut: verifie
+      source: "Reef ANVY-1 §7.5.1 — lu verbatim 2026-06-18"
+
+    - exigence: "Limitation et sécurité de la température du fluide caloporteur d'un plancher chauffant à eau"
+      seuil: "Dispositif limitant le fluide à 50 °C ; sécurité indépendante à réarmement manuel coupant la chaleur à 65 °C"
+      condition: "Mode chauffage ; sécurité fonctionnant même hors tension"
+      ref: "NF DTU 65.14 P1-1-1 (juil. 2023) §7.1.1 et §7.2.1"
+      statut: verifie
+      source: "Reef ANVY-1 §7.1–7.2 — lu verbatim 2026-06-18"
+
+  # =====================================================================
+  # LOT 05 — Électricité  (NF C 15-100, édition A5 — AFNOR, hors Reef)
+  # Valeurs recoupées sur ≥3 sources autoritaires concordantes.
+  # =====================================================================
+  "05":
+    - exigence: "Protection différentielle haute sensibilité de tous les circuits terminaux"
+      seuil: "DDR ≤ 30 mA ; au moins 2 interrupteurs différentiels ; au plus 8 circuits protégés par différentiel"
+      condition: "Type A exigé pour cuisson, lave-linge et IRVE ; type AC minimum pour les autres circuits"
+      ref: "NF C 15-100 (amendement A5, en vigueur depuis nov. 2015)"
+      statut: verifie
+      source: "promotelec.com + repereelec.fr/nfc15-100.htm + egpp-electricite.fr — concordants 2026-06-18"
+
+    - exigence: "Nombre minimal de socles de prise de courant 16 A dans le séjour"
+      seuil: "1 socle par tranche de 4 m², minimum 5 (séjour ≤ 28 m²) ; minimum 7 au-delà de 28 m²"
+      condition: "Pièce principale 'séjour' ; socles non commandés"
+      ref: "NF C 15-100 (amendement A5)"
+      statut: verifie
+      source: "promotelec.com + repereelec.fr + egpp-electricite.fr — concordants 2026-06-18"
+
+    - exigence: "Nombre minimal de socles de prise de courant 16 A par chambre"
+      seuil: "3 socles minimum par chambre"
+      condition: "Chambre (pièce principale)"
+      ref: "NF C 15-100 (amendement A5)"
+      statut: verifie
+      source: "repereelec.fr/nfc15-100.htm + egpp-electricite.fr — concordants 2026-06-18"
+
+    - exigence: "Socles de prise de courant non spécialisés en cuisine"
+      seuil: "6 socles (dont 4 répartis au-dessus du plan de travail) sur circuit dédié ; 3 socles si cuisine ≤ 4 m²"
+      condition: "Cuisine > 4 m² ; les 6 socles non spécialisés disposent d'un circuit dédié"
+      ref: "NF C 15-100 (amendement A5)"
+      statut: verifie
+      source: "promotelec.com + egpp-electricite.fr — concordants 2026-06-18"
+
+    - exigence: "Circuit d'éclairage : section des conducteurs cuivre et calibre de protection"
+      seuil: "1,5 mm² ; protection ≤ 16 A ; au plus 8 points lumineux par circuit"
+      condition: "Au moins 2 circuits d'éclairage par logement (hors studio)"
+      ref: "NF C 15-100 (amendement A5)"
+      statut: verifie
+      source: "repereelec.fr/nfc15-100.htm + egpp-electricite.fr — concordants 2026-06-18"
+
+    - exigence: "Circuit de prises de courant 16 A : section et calibre selon le nombre de socles"
+      seuil: "1,5 mm² → 16 A → 8 socles max ; ou 2,5 mm² → 20 A → 12 socles max"
+      condition: "Prises 16 A non spécialisées ; comptage 1 socle = 1 prise"
+      ref: "NF C 15-100 (amendement A5)"
+      statut: verifie
+      source: "repereelec.fr/nfc15-100.htm + egpp-electricite.fr + promotelec.com — concordants 2026-06-18"
+
+    - exigence: "Circuits spécialisés dédiés (gros électroménager) : section et calibre"
+      seuil: "Lave-linge, lave-vaisselle, four : 2,5 mm² / 20 A, 1 circuit dédié chacun ; plaque de cuisson : 6 mm² / 32 A (monophasé)"
+      condition: "Un circuit dédié par appareil ; conducteurs cuivre"
+      ref: "NF C 15-100 (amendement A5)"
+      statut: verifie
+      source: "repereelec.fr/nfc15-100.htm + egpp-electricite.fr — concordants 2026-06-18"
+
+  # =====================================================================
+  # LOT 08 — Carrelage / Faïence  (NF DTU 52.2 — pose collée)
+  # =====================================================================
+  "08":
+    - exigence: "Largeur minimale des joints entre éléments de revêtement céramique collé (pose à joint nul interdite)"
+      seuil: "Carreaux pressés : ≥ 2 mm (surface ≤ 500 cm²), ≥ 3 mm (> 500 cm²) ; carreaux à chants rectifiés et pierres naturelles : ≥ 2 mm ; carreaux étirés et plaquettes terre cuite : ≥ 6 mm"
+      condition: "Pose collée ; largeur nominale = minimale + tolérance dimensionnelle du carreau"
+      ref: "NF DTU 52.2 P1-1-1 (juin 2022) §7.3.5"
+      statut: verifie
+      source: "Reef ABQO-3 §7.3.5 — lu verbatim 2026-06-18"
+
+  # =====================================================================
+  # LOT 09 — Revêtements de sol (parquet)  (NF DTU 51.2 — parquets collés)
+  # =====================================================================
+  "09":
+    - exigence: "Degré d'humidité maximal du support à base de liants hydrauliques avant pose d'un parquet collé"
+      seuil: "≤ 3 % en poids (mesure à la bombe au carbure, méthode de référence) ; pré-test par impédance déclenchant le test bombe au carbure au-delà de 5 % (liant hydraulique) ou 0,8 % (sulfate de calcium)"
+      condition: "Supports à base de liants hydrauliques (chape/dalle/plancher béton) ; parquet collé"
+      ref: "NF DTU 51.2 P1-1 (mars 2023) §5.2.6.6"
+      statut: verifie
+      source: "Reef ABYY-4 §5.2.6.6 — lu verbatim 2026-06-18"
+
+  # =====================================================================
+  # LOT 10 — Peinture / Revêtements muraux  (NF DTU 59.1)
+  # =====================================================================
+  "10":
+    - exigence: "Conditions hygrothermiques minimales d'application des peintures, vernis et enduits"
+      seuil: "Travaux intérieurs : température +8 °C à +35 °C, hygrométrie < 70 % HR. Travaux extérieurs : température (ambiante et subjectile) +5 °C à +35 °C, hygrométrie ≤ 80 % HR"
+      condition: "Jamais sur subjectile gelé/surchauffé ni en atmosphère de condensation ; climat tropical : 75 % HR (int.) / 90 % HR (ext.)"
+      ref: "NF DTU 59.1 P1-1 (juin 2013) §7.1"
+      statut: verifie
+      source: "Reef AEZO-2 §7.1 — lu verbatim 2026-06-18"
