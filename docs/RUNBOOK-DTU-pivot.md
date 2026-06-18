@@ -24,10 +24,14 @@ Secret nécessaire **uniquement à l'étape embeddings** : `GEMINI_API_KEY`
 ou via `SUPABASE_DB_URL` + `tools/embed_and_load.py`.
 
 > **Modèle d'embedding** : la table `maestro_norms_chunks` est en
-> **`text-embedding-004`** (768d) — source de vérité :
-> `maestro-platform/packages/maestro/core/model_config.py:43`. **Ré-embedder
-> avec un autre modèle = autre espace vectoriel = retrieval dégradé.** Toujours
-> exécuter l'auto-test §3 avant d'insérer.
+> **`gemini-embedding-001`** (768d, `RETRIEVAL_DOCUMENT`) — **prouvé empiriquement**
+> par l'auto-test §3 (cosinus 1.00000 / 0.99956). `text-embedding-004` répond
+> désormais **404 NOT_FOUND** (retiré par Google) et n'est PLUS l'espace de la
+> table, malgré `model_config.py:43` de la plateforme qui le déclare encore côté
+> CONFIG (à corriger côté plateforme, PR séparée). **Ré-embedder avec un autre
+> modèle = autre espace vectoriel = retrieval dégradé.** Toujours exécuter
+> l'auto-test §3 avant d'insérer ; en cas de conflit, la source de vérité est
+> l'auto-test cosinus, pas le code de config.
 
 ---
 
