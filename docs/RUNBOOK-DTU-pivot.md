@@ -106,10 +106,19 @@ Même pipeline §1–§4, **mais** :
 Règle : *les faits/seuils (un nombre, une condition) ne sont pas protégeables ;
 la prose de la clause l'est.* On **cite**, on ne **recopie** pas.
 
-Garde-fous techniques recommandés :
-- marquer ces chunks (`licence: dtu_payant`) et **exclure leur `text`** de toute
-  sortie client (retrieval interne → l'agent reformule, ne cite que la réf) ;
-- front-matter `usage: consultation interne — NE PAS injecter au LLM en entier`.
+Garde-fous techniques (implémentés) :
+- **Stockage gitignoré** : pivot `.md` + chunks d'un DTU payant sous `private/`
+  (cf. `.gitignore`) → jamais publié dans ce repo public.
+- **Marquage des chunks** : `chunk_md.py` propage le front-matter `licence` sur
+  chaque chunk (`licence: dtu_payant`). La couche de restitution **exclut le `text`**
+  des chunks `dtu_payant` de toute sortie client (retrieval interne → l'agent cite
+  la réf, ne recopie pas la prose). Les chunks RAGE portent `licence: …libre…`.
+- **Front-matter** `usage: consultation interne — NE PAS injecter au LLM en entier`.
+
+> **POC réalisé** (2026-06-18) : `private/dtu/NF-DTU-65.14-P1-1-1.md` (slice borné
+> §6/§7 lu dans le Reef « comme un utilisateur », pas d'extraction systématique) →
+> `chunk_md.py` → 5 chunks section-aware `lot=04 · licence=dtu_payant`. Étape
+> embeddings/insert **gated** sur `GEMINI_API_KEY` (idem Action 1).
 
 Licences (rappel `README.md`) : RAGE/PACTE/PROFEEL = libre diffusion (plein texte
 OK) ; **DTU/NF & FFB = citation seule**.

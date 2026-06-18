@@ -14,5 +14,9 @@ index/embeddings_ids.json
 *.key
 probes.json
 
+# DTU/NF sous licence (REEF) — stockage INTERNE, jamais publié (repo public).
+# Pivot .md + chunks de DTU payants = consultation interne / retrieval seulement.
+private/
+
 # OS
 .DS_Store

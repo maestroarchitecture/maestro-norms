@@ -107,6 +107,11 @@ def main():
     lot = fm.get("lot", "")
     dtu = fm.get("dtu_refs", "[]")
     doc_path = fm.get("doc_path", "")  # rempli au besoin par l'appelant
+    # Garde-fou licence (cf. RUNBOOK-DTU-pivot §5) : un DTU/NF payant porte
+    # `licence: dtu_payant` en front-matter. On le propage sur chaque chunk pour
+    # que la couche de restitution exclue leur `text` de toute sortie client
+    # (retrieval interne → l'agent cite la réf, ne recopie pas la prose).
+    licence = fm.get("licence", "")
 
     out = args.out or os.path.splitext(args.md)[0] + ".chunks.jsonl"
     n = 0
@@ -131,6 +136,7 @@ def main():
                     "section_path": breadcrumb,
                     "lot": lot,
                     "dtu_refs": dtu,
+                    "licence": licence,  # "" (libre) ou "dtu_payant" (citation seule)
                     "n_chars": len(piece),
                     "text": f"[{breadcrumb}]\n{piece}" if breadcrumb else piece,
                 }
