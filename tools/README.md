@@ -11,6 +11,41 @@ PDF (corpus/**) ──[1] extract_chunks.py──▶ index/chunks.jsonl ──[2
         └ déjà fait                                                       └ local .npy  OU  Supabase pgvector
 ```
 
+## Variante recommandée — pivot Markdown *section-aware*
+
+Pour une **consultation interne** (recherche plein-texte, 0 token LLM) **et** une
+ingestion plus précise, on passe par un `.md` structuré intermédiaire au lieu du
+texte brut. Le `.md` est la **source unique** ; le LLM n'en consomme jamais
+l'intégralité (seulement le top-k au retrieval).
+
+```
+PDF ──[A] pdf_to_md.py──▶ .md structuré ──[B] chunk_md.py──▶ chunks.jsonl ──▶ embed_and_load.py
+     │ sommaire embarqué    (front-matter:           │ découpe par SECTION       (inchangé)
+     │ + pdftotext          lot/dtu_refs/source)      │ + breadcrumb + lot
+     └ titres #/##/###                                └ compatible INSERT Supabase
+```
+
+```bash
+# A) PDF → Markdown navigable (front-matter manifest : lot, dtu_refs, source_url, sha256)
+python3 tools/pdf_to_md.py corpus/rage/<fichier>.pdf      # → index/sample/<doc>.md
+
+# B) Markdown → chunks par section (respecte les frontières, porte lot + dtu_refs)
+python3 tools/chunk_md.py index/sample/<doc>.md           # → index/sample/<doc>.chunks.jsonl
+
+# C) Embeddings + chargement : identique à l'étape 2 ci-dessous (mêmes champs)
+python3 tools/embed_and_load.py --target supabase --chunks index/sample/<doc>.chunks.jsonl
+```
+
+**Pourquoi** vs `extract_chunks.py` (fenêtres de 300 mots à l'aveugle) :
+- chunk = une sous-section cohérente → retrieval plus précis, citation exacte (`§7.2`) ;
+- chaque chunk porte `lot` + `dtu_refs` → **filtrage déterministe avant** la recherche
+  sémantique (0 token) ;
+- le `.md` sert aussi de doc interne navigable (humain) — utile surtout pour les **DTU**
+  payants (lecture interne sous licence, jamais de verbatim côté client).
+
+Exemple versionné : `index/sample/recommandation-pro-rage-appareils-…-granules-…md`
+(+ `.chunks.jsonl`) — Reco Pro RAGE, libre de droits.
+
 ## Étape 1 — Extraction + chunking (faite)
 
 ```bash
