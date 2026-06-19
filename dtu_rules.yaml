@@ -186,6 +186,14 @@ rules:
       statut: verifie
       source: "voltwork.fr + bornetik-idf.fr + jcsm.fr + installation-renovation-electrique.com — concordants 2026-06-19"
 
+    # --- Clauses de marché / exécution du lot Électricité (DTU 70.1 — SOURCE REEF, lu verbatim) ---
+    - exigence: "Attestation de conformité Consuel et réception de l'installation électrique du logement"
+      seuil: "Attestation(s) de conformité Consuel transmise(s) ≥ 20 jours avant la mise sous tension définitive ; essais et vérifications préalables selon l'article 6 de la NF C 15-100 ; réception prononcée selon NF P 03-001"
+      condition: "Lot Électricité (installations intérieures NF C 15-100 §771/772 + branchement NF C 14-100), bâtiments d'habitation ; entrepreneur titulaire du marché"
+      ref: "DTU 70.1 (NF P80-201-2, mai 1998) §1, §7.2, §8.1–8.2 (renvoi arrêté du 17 oct. 1973)"
+      statut: verifie
+      source: "Reef ALR-1 §1/§7.2/§8 — lu verbatim 2026-06-19"
+
   # =====================================================================
   # LOT 08 — Carrelage / Faïence  (NF DTU 52.2 — pose collée)
   # =====================================================================
