@@ -72,12 +72,9 @@ rules:
       ref: "Arrêté du 24 mars 1982, art. 3"
       statut: verifie
       source: "Legifrance LEGIARTI000006830557 (art. 3) — tableau lu verbatim 2026-06-18"
-      # WC unique (cas courant) ; WC multiple = 15 m³/h fixe (non contextualisé)
-      check:
-        type: ventilation_debit
-        piece: wc
-        unit: "m³/h"
-        min_by_pieces: { "1": 15, "2": 15, "3": 15, "4+": 30 }
+      # PAS de check : le débit WC dépend du nombre de WC (unique 15→30 / multiple 15),
+      # non déductible du seul nb de pièces principales → reste générique « à vérifier »
+      # (revue Codex GitHub, P2 — éviter de surestimer sur les plans multi-WC).
 
     - exigence: "Débit total extrait réduit minimal admis (ventilation à débit modulé)"
       seuil: "Dispositif de réglage : 35→135 m³/h (1 à 7 pièces), cuisine réduite ≥ 20→45 m³/h ; modulation automatique : 10→35 m³/h (1 à 7 pièces)"
