@@ -244,6 +244,32 @@ rules:
       source: "Reef ALR-1 §1/§7.2/§8/Annexe A — lu verbatim 2026-06-19"
 
   # =====================================================================
+  # LOT 06 — Menuiseries intérieures  (NF DTU 36.2 — menuiserie int. bois)
+  # SOURCE REEF : AHHV-2 = NF DTU 36.2 P1-1 (CCT, novembre 2025), lu verbatim.
+  # =====================================================================
+  "06":
+    - exigence: "Conditions préalables à la pose des menuiseries intérieures (ambiance, humidité)"
+      seuil: "Humidité relative des locaux 40–60 % à 20 °C ; bois stabilisé selon le local : 7–9,9 % d'humidité (faible hygrométrie) ou 10–13 % (hygrométrie moyenne) ; pose sur paroi maçonnée seulement si le support contient moins de 5 % d'eau"
+      condition: "Travaux exécutés après mise hors d'eau / hors d'air, ambiance de pose stabilisée"
+      ref: "NF DTU 36.2 P1-1 (novembre 2025) §5.4"
+      statut: verifie
+      source: "Reef AHHV-2 §5.4 — lu verbatim 2026-06-19"
+
+    - exigence: "Tolérances de pose du dormant (bâti/huisserie) — ouvrage fini"
+      seuil: "Aplomb des montants ≤ 2 mm/m (dans le plan de la cloison) ; rectitude/parallélisme des montants ≤ 2 mm dans tous les plans ; rectitude et niveau de la traverse ≤ 2 mm au 1er mètre puis +1 mm par mètre supplémentaire, maximum 4 mm ; équerrage après pose ≤ 2 mm"
+      condition: "Dormants bois / à base de bois / métalliques, ouvrage fini"
+      ref: "NF DTU 36.2 P1-1 (novembre 2025) §6.8.1"
+      statut: verifie
+      source: "Reef AHHV-2 §6.8.1 — lu verbatim 2026-06-19"
+
+    - exigence: "Tolérances et jeux du vantail posé sur dormant (ouvrage fini)"
+      seuil: "Jeux apparents entre dormant et vantail (et au battement des portes à 2 vantaux) ≤ 3 mm pour les portes finies, ≤ 5 mm pour les portes à peindre ; variation de jeu ≤ 1 mm par mètre ; affleurement du vantail par rapport au nu du dormant ≤ 1 mm"
+      condition: "Vantail bois / à base de bois sur dormant mis en œuvre"
+      ref: "NF DTU 36.2 P1-1 (novembre 2025) §6.8.2"
+      statut: verifie
+      source: "Reef AHHV-2 §6.8.2 — lu verbatim 2026-06-19"
+
+  # =====================================================================
   # LOT 07 — Menuiseries extérieures  (NF DTU 36.5 — pose fenêtres/portes ext.)
   # SOURCE REEF : ABKY-1 = NF DTU 36.5 P1-1 (CCT, avril 2010) ; choix AEV : ABKZ-1 (P1-2)
   # renvoie au FD DTU 36.5 P3 = ACJL-1 (Tableau 8 récap, lu verbatim image par image).
