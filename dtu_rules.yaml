@@ -275,6 +275,13 @@ rules:
       statut: verifie
       source: "Reef AHHV-2 §6.8.2 — lu verbatim 2026-06-19"
 
+    - exigence: "Fixation des dormants (huisseries / bâtis) des menuiseries intérieures"
+      seuil: "Montant SANS organe de rotation : ≥ 3 fixations (dont une en pied), entraxe ≤ 950 mm ; pied de montant : ≥ 1 fixation au sol/paroi à ≤ 200 mm du sol fini ; montant AVEC organes de rotation : une fixation près de chaque organe (+ 1 si entraxe des organes > 950 mm). Traverse : fixation requise si l'ouvrant fait > 0,93 m de large (et jeu ≥ 15 mm en tout point de la baie)"
+      condition: "Dormants bois / à base de bois / métalliques ; fixations adaptées au support"
+      ref: "NF DTU 36.2 P1-1 (novembre 2025) §6.1.1"
+      statut: verifie
+      source: "Reef AHHV-2 §6.1.1 — lu verbatim 2026-06-19"
+
   # =====================================================================
   # LOT 07 — Menuiseries extérieures  (NF DTU 36.5 — pose fenêtres/portes ext.)
   # SOURCE REEF : ABKY-1 = NF DTU 36.5 P1-1 (CCT, avril 2010) ; choix AEV : ABKZ-1 (P1-2)
