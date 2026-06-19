@@ -11,7 +11,7 @@
 # règles `statut: verifie` (source primaire lue + recoupée) figurent ici.
 
 meta:
-  generated: "2026-06-18"
+  generated: "2026-06-19"
   licence: "Faits/seuils paraphrasés — AUCUN texte DTU/NF verbatim. ref = citation seule."
   verification: >-
     Lot 04 : sources PRIMAIRES lues verbatim — Arrêté du 24 mars 1982 (Legifrance,
@@ -47,6 +47,12 @@ rules:
       ref: "Arrêté du 24 mars 1982, art. 3 (débits repris par le NF DTU 68.3)"
       statut: verifie
       source: "Legifrance LEGIARTI000006830557 (art. 3) — tableau lu verbatim 2026-06-18"
+      # check : seuil contextualisable au nb de pièces principales (étage 0 — éval déterministe)
+      check:
+        type: ventilation_debit
+        piece: cuisine
+        unit: "m³/h"
+        min_by_pieces: { "1": 75, "2": 90, "3": 105, "4": 120, "5+": 135 }
 
     - exigence: "Débit d'air extrait minimal en salle de bains ou de douches"
       seuil: "15 m³/h (logement de 1 à 2 pièces principales) ; 30 m³/h (3 pièces et plus)"
@@ -54,6 +60,11 @@ rules:
       ref: "Arrêté du 24 mars 1982, art. 3"
       statut: verifie
       source: "Legifrance LEGIARTI000006830557 (art. 3) — tableau lu verbatim 2026-06-18"
+      check:
+        type: ventilation_debit
+        piece: sdb
+        unit: "m³/h"
+        min_by_pieces: { "1": 15, "2": 15, "3+": 30 }
 
     - exigence: "Débit d'air extrait minimal au cabinet d'aisances (WC)"
       seuil: "WC unique : 15 m³/h (1 à 3 pièces), 30 m³/h (4 pièces et plus) ; WC multiple : 15 m³/h"
@@ -61,6 +72,12 @@ rules:
       ref: "Arrêté du 24 mars 1982, art. 3"
       statut: verifie
       source: "Legifrance LEGIARTI000006830557 (art. 3) — tableau lu verbatim 2026-06-18"
+      # WC unique (cas courant) ; WC multiple = 15 m³/h fixe (non contextualisé)
+      check:
+        type: ventilation_debit
+        piece: wc
+        unit: "m³/h"
+        min_by_pieces: { "1": 15, "2": 15, "3": 15, "4+": 30 }
 
     - exigence: "Débit total extrait réduit minimal admis (ventilation à débit modulé)"
       seuil: "Dispositif de réglage : 35→135 m³/h (1 à 7 pièces), cuisine réduite ≥ 20→45 m³/h ; modulation automatique : 10→35 m³/h (1 à 7 pièces)"
