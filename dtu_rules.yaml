@@ -110,8 +110,9 @@ rules:
       source: "Reef ANVY-1 §7.1–7.2 — lu verbatim 2026-06-18"
 
   # =====================================================================
-  # LOT 05 — Électricité  (NF C 15-100, édition A5 — AFNOR, hors Reef)
-  # Valeurs recoupées sur ≥3 sources autoritaires concordantes.
+  # LOT 05 — Électricité  (NF C 15-100, édition 2024 — AFNOR, hors Reef)
+  # Valeurs résidentielles (partie 10) recoupées sur ≥3 sources autoritaires concordantes.
+  # Nouveautés 2024 (type F, DPDA, IRVE 7-722) recoupées le 2026-06-19.
   # =====================================================================
   "05":
     - exigence: "Protection différentielle haute sensibilité de tous les circuits terminaux"
@@ -162,6 +163,28 @@ rules:
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
       statut: verifie
       source: "repereelec.fr/nfc15-100.htm + egpp-electricite.fr — concordants 2026-06-18"
+
+    # --- Nouveautés de l'édition 2024 (recoupées ≥3 sources autoritaires, 2026-06-19) ---
+    - exigence: "Protection différentielle de type F (et type B en triphasé) pour les circuits à variateur / composante haute fréquence"
+      seuil: "DDR 30 mA de TYPE F en tête des circuits monophasés alimentant pompe à chaleur, climatisation, pompe de piscine et prises renforcées (équipements à variateur de vitesse monophasé) ; TYPE B (30 mA) pour ces mêmes usages en triphasé"
+      condition: "Nouveauté édition 2024 ; le type F protège au moins comme le type A et résiste mieux aux déclenchements intempestifs"
+      ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025)"
+      statut: verifie
+      source: "legrand.fr + hager.com + sonepar.fr + materiels-electriques.fr — concordants 2026-06-19"
+
+    - exigence: "Dispositif de protection contre les défauts d'arc (DPDA / AFDD) — RECOMMANDÉ, non obligatoire"
+      seuil: "Recommandé (non imposé) en tête des circuits 'prises de courant' des chambres, des locaux à risque incendie (stockage de matières inflammables, grange, scierie/menuiserie), des locaux à biens irremplaçables (bâtiment patrimonial, musée), et des circuits d'équipements alimentés en permanence (VMC, pompe de piscine)"
+      condition: "Édition 2024 ; recommandation ; à installer à l'origine du circuit terminal protégé"
+      ref: "NF C 15-100 (édition 2024)"
+      statut: verifie
+      source: "sonepar.fr + capeb.fr (DP révision déc. 2024) + legrand.fr + hager.com — concordants 2026-06-19"
+
+    - exigence: "Point de recharge de véhicule électrique (IRVE) : circuit dédié et protection (partie 7-722)"
+      seuil: "Circuit spécialisé dédié (aucun autre appareil) + DDR 30 mA dédié. Monophasé : type A ou F + détection 6 mA DC (souvent intégrée à la borne). Triphasé : type B obligatoire. Dimensionnement : prise renforcée 3,7 kW → 16 A / 2,5 mm² / disj 20 A ; borne 7,4 kW → 32 A / 6 mm² (<15 m) / disj 40 A (monophasé) ; 22 kW → 32 A/phase / 10 mm² / disj 40 A tétrapolaire (triphasé)"
+      condition: "NF C 15-100 partie 7-722 en vigueur depuis le 1er sept. 2025 ; sections à majorer selon la longueur (chute de tension)"
+      ref: "NF C 15-100 partie 7-722 (édition 2024 ; applicable 01/09/2025)"
+      statut: verifie
+      source: "voltwork.fr + bornetik-idf.fr + jcsm.fr + installation-renovation-electrique.com — concordants 2026-06-19"
 
   # =====================================================================
   # LOT 08 — Carrelage / Faïence  (NF DTU 52.2 — pose collée)
