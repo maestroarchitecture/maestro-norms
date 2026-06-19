@@ -18,7 +18,10 @@ meta:
     réglementaire, art. 3 et 4) pour les débits de ventilation ; NF DTU 24.1 P1-1-1
     (sept. 2020) et NF DTU 65.14 P1-1-1 (juil. 2023) lus dans le Reef (CSTB/AFNOR).
     Lot 05 : NF C 15-100 (AFNOR, hors Reef) — valeurs recoupées sur ≥3 sources
-    autoritaires concordantes (Promotelec, repereelec, guide complet) ; édition A5.
+    autoritaires concordantes (Promotelec, repereelec, guide complet). Réfs mises à jour
+    vers l'ÉDITION 2024 (série obligatoire depuis sept. 2025) ; valeurs résidentielles
+    partie 10 issues de l'amendement A5. TODO (via Reef) : intégrer les nouveautés 2024 —
+    DDR type F (PAC/clim), détecteurs d'arc (DPDA), partie IRVE 7-722.
   sources_primaires:
     arrete_24_03_1982: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000862344"
     nf_dtu_24_1_p1_1_1: "Reef batipedia.com — code ALUF-1 (sept. 2020)"
@@ -114,49 +117,49 @@ rules:
     - exigence: "Protection différentielle haute sensibilité de tous les circuits terminaux"
       seuil: "DDR ≤ 30 mA ; au moins 2 interrupteurs différentiels ; au plus 8 circuits protégés par différentiel"
       condition: "Type A exigé pour cuisson, lave-linge et IRVE ; type AC minimum pour les autres circuits"
-      ref: "NF C 15-100 (amendement A5, en vigueur depuis nov. 2015)"
+      ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; règle issue de l'amendement A5 de 2015, reconduite pour le résidentiel)"
       statut: verifie
       source: "promotelec.com + repereelec.fr/nfc15-100.htm + egpp-electricite.fr — concordants 2026-06-18"
 
     - exigence: "Nombre minimal de socles de prise de courant 16 A dans le séjour"
       seuil: "1 socle par tranche de 4 m², minimum 5 (séjour ≤ 28 m²) ; minimum 7 au-delà de 28 m²"
       condition: "Pièce principale 'séjour' ; socles non commandés"
-      ref: "NF C 15-100 (amendement A5)"
+      ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
       statut: verifie
       source: "promotelec.com + repereelec.fr + egpp-electricite.fr — concordants 2026-06-18"
 
     - exigence: "Nombre minimal de socles de prise de courant 16 A par chambre"
       seuil: "3 socles minimum par chambre"
       condition: "Chambre (pièce principale)"
-      ref: "NF C 15-100 (amendement A5)"
+      ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
       statut: verifie
       source: "repereelec.fr/nfc15-100.htm + egpp-electricite.fr — concordants 2026-06-18"
 
     - exigence: "Socles de prise de courant non spécialisés en cuisine"
       seuil: "6 socles (dont 4 répartis au-dessus du plan de travail) sur circuit dédié ; 3 socles si cuisine ≤ 4 m²"
       condition: "Cuisine > 4 m² ; les 6 socles non spécialisés disposent d'un circuit dédié"
-      ref: "NF C 15-100 (amendement A5)"
+      ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
       statut: verifie
       source: "promotelec.com + egpp-electricite.fr — concordants 2026-06-18"
 
     - exigence: "Circuit d'éclairage : section des conducteurs cuivre et calibre de protection"
       seuil: "1,5 mm² ; protection ≤ 16 A ; au plus 8 points lumineux par circuit"
       condition: "Au moins 2 circuits d'éclairage par logement (hors studio)"
-      ref: "NF C 15-100 (amendement A5)"
+      ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
       statut: verifie
       source: "repereelec.fr/nfc15-100.htm + egpp-electricite.fr — concordants 2026-06-18"
 
     - exigence: "Circuit de prises de courant 16 A : section et calibre selon le nombre de socles"
       seuil: "1,5 mm² → 16 A → 8 socles max ; ou 2,5 mm² → 20 A → 12 socles max"
       condition: "Prises 16 A non spécialisées ; comptage 1 socle = 1 prise"
-      ref: "NF C 15-100 (amendement A5)"
+      ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
       statut: verifie
       source: "repereelec.fr/nfc15-100.htm + egpp-electricite.fr + promotelec.com — concordants 2026-06-18"
 
     - exigence: "Circuits spécialisés dédiés (gros électroménager) : section et calibre"
       seuil: "Lave-linge, lave-vaisselle, four : 2,5 mm² / 20 A, 1 circuit dédié chacun ; plaque de cuisson : 6 mm² / 32 A (monophasé)"
       condition: "Un circuit dédié par appareil ; conducteurs cuivre"
-      ref: "NF C 15-100 (amendement A5)"
+      ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
       statut: verifie
       source: "repereelec.fr/nfc15-100.htm + egpp-electricite.fr — concordants 2026-06-18"
 
