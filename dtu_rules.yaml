@@ -157,11 +157,17 @@ rules:
       source: "Reef ANVY-1 §7.1–7.2 — lu verbatim 2026-06-18"
 
   # =====================================================================
-  # LOT 05 — Électricité  (NF C 15-100, édition 2024 — hors Reef de Namur)
-  # SOURCE : Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local de Namur), lu verbatim
-  # 2026-06-19 — valeurs résidentielles (partie 10) + nouveautés 2024 (type F, DPDA, IRVE)
-  # CONFIRMÉES. NB : le texte officiel NF C 15-100 n'est pas dans le Reef de Namur ; le guide
-  # Legrand 2024 (qui reproduit/applique la norme) sert de source primaire sur disque.
+  # LOT 05 — Électricité  (NF C 15-100, partie 7-771 « Locaux d'habitation » — hors Reef)
+  # SOURCES (NF C 15-100 absente du Reef de Namur) :
+  #  - VALEURS EN VIGUEUR (édition 2024 / amendement A5) : Guide Legrand NF C 15-100 (rév.
+  #    23 août 2024) + Promotelec « Installations électriques privatives » — docs locaux de
+  #    Namur (~/Projects/PHD/maestro-ref/dtu). Lus verbatim 2026-06-19.
+  #  - Texte officiel AFNOR sur disque = FA005536 = NF C 15-100 DÉCEMBRE 2002 + A1/A2 (515 p.) :
+  #    donne la STRUCTURE officielle (partie 771) MAIS édition PÉRIMÉE (antérieure à l'A5 de
+  #    2015 et à la révision 2024) → ses VALEURS ne sont PAS à jour, donc non utilisées ici.
+  #    (Pour le texte exact en vigueur : il faudrait l'édition AFNOR août 2024.)
+  #  - Garde-fou AFNOR (le doc s'oppose à l'usage par IA) : on n'extrait que des FAITS/seuils
+  #    (non protégeables) en citation seule, jamais le verbatim de la prose.
   # =====================================================================
   "05":
     - exigence: "Protection différentielle haute sensibilité de tous les circuits terminaux"
