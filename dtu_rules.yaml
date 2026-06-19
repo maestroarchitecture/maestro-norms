@@ -195,6 +195,26 @@ rules:
       source: "Reef ALR-1 §1/§7.2/§8/Annexe A — lu verbatim 2026-06-19"
 
   # =====================================================================
+  # LOT 07 — Menuiseries extérieures  (NF DTU 36.5 — pose fenêtres/portes ext.)
+  # SOURCE REEF : ABKY-1 = NF DTU 36.5 P1-1 (CCT, avril 2010), lu verbatim.
+  # NB : le choix de la CLASSE AEV selon l'exposition est dans P1-2 (CGM) — à sourcer.
+  # =====================================================================
+  "07":
+    - exigence: "Calage et fixation des fenêtres et portes extérieures (mise en œuvre, travaux neufs)"
+      seuil: "Cales d'assise en sous-face de la traverse basse, au voisinage des montants ; distance libre entre cales ≤ 30 cm ; distance maximale entre deux fixations ≤ 0,80 m ; chaque cale et chaque fixation doit supporter une charge ponctuelle de 100 daN sans altération. Fixations par pointes interdites ; collage ou injection de mousse seuls non admis"
+      condition: "Travaux neufs ; les fixations transmettent au gros œuvre les efforts (vent, manœuvre des vantaux)"
+      ref: "NF DTU 36.5 P1-1 (avril 2010) §5.2–5.3"
+      statut: verifie
+      source: "Reef ABKY-1 §5.2/§5.3 — lu verbatim 2026-06-19"
+
+    - exigence: "Calfeutrement périphérique (étanchéité à l'air et à l'eau) des menuiseries extérieures"
+      seuil: "Joint de calfeutrement par mastic sur fond de joint ; largeur maximale du joint entre fenêtre et support ≤ 30 mm ; longueur de cheminement de l'eau ≥ 30 mm (calfeutrement humide renforcé) ; le calfeutrement par mastic ne doit pas être revêtu de peinture/enduit"
+      condition: "La classe AEV (air/eau/vent) de la menuiserie est choisie selon l'exposition — cf. NF DTU 36.5 P1-2 (CGM), à sourcer"
+      ref: "NF DTU 36.5 P1-1 (avril 2010) §5.9"
+      statut: verifie
+      source: "Reef ABKY-1 §5.9 — lu verbatim 2026-06-19"
+
+  # =====================================================================
   # LOT 08 — Carrelage / Faïence  (NF DTU 52.2 — pose collée)
   # =====================================================================
   "08":
