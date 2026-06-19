@@ -356,3 +356,13 @@ rules:
       ref: "NF DTU 59.1 P1-1 (juin 2013) §7.1"
       statut: verifie
       source: "Reef AEZO-2 §7.1 — lu verbatim 2026-06-18"
+
+  # =====================================================================
+  # LOTS SANS RÈGLE ÉTAGE 0 (vérifié 2026-06-19) — lots organisationnels / méta, pas de
+  # DTU ni de seuil chiffré normatif à inscrire (rules_for_lot renvoie [] proprement) :
+  #   00 — Installation de chantier (préparation, protections, manutention)
+  #   01 — Démolition / Dépose / Curage (les déposes restent dans les lots métier)
+  #   11 — Cuisine / Salle de bain (forfaits) — LOT MÉTA (agrège d'autres lots)
+  #   12 — Nettoyage fin de chantier
+  # → étage 0 couvre les lots à seuils chiffrés : 02,03,04,05,06,07,08,09,10.
+  # =====================================================================
