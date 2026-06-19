@@ -157,9 +157,11 @@ rules:
       source: "Reef ANVY-1 §7.1–7.2 — lu verbatim 2026-06-18"
 
   # =====================================================================
-  # LOT 05 — Électricité  (NF C 15-100, édition 2024 — AFNOR, hors Reef)
-  # Valeurs résidentielles (partie 10) recoupées sur ≥3 sources autoritaires concordantes.
-  # Nouveautés 2024 (type F, DPDA, IRVE 7-722) recoupées le 2026-06-19.
+  # LOT 05 — Électricité  (NF C 15-100, édition 2024 — hors Reef de Namur)
+  # SOURCE : Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local de Namur), lu verbatim
+  # 2026-06-19 — valeurs résidentielles (partie 10) + nouveautés 2024 (type F, DPDA, IRVE)
+  # CONFIRMÉES. NB : le texte officiel NF C 15-100 n'est pas dans le Reef de Namur ; le guide
+  # Legrand 2024 (qui reproduit/applique la norme) sert de source primaire sur disque.
   # =====================================================================
   "05":
     - exigence: "Protection différentielle haute sensibilité de tous les circuits terminaux"
@@ -167,49 +169,49 @@ rules:
       condition: "Type A exigé pour cuisson, lave-linge et IRVE ; type AC minimum pour les autres circuits"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; règle issue de l'amendement A5 de 2015, reconduite pour le résidentiel)"
       statut: verifie
-      source: "promotelec.com + repereelec.fr/nfc15-100.htm + egpp-electricite.fr — concordants 2026-06-18"
+      source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.12-13 — lu verbatim 2026-06-19"
 
     - exigence: "Nombre minimal de socles de prise de courant 16 A dans le séjour"
       seuil: "1 socle par tranche de 4 m², minimum 5 (séjour ≤ 28 m²) ; minimum 7 au-delà de 28 m²"
       condition: "Pièce principale 'séjour' ; socles non commandés"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
       statut: verifie
-      source: "promotelec.com + repereelec.fr + egpp-electricite.fr — concordants 2026-06-18"
+      source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.24-25 — lu verbatim 2026-06-19"
 
     - exigence: "Nombre minimal de socles de prise de courant 16 A par chambre"
       seuil: "3 socles minimum par chambre"
       condition: "Chambre (pièce principale)"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
       statut: verifie
-      source: "repereelec.fr/nfc15-100.htm + egpp-electricite.fr — concordants 2026-06-18"
+      source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.16-25 — lu verbatim 2026-06-19"
 
     - exigence: "Socles de prise de courant non spécialisés en cuisine"
       seuil: "6 socles (dont 4 répartis au-dessus du plan de travail) sur circuit dédié ; 3 socles si cuisine ≤ 4 m²"
       condition: "Cuisine > 4 m² ; les 6 socles non spécialisés disposent d'un circuit dédié"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
       statut: verifie
-      source: "promotelec.com + egpp-electricite.fr — concordants 2026-06-18"
+      source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.24-25 — lu verbatim 2026-06-19"
 
     - exigence: "Circuit d'éclairage : section des conducteurs cuivre et calibre de protection"
       seuil: "1,5 mm² ; protection ≤ 16 A ; au plus 8 points lumineux par circuit"
       condition: "Au moins 2 circuits d'éclairage par logement (hors studio)"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
       statut: verifie
-      source: "repereelec.fr/nfc15-100.htm + egpp-electricite.fr — concordants 2026-06-18"
+      source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.16-25 — lu verbatim 2026-06-19"
 
     - exigence: "Circuit de prises de courant 16 A : section et calibre selon le nombre de socles"
       seuil: "1,5 mm² → 16 A → 8 socles max ; ou 2,5 mm² → 20 A → 12 socles max"
       condition: "Prises 16 A non spécialisées ; comptage 1 socle = 1 prise"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
       statut: verifie
-      source: "repereelec.fr/nfc15-100.htm + egpp-electricite.fr + promotelec.com — concordants 2026-06-18"
+      source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.16-17/24-25 — lu verbatim 2026-06-19"
 
     - exigence: "Circuits spécialisés dédiés (gros électroménager) : section et calibre"
       seuil: "Lave-linge, lave-vaisselle, four : 2,5 mm² / 20 A, 1 circuit dédié chacun ; plaque de cuisson : 6 mm² / 32 A (monophasé)"
       condition: "Un circuit dédié par appareil ; conducteurs cuivre"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
       statut: verifie
-      source: "repereelec.fr/nfc15-100.htm + egpp-electricite.fr — concordants 2026-06-18"
+      source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.16-25 — lu verbatim 2026-06-19"
 
     # --- Nouveautés de l'édition 2024 (recoupées ≥3 sources autoritaires, 2026-06-19) ---
     - exigence: "Protection différentielle de type F (et type B en triphasé) pour les circuits à variateur / composante haute fréquence"
@@ -217,21 +219,21 @@ rules:
       condition: "Nouveauté édition 2024 ; le type F protège au moins comme le type A et résiste mieux aux déclenchements intempestifs"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025)"
       statut: verifie
-      source: "legrand.fr + hager.com + sonepar.fr + materiels-electriques.fr — concordants 2026-06-19"
+      source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.12-13 — lu verbatim 2026-06-19"
 
     - exigence: "Dispositif de protection contre les défauts d'arc (DPDA / AFDD) — RECOMMANDÉ, non obligatoire"
-      seuil: "Recommandé (non imposé) en tête des circuits 'prises de courant' des chambres, des locaux à risque incendie (stockage de matières inflammables, grange, scierie/menuiserie), des locaux à biens irremplaçables (bâtiment patrimonial, musée), et des circuits d'équipements alimentés en permanence (VMC, pompe de piscine)"
-      condition: "Édition 2024 ; recommandation ; à installer à l'origine du circuit terminal protégé"
-      ref: "NF C 15-100 (édition 2024)"
+      seuil: "Recommandé (non imposé) en tête des circuits 'prises de courant' de : locaux à sommeil HORS logement (foyers, EHPAD, hôtels) ; bâtiments patrimoniaux/historiques et biens irremplaçables (musées) ; locaux de stockage de matières inflammables (scieries, silos, ateliers) ; + circuits alimentant des équipements fonctionnant en permanence et d'accès difficile (VMC, pompes)"
+      condition: "Édition 2024 ; recommandation. NB : vise les locaux à sommeil HORS logement — PAS les chambres d'un logement (correction vs 1re version web)"
+      ref: "NF C 15-100 (édition 2024) — protection contre les arcs électriques"
       statut: verifie
-      source: "sonepar.fr + capeb.fr (DP révision déc. 2024) + legrand.fr + hager.com — concordants 2026-06-19"
+      source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.10-11 — lu verbatim 2026-06-19"
 
     - exigence: "Point de recharge de véhicule électrique (IRVE) : circuit dédié et protection (partie 7-722)"
       seuil: "Circuit spécialisé dédié (aucun autre appareil) + DDR 30 mA dédié. Monophasé : type A ou F + détection 6 mA DC (souvent intégrée à la borne). Triphasé : type B obligatoire. Dimensionnement : prise renforcée 3,7 kW → 16 A / 2,5 mm² / disj 20 A ; borne 7,4 kW → 32 A / 6 mm² (<15 m) / disj 40 A (monophasé) ; 22 kW → 32 A/phase / 10 mm² / disj 40 A tétrapolaire (triphasé)"
       condition: "NF C 15-100 partie 7-722 en vigueur depuis le 1er sept. 2025 ; sections à majorer selon la longueur (chute de tension)"
       ref: "NF C 15-100 partie 7-722 (édition 2024 ; applicable 01/09/2025)"
       statut: verifie
-      source: "voltwork.fr + bornetik-idf.fr + jcsm.fr + installation-renovation-electrique.com — concordants 2026-06-19"
+      source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.12-13 [circuit dédié, types A/F+6 mA DC / B, prise Green'up] + voltwork.fr [dimensionnement bornes 7,4/22 kW] — 2026-06-19"
 
     # --- Clauses de marché / exécution du lot Électricité (DTU 70.1 — SOURCE REEF, lu verbatim) ---
     - exigence: "Attestation de conformité Consuel et réception de l'installation électrique du logement"
