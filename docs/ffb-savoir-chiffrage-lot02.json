@@ -1,0 +1,224 @@
+[
+ {
+  "titre": "Plafonds suspendus modulaires : l'essentiel du NF DTU 58.1 (calepin de chantier FFB)",
+  "pertinence": "moyenne",
+  "sous_poste": "Plafonds suspendus modulaires (dalles sur ossature)",
+  "perimetre": [
+   "Pose d'une ossature suspendue (suspentes, accroches) et d'éléments d'habillage modulaires (dalles de plafond)",
+   "Calepinage de la surface de plafond pour répartir les dalles",
+   "Traitement des cas particuliers : plénum de grande hauteur, zones sismiques",
+   "Réception de l'ouvrage fini avec contrôle des tolérances (désaffleurement, bâillement, planéité)",
+   "Le classement du local et son hygrométrie conditionnent le type de dalle/ossature retenu (à intégrer au choix produit)"
+  ],
+  "facteurs_prix": [
+   "Classement du local et niveau d'hygrométrie (local sec vs local humide) qui impose un type de dalle et d'ossature adapté",
+   "Hauteur du plénum : un plénum de grande hauteur demande des dispositifs particuliers (suspentes plus longues, renforts) qui alourdissent le coût",
+   "Localisation en zone sismique (fixations et renforts spécifiques)",
+   "Risque de soulèvement des dalles imposant des dispositifs anti-soulèvement",
+   "Complexité du calepinage (découpes périphériques, intégration de luminaires/bouches)",
+   "Niveau de tolérances exigé sur l'ouvrage fini (planéité, désaffleurement)"
+  ],
+  "regles_metre": [
+   "Métré en surface (m²) de plafond, le calepinage déterminant la quantité de dalles et de découpes de rive",
+   "Prévoir le linéaire d'ossature périmétrique (cornières de rive) et l'ossature porteuse selon la trame du calepinage",
+   "Compter les suspentes/accroches selon l'entraxe d'ossature et la hauteur du plénum"
+  ],
+  "points_vigilance": [
+   "Respecter les conditions de chantier prescrites : température minimale d'intervention, planning, stockage des matériaux à l'abri",
+   "Risque de soulèvement des dalles à anticiper (mouvements d'air/pression dans le plénum)",
+   "Adapter la conception au classement du local et à son hygrométrie pour éviter la dégradation des dalles en ambiance humide",
+   "Cas du plénum de grande hauteur : suspentes et accroches dimensionnées en conséquence",
+   "Zones sismiques : dispositifs de fixation particuliers",
+   "Vérifier en réception les tolérances : désaffleurement entre dalles, bâillement, planéité d'ensemble"
+  ],
+  "materiaux": [
+   "Dalles de plafond modulaires (éléments d'habillage)",
+   "Ossature suspendue (profilés porteurs et entretoises, cornières de rive)",
+   "Suspentes et accroches",
+   "Dispositifs anti-soulèvement (cas particuliers)"
+  ],
+  "normes": [
+   "NF DTU 58.1 (P68-203), juin 2019"
+  ],
+  "pour_devis": "Permet de structurer un poste « plafond suspendu modulaire » en m² avec les bons modificateurs de prix (hygrométrie du local, hauteur de plénum, zone sismique, anti-soulèvement) et de rappeler les tolérances de réception, sans fournir de prix."
+ },
+ {
+  "titre": "Ouvrages en staff : une solution acoustique",
+  "pertinence": "moyenne",
+  "sous_poste": "Plafond en staff (traditionnel ou acoustique)",
+  "perimetre": [
+   "INCLUS : fourniture et pose d'un plafond en staff suspendu (plâtre armé) mis en oeuvre par entreprise spécialisée",
+   "Variante traditionnelle : plaque de staff posée pour combler/habiller, sans dispositif anti-vibratile",
+   "Variante acoustique (élaborée) : plafond staff sur patins de scellement (polochon) + suspentes anti-vibratiles + isolant en plénum",
+   "EXCLU/À distinguer : plafond en plaques de plâtre standard (produit manufacturé, autre poste) ; le staff est fabriqué sur mesure par l'entreprise"
+  ],
+  "facteurs_prix": [
+   "Épaisseur de la plaque de staff (15 mm en version traditionnelle, 20 mm en version acoustique élaborée)",
+   "Présence de patins de scellement (polochon) sous la plaque",
+   "Type de suspentes : standard vs suspentes anti-vibratiles (désolidarisation acoustique)",
+   "Ajout d'un isolant (laine minérale) dans le plénum et son épaisseur (ex. 100 mm)",
+   "Hauteur du plénum (vide entre plafond support et staff, ex. 200 mm)",
+   "Nature du plancher support (bois ou béton) : la performance acoustique visée change la configuration nécessaire",
+   "Niveau de performance acoustique recherché (objectif d'amélioration visé)"
+  ],
+  "regles_metre": [
+   "Plafond métré en m² de surface horizontale",
+   "Prévoir la hauteur de plénum dans le calcul de la hauteur sous plafond fini (ex. plénum de 200 mm) et son impact sur la longueur des suspentes",
+   "Quantifier séparément l'isolant en plénum (m² + épaisseur) quand la version acoustique est retenue"
+  ],
+  "points_vigilance": [
+   "Mise en oeuvre exigée conforme au NF DTU 25.51 (ouvrages en staff traditionnel)",
+   "Sous plancher béton, la version traditionnelle ne suffit pas pour un gain acoustique notable : prévoir la version élaborée (suspentes anti-vibratiles + isolant) pour atteindre la performance",
+   "Sous plancher bois, le staff (traditionnel ou élaboré) apporte déjà une amélioration acoustique sensible",
+   "Le staff n'a pas de procès-verbal acoustique standardisé comme les plaques de plâtre : la performance dépend de la configuration mise en oeuvre, à valider au cas par cas",
+   "La désolidarisation (patins + suspentes anti-vibratiles) est la clé de la performance, pas seulement l'épaisseur"
+  ],
+  "materiaux": [
+   "Staff (plâtre armé de fibres) en plaques de 15 ou 20 mm",
+   "Patins de scellement (polochon)",
+   "Suspentes anti-vibratiles",
+   "Laine minérale (isolant en plénum, ex. >= 100 mm)"
+  ],
+  "normes": [
+   "NF DTU 25.51 (Mise en oeuvre des ouvrages en staff traditionnel)"
+  ],
+  "pour_devis": "Permet de proposer un poste \"plafond en staff\" en deux variantes chiffrables (traditionnel vs acoustique avec suspentes anti-vibratiles + isolant), de justifier le surcoût de la version acoustique et d'adapter la solution selon le plancher support (bois/béton) en référence au NF DTU 25.51."
+ },
+ {
+  "titre": "Plafonds suspendus modulaires : meilleure prescription et domaine d'application élargi (NF DTU 58.1)",
+  "pertinence": "moyenne",
+  "sous_poste": "Plafonds suspendus modulaires (dalles démontables sur ossature)",
+  "perimetre": [
+   "Pose de plafond suspendu modulaire : rives, suspentes, porteurs, entretoises et éléments d'habillage (dalles)",
+   "Le périmètre de responsabilité du plafiste est délimité par le NF DTU 58.1 (distinguer ce qui relève du plafiste de ce qui relève des autres corps d'état techniques)",
+   "Cas particulier inclus : plafonds rayonnants modulaires (plafond chauffant) — pose des circuits d'alimentation des modules et respect de la sécurité électrique côté plafiste, dans le cadre désormais traditionnel",
+   "Pour un plafond rayonnant : pose d'une plaque signalétique indiquant la nature du plafond modulaire (information du maître d'ouvrage et des autres corps d'état)",
+   "Au-delà d'une hauteur de plénum donnée, l'ouvrage sort du domaine traditionnel (hors DTU) : à traiter alors hors poste standard"
+  ],
+  "facteurs_prix": [
+   "Classe d'ambiance / classement hygrométrique du local (local sec type chambre vs local humide) : conditionne le choix des dalles et de l'ossature, donc le prix unitaire",
+   "Hauteur du plénum (espace entre le dessus du plafond et la sous-face du plancher/toiture) : grande hauteur = suspentes spécifiques et mise en œuvre plus lourde",
+   "Type de suspentes : partie basse du plénum en suspentes rigides (imposé), partie haute possible en suspentes rigides ou souples",
+   "Plafond rayonnant modulaire (chauffant) vs plafond modulaire simple : surcoût lié au respect du plan de calepinage du bureau d'études thermiques, aux circuits d'alimentation et à la sécurité électrique",
+   "Respect d'un plan de calepinage (notamment imposé par le bureau d'études thermiques pour les plafonds rayonnants)"
+  ],
+  "regles_metre": [
+   "Plénum de grande hauteur découpé en deux parties : partie basse comprise entre un tiers et la moitié de la hauteur totale du plénum, et limitée à 2 m maximum ; partie haute jusqu'à 4 m maximum",
+   "Hauteur totale de plénum admise dans le domaine traditionnel : 6 m maximum (au-delà, hors DTU)"
+  ],
+  "points_vigilance": [
+   "Vérifier la correspondance entre le classement hygrométrique du local (Cahier CSTB n° 3567, NF DTU 25.41 / 25.42) et la classe d'ambiance du NF DTU 58.1 (ex. classement EA d'une chambre = classe d'ambiance A) avant de choisir le produit",
+   "Au-delà de 6 m de plénum total, l'ouvrage n'est plus couvert par le DTU : prévoir une étude/justification spécifique",
+   "Partie basse du plénum : suspentes rigides obligatoires (pas de suspentes souples)",
+   "Plafond rayonnant : respecter impérativement le plan de calepinage du bureau d'études thermiques et apposer la plaque signalétique",
+   "Coordination inter-corps d'état : la plaque signalétique vise à informer le maître d'ouvrage et les autres corps techniques de la nature du plafond posé"
+  ],
+  "materiaux": [
+   "Dalles / éléments d'habillage modulaires démontables",
+   "Ossature de plafond suspendu : rives, porteurs, entretoises",
+   "Suspentes rigides et suspentes souples",
+   "Isolation éventuelle posée au-dessus des dalles",
+   "Modules de plafond rayonnant (plafond chauffant modulaire) et circuits d'alimentation associés",
+   "Plaque signalétique de nature du plafond (pour plafond rayonnant)"
+  ],
+  "normes": [
+   "NF DTU 58.1 (Plafonds suspendus modulaires, version juin 2019 remplaçant celle de 2008)",
+   "NF DTU 58.1 P1-1",
+   "NF DTU 25.41",
+   "NF DTU 25.42",
+   "Cahier CSTB n° 3567 (classements hygrométriques des locaux)"
+  ],
+  "pour_devis": "Permet de cadrer un poste « plafond suspendu modulaire » en faisant dépendre le choix des dalles/ossature de la classe d'ambiance du local (humidité) et de la hauteur de plénum, et de distinguer un plafond modulaire simple d'un plafond rayonnant (chauffant) qui justifie un surcoût et une coordination avec le bureau d'études thermiques."
+ },
+ {
+  "titre": "Calepin de chantier FFB — Isolation des combles perdus par soufflage d'isolant en vrac (NF DTU 45.11)",
+  "pertinence": "moyenne",
+  "sous_poste": "Isolation thermique des combles perdus par soufflage",
+  "perimetre": [
+   "INCLUS : soufflage mécanique (machine pneumatique) d'isolant en vrac dans des combles non aménageables / non aménagés / perdus",
+   "INCLUS : traitement des points singuliers — arrêtoirs autour des conduits de fumée, déflecteurs, traitement des trappes d'accès, des parties non isolées et des conduits de ventilation",
+   "INCLUS : mise en place d'une membrane pare-vapeur (avec ou sans espace technique) selon le besoin",
+   "INCLUS : repérage de la hauteur de soufflage cible et réalisation d'un chemin de circulation dans les combles",
+   "INCLUS : contrôle de l'épaisseur posée et pose de l'étiquette signalétique de l'entreprise à destination des corps de métier intervenant ensuite",
+   "Prestation distincte d'une isolation de combles aménagés (qui relève d'autres procédés)"
+  ],
+  "facteurs_prix": [
+   "Nature et état du support (plancher béton/maçonné/dalle de compression, plafond plaque de plâtre ou brique plâtrière ou lattis plâtré, lambris, plancher bois) — conditionne les travaux préparatoires",
+   "Présence d'une isolation préalable à conserver (cas d'isolation sur paroi déjà isolée) → surépaisseur, complément",
+   "Nombre et complexité des points singuliers (conduits de fumée, éléments dégageant de la chaleur, trappes, conduits de ventilation) → plus de traitements = plus cher",
+   "Besoin d'une membrane pare-vapeur (avec ou sans espace technique) en supplément de l'isolant",
+   "Mise en place de déflecteurs / arrêtoirs / chemin de circulation",
+   "Type d'isolant en vrac retenu (laine minérale vs ouate de cellulose) → pouvoir couvrant et masse différents",
+   "Épaisseur / performance thermique visée (la hauteur de soufflage dépend de la résistance thermique cible)"
+  ],
+  "regles_metre": [
+   "Quantité principale exprimée en surface de combles soufflée (m²)",
+   "L'épaisseur soufflée est repérée par des piges de hauteur et contrôlée après pose",
+   "La masse d'isolant à mettre en œuvre et le volume réel occupé se déduisent du pouvoir couvrant du produit et de la performance visée",
+   "Le pouvoir couvrant réel de l'isolation se calcule après pose (masse posée / surface), à confronter au pouvoir couvrant annoncé"
+  ],
+  "points_vigilance": [
+   "Le soufflage est réservé aux combles à faible hygrométrie (humidité absolue < 2,5 g/m³) ou moyenne (entre 2,5 et 5 g/m³) ; au-delà, le soufflage est INTERDIT — vérifier l'humidité avant chiffrage/engagement",
+   "Le support doit être plein, continu et non poreux (pas de fente, trou ni porosité) pour retenir l'isolant",
+   "Exigences de ventilation des combles à respecter (ne pas obstruer les entrées d'air)",
+   "Présence d'éléments dégageant de la chaleur ou de conduits de fumée → arrêtoirs/distances de sécurité obligatoires",
+   "Étiquette signalétique à laisser dans les combles pour les intervenants ultérieurs (obligation de l'entreprise)",
+   "Un lambris doit avoir été posé selon NF DTU 36.2 avec membrane assurant la continuité du support pour être un support valable"
+  ],
+  "materiaux": [
+   "Isolant en vrac : laine minérale (soufflée)",
+   "Isolant en vrac : ouate de cellulose de papier",
+   "Membrane pare-vapeur (avec ou sans espace technique)",
+   "Déflecteurs, arrêtoirs autour des conduits",
+   "Étiquette signalétique de l'entreprise"
+  ],
+  "normes": [
+   "NF DTU 45.11 (isolation thermique de combles par soufflage d'isolant en vrac)",
+   "NF DTU 36.2 (pose du lambris, cité comme condition de support)"
+  ],
+  "pour_devis": "Permet de cadrer proprement un poste d'isolation de combles perdus par soufflage (unité au m², traitements de points singuliers, membrane pare-vapeur en option) et d'y attacher des conditions bloquantes — notamment le seuil d'humidité au-delà duquel le soufflage est interdit — sans toutefois fournir de prix."
+ },
+ {
+  "titre": "Mousse polyuréthane projetée in situ : domaines d'emploi élargis (sols, murs intérieurs, planchers bois)",
+  "pertinence": "moyenne",
+  "sous_poste": "Isolation thermique projetée in situ (mousse polyuréthane) sous chape / par l'intérieur / sur plancher bois",
+  "perimetre": [
+   "INCLUS : isolation thermique par mousse PU projetée directement sur le support (béton, mur intérieur, plancher bois)",
+   "INCLUS : traitement de l'étanchéité à l'air en continu via la projection (la mousse adhère au support, supprime les ponts thermiques)",
+   "INCLUS sur plancher : rattrapage d'altimétrie/dénivelé du support par la mousse, évitant un ravoirage traditionnel",
+   "EXCLU : la chape de finition au-dessus de la mousse en sol (traditionnelle ou fluide, avec ou sans plancher chauffant) reste un poste distinct",
+   "EXCLU : le revêtement de finition (carrelage, etc.) posé au-dessus",
+   "POSITION en sol : couche intercalée entre le support béton et la chape"
+  ],
+  "facteurs_prix": [
+   "Configuration d'emploi : sous chape sur dalle béton, isolation de mur par l'intérieur, ou sur plancher bois (chacune relève d'un Avis Technique distinct)",
+   "Épaisseur de mousse projetée nécessaire (liée au rattrapage d'altimétrie et à la performance thermique visée)",
+   "Importance du dénivelé/altimétrie à rattraper sur plancher (plus le support est irrégulier, plus l'épaisseur augmente)",
+   "Neuf vs rénovation (en rénovation, état du support à reprendre)",
+   "Intégration des tuyauteries/réseaux dans l'épaisseur de mousse",
+   "Niveau de planéité exigé pour le support sous le revêtement (objectif de tolérance évoqué : 3 mm sous la règle de 2 m)"
+  ],
+  "regles_metre": [
+   "Métré principal en surface (m²) de support à isoler (sol, mur ou plancher)",
+   "Le volume/épaisseur conditionne la quantité de mousse : tenir compte de l'épaisseur moyenne réelle, accrue là où il faut rattraper l'altimétrie du support"
+  ],
+  "points_vigilance": [
+   "Mise en oeuvre conditionnée par la détention d'un Avis Technique couvrant le cas précis (sols/planchers intermédiaires, murs par l'intérieur, plancher bois) — vérifier la validité du domaine d'emploi",
+   "Sur plancher bois existant en rénovation : risque de mauvaises surprises (conservation des couches du support, capacité de portance) — diagnostic du plancher avant projection",
+   "L'étanchéité à l'air n'est performante que si la continuité est respectée : éviter de percer la mousse (faire passer l'électricité par-dessus plutôt que de la traverser)",
+   "Exigence de planéité du support à atteindre pour la pose du revêtement (tolérance évoquée 3 mm/2 m)",
+   "L'argument 'légèreté' est mis en avant sur plancher bois (limite la surcharge), à confronter à la portance réelle du plancher existant"
+  ],
+  "materiaux": [
+   "Mousse polyuréthane projetée in situ (sur chantier)",
+   "Support béton (cas sol/chape)",
+   "Chape traditionnelle ou chape fluide, avec ou sans plancher chauffant (posée au-dessus en sol, hors poste)",
+   "Plancher bois (support en rénovation)"
+  ],
+  "normes": [
+   "RT 2012 (réglementation thermique citée comme moteur de la technique : exigences d'isolation et d'étanchéité à l'air)",
+   "Avis Techniques (plusieurs ATec encadrant les domaines d'emploi : sols/planchers, murs par l'intérieur, plancher bois)"
+  ],
+  "pour_devis": "Permet de proposer une variante d'isolation thermique projetée (mousse PU) en sol sous chape, en mur par l'intérieur ou sur plancher bois, en chiffrant au m² selon l'épaisseur et le rattrapage d'altimétrie, tout en rappelant que la chape et le revêtement restent des postes séparés et que l'emploi suppose un Avis Technique valide."
+ }
+]

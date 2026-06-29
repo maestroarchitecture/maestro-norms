@@ -1,0 +1,89 @@
+[
+ {
+  "titre": "Peintures : bien délimiter les prestations sur un chantier (NF DTU 59.1)",
+  "pertinence": "moyenne",
+  "sous_poste": "Peinture intérieure — cadrage du périmètre et des teintes",
+  "perimetre": [
+   "INCLUS implicitement : application des teintes dans la limite contractuelle prévue par le NF DTU 59.1 (plafond, murs, menuiseries)",
+   "EXCLU / à chiffrer à part : les teintes au-delà du maximum toléré (nombre de couleurs supplémentaires)",
+   "EXCLU / tarification particulière possible : les rechampis autres que plafonds, huisseries et plinthes (pour une mise en couleur usuelle)",
+   "Réception préalable du support attendue : locaux propres, accessibles, vidés de tout objet/matériel et des gravats des autres corps d'état avant intervention du peintre",
+   "Chaque corps d'état protège ses propres ouvrages (la protection des ouvrages d'autrui n'est pas due par le peintre)",
+   "Le nettoyage de fin de chantier n'est pas nécessairement dû par l'entreprise de peinture : à clarifier et à chiffrer s'il est demandé",
+   "Accès aux locaux réservé au peintre pendant ses travaux ET pendant la durée de séchage des revêtements"
+  ],
+  "facteurs_prix": [
+   "Nombre de teintes / couleurs demandées (plus de couleurs = plus de temps de mise en œuvre et de changements = surcoût)",
+   "Présence et nombre de rechampis (filets, séparations de teintes, oculus, chants) au-delà des rechampis usuels",
+   "Type de chantier : un établissement scolaire ou hospitalier admet davantage de teintes, donc complexité et coût supérieurs",
+   "Demandes particulières de polychromie (faces de porte de couleurs différentes, oculus, chant à traiter) : sources de surcoût",
+   "Niveau de préparation/propreté du support à la prise en charge (si les locaux ne sont pas livrés propres et vidés, surcoût ou litige)"
+  ],
+  "regles_metre": [
+   "Le seuil de teintes du NF DTU 59.1 s'apprécie sur un chantier inférieur à 1 000 m² de surface de peinture (au-delà, le cadre standard ne s'applique plus tel quel)",
+   "Compter le nombre de teintes globalement sur le chantier ET par pièce, car les limites s'expriment aux deux niveaux (plafond / murs / menuiseries)",
+   "Pour les établissements scolaires ou hospitaliers, le décompte des teintes se fait par étage",
+   "Identifier et compter séparément les rechampis non usuels pour les chiffrer en supplément"
+  ],
+  "points_vigilance": [
+   "Le nombre de teintes est souvent découvert tardivement (juste avant ou en cours de chantier) : le verrouiller dès le devis pour éviter le gonflement du montant",
+   "Préciser au devis ce qui est compris en teintes/rechampis et ce qui fera l'objet d'un supplément, pour mettre tous les soumissionnaires sur un pied d'égalité",
+   "Demandes ambiguës de polychromie (couleur par face, oculus, chant non précisé) : exiger une définition complète avant chiffrage",
+   "Le nettoyage de fin de chantier réalisé mais non chiffré est un risque de perte : statuer dessus au devis",
+   "Le délai de séchage des revêtements doit rester dans le planning avec accès réservé au peintre (impacte le délai global)",
+   "S'assurer que les locaux seront livrés propres et vidés par les autres corps d'état avant l'intervention"
+  ],
+  "materiaux": [],
+  "normes": [
+   "NF DTU 59.1 (Travaux de peinture, version 2013)",
+   "CCS (Cahier des Clauses Spéciales) du NF DTU 59.1",
+   "Annexe du NF DTU 59.1 définissant la limite des prestations en matière de polychromie"
+  ],
+  "pour_devis": "Permet de cadrer le poste peinture dans le devis en fixant explicitement le nombre de teintes et les rechampis inclus (selon le NF DTU 59.1), et en signalant comme suppléments les couleurs/rechampis additionnels et le nettoyage de fin de chantier, ce qui sécurise la marge contre les dérives."
+ },
+ {
+  "titre": "B.A.BA de la réfection d'enduit",
+  "pertinence": "moyenne",
+  "sous_poste": "Réfection d'enduit de façade (ravalement)",
+  "perimetre": [
+   "INCLUS : diagnostic préalable de l'existant (état du revêtement + type de support, examen visuel et sonore)",
+   "INCLUS : nettoyage du support (dépoussiérage, lavage sous pression)",
+   "INCLUS : traitement anti-mousses/champignons/algues si micro-organismes présents",
+   "INCLUS selon état : piquage partiel (zones dégradées) ou piquage total de l'enduit",
+   "INCLUS selon cas : ragréage du support",
+   "INCLUS : application de la finition retenue (peinture/film mince, revêtement d'imperméabilité, ou nouvel enduit mortier)",
+   "Le choix de la finition appartient au maître d'ouvrage : à confirmer avant chiffrage"
+  ],
+  "facteurs_prix": [
+   "Type de finition retenue : peinture/film mince vs revêtement d'imperméabilité vs nouvel enduit mortier (coûts très différents)",
+   "Étendue du piquage : conservation, piquage partiel ou piquage total selon le taux de surface dégradée",
+   "État du support (friable, fissuré, cloquage, défaut d'accroche détecté au son creux)",
+   "Présence de salissures/végétaux/micro-organismes nécessitant traitement",
+   "Besoin de ragréage avant finition",
+   "Exposition de la façade (partie basse plus dégradée : pluies battantes, remontées capillaires, chocs)",
+   "Présence de points singuliers (angles d'ouvertures) à reprendre"
+  ],
+  "regles_metre": [
+   "Seuil de décision piquage : si la zone d'enduit dégradé dépasse 30 % de la surface totale, prévoir un piquage TOTAL (et non partiel) pour prévenir d'autres désordres (ex. spectres)",
+   "Métré exprimé en surface (m2) de façade"
+  ],
+  "points_vigilance": [
+   "Le diagnostic de l'existant est le point déterminant : à réaliser avant tout chiffrage",
+   "Un revêtement d'imperméabilité ne doit pas bloquer la perméabilité (respiration) du support",
+   "Enduit qui sonne creux = défaut d'accroche sur le support, parfois dommage du support lui-même → examen plus approfondi requis",
+   "Classification visuelle des désordres : microfissures (< 0,2 mm), fissures (0,2 à 2 mm), épaufrures, éclats, cloquage",
+   "Partie basse de façade plus exposée (pluie, remontées d'humidité par capillarité, chocs) : zone à inspecter en priorité",
+   "Au-delà d'un piquage partiel non suffisant, risque d'apparition de spectres si on conserve trop d'enduit faible",
+   "Recours à un expert rarement justifié sauf sinistre / demande de l'assureur"
+  ],
+  "materiaux": [
+   "Peinture de façade (film mince)",
+   "Revêtement d'imperméabilité (perméable à la vapeur)",
+   "Enduit de mortier",
+   "Produit de traitement anti-mousses / champignons / algues",
+   "Produit de ragréage"
+  ],
+  "normes": [],
+  "pour_devis": "Permet de structurer un poste de réfection d'enduit de façade en distinguant diagnostic, préparation/nettoyage du support, piquage (partiel ou total selon le seuil de 30 % de surface dégradée) et finition, ce qui aide à choisir la variante de prestation et son métré."
+ }
+]

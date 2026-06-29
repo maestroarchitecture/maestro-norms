@@ -1,0 +1,99 @@
+[
+ {
+  "titre": "La bonne mise en œuvre en cas d'ITE",
+  "pertinence": "moyenne",
+  "sous_poste": "Pose de menuiseries extérieures en façade isolée par l'extérieur (interface menuiserie / ITE)",
+  "perimetre": [
+   "Pose de la fenêtre/porte extérieure sur un gros œuvre destiné à recevoir une ITE",
+   "Calfeutrement entre dormant et gros œuvre (avec protection éventuelle par membrane d'étanchéité en partie haute)",
+   "Mise en place et bon positionnement des bavettes pour le drainage de l'eau de pluie",
+   "Coordination de l'interface entre le lot menuiserie et le lot ITE (qui pose quoi)",
+   "Cas du bloc-baie (coffre de volet roulant) intégré au dormant : interface avec l'ITE sur le lambrequin",
+   "EXCLU du lot menuiserie : la pose de l'isolant de façade et son retour relèvent du lot ITE (le menuisier ne dicte pas la mise en œuvre de l'ITE)",
+   "EXCLU en présence d'ITE : les larmiers métalliques (générateurs de ponts thermiques)"
+  ],
+  "facteurs_prix": [
+   "Mode d'intégration de la menuiserie dans le gros œuvre : applique extérieure, tunnel, applique intérieure ou sur précadre (4 configurations distinctes)",
+   "Présence ou non d'une ITE sur la façade (impose des dispositions supplémentaires : membrane, bavettes adaptées, exclusion des larmiers)",
+   "Présence d'un bloc-baie / coffre de volet roulant sur le dormant (gestion de l'interface avec l'isolant)",
+   "Nécessité d'une protection du calfeutrement par membrane d'étanchéité en partie haute (cas pose en applique extérieure avec stagnation d'eau possible)",
+   "Coordination inter-lots (menuiserie / ITE) à organiser"
+  ],
+  "regles_metre": [
+   "Membrane d'étanchéité protégeant le calfeutrement en partie haute : déborder d'au moins 100 mm de chaque côté, ou redescendre d'au moins 100 mm sur les tableaux"
+  ],
+  "points_vigilance": [
+   "La mise en œuvre de l'ITE ne doit pas perturber le drainage de la fenêtre : le retour d'isolant ne doit ni gêner l'évacuation de l'eau de pluie ni la rediriger vers l'isolant de façade (source de sinistre)",
+   "Les larmiers métalliques, acceptables sans ITE, sont à proscrire en présence d'ITE (ponts thermiques)",
+   "En pose en applique extérieure, si l'eau peut stagner sur le calfeutrement entre dormant et gros œuvre, ce calfeutrement doit être protégé par une membrane d'étanchéité en partie haute",
+   "En présence d'un bloc-baie, l'ITE ne doit jamais appuyer sur le lambrequin du coffre (risque de gêner la descente du tablier du volet roulant)",
+   "Gestion contractuelle de l'interface menuiserie/ITE : le lot menuiserie ne peut pas imposer sa mise en œuvre au lot ITE, d'où l'importance d'un cahier des clauses spéciales (coordination)",
+   "Le DTU 36.5 version 2010 donne peu d'indications sur l'ITE : se référer aux documents complémentaires (Guide Rage, Cahier CSTB) en attendant la révision"
+  ],
+  "materiaux": [
+   "Membrane d'étanchéité (protection du calfeutrement en partie haute)",
+   "Calfeutrement entre dormant et gros œuvre",
+   "Bavettes (drainage de la fenêtre)",
+   "Bloc-baie / coffre de volet roulant avec lambrequin",
+   "Précadre (l'une des modalités d'intégration)"
+  ],
+  "normes": [
+   "NF DTU 36.5 (Mise en œuvre des fenêtres et portes extérieures, version 2010 et révision en cours)",
+   "Guide Rage 2012 « Menuiseries extérieures et ITE neuf et rénovation »",
+   "Cahier CSTB n° 3709"
+  ],
+  "pour_devis": "Permet de structurer un poste « pose de menuiserie extérieure en façade ITE » avec ses configurations (applique ext./int., tunnel, précadre) et d'ajouter les prestations de vigilance facturables (protection du calfeutrement par membrane débordant de 100 mm, bavettes de drainage, exclusion des larmiers) ainsi que de borner clairement le périmètre face au lot ITE."
+ },
+ {
+  "titre": "Motorisation des stores et volets : ne pas oublier les bonnes pratiques",
+  "pertinence": "moyenne",
+  "sous_poste": "Motorisation et raccordement électrique des fermetures (volets roulants / stores)",
+  "perimetre": [
+   "INCLUS : pose et mise en œuvre de la protection solaire suivant les étapes habituelles, puis raccordement et réglages du moteur",
+   "INCLUS : vérification de l'état des raccords électriques à la réception du support",
+   "INCLUS : réglages fins du moteur selon prescriptions du fabricant",
+   "INCLUS : protection mécanique du câble d'alimentation sur tout son parcours (gaine)",
+   "INCLUS : essai de fonctionnement des commandes sur une course complète",
+   "INTERFACE : l'article suppose qu'un circuit électrique spécialisé existe ou doit être prévu en amont (à coordonner avec le lot électricité)",
+   "POINT DE CHIFFRAGE : la motorisation ajoute des contraintes/étapes par rapport à une fermeture manuelle (surcoût de pose + équipement électrique)"
+  ],
+  "facteurs_prix": [
+   "Type de commande : filaire vs radio (la pose de commandes radio dans le bâtiment doit être vérifiée si le client le demande)",
+   "Présence d'un automatisme existant : compatibilité des capteurs et commandes à vérifier (peut générer du travail/adaptation supplémentaire)",
+   "Nombre de moteurs et possibilité ou non de branchement en parallèle (la plupart des moteurs filaires ne se raccordent pas en parallèle)",
+   "Classe d'isolation du moteur (classe II = pas de mise à la terre requise) influençant le raccordement",
+   "Niveau d'automatisation / options de commande choisies (fait varier la mise en œuvre et les vérifications)",
+   "Solution d'alimentation retenue",
+   "Exigence d'une manœuvre de secours sur volet motorisé",
+   "Nombre de baies équipées (si toutes les baies sont motorisées, au moins un volet doit rester manœuvrable manuellement)"
+  ],
+  "regles_metre": [
+   "Le câble d'alimentation doit être protégé sur l'intégralité de son parcours : compter la longueur de gaine selon le cheminement réel du câble du moteur jusqu'au point d'alimentation"
+  ],
+  "points_vigilance": [
+   "La plupart des moteurs filaires ne supportent pas le branchement en parallèle (risque de destruction irréversible) : se référer à la notice du fabricant",
+   "Vérifier la compatibilité des capteurs/commandes avec un automatisme déjà en place",
+   "La manœuvre de secours d'un volet motorisé doit être solidaire du volet et non démontable",
+   "Si toutes les baies sont motorisées, au moins un volet doit rester manœuvrable manuellement",
+   "En cas de coupure de courant, au moins un volet doit rester manœuvrable depuis l'extérieur",
+   "Consigner ou couper l'alimentation électrique avant toute intervention",
+   "Le câble doit être protégé contre la pénétration d'eau et permettre son écoulement (équivalent à un parcours classe II)",
+   "Exiger la conformité du raccordement au réseau électrique : circuit spécialisé obligatoire pour stores et volets roulants",
+   "La terre n'est pas nécessaire pour un équipement de classe II ; seule la motorisation est reliée selon sa classe d'isolation",
+   "Habilitation électrique minimale BS requise pour l'installateur réalisant le raccordement des volets"
+  ],
+  "materiaux": [
+   "Moteur de volet/store (commande filaire ou radio)",
+   "Gaine de protection du câble d'alimentation",
+   "Câble d'alimentation de section 1,5 mm²",
+   "Commandes / capteurs (filaires ou radio) et éventuels automatismes",
+   "Dispositif de manœuvre de secours solidaire du volet"
+  ],
+  "normes": [
+   "NF DTU 34.4",
+   "NF C 15-100 (article 10.11.3.4 : circuit spécialisé pour stores et volets roulants)",
+   "NF C 18-510 (habilitation BS pour le raccordement)"
+  ],
+  "pour_devis": "Permet de chiffrer correctement le surcoût de motorisation d'une fermeture en distinguant l'équipement (moteur, commande filaire/radio), le raccordement électrique (circuit spécialisé NF C 15-100, gaine + câble 1,5 mm² protégé sur tout le parcours) et la main-d'œuvre habilitée BS, tout en identifiant les facteurs (commande radio, automatisme existant, classe d'isolation) qui font varier le prix."
+ }
+]

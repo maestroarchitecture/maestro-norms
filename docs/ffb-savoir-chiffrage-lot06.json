@@ -1,0 +1,79 @@
+[
+ {
+  "titre": "Mise en œuvre de blocs-portes intérieurs en bois",
+  "pertinence": "moyenne",
+  "sous_poste": "Fourniture et pose de blocs-portes intérieurs en bois (huisserie + porte)",
+  "perimetre": [
+   "Pose du bloc-porte intérieur en bois (dormant/huisserie + ouvrant) sur cloison en plaques de plâtre",
+   "Deux modes de pose distincts à distinguer : pose des dormants des portes légères 'à l'avancement' réalisée par le plaquiste, ou pose 'après coup' par le menuisier — affecte qui réalise le poste et la coordination entre lots",
+   "Pour un bloc-porte technique (résistant au feu), le périmètre peut inclure des accessoires couverts par le PV : habillages, oculus (vitrage), dispositif anti-pince-doigt",
+   "L'interface entre la paroi coupe-feu et le bloc-porte feu peut nécessiter un 'avis de chantier' spécifique (prestation/étude supplémentaire) lorsque la configuration sort du champ du PV produit"
+  ],
+  "facteurs_prix": [
+   "Bloc-porte standard vs bloc-porte technique résistant au feu : ce dernier est un produit manufacturé certifié, plus cher",
+   "Niveau d'exigence réglementaire du chantier : incendie (le plus contraignant), mais aussi acoustique, thermique, accessibilité PMR — chacun peut imposer un produit spécifique",
+   "Présence d'accessoires (oculus, habillages, anti-pince-doigt) intégrés ou non au PV",
+   "Configuration de chantier nécessitant un avis de chantier pour qualifier l'interface paroi/bloc-porte feu : démarche décrite comme contraignante et coûteuse",
+   "Mode de pose (à l'avancement par le plaquiste vs après coup par le menuisier)"
+  ],
+  "regles_metre": [],
+  "points_vigilance": [
+   "Sur cloison en plaques de plâtre, vérifier qui pose le dormant (plaquiste à l'avancement vs menuisier après coup) car cela relève de DTU différents et impacte la coordination des corps d'état",
+   "En contexte incendie, exiger un produit manufacturé accompagné d'un PV de résistance au feu issu d'un laboratoire agréé (ministère de l'Intérieur) — ne pas poser un bloc-porte feu sans ce justificatif",
+   "Le PV ne couvre que le bloc-porte technique lui-même ; certaines mises en œuvre ou interfaces sortent du champ du PV et nécessitent un avis de chantier (coût/délai supplémentaire à anticiper)",
+   "Caractériser l'interface entre paroi coupe-feu et bloc-porte feu (ex. EI 60 / EI 60) peut requérir une démarche spécifique selon la configuration",
+   "Penser à cumuler, le cas échéant, les exigences acoustique, thermique et accessibilité PMR en plus de l'incendie"
+  ],
+  "materiaux": [
+   "Bloc-porte intérieur en bois (huisserie/dormant + ouvrant)",
+   "Bloc-porte technique résistant au feu (manufacturé, certifié par PV)",
+   "Accessoires : oculus (vitrage), habillages, dispositif anti-pince-doigt"
+  ],
+  "normes": [
+   "NF DTU 36.2 (Menuiseries intérieures en bois)",
+   "NF DTU 25.41 (Ouvrages en plaques de plâtre - plaques à faces cartonnées)",
+   "Classement Euroclasses de résistance au feu (ex. EI 60)",
+   "PV de résistance au feu (laboratoire agréé ministère de l'Intérieur)"
+  ],
+  "pour_devis": "Permet de structurer le poste bloc-porte intérieur en distinguant porte standard et porte technique feu (produit certifié plus cher), de prévoir une ligne/prestation 'avis de chantier' en contexte incendie, et de cadrer la pose selon le DTU applicable (NF DTU 36.2 menuisier ou NF DTU 25.41 plaquiste)."
+ },
+ {
+  "titre": "NF DTU Menuiseries intérieures : privilégier une lecture fluide et claire (refonte NF DTU 36.2)",
+  "pertinence": "moyenne",
+  "sous_poste": "Lambris et panneaux décoratifs bois (pose, y compris pose collée)",
+  "perimetre": [
+   "Inclus : pose de lambris en lames et menuisés, panneaux bois décoratifs (plaquage et bois massif)",
+   "Inclus : préparation/vérification du support avant pose collée (planéité, porosité, cohésion, absence de pulvérulence)",
+   "Inclus : fixation mécanique de sécurité en point haut pour les lambris posés collés",
+   "Hors périmètre direct de chiffrage de cet article : pas de prix unitaire ni de quantitatif fourni"
+  ],
+  "facteurs_prix": [
+   "Type d'ouvrage : lambris en lames/menuisés vs panneaux décoratifs (plaquage ou bois massif), les panneaux décoratifs étant des ouvrages valorisants donc plus coûteux",
+   "Mode de pose : pose collée (vérifications support + colle) vs pose mécanique",
+   "Qualité/préparation du support : un support non conforme en planéité, porosité ou cohésion impose des travaux de reprise avant pose",
+   "Hauteur de mise en oeuvre : fixation mécanique haute requise jusqu'à 2,80 m max pour la pose collée",
+   "Choix de la colle adapté (humidité, temps ouvert, surface encollable, températures), pouvant restreindre les conditions de chantier"
+  ],
+  "regles_metre": [],
+  "points_vigilance": [
+   "Pose collée de lambris autorisée uniquement si le support est conforme : planéité 5 mm sous règle de 2 m, ainsi que des exigences de porosité, de cohésion et d'absence de pulvérulence",
+   "Lambris posé collé : fixation mécanique obligatoire en point haut, à une hauteur n'excédant pas 2,80 m du sol (sécurité anti-chute)",
+   "Compatibilité colle/support à vérifier : humidité du support, temps ouvert, consommation, surface maximale à encoller, températures mini/maxi de mise en oeuvre",
+   "Trait de niveau désormais imposé : doit être tracé et visible à 1 m de hauteur dans chaque pièce proche du lieu de pose (prérequis avant intervention)",
+   "Conditions de stockage du bois et taux d'humidité des menuiseries selon leur destination à respecter (risque de désordre si non maîtrisé)",
+   "Pour les panneaux décoratifs : conditions d'homogénéité des bois de plaquage et des bois massifs à respecter",
+   "Un lambris qui se décolle est inesthétique et dangereux (chute) : la conformité support + fixation mécanique conditionne la garantie de l'ouvrage"
+  ],
+  "materiaux": [
+   "Lambris en lames et lambris menuisés",
+   "Panneaux bois décoratifs (bois de plaquage, bois massif)",
+   "Colle pour pose collée de lambris (à sélectionner selon humidité support, temps ouvert, surface et températures de mise en oeuvre)",
+   "Fixations mécaniques (point haut)"
+  ],
+  "normes": [
+   "NF DTU 36.2 (Menuiseries intérieures en bois, refonte de l'ancien DTU 36.1)",
+   "NF DTU 36.1 (ancienne version, désormais refondue)"
+  ],
+  "pour_devis": "Permet de cadrer correctement un poste lambris/panneaux bois intérieur en intégrant, dans la description et le prix, les prérequis support de la pose collée (planéité 5 mm/2 m, porosité, cohésion), la fixation mécanique de sécurité (point haut, max 2,80 m), le trait de niveau et les conditions de stockage/humidité du bois exigés par le NF DTU 36.2."
+ }
+]

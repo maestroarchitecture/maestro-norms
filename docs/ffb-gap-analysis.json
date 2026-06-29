@@ -1,0 +1,522 @@
+[
+ {
+  "lot": "02 — Plâtrerie / Cloisons / Doublage",
+  "dtu_dans_registre": [
+   "NF DTU 25.41 P1-1 (février 2022)"
+  ],
+  "calepins_ffb": [
+   {
+    "titre": "Ouvrages en plaques de plâtre : les NF DTU 25.41 et 25.42 illustrés",
+    "dtu": "NF DTU 25.41 (et 25.42)",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/platrerie-plafonds-planchers-techniques/calepin/ouvrages-plaques-platre-nf-dtu-25-41-25-42"
+   },
+   {
+    "titre": "Ouvrages en staff traditionnel : l'essentiel du NF DTU 25.51",
+    "dtu": "NF DTU 25.51",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/platrerie-plafonds-planchers-techniques/calepin/calepin-chantier-ouvrages-en-staff-traditionnel"
+   },
+   {
+    "titre": "Plafonds suspendus modulaires : l'essentiel du NF DTU 58.1",
+    "dtu": "NF DTU 58.1",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/platrerie-plafonds-planchers-techniques/calepin/plafonds-suspendus-modulaires-l-essentiel-du-nf-dtu-58-1"
+   },
+   {
+    "titre": "Calepin isolation par soufflage",
+    "dtu": "(aucun DTU rattaché dans l'index)",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/isolation-interieure/calepin/calepin-isolation-par-soufflage"
+   }
+  ],
+  "dtu_manquants": [
+   {
+    "dtu": "NF DTU 25.42",
+    "sujet": "Ouvrages de doublage et habillage en complexes et sandwiches plaques de parement plâtre — isolation thermique par l'intérieur (ITI) par doublage collé. Présent à la fois dans le mapping historique (dtu_refs lot 02) et dans le calepin FFB combiné 25.41/25.42, mais aucune règle correspondante dans dtu_rules.yaml (les 6 règles existantes citent toutes le seul NF DTU 25.41).",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/platrerie-plafonds-planchers-techniques/calepin/ouvrages-plaques-platre-nf-dtu-25-41-25-42",
+    "priorite": "haute"
+   },
+   {
+    "dtu": "NF DTU 58.1",
+    "sujet": "Plafonds suspendus modulaires (dalles sur ossature). Calepin de chantier FFB dédié + dossier FFB, absent du registre. Plutôt tertiaire mais possible en appartement (faux-plafond modulaire).",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/platrerie-plafonds-planchers-techniques/calepin/plafonds-suspendus-modulaires-l-essentiel-du-nf-dtu-58-1",
+    "priorite": "basse"
+   },
+   {
+    "dtu": "NF DTU 25.51",
+    "sujet": "Ouvrages en staff traditionnel (corniches, moulures, éléments décoratifs en plâtre armé). Calepin de chantier FFB, absent du registre. Ouvrage décoratif spécialisé, rare en rénovation d'appartement courante.",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/platrerie-plafonds-planchers-techniques/calepin/calepin-chantier-ouvrages-en-staff-traditionnel",
+    "priorite": "basse"
+   }
+  ],
+  "calepins_a_lire_prioritaires": [
+   {
+    "titre": "Ouvrages en plaques de plâtre : les NF DTU 25.41 et 25.42 illustrés",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/platrerie-plafonds-planchers-techniques/calepin/ouvrages-plaques-platre-nf-dtu-25-41-25-42",
+    "raison": "À lire en premier : c'est le calepin combiné qui couvre la partie 25.42 (doublage ITI collé) manquante au registre. Le doublage thermique par l'intérieur est l'ouvrage le plus courant en rénovation d'appartement (isolation des murs, contre-cloisons isolantes). Le registre ne couvre aujourd'hui que le 25.41. Source à extraire ensuite pour les seuils réels (planéité, hauteurs/épaisseurs de doublage, conditions de collage) — non chiffrés ici."
+   },
+   {
+    "titre": "Plafonds suspendus modulaires : l'essentiel du NF DTU 58.1",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/platrerie-plafonds-planchers-techniques/calepin/plafonds-suspendus-modulaires-l-essentiel-du-nf-dtu-58-1",
+    "raison": "À lire en second, seulement si des faux-plafonds modulaires (dalles démontables) entrent dans le périmètre des devis. Priorité moindre que le 25.42 car usage occasionnel en logement."
+   }
+  ],
+  "note": "Analyse factuelle d'écarts, AUCUN seuil chiffré inventé. Registre dtu_rules.yaml lot 02 : 6 règles vérifiées (statut: verifie), toutes basées sur le seul NF DTU 25.41 P1-1 (février 2022), lues verbatim depuis Reef ABCR-5 le 2026-06-19 (planéité local/général, entraxe ossature plafonds, entraxe montants cloisons/contre-cloisons, fixation par vis, traitement des joints + limites du collage). Écart principal : le NF DTU 25.42 (doublage/ITI collé) est présent au mapping historique (dtu_refs = DTU 25.41 + DTU 25.42) ET dans le calepin FFB combiné 25.41/25.42, mais n'a aucune règle dans le registre = candidat prioritaire haute (ouvrage courant en rénovation d'appartement). Deux autres DTU documentés par la FFB mais absents du registre : NF DTU 25.51 (staff) et NF DTU 58.1 (plafonds modulaires), priorité basse (ouvrages spécialisés/tertiaires). Le calepin 'isolation par soufflage' n'a pas de DTU rattaché dans l'index et relève plutôt des combles (hors champ appartement) — non retenu comme candidat. Les seuils réels devront être extraits d'une source primaire (Reef / NF DTU) puis vérifiés par l'utilisateur avant intégration. Advisor non consulté (rate-limited) ; analyse fondée directement sur la lecture des 3 fichiers."
+ },
+ {
+  "lot": "03 — Plomberie / Sanitaires",
+  "dtu_dans_registre": [
+   "NF DTU 60.11 P1-1 (août 2013)"
+  ],
+  "calepins_ffb": [
+   {
+    "titre": "Plomberie sanitaire : le NF DTU 60.1 en images",
+    "dtu": "NF DTU 60.1",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/equipements-techniques/plomberie-sanitaire/calepin/plomberie-sanitaire-nf-dtu-60-1"
+   }
+  ],
+  "dtu_manquants": [
+   {
+    "dtu": "NF DTU 60.1",
+    "sujet": "Mise en œuvre de la plomberie sanitaire (canalisations EFS/ECS, raccordements, pose des appareils sanitaires, évacuations, essais d'étanchéité et de fonctionnement). Distincte du NF DTU 60.11 qui ne couvre que les RÈGLES DE CALCUL (débits/diamètres). Le registre n'a aujourd'hui qu'une règle de calcul (60.11) et AUCUNE règle de mise en œuvre (60.1).",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/equipements-techniques/plomberie-sanitaire/calepin/plomberie-sanitaire-nf-dtu-60-1",
+    "priorite": "haute"
+   }
+  ],
+  "calepins_a_lire_prioritaires": [
+   {
+    "titre": "Plomberie sanitaire : le NF DTU 60.1 en images",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/equipements-techniques/plomberie-sanitaire/calepin/plomberie-sanitaire-nf-dtu-60-1",
+    "raison": "Unique calepin de chantier du lot 03. Il illustre le NF DTU 60.1, norme-mère de mise en œuvre absente du registre (qui ne couvre que le volet calcul 60.11). Lecture prioritaire pour extraire ensuite, depuis la source primaire et après vérification utilisateur, des règles chiffrées de pose intérieure (raccordements, fixation/incorporation des tubes, pose des appareils, essais d'étanchéité) — cœur des devis de rénovation d'appartements."
+   }
+  ],
+  "note": "Analyse factuelle d'écarts, aucun seuil chiffré inventé. Registre dtu_rules.yaml section \"03\" : une seule règle vérifiée (ref NF DTU 60.11 P1-1 août 2013 §3.2.1 Tableau 1 — débits minimaux de calcul et diamètres intérieurs par appareil), qualifiée par le registre lui-même de \"règles de calcul\". Index FFB lot 03 : 51 documents au total mais UN SEUL \"Calepin de chantier\" (les 50 autres sont des Dossier/Modèle, hors champ \"calepin\"), portant sur le NF DTU 60.1. Mapping lot 03 : dtu_refs = {DTU 60.1, DTU 60.11}. Différence (calepins FFB ∪ dtu_refs mapping) moins (refs du registre) = UN SEUL manquant : NF DTU 60.1. Point de vigilance important : 60.1 (mise en œuvre) et 60.11 (règles de calcul) sont DEUX numéros de norme distincts — ne pas traiter \"60.1\" comme un simple préfixe de \"60.11\". Le fait que le calepin \"en images\" puisse aborder aussi le calcul ne doit PAS faire retirer 60.1 des manquants : le volet mise en œuvre (raccordements, incorporation de tubes, flexibles, pose des appareils, essais d'étanchéité — sujets que confirment de nombreux dossiers FFB du lot) n'a aucune règle au registre. Aucune Reco Pro RAGE dédiée à la plomberie (justification mapping = dtu_citation_seule), donc le calepin FFB est la voie d'accès la plus directe pour la lecture ultérieure. Rappel garde-fou : les seuils réels seront extraits d'une source primaire (Reef/NF DTU 60.1) et vérifiés par l'utilisateur avant inscription au registre."
+ },
+ {
+  "lot": "04 — Chauffage / VMC / Fumisterie",
+  "dtu_dans_registre": [
+   "Arrêté du 24 mars 1982 (art. 3 et art. 4) — débits réglementaires de ventilation, repris par le NF DTU 68.3",
+   "NF DTU 24.1 P1-1-1 (sept. 2020) — fumisterie, débouché du conduit de fumée bois/granulés",
+   "NF DTU 65.14 P1-1-1 (juil. 2023) — plancher chauffant à eau basse température (température sol, fluide, espacement)"
+  ],
+  "calepins_ffb": [
+   {
+    "titre": "Ventilation mécanique contrôlée : l'essentiel du NF DTU 68.3",
+    "dtu": "NF DTU 68.3",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/equipements-techniques/chauffage-ventilation-climatisation/calepin/ventilation-mecanique-controlee-vmc-essentiel-dtu-68-3"
+   },
+   {
+    "titre": "Planchers chauffants à eau chaude : l'essentiel du NF DTU 65.14",
+    "dtu": "NF DTU 65.14",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/equipements-techniques/chauffage-ventilation-climatisation/calepin/calepin-chantier-planchers-chauffants-eau-chaude"
+   },
+   {
+    "titre": "Installation solaire thermique individuelle : le NF DTU 65.12 illustré",
+    "dtu": "NF DTU 65.12",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/equipements-techniques/chauffage-ventilation-climatisation/calepin/calepin-chantier-installation-solaire-thermique-individuelle"
+   }
+  ],
+  "dtu_manquants": [
+   {
+    "dtu": "NF DTU 68.3",
+    "sujet": "Ventilation mécanique contrôlée (VMC) — mise en œuvre des réseaux aérauliques : conduits, étanchéité à l'air des réseaux, supports, pièges à son, raccordements, accessibilité pour entretien. Le registre ne contient AUCUNE règle dont le ref propre est le NF DTU 68.3 : il n'apparaît qu'en mention rattachée à une règle de l'Arrêté 24 mars 1982 (débits). Les seuils de mise en œuvre du DTU lui-même (distincts des débits réglementaires) ne sont donc pas couverts.",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/equipements-techniques/chauffage-ventilation-climatisation/calepin/ventilation-mecanique-controlee-vmc-essentiel-dtu-68-3",
+    "priorite": "haute"
+   },
+   {
+    "dtu": "NF DTU 65.12",
+    "sujet": "Installation solaire thermique individuelle (CESI/SSC) — mise en œuvre des capteurs, circuit primaire, ballon. Calepin FFB dédié présent, mais aucune règle au registre. Ouvrage spécial peu fréquent en rénovation d'appartement (souvent en toiture/maison individuelle).",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/equipements-techniques/chauffage-ventilation-climatisation/calepin/calepin-chantier-installation-solaire-thermique-individuelle",
+    "priorite": "basse"
+   },
+   {
+    "dtu": "DTU 65.10",
+    "sujet": "Canalisations d'eau chaude/froide sous pression et évacuations — installations de génie climatique / distribution de chauffage central (supports, pose, calorifugeage des canalisations de chauffage). Présent comme dtu_ref dans le mapping historique, absent du registre. Pas de calepin FFB associé : la source primaire reste à confirmer avant extraction. Pertinent pour le raccordement/distribution en rénovation, mais pas de seuil illustré FFB disponible.",
+    "source_ffb_url": "",
+    "priorite": "moyenne"
+   }
+  ],
+  "calepins_a_lire_prioritaires": [
+   {
+    "titre": "Ventilation mécanique contrôlée : l'essentiel du NF DTU 68.3",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/equipements-techniques/chauffage-ventilation-climatisation/calepin/ventilation-mecanique-controlee-vmc-essentiel-dtu-68-3",
+    "raison": "VMC = équipement le plus courant en rénovation d'appartement. Le registre ne couvre que les DÉBITS réglementaires (Arrêté 1982) ; les exigences de MISE EN ŒUVRE propres au NF DTU 68.3 (étanchéité des réseaux, raccordements, accessibilité) ne sont pas tracées. Calepin = entrée directe vers les seuils du DTU à extraire ensuite d'une source primaire."
+   },
+   {
+    "titre": "Planchers chauffants à eau chaude : l'essentiel du NF DTU 65.14",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/equipements-techniques/chauffage-ventilation-climatisation/calepin/calepin-chantier-planchers-chauffants-eau-chaude",
+    "raison": "Le NF DTU 65.14 est DÉJÀ présent au registre (2 règles : température sol ≤ 28 °C, sécurité fluide). Lire ce calepin permet de vérifier la complétude — repérer d'éventuels seuils de mise en œuvre supplémentaires (désolidarisation, joints de dilatation, mise en eau) non encore consignés. Priorité moindre que la VMC car déjà partiellement couvert."
+   }
+  ],
+  "note": "Analyse d'écarts purement documentaire — aucun seuil chiffré inventé ; les valeurs réelles devront être extraites d'une source primaire (Rereef/AFNOR) et vérifiées par l'utilisateur. Refs DÉJÀ couvertes et bien tracées : NF DTU 24.1 (fumisterie), NF DTU 65.14 (plancher chauffant), Arrêté 24 mars 1982 (débits ventilation). Point d'attention sur le NF DTU 68.3 : techniquement il « apparaît » dans le registre, mais seulement comme mention rattachée à une règle de débit dont le ref est l'Arrêté 1982 — il n'a aucune règle propre couvrant la mise en œuvre des réseaux ; c'est pourquoi il est classé manquant prioritaire (le mapping le liste en dtu_ref et 4 Reco Pro RAGE existent : VMC double flux collectif/individuel neuf, VMC simple flux individuel, VMC simple flux collectif réno). NF DTU 65.12 (solaire) : calepin FFB présent mais ouvrage rare en appartement → basse priorité. DTU 65.10 (distribution chauffage) : seulement au mapping, ni règle ni calepin FFB → source primaire à confirmer avant tout ajout. Le reste de l'index FFB lot 04 (≈75 dossiers : PAC, gaz, fluides frigorigènes, ramonage, entretien, QAI) relève de réglementation d'exploitation/entretien et non de seuils de mise en œuvre type DTU — non retenu comme candidat règle."
+ },
+ {
+  "lot": "05 — Électricité",
+  "dtu_dans_registre": [
+   "NF C 15-100 (édition 2024 / amendement A5) — locaux d'habitation, partie 7-771",
+   "NF C 15-100 partie 7-722 (IRVE)",
+   "DTU 70.1 (NF P80-201-2, mai 1998) — clauses de marché / Consuel / réception"
+  ],
+  "calepins_ffb": [],
+  "dtu_manquants": [
+   {
+    "dtu": "NF C 14-100",
+    "sujet": "Installation de branchement à basse tension (du réseau du distributeur jusqu'au tableau / point de livraison). Citée comme dtu_ref du mapping lot 05 ET mentionnée dans la condition de la règle Consuel du registre, mais AUCUNE règle chiffrée n'a ref: NF C 14-100. Pertinence faible en rénovation d'appartement : le branchement amont (en limite de propriété, dimensionnement de la liaison au comptage) relève surtout du gestionnaire de réseau / des parties communes, rarement du périmètre intérieur d'un lot rénovation appartement.",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/equipements-techniques/electricite-courant-fort-courant-faible/dossier-bam/un-marche-durablement-porteur-1",
+    "priorite": "basse"
+   },
+   {
+    "dtu": "NF C 17-xxx (norme protection foudre/parafoudre — référence exacte à confirmer en source primaire, NE PAS présumer le numéro)",
+    "sujet": "Protection contre la foudre et mise en œuvre de parafoudres. La FFB documente le sujet (dossier « Protection contre la foudre : deux évolutions normatives réveillent le marché »). La pose éventuelle d'un parafoudre relève de la NF C 15-100 (obligation selon zone AQ / niveau kéraunique) mais la protection foudre dédiée renvoie à une norme NF C 17 distincte, absente du registre. Pertinence variable : un parafoudre peut être exigé au tableau selon la zone — à vérifier, mais reste un point ponctuel, pas un cœur de devis appartement.",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/equipements-techniques/electricite-courant-fort-courant-faible/dossier-bam/deux-evolutions-normatives-reveillent-le-marche",
+    "priorite": "basse"
+   },
+   {
+    "dtu": "Norme/guide installations photovoltaïques (réf. exacte à confirmer en source primaire — ex. guide pratique UTE C 15-712 / Avis Techniques ; NE PAS présumer)",
+    "sujet": "Installations photovoltaïques raccordées au réseau (la majorité des 33 dossiers FFB du lot 05 portent sur le photovoltaïque). Le mapping lot 05 liste d'ailleurs un guide RAGE « Systèmes photovoltaïques » sous dtu NF C 15-100. Aucune règle PV dans le registre. Pertinence BASSE pour la rénovation d'appartements (ouvrage extérieur/toiture, hors périmètre intérieur courant).",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/performance-environnementale-batiments/energies-renouvelables-photovoltaique/dossier/energies-renouvelables-dans-batiments-neuf-et-renovation",
+    "priorite": "basse"
+   }
+  ],
+  "calepins_a_lire_prioritaires": [],
+  "note": "CONSTAT MAJEUR : la FFB ne publie AUCUN « Calepin de chantier » pour le lot 05 (n_calepins: 0 dans l'index ; les 33 documents FFB du lot sont tous des « Dossier »/articles, pas des guides illustrés d'un NF DTU). C'est cohérent : l'électricité résidentielle est régie par la NF C 15-100 (norme AFNOR/UTE), qui n'est pas un NF DTU — or les calepins FFB illustrent les NF DTU. Il n'y a donc pas de calepin à lire pour ce lot ; les deux listes calepins sont vides à dessein (pas une omission). Conséquence : l'« analyse d'écarts via calepins » qui fonctionne pour les autres lots ne s'applique pas ici — la source primaire restera la NF C 15-100 elle-même (déjà la base du registre).\\n\\nÉCARTS RÉELS : le registre couvre déjà le cœur du lot (NF C 15-100 éd. 2024 + A5 : différentiels, prises, éclairage, circuits spécialisés, type F, DPDA, IRVE 7-722 ; plus DTU 70.1 pour Consuel/réception). Les seuls candidats « manquants » au sens strict (sujet documenté par FFB ou listé en dtu_ref du mapping, sans règle correspondante) sont : NF C 14-100 (branchement — déjà citée en condition, pas en ref), la protection foudre/parafoudre, et le photovoltaïque. Tous trois sont de priorité BASSE pour des devis de rénovation d'appartements (branchement amont = gestionnaire réseau ; foudre = ponctuel selon zone ; PV = ouvrage extérieur hors périmètre intérieur). Aucun manque de priorité haute/moyenne identifié pour la pose intérieure courante : le registre est déjà bien dimensionné sur le périmètre rénovation appartement.\\n\\nGARDE-FOU RESPECTÉ : aucun seuil chiffré inventé. Pour les normes foudre et PV, le NUMÉRO exact de la norme n'est pas attesté par les sources fournies — il est explicitement marqué « à confirmer en source primaire » et ne doit pas être présumé. Les nouveautés 2024 déjà notées en TODO du registre (DDR type F, DPDA, IRVE 7-722) sont DÉJÀ traitées comme règles vérifiées — pas de redite à ajouter."
+ },
+ {
+  "lot": "06 — Menuiseries intérieures",
+  "dtu_dans_registre": [
+   "NF DTU 36.2 P1-1 (novembre 2025)"
+  ],
+  "calepins_ffb": [
+   {
+    "titre": "Escalier en bois : l'essentiel du NF DTU 36.3",
+    "dtu": "NF DTU 36.3",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/menuiseries-interieures/calepin/escalier-bois-essentiel-nf-dtu-36-3"
+   },
+   {
+    "titre": "Menuiseries intérieures en bois : le NF DTU 36.2 en images - Tome 1",
+    "dtu": "NF DTU 36.2",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/menuiseries-interieures/calepin/menuiseries-interieures-bois-nf-dtu-36-2"
+   },
+   {
+    "titre": "Menuiseries intérieures en bois : le NF DTU 36.2 en images - Tome 2",
+    "dtu": "NF DTU 36.2",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/menuiseries-interieures/calepin/menuiseries-interieures-bois-nf-dtu-36-2-en-images-tome-2"
+   }
+  ],
+  "dtu_manquants": [
+   {
+    "dtu": "NF DTU 36.3",
+    "sujet": "Escaliers en bois (conception, tolérances de pose, garde-corps, fixation/scellement, dimensions de marche) — aucune règle correspondante dans dtu_rules.yaml lot 06, alors que la FFB publie un calepin de chantier dédié.",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/menuiseries-interieures/calepin/escalier-bois-essentiel-nf-dtu-36-3",
+    "priorite": "moyenne"
+   },
+   {
+    "dtu": "DTU 36.1",
+    "sujet": "Référence menuiserie bois figurant au mapping historique (lot-norms-mapping.yaml: dtu_refs=[DTU 36.1, DTU 36.5]) mais absente du registre. Ancien DTU menuiserie bois, désormais scindé/refondu dans les NF DTU 36.2 (intérieur) et 36.5 (extérieur). Pas de calepin FFB dédié au lot 06. À traiter comme référence legacy : NE PAS chiffrer telle quelle — vérifier d'abord qu'elle n'est pas entièrement absorbée par le NF DTU 36.2 déjà couvert avant tout ajout.",
+    "source_ffb_url": "",
+    "priorite": "basse"
+   }
+  ],
+  "calepins_a_lire_prioritaires": [
+   {
+    "titre": "Escalier en bois : l'essentiel du NF DTU 36.3",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/menuiseries-interieures/calepin/escalier-bois-essentiel-nf-dtu-36-3",
+    "raison": "Seul calepin FFB du lot 06 pointant un DTU (NF DTU 36.3) non couvert par le registre. Source illustrée de l'essentiel pour repérer les seuils à extraire ensuite d'une source primaire (Reef/AFNOR) : dimensions de marche (giron/hauteur), tolérances de pose, fixation et garde-corps. Pertinent pour les appartements en duplex ou avec combles aménagés."
+   },
+   {
+    "titre": "Menuiseries intérieures en bois : le NF DTU 36.2 en images - Tome 2",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/menuiseries-interieures/calepin/menuiseries-interieures-bois-nf-dtu-36-2-en-images-tome-2",
+    "raison": "DTU déjà couvert (4 règles vérifiées), mais le calepin Tome 2 peut révéler des points non encore inscrits (placards, lambris, plinthes, habillages, quincaillerie) — à parcourir pour contrôler la complétude du registre 36.2, pas pour ajouter un nouveau DTU."
+   }
+  ],
+  "note": "Lot 06 déjà solidement couvert : 4 règles vérifiées (statut: verifie) sur NF DTU 36.2 P1-1 (nov. 2025), source Reef AHHV-2 lue verbatim — conditions de pose (§5.4), tolérances dormant (§6.8.1), jeux vantail (§6.8.2), fixation dormants (§6.1.1). UN SEUL vrai écart : NF DTU 36.3 (escaliers bois), documenté par un calepin FFB mais absent du registre. Deux points de mapping à clarifier sans en faire des manquants : (1) DTU 36.1 = référence legacy probablement absorbée par le NF DTU 36.2 (à vérifier avant tout ajout, ne pas chiffrer telle quelle) ; (2) DTU 36.5 listé au lot 06 du mapping concerne en réalité les menuiseries EXTÉRIEURES et est DÉJÀ couvert au lot 07 (6 règles NF DTU 36.5 / FD DTU 36.5 P3) — incohérence du mapping, hors périmètre du lot 06 intérieur, donc PAS un manquant. RÈGLE RESPECTÉE : aucun seuil chiffré inventé — cette analyse identifie seulement le DTU à ajouter (36.3) et le calepin à lire ; les valeurs réelles seront extraites d'une source primaire (Reef/AFNOR) et validées par l'utilisateur. Priorité rénovation appartements : NF DTU 36.3 = moyenne (escalier intérieur fréquent en duplex/combles mais pas systématique) ; DTU 36.1 = basse (legacy)."
+ },
+ {
+  "lot": "07 — Menuiseries extérieures / Fermetures",
+  "dtu_dans_registre": [
+   "NF DTU 36.5 P1-1 (avril 2010)",
+   "NF DTU 36.5 P1-2 (avril 2010)",
+   "FD DTU 36.5 P3 (octobre 2010)",
+   "NF EN 14351-1",
+   "NF EN 12207",
+   "NF EN 12208",
+   "NF EN 12210",
+   "NF EN 12211",
+   "NF EN 1991-1-4/NA",
+   "NF P 20-501"
+  ],
+  "calepins_ffb": [
+   {
+    "titre": "Fenêtres et portes extérieures : le NF DTU 36.5 illustré",
+    "dtu": "NF DTU 36.5",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/enveloppe-du-batiment/menuiseries-exterieures-facades-rideaux/calepin/calepin-chantier-fenetres-et-portes-exterieures"
+   },
+   {
+    "titre": "Portes et portails résidentiels : l'essentiel du NF DTU 34.1",
+    "dtu": "NF DTU 34.1",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/enveloppe-du-batiment/fermetures-stores-portails/calepin/calepin-chantier-portes-portails-residentiels"
+   },
+   {
+    "titre": "Volets et stores : le NF DTU 34.4 en images",
+    "dtu": "NF DTU 34.4",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/enveloppe-du-batiment/fermetures-stores-portails/calepin/calepin-chantier-volets-stores"
+   }
+  ],
+  "dtu_manquants": [
+   {
+    "dtu": "NF DTU 34.4",
+    "sujet": "Volets et stores (volets roulants, volets battants, stores) — mise en œuvre. Calepin FFB \"Volets et stores en images\". Volet roulant = équipement courant en appartement, le plus pertinent des trois manquants ; mais ouvrage de fermeture extérieure, d'où priorité moyenne (et non haute).",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/enveloppe-du-batiment/fermetures-stores-portails/calepin/calepin-chantier-volets-stores",
+    "priorite": "moyenne"
+   },
+   {
+    "dtu": "NF DTU 34.1",
+    "sujet": "Portes et portails résidentiels (portes de garage, portails) — mise en œuvre. Calepin FFB. Orienté maison individuelle : peu pertinent pour la rénovation d'appartements, d'où priorité basse.",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/enveloppe-du-batiment/fermetures-stores-portails/calepin/calepin-chantier-portes-portails-residentiels",
+    "priorite": "basse"
+   },
+   {
+    "dtu": "DTU 39",
+    "sujet": "Vitrerie / miroiterie / verrières (travaux de vitrage). Présent au mapping historique (dtu_refs), SANS calepin FFB dans l'index lot 07 — seule trace = la reco professionnelle RAGE \"Verrières\" (statut indisponible, host parqué). Le vitrage des fenêtres arrive déjà avec la menuiserie (couvert par DTU 36.5) et les verrières sont un ouvrage spécial, d'où priorité basse.",
+    "source_ffb_url": "http://www.reglesdelart-grenelle-environnement-2012.fr/fileadmin/redacteurs/Regles_de_l_Art/Recommandations_Pro/Bati/recommandations-pro-rage-verrieres-2013-09.pdf",
+    "priorite": "basse"
+   }
+  ],
+  "calepins_a_lire_prioritaires": [
+   {
+    "titre": "Volets et stores : le NF DTU 34.4 en images",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/enveloppe-du-batiment/fermetures-stores-portails/calepin/calepin-chantier-volets-stores",
+    "raison": "Couvre NF DTU 34.4, totalement absent du registre. Volets (notamment roulants) = poste courant en rénovation d'appartement ; calepin illustré = source idéale pour repérer les seuils à extraire ensuite d'une source primaire."
+   },
+   {
+    "titre": "Portes et portails résidentiels : l'essentiel du NF DTU 34.1",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/enveloppe-du-batiment/fermetures-stores-portails/calepin/calepin-chantier-portes-portails-residentiels",
+    "raison": "Couvre NF DTU 34.1, absent du registre. À lire en second : pertinence moindre en appartement (orienté garage/portail) mais c'est le seul autre manquant doté d'un calepin FFB."
+   }
+  ],
+  "note": "Analyse d'écarts lot 07, factuelle, sans aucun seuil chiffré inventé. Registre dtu_rules.yaml (§07, lignes 290-332) : 6 règles vérifiées, TOUTES sur NF DTU 36.5 (P1-1, P1-2, FD P3) + normes EN associées (calage/fixation, calfeutrement, choix classe AEV, résistance vent V*, perméabilité air A*, étanchéité eau E*). La FFB documente 3 calepins de chantier pour ce lot : 36.5 (déjà couvert), 34.1 et 34.4 (absents du registre). Le mapping historique ajoute DTU 39 (vitrerie/verrières), absent du registre ET sans calepin FFB dans l'index lot 07. \\n\\nDTU manquants = 3 : NF DTU 34.4 (moyenne), NF DTU 34.1 (basse), DTU 39 (basse). Aucun classé \\\"haute\\\" : tout le lot est de nature extérieure/fermetures, donc utilité limitée pour des devis de rénovation d'appartements (la pose intérieure de fenêtres relève déjà du 36.5 couvert). 34.4 placé en moyenne car le volet roulant est l'équipement le plus courant des trois en appartement — arbitrage assumé entre \\\"courant\\\" (pousse vers haut) et \\\"extérieur\\\" (pousse vers bas).\\n\\nPoint d'honnêteté sur les sources : DTU 39 n'a AUCUNE URL FFB dans l'index lot 07. Le source_ffb_url fourni pour 39 N'EST PAS une page FFB mais l'URL réelle de la reco professionnelle RAGE \\\"Verrières\\\" issue du mapping (statut indisponible — host d'origine parqué, à récupérer via miroir/archive). L'identifiant \\\"DTU 39\\\" est conservé tel quel pour rester cohérent avec le mapping. Calepins à lire en priorité = seulement 34.4 puis 34.1 (les seuls manquants avec un calepin) ; DTU 39 n'a pas de calepin à lire ; le calepin 36.5 est déjà épuisé par les 6 règles vérifiées, donc hors prioritaires. Les valeurs chiffrées de 34.1/34.4/39 devront être extraites plus tard d'une source primaire et validées par l'utilisateur."
+ },
+ {
+  "lot": "08 — Carrelage / Faïence / Chapes",
+  "dtu_dans_registre": [
+   "NF DTU 52.2"
+  ],
+  "calepins_ffb": [
+   {
+    "titre": "Chapes et dalles à base de liants hydrauliques : le NF DTU 26.2 illustré",
+    "dtu": "NF DTU 26.2",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes/calepin/calepin-chantier-chapes-dalles-liants-hydrauliques"
+   },
+   {
+    "titre": "Pose collée de céramiques en murs intérieurs : l'essentiel du NF DTU 52.2",
+    "dtu": "NF DTU 52.2",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes/calepin/calepin-chantier-pose-collee-ceramiques-murs-interieurs"
+   },
+   {
+    "titre": "Pose collée de céramiques en terrasse extérieure dans le neuf : l'essentiel du NF DTU 52.2 et des Règles professionnelles",
+    "dtu": "NF DTU 52.2",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes/calepin/pose-collee-ceramiques-terrasse-exterieure-neuf-essentiel-dtu-52-2"
+   },
+   {
+    "titre": "Pose collée de céramiques pour les sols : l'essentiel du NF DTU 52.2",
+    "dtu": "NF DTU 52.2",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes/calepin/calepin-pose-collee-ceramiques-sols"
+   },
+   {
+    "titre": "Chapes fluides : l'essentiel des règles de mise en œuvre (ciment / sulfate de calcium)",
+    "dtu": "non précisé (relève d'Avis Techniques / CPT CSTB, pas d'un NF DTU)",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes/calepin/chapes-fluides-a-base-de-ciment-sulfate-de-calcium"
+   },
+   {
+    "titre": "Pose collée de carrelage pour les murs intérieurs en rénovation",
+    "dtu": "NF DTU 52.2 (champ d'application : pose collée — non précisé dans la fiche FFB)",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes/calepin/pose-collee-carrelage-murs-interieurs-renovation"
+   },
+   {
+    "titre": "Pose collée de carrelage pour les sols intérieurs en rénovation",
+    "dtu": "NF DTU 52.2 (champ d'application : pose collée — non précisé dans la fiche FFB)",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes/calepin/pose-collee-carrelage-pour-sols-interieurs-renovation"
+   },
+   {
+    "titre": "Revêtements de sols scellés et sous-couches : l'essentiel des NF DTU",
+    "dtu": "NF DTU 52.1 + NF DTU 52.10 (plusieurs NF DTU — non détaillés dans la fiche FFB)",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes/calepin/revetements-sols-scelles-et-sous-couches-essentiel-nf-dtu"
+   }
+  ],
+  "dtu_manquants": [
+   {
+    "dtu": "NF DTU 26.2",
+    "sujet": "Chapes et dalles à base de liants hydrauliques (support de revêtement de sol). Présent comme calepin FFB illustré ; aucune règle correspondante dans dtu_rules.yaml. « Chapes » figure dans l'intitulé du lot et la chape est un support de sol courant en rénovation d'appartement.",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes/calepin/calepin-chantier-chapes-dalles-liants-hydrauliques",
+    "priorite": "haute"
+   },
+   {
+    "dtu": "DTU 52.1",
+    "sujet": "Pose scellée des revêtements de sol (carrelage/céramique scellé) — présent au mapping (dtu_refs) ET via fiche d'autocontrôle FFB + calepin « sols scellés et sous-couches » ; aucune règle dans dtu_rules.yaml. La pose collée domine en rénovation, et la FFB signale un « champ d'application restreint pour la pose scellée ».",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes/calepin/revetements-sols-scelles-et-sous-couches-essentiel-nf-dtu",
+    "priorite": "moyenne"
+   },
+   {
+    "dtu": "NF DTU 55.2",
+    "sujet": "Revêtements muraux attachés en pierre mince. Présent uniquement au mapping (dtu_refs), AUCUNE documentation FFB en lot 08 (ni calepin ni modèle) ; aucune règle dans dtu_rules.yaml. Ouvrage spécialisé, peu courant en rénovation d'appartement courante. URL source = page de famille FFB faute d'URL dédiée (DTU dérivé du mapping, pas d'un calepin).",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes",
+    "priorite": "basse"
+   }
+  ],
+  "calepins_a_lire_prioritaires": [
+   {
+    "titre": "Pose collée de carrelage pour les murs intérieurs en rénovation",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes/calepin/pose-collee-carrelage-murs-interieurs-renovation",
+    "raison": "Document le plus on-target pour la rénovation d'appartement (faïence murale en pose collée). Couvre le champ du NF DTU 52.2 déjà au registre, mais en contexte rénovation : utile pour confirmer/compléter les règles existantes (état du support, reconnaissance, etc.). Ne crée pas de DTU manquant."
+   },
+   {
+    "titre": "Pose collée de carrelage pour les sols intérieurs en rénovation",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes/calepin/pose-collee-carrelage-pour-sols-interieurs-renovation",
+    "raison": "Second document le plus pertinent pour les appartements (carrelage de sol collé en rénovation). Même champ que NF DTU 52.2 déjà présent ; lecture utile pour les conditions de support en rénovation. Ne crée pas de DTU manquant."
+   },
+   {
+    "titre": "Chapes et dalles à base de liants hydrauliques : le NF DTU 26.2 illustré",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes/calepin/calepin-chantier-chapes-dalles-liants-hydrauliques",
+    "raison": "Seul calepin couvrant un DTU réellement manquant et prioritaire (NF DTU 26.2) : support de sol courant en rénovation. À lire en premier pour en extraire les seuils (épaisseurs mini, délais de séchage, etc.) à vérifier ensuite en source primaire."
+   },
+   {
+    "titre": "Revêtements de sols scellés et sous-couches : l'essentiel des NF DTU",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes/calepin/revetements-sols-scelles-et-sous-couches-essentiel-nf-dtu",
+    "raison": "Porte d'entrée vers DTU 52.1 (pose scellée, manquant moyen) et DTU 52.10 (sous-couches isolantes — voir note). Un seul calepin pour deux normes absentes du registre ; lecture efficace avant extraction."
+   }
+  ],
+  "note": "Registre actuel (dtu_rules.yaml, lot 08) = UNE seule règle vérifiée, portant sur NF DTU 52.2 §7.3.5 (largeur mini des joints en pose collée). Donc un seul DTU « couvert » côté registre. Méthode strictement appliquée : un DTU est « manquant » s'il a un calepin FFB OU un dtu_ref au mapping SANS règle correspondante au registre ; aucun seuil chiffré inventé. — Trois manquants retenus : NF DTU 26.2 (calepin), DTU 52.1 (mapping + calepin scellés/sous-couches), NF DTU 55.2 (mapping seul, sans doc FFB). — DTU 52.10 (sous-couches isolantes) DÉLIBÉRÉMENT NON listé en manquant : il n'apparaît qu'en « Modèle de document » (fiche d'autocontrôle) et dans le calepin « sols scellés et sous-couches » dont le champ dtu est vide — il ne remplit pas le critère strict (pas de calepin à champ dtu renseigné, ni de dtu_ref au mapping). Pertinent pour l'acoustique en logement : à arbitrer séparément. — Les deux calepins « rénovation » (murs / sols intérieurs) n'ont pas de champ dtu mais relèvent de la pose collée = champ du NF DTU 52.2 déjà au registre : ils ne créent PAS de manquant mais sont les documents les plus utiles pour la rénovation d'appartement (placés en tête des lectures prioritaires). — NF DTU 55.2 : aucune URL FFB dédiée en lot 08 ; source_ffb_url = page de famille FFB, DTU dérivé du seul mapping ; priorité basse (ouvrage spécialisé, pierre mince attachée). — Beaucoup d'autres documents FFB du lot (dossiers BAM, douches zéro ressaut, terrasses sur plots, polyuréthane projeté, UPEC, etc.) sont hors champ de cette analyse (ni calepins à dtu renseigné, ni dtu_refs au mapping)."
+ },
+ {
+  "lot": "09",
+  "dtu_dans_registre": [
+   "NF DTU 51.2 (parquets collés) — NF DTU 51.2 P1-1 (mars 2023) §5.2.6.6, statut vérifié"
+  ],
+  "calepins_ffb": [
+   {
+    "titre": "Revêtements de sol souples : le NF DTU 53.12 illustré",
+    "dtu": "NF DTU 53.12",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/sols-souples-sols-coules/calepin/revetement-sol-souples-nf-dtu-53-12"
+   },
+   {
+    "titre": "Revêtements de sol en résine de synthèse : le NF DTU 54.1 illustré",
+    "dtu": "NF DTU 54.1",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/sols-souples-sols-coules/calepin/revetement-sol-resine-synthese-nf-dtu-54-1"
+   },
+   {
+    "titre": "Parquets et planchers bois : l'essentiel des NF DTU en images",
+    "dtu": "(non précisé — famille parquet : NF DTU 51.1 cloués, 51.2 collés, 51.11 flottants)",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/parquet-bois/calepin/calepin-chantier-parquets-planchers-bois"
+   }
+  ],
+  "dtu_manquants": [
+   {
+    "dtu": "NF DTU 53.12",
+    "sujet": "Revêtements de sol souples (PVC, linoléum, dalles plombantes, lés) collés ou plombants — pose intérieure courante en rénovation d'appartement",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/sols-souples-sols-coules/calepin/revetement-sol-souples-nf-dtu-53-12",
+    "priorite": "haute"
+   },
+   {
+    "dtu": "NF DTU 51.1",
+    "sujet": "Parquets et planchers à clouer (pose clouée) — finition intérieure bois ; couvert par le calepin FFB 'Parquets et planchers bois' et listé au mapping (DTU 51.1)",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/parquet-bois/calepin/calepin-chantier-parquets-planchers-bois",
+    "priorite": "moyenne"
+   },
+   {
+    "dtu": "NF DTU 53.1",
+    "sujet": "Revêtements de sol textiles (moquette) — pose intérieure ; Dossier FFB 'Le NF DTU 53.1 révisé' + listé au mapping (DTU 53.1)",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/sols-souples-sols-coules/dossier-bam/le-nf-dtu-53-1-revise",
+    "priorite": "moyenne"
+   },
+   {
+    "dtu": "NF DTU 54.1",
+    "sujet": "Revêtements de sol coulés en résine de synthèse — surtout tertiaire/technique, rare en logement résidentiel ; Calepin FFB dédié",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/sols-souples-sols-coules/calepin/revetement-sol-resine-synthese-nf-dtu-54-1",
+    "priorite": "basse"
+   },
+   {
+    "dtu": "NF DTU 53.2",
+    "sujet": "Revêtements de sol scellés (pose scellée de carreaux/dalles durs) — listé au mapping (DTU 53.2) ; pas de calepin FFB propre dans le lot 09 ; périmètre partiellement recouvert par le lot 08 carrelage",
+    "source_ffb_url": "(aucune — référence issue du mapping historique lot-norms-mapping.yaml uniquement)",
+    "priorite": "basse"
+   },
+   {
+    "dtu": "NF DTU 51.4",
+    "sujet": "Platelages extérieurs en bois (terrasses bois) — ouvrage EXTÉRIEUR, hors périmètre rénovation intérieure d'appartement ; Dossier FFB uniquement (pas de calepin)",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/parquet-bois/dossier-bam/le-nf-dtu-51-4-depoussiere-1",
+    "priorite": "basse"
+   }
+  ],
+  "calepins_a_lire_prioritaires": [
+   {
+    "titre": "Revêtements de sol souples : le NF DTU 53.12 illustré",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/sols-souples-sols-coules/calepin/revetement-sol-souples-nf-dtu-53-12",
+    "raison": "Sols souples (PVC/lino/dalles) = revêtement intérieur le plus courant en rénovation d'appartement ; DTU 53.12 totalement absent du registre. Calepin = essentiel illustré du NF DTU, idéal pour repérer les seuils à extraire ensuite (planéité/humidité support, conditions de pose). Priorité no 1."
+   },
+   {
+    "titre": "Parquets et planchers bois : l'essentiel des NF DTU en images",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/parquet-bois/calepin/calepin-chantier-parquets-planchers-bois",
+    "raison": "Complète la couverture parquet : le registre n'a que le collé (51.2) ; ce calepin couvre la famille parquet (51.1 cloués, 51.11 flottants), pose bois intérieure fréquente. Permet d'identifier les DTU manquants 51.1 (et 51.11) avant extraction de seuils."
+   },
+   {
+    "titre": "Revêtements de sol en résine de synthèse : le NF DTU 54.1 illustré",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/sols-souples-sols-coules/calepin/revetement-sol-resine-synthese-nf-dtu-54-1",
+    "raison": "À lire en dernier pour le lot 09 : DTU 54.1 absent du registre mais usage résidentiel rare (plutôt tertiaire/technique). Utile pour complétude mais faible utilité pour des devis d'appartement."
+   }
+  ],
+  "note": "Analyse d'écarts strictement factuelle, AUCUN seuil chiffré inventé. ÉTAT REGISTRE : le lot 09 de dtu_rules.yaml (l.348-354) contient UNE seule règle vérifiée, ref NF DTU 51.2 (parquets collés). VÉRIFIÉ : aucune occurrence de 51.1, 53.1, 53.12, 53.2 ni 54.1 ailleurs dans le registre. SOURCES DES MANQUANTS : NF DTU 53.12, 54.1 et la famille parquet (51.1/51.11) proviennent des 3 Calepins de chantier FFB du lot 09 ; NF DTU 53.1 d'un Dossier FFB ; les refs 51.1, 53.1, 53.2 figurent aussi au mapping historique (dtu_refs = DTU 51.1, 51.2, 53.1, 53.2). PRIORISATION (rénovation appartement, pose intérieure) : haute = 53.12 (sols souples) ; moyenne = 51.1 (parquet cloué) et 53.1 (moquette/textile) ; basse = 54.1 (résine, tertiaire), 53.2 (scellé, chevauche le lot 08 carrelage, ref mapping sans calepin), 51.4 (platelage EXTÉRIEUR, hors périmètre). RÉSERVES : (1) le calepin 'Parquets et planchers bois' n'a pas de champ dtu explicite dans l'index — l'attribution 51.1/51.11 est une inférence de périmètre, à confirmer à la lecture du calepin ; (2) NF DTU 53.2 n'a pas de calepin FFB propre et son périmètre (sols scellés durs) recoupe partiellement le lot 08 — vérifier la frontière lot 08/09 avant ajout. Prochaine étape recommandée : lire d'abord le calepin 53.12, puis le calepin parquets/planchers bois, et extraire les seuils depuis source primaire (Reef/NF DTU) avec validation utilisateur."
+ },
+ {
+  "lot": "10",
+  "dtu_dans_registre": [
+   "NF DTU 59.1 P1-1 (juin 2013)"
+  ],
+  "calepins_ffb": [
+   {
+    "titre": "Travaux de peinture : l'essentiel du NF DTU 59.1",
+    "dtu": "NF DTU 59.1",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/peinture/calepin/calepin-chantier-travaux-de-peinture"
+   },
+   {
+    "titre": "Peinture de sol : le NF DTU 59.3 en images",
+    "dtu": "NF DTU 59.3",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/peinture/calepin/peinture-de-sol-nf-dtu-59-3-en-images"
+   },
+   {
+    "titre": "Réfection de façades par revêtements d'imperméabilité : le NF DTU 42.1",
+    "dtu": "NF DTU 42.1",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/enveloppe-du-batiment/enduits-revetements-de-facade/calepin/calepin-chantier-refection-facades-revetements-impermeabilite-polymeres"
+   }
+  ],
+  "dtu_manquants": [
+   {
+    "dtu": "DTU 59.4",
+    "sujet": "Peinture sur supports/éléments métalliques et ouvrages divers (radiateurs, garde-corps, ferronnerie, canalisations apparentes) — présent au mapping historique (dtu_refs lot 10) mais aucune règle dans dtu_rules.yaml. Pas de calepin FFB dédié pour ce DTU dans l'index.",
+    "source_ffb_url": "",
+    "priorite": "moyenne"
+   },
+   {
+    "dtu": "NF DTU 59.3",
+    "sujet": "Peinture de sol — couvert par un calepin FFB (« Peinture de sol : le NF DTU 59.3 en images »), absent du registre dtu_rules.yaml ET du mapping historique. Pose intérieure mais application spécialisée (sols peints), peu fréquente en appartement résidentiel standard.",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/peinture/calepin/peinture-de-sol-nf-dtu-59-3-en-images",
+    "priorite": "moyenne"
+   },
+   {
+    "dtu": "NF DTU 42.1",
+    "sujet": "Réfection de façades par revêtements d'imperméabilité (polymères) — calepin FFB, absent du registre. Ouvrage EXTÉRIEUR/façade, hors périmètre rénovation intérieure d'appartement (pertinent surtout pour ravalement, ex. chantiers type Esparon).",
+    "source_ffb_url": "https://www.ffbatiment.fr/techniques-batiment/enveloppe-du-batiment/enduits-revetements-de-facade/calepin/calepin-chantier-refection-facades-revetements-impermeabilite-polymeres",
+    "priorite": "basse"
+   }
+  ],
+  "calepins_a_lire_prioritaires": [
+   {
+    "titre": "Travaux de peinture : l'essentiel du NF DTU 59.1",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/peinture/calepin/calepin-chantier-travaux-de-peinture",
+    "raison": "DTU déjà au registre mais une seule règle extraite (conditions hygrothermiques §7.1). Ce calepin synthétise l'essentiel du NF DTU 59.1 (reconnaissance des fonds, états de finition A/B/C, préparation des supports, tolérances) — gisement direct de règles supplémentaires pour le cœur du lot 10 en rénovation intérieure. À lire en premier."
+   },
+   {
+    "titre": "Peinture de sol : le NF DTU 59.3 en images",
+    "url": "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/peinture/calepin/peinture-de-sol-nf-dtu-59-3-en-images",
+    "raison": "Seul calepin couvrant un DTU totalement absent du registre et pertinent en intérieur (peinture de sol). À lire pour décider d'ajouter ou non NF DTU 59.3 selon la fréquence réelle des prestations de sol peint."
+   }
+  ],
+  "note": "Analyse d'écarts strictement factuelle, sans aucun seuil chiffré inventé. Sources lues directement : dtu_rules.yaml (section \"10\" = 1 règle, ref NF DTU 59.1 P1-1 juin 2013 §7.1), ffb-techniques-index.yaml (lots[\"10\"], label \"Peinture\", 12 docs dont 3 calepins) et lot-norms-mapping.yaml (lot 10, dtu_refs = [\"NF DTU 59.1\", \"DTU 59.4\"]). État du registre : seul NF DTU 59.1 est présent, et avec une seule règle (conditions hygrothermiques d'application). Écarts identifiés : (1) DTU 59.4 — au mapping historique, absent du registre, pas de calepin FFB ; (2) NF DTU 59.3 (peinture de sol) — calepin FFB, absent du registre et du mapping ; (3) NF DTU 42.1 (façades, revêtements d'imperméabilité) — calepin FFB, absent du registre, ouvrage extérieur donc priorité basse pour la rénovation d'appartements. Réserves : la désignation « DTU 59.4 » est reprise telle quelle du mapping (pas de millésime ni de préfixe « NF » confirmé dans les sources lues, à vérifier) ; le calepin NF DTU 59.1 est listé comme prioritaire à relire car son DTU est déjà au registre mais sous-exploité (1 seule règle), c'est le gisement le plus rentable pour enrichir le lot 10 en contexte intérieur. Aucun seuil ne doit être inscrit sans extraction d'une source primaire (Reef/CSTB) et validation utilisateur. Conseil croisé indisponible (advisor rate-limité) — conclusions appuyées sur la lecture directe des trois fichiers."
+ }
+]

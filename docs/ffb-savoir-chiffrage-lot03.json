@@ -1,0 +1,432 @@
+[
+ {
+  "titre": "Les règles de l'art de la salle de bains",
+  "pertinence": "moyenne",
+  "sous_poste": "Pose d'appareils sanitaires en salle de bains (receveurs de douche, baignoires)",
+  "perimetre": [
+   "INCLUS : pose et raccordement (alimentation + évacuation) des appareils sanitaires",
+   "INCLUS : supportage périphérique des receveurs et baignoires acryliques",
+   "INCLUS : mise en œuvre des joints d'étanchéité (mastic sanitaire) à la liaison appareil/paroi + joint de finition continu",
+   "Connexe (autre référentiel) : protection à l'eau des parois et du sol (étanchéité) — relève d'un poste distinct",
+   "Connexe (lot électricité) : respect des volumes de protection électrique selon NF C 15-100",
+   "Contrainte de configuration : en logement neuf, exigence d'une salle d'eau accessible avec douche sans ressaut + espace de manœuvre fauteuil"
+  ],
+  "facteurs_prix": [
+   "Type de receveur : céramique vs acrylique (l'acrylique impose un supportage périphérique sur tous les côtés)",
+   "Type d'appareil : receveur de douche vs baignoire (baignoire acrylique = supportage périphérique similaire)",
+   "Configuration accessibilité PMR : douche sans ressaut + espace d'usage + espace de manœuvre fauteuil (en neuf), plus exigeante",
+   "Nature du support à créer pour les bords libres (maçonnerie hydrofuge : carreau de plâtre hydrofuge, béton cellulaire)",
+   "Mise en place de profilés imputrescibles + joint d'appui en mousse côté paroi verticale",
+   "Limitation de température ECS à 50°C (mitigeur thermostatique / dispositif de sécurité)"
+  ],
+  "regles_metre": [
+   "Ménager un espace libre d'au moins 5 mm entre le bord du receveur et la paroi (mouvements relatifs)",
+   "Receveur acrylique : support en périphérie sur tous les côtés (à prévoir au métré du support)",
+   "Baignoire acrylique : supportage périphérique à prévoir de la même manière"
+  ],
+  "points_vigilance": [
+   "Receveur acrylique non supporté en périphérie = mise en œuvre non conforme (risque de fissuration sous charge)",
+   "Joint d'étanchéité de finition à réaliser sans interruption (continuité indispensable)",
+   "Côté paroi : utiliser des profilés imputrescibles + joint d'appui mousse, pas un appui rigide direct",
+   "Bords libres : caler sur maçonnerie hydrofuge (carreau de plâtre hydrofuge, béton cellulaire), pas de matériau sensible à l'eau",
+   "Température d'eau chaude sanitaire plafonnée à 50°C (sécurité d'utilisation)",
+   "Volumes de protection électrique à respecter avant implantation des points d'eau (NF C 15-100)",
+   "En neuf : la douche accessible PMR doit être sans ressaut (à intégrer dès la conception du receveur/sol)"
+  ],
+  "materiaux": [
+   "Receveur de douche en céramique",
+   "Receveur de douche en acrylique",
+   "Baignoire en acrylique",
+   "Mastic sanitaire d'étanchéité (liaison) + mastic sanitaire de finition",
+   "Profilés imputrescibles + joint d'appui en mousse (côté paroi verticale)",
+   "Éléments de maçonnerie hydrofuge pour bords libres : carreau de plâtre hydrofuge, béton cellulaire"
+  ],
+  "normes": [
+   "NF DTU 60.1 (Plomberie sanitaire pour bâtiments, partie 3 du CCT — mise en œuvre des appareils et raccordements)",
+   "DTU 60.11 (conception et dimensionnement des installations de plomberie sanitaire)",
+   "NF C 15-100 (volumes de protection électrique en salle de bains)",
+   "Réglementation accessibilité des bâtiments (salle d'eau accessible, douche sans ressaut)"
+  ],
+  "pour_devis": "Permet de cadrer le poste « pose receveur/baignoire » d'un devis SDB : justifier le supportage périphérique (acrylique), le jeu de 5 mm, les joints sanitaires et le calage hydrofuge comme prestations normées (NF DTU 60.1), et d'anticiper les surcoûts liés à l'accessibilité PMR et au mitigeur limité à 50°C."
+ },
+ {
+  "titre": "Les règles d'incorporation de tubes",
+  "pertinence": "moyenne",
+  "sous_poste": "Réseaux de plomberie encastrés / incorporés (alimentation et évacuation noyées, encastrées ou engravées)",
+  "perimetre": [
+   "Pose des canalisations incorporées au gros œuvre, sous trois modes distincts à distinguer au chiffrage : enrobage (noyé dans le gros œuvre directement ou sous fourreau), encastrement (logé dans une réservation prévue puis enrobé), engravement (logé dans une saignée taillée après coup puis enrobée)",
+   "INCLUS : fourreaux/gaines lorsque la configuration ou la nature du tube l'impose (cuivre gainé en plancher, tubes de synthèse au-delà de 60 degres de fluide, traversées)",
+   "INCLUS implicitement : réalisation des saignées en éléments non porteurs et leur rebouchage/enrobage avec un matériau compatible",
+   "EXCLU de fait : saignées et incorporation dans les éléments porteurs (dalles, poteaux, voiles porteurs, poutres, précontraint) - interdites, donc à traiter en pose apparente, sous coffrage ou en réservation prévue au gros œuvre",
+   "EXCLU : pose de canalisation dans l'épaisseur d'un isolant thermique ou phonique (interdite)"
+  ],
+  "facteurs_prix": [
+   "Mode d'incorporation retenu : enrobage simple vs encastrement en réservation vs engravement par saignée (la saignée + rebouchage ajoute de la main d'oeuvre et de la dépose de matière)",
+   "Nature du tube (cuivre, acier galvanisé, PE-X, PB, multicouche, plastique) qui conditionne l'obligation de fourreau et donc la fourniture supplémentaire",
+   "Présence ou non d'un fourreau/gaine (matériau et longueur supplémentaires)",
+   "Nature du support recevant l'incorporation : plancher, mortier, béton, plâtre - chaque support a des autorisations différentes, certaines configurations sont interdites et imposent un mode alternatif plus coûteux",
+   "Traversée de joints de gros œuvre nécessitant des pièces spéciales (lyre, esse) ou une désolidarisation sur une longueur de part et d'autre du joint",
+   "Température du fluide véhiculé (au-delà de 60 degres, fourreautage obligatoire des tubes de synthèse)"
+  ],
+  "regles_metre": [
+   "Distinguer au métré les linéaires selon le mode (enrobé / encastré / engravé) car la main d'oeuvre diffère",
+   "Prévoir une sur-longueur de fourreau de part et d'autre des traversées de joints de gros œuvre (longueur de désolidarisation non chiffrée dans l'extrait)",
+   "Compter les pièces spéciales (lyre, esse) à l'unité au droit des franchissements de joints",
+   "Compter les linéaires de saignée à réaliser puis à reboucher séparément du linéaire de tube"
+  ],
+  "points_vigilance": [
+   "Interdiction d'incorporer (enrober/encastrer/saigner) dans tout élément porteur assurant la stabilité : dalles, poteaux, poutres, voiles porteurs, éléments précontraints - prévoir une solution alternative",
+   "Saignées en éléments non porteurs admises seulement si elles ne compromettent pas la stabilité et sans sectionnement d'armatures",
+   "En plancher reposant directement sur entrevous : seuls cuivre (gainé) et plastique admis, sous conditions",
+   "Enrobage interdit dans le mortier de pose des carrelages scellés",
+   "Incorporation interdite dans l'épaisseur d'un isolant thermique ou phonique",
+   "Au franchissement d'un joint de gros œuvre : préserver le mouvement relatif des bords sans détérioration du tube, du gros œuvre ni de l'étanchéité ; ces joints n'étant pas étanches, prévoir une canalisation résistant à l'humidité en présence d'eau",
+   "Tubes PE-X, PB et multicouche : fourreautage obligatoire si la température du fluide peut dépasser 60 degres",
+   "La périphérie des dalles sur terre-plein peut se comporter comme un joint de gros œuvre selon les dispositions constructives"
+  ],
+  "materiaux": [
+   "Tube cuivre (gainé en plancher sur entrevous)",
+   "Tube acier galvanisé",
+   "Tube PE-X",
+   "Tube PB (polybutène)",
+   "Tube multicouche",
+   "Tube plastique",
+   "Fourreaux / gaines",
+   "Matériau d'enrobage compatible (mortier, béton, plâtre selon le cas)",
+   "Pièces spéciales de tuyauterie pour franchissement de joint (lyre, esse)"
+  ],
+  "normes": [
+   "NF DTU 60.5 P1-2 (référencé pour le gainage du cuivre en plancher) ; renvoi général aux NF DTU régissant l'incorporation des canalisations dans le gros œuvre"
+  ],
+  "pour_devis": "Permet de cadrer correctement un poste de réseaux de plomberie encastrés : choisir le bon mode (enrobé/encastré/engravé) selon le support, écarter au chiffrage les incorporations interdites (éléments porteurs, isolant, mortier de carrelage) et intégrer les fournitures induites (fourreaux, pièces de franchissement de joints, rebouchage de saignées)."
+ },
+ {
+  "titre": "Baignoires non autoportantes : supportage périphérique obligatoire (acrylique)",
+  "pertinence": "moyenne",
+  "sous_poste": "Pose baignoire / receveur acrylique non autoportant (supportage et habillage)",
+  "perimetre": [
+   "INCLUS : réalisation d'un support de maintien périphérique sous le fond et sur le pourtour de la baignoire/receveur acrylique non autoportant",
+   "INCLUS : profilé imputrescible fixé au mur (côté paroi), avec joint d'appui silicone entre le support et la baignoire",
+   "INCLUS : maçonnerie hydrofuge pour les bords libres de la baignoire",
+   "INCLUS : aménagement d'une ou plusieurs trappes de visite donnant accès à la robinetterie et au vidage",
+   "INCLUS : mise à niveau des bords supérieurs de la baignoire et calage des pieds (tous en contact avec le sol)",
+   "INCLUS : protection de l'équipement sanitaire pendant toute la durée du chantier",
+   "EXCLU : baignoires livrées avec un support/châssis d'installation complet (pas de supportage à créer)",
+   "EXCLU : baignoires à brassage d'eau (balnéo) — prescriptions non applicables"
+  ],
+  "facteurs_prix": [
+   "Présence ou non d'un support/châssis d'usine fourni avec l'appareil (si oui, pas de supportage à construire)",
+   "Nombre de côtés à supporter (côté paroi vs bords libres) selon implantation : en niche, en angle, ou îlot partiel",
+   "Nature du support mural disponible (mur maçonné, carreau de plâtre hydrofuge, béton cellulaire) conditionnant la fixation du profilé",
+   "Nombre et dimension des trappes de visite à intégrer dans l'habillage",
+   "Travaux de maçonnerie hydrofuge pour fermer les bords libres",
+   "Réglages de mise à niveau et calage des pieds",
+   "Type d'équipement : baignoire simple vs receveur de douche acrylique (les balnéos sont hors champ)"
+  ],
+  "regles_metre": [
+   "Compter le supportage par appareil (1 baignoire ou 1 receveur acrylique non autoportant)",
+   "Métrer le linéaire de profilé imputrescible côté paroi selon les côtés en contact avec le mur",
+   "Quantifier la maçonnerie hydrofuge au linéaire/surface des bords libres à fermer",
+   "Prévoir au moins une trappe de visite par appareil (compter selon les accès robinetterie/vidage nécessaires)"
+  ],
+  "points_vigilance": [
+   "Les baignoires/receveurs acryliques fournis sans structure ne sont PAS autoportants : un supportage de maintien fond + périphérie est obligatoire",
+   "Utiliser un profilé imputrescible et des supports en matériaux hydrofuges (milieu humide)",
+   "Prévoir impérativement le joint d'appui silicone entre support et appareil",
+   "Garantir l'accès à la robinetterie et au vidage via trappe(s) de visite (ne pas murer en aveugle)",
+   "Après pose, tous les pieds doivent toucher le sol et les bords supérieurs être de niveau",
+   "Ne percer l'appareil que pour robinetterie/poignées, aucune autre modification",
+   "Protéger l'appareil pendant toute la durée des travaux pour éviter rayures/casse",
+   "Prescriptions inapplicables aux appareils livrés avec support complet ou aux baignoires balnéo"
+  ],
+  "materiaux": [
+   "Profilé de support imputrescible (fixation murale)",
+   "Maçonnerie hydrofuge : carreau de plâtre hydrofuge, béton cellulaire",
+   "Mastic/joint d'appui silicone",
+   "Trappe(s) de visite",
+   "Baignoire ou receveur de douche en acrylique (appareil non autoportant)"
+  ],
+  "normes": [
+   "NF DTU 60.1 Travaux de bâtiment - Plomberie sanitaire pour bâtiment (décembre 2012)",
+   "Recommandation SFDB (Syndicat français des industries de la douche et de la baignoire), 2002"
+  ],
+  "pour_devis": "Permet de chiffrer un sous-poste distinct de supportage/habillage hydrofuge pour toute baignoire ou receveur acrylique non autoportant (profilé imputrescible, maçonnerie hydrofuge, joint silicone, trappe de visite), souvent oublié alors qu'il est imposé par le NF DTU 60.1."
+ },
+ {
+  "titre": "Quelles règles de mise en œuvre ? (canalisations sous dallage, enterrées et incorporées — DTU plomberie)",
+  "pertinence": "moyenne",
+  "sous_poste": "Réseaux d'alimentation et d'évacuation — canalisations sous dallage / enterrées",
+  "perimetre": [
+   "INCLUS : pose des canalisations d'eau froide, eau chaude, évacuation, chauffage et gaz dans ou à travers dallages et planchers",
+   "INCLUS : terrassement/fouille, lit de pose et remblayage pour canalisations enterrées",
+   "INCLUS : pose d'un grillage avertisseur de signalisation du réseau enterré",
+   "INCLUS : ravoirage pour incorporer un tuyau (à la place d'un enrobage interdit dans le mortier de carrelage)",
+   "EXCLU : le scellement du tuyau dans le mortier de pose d'un carrelage scellé n'est pas autorisé (donc pas un mode de pose facturable)"
+  ],
+  "facteurs_prix": [
+   "Nature du dallage (non armé vs armé) qui conditionne la position autorisée des canalisations",
+   "Type de fluide transporté (eau froide, eau chaude, évacuation, gaz) — chacun ayant des contraintes de position différentes",
+   "Position de pose : sous le dallage, incorporée dans le dallage, ou enterrée",
+   "Type de bâtiment (maison individuelle vs collectif/tertiaire/industriel) qui change la liberté de placement",
+   "Présence de croisements de réseaux nécessitant des dispositions locales spécifiques",
+   "Profondeur et nature du terrassement pour les réseaux enterrés (terre épierrée, sable, tout-venant)"
+  ],
+  "regles_metre": [
+   "Canalisation sous dallage : distance mini entre génératrice supérieure du tube et sous-face du dallage = diamètre du tube + 5 cm",
+   "Canalisation dans le dallage : diamètre du tube limité à 1/5 de l'épaisseur du dallage dans la zone considérée",
+   "Canalisation dans le dallage : enrobage et écartement horizontal entre tubes au moins égaux à un diamètre, et jamais inférieurs à 5 cm",
+   "Canalisation enterrée : remblayage en éléments fins et homogènes jusqu'à 0,20 m au-dessus du tube, tout-venant au-delà",
+   "Grillage avertisseur posé à environ 0,20 m au-dessus de la génératrice supérieure des tubes"
+  ],
+  "points_vigilance": [
+   "Dallage non armé : eau chaude interdite (ni incorporée ni sous le dallage), eau froide/évacuation uniquement sous le dallage",
+   "Dallage armé : eau chaude obligatoirement incorporée ; aucune autre canalisation, câble ou fourreau toléré à côté, et les liaisons froides doivent passer sous le dallage",
+   "Canalisations enterrées : pose sur lit de pose sans fourreau, fond de fouille dressé et damé pour appui continu du tube",
+   "Interdiction d'enrober un tuyau dans le mortier de pose d'un carrelage scellé (endommagement lors d'interventions ultérieures) — prévoir un ravoirage",
+   "Gaz : tracé conforme à la norme, interdiction de passer au-dessus d'un vide sanitaire (risque d'accumulation)",
+   "Les règles d'incorporation sont indépendantes du fluide (eau ou gaz), mais le gaz a des contraintes de parcours supplémentaires"
+  ],
+  "materiaux": [
+   "Lit de pose / lit de sable (terre épierrée ou sable, éléments fins damés)",
+   "Tout-venant pour remblayage supérieur",
+   "Grillage avertisseur de signalisation de réseau",
+   "Ravoirage pour incorporation de tuyau"
+  ],
+  "normes": [
+   "NF DTU réseaux/canalisations sous dallage et planchers (référencé sans numéro dans l'extrait)",
+   "Norme applicable aux conduites de gaz (citée sans référence précise)"
+  ],
+  "pour_devis": "Permet de cadrer un poste de pose de canalisations sous/dans dallage ou enterrées en justifiant les sujétions de pose (lit de pose, remblai, grillage avertisseur, ravoirage, enrobages mini) qui influencent le métré de terrassement et la quantité de matériaux, et d'éviter de chiffrer une pose interdite (eau chaude en dallage non armé, scellement dans mortier de carrelage)."
+ },
+ {
+  "titre": "Désinfection des réseaux d'alimentation d'eau avant la mise en service",
+  "pertinence": "moyenne",
+  "sous_poste": "Mise en service / désinfection des réseaux d'eau sanitaire",
+  "perimetre": [
+   "INCLUS : rinçage préalable de l'installation avant mise en service",
+   "INCLUS : mise en eau avec injection d'une solution désinfectante pendant le remplissage",
+   "INCLUS : maintien de la solution dans le réseau pendant la durée de contact, puis rinçage terminal jusqu'à absence de produit",
+   "INCLUS : pose et mise en place d'un (ou plusieurs) dispositif(s) d'injection proportionnelle avec compteur volumétrique, en amont, au niveau de l'alimentation d'eau froide privative",
+   "INCLUS : trempage des périphériques de distribution (brise-jets, aérateurs) dans une solution désinfectante puis pose différée après désinfection",
+   "PRÉALABLE (souvent hors poste) : test d'étanchéité à l'eau de l'installation pour vérifier l'absence de fuites",
+   "PRÉALABLE : analyse d'eau du réseau public (type D1) avant ouverture des vannes d'alimentation",
+   "DÉCLENCHEMENT : prestation réalisée à la demande du responsable de l'installation (exploitant / maître d'ouvrage) ou des autorités sanitaires — pas systématiquement obligatoire après rinçage"
+  ],
+  "facteurs_prix": [
+   "Taille de l'installation : un grand réseau peut devoir être divisé en sections, multipliant les opérations de désinfection/rinçage",
+   "Nombre d'exutoires / points de puisage à contrôler (présence puis absence de solution)",
+   "Type de produit désinfectant retenu (base chlore ou permanganate de potassium) et sa compatibilité avec les matériaux",
+   "Nécessité d'une analyse d'eau préalable (type D1) et d'un test d'étanchéité",
+   "Conception du réseau (équilibrage, séparation eau chaude/froide) influant sur la complexité de l'opération"
+  ],
+  "regles_metre": [
+   "Rinçage terminal : ouverture au maximum de tous les robinets / exutoires pendant 2 heures (durée de rinçage indiquée dans l'extrait)",
+   "Pour un grand réseau, prévoir un découpage en sections (le métré se fait alors par section traitée)"
+  ],
+  "points_vigilance": [
+   "Le produit désinfectant doit être conforme au code de la santé publique (eaux destinées à la consommation humaine) et compatible avec TOUS les matériaux de l'installation, robinetterie incluse",
+   "Périphériques (brise-jets, aérateurs) à NE PAS installer avant la désinfection : ils se posent après trempage désinfectant",
+   "Vannes des alimentations d'eau froide fermées aux limites de prestation tant que l'analyse d'eau D1 n'a pas validé la qualité",
+   "La désinfection n'est pas automatiquement obligatoire : c'est le rinçage qui est requis avant mise en service ; la désinfection est conditionnée à une demande",
+   "Respecter la durée de contact nécessaire avant le rinçage terminal, puis vérifier l'absence totale de solution résiduelle"
+  ],
+  "materiaux": [
+   "Solution désinfectante à base de chlore",
+   "Solution désinfectante à base de permanganate de potassium",
+   "Dispositif d'injection proportionnel avec compteur volumétrique adapté"
+  ],
+  "normes": [
+   "NF DTU 60.1 (Plomberie sanitaire pour le bâtiment), Partie 1-1-1 : Réseaux d'alimentation d'eau froide et chaude sanitaire — CCT types",
+   "Code de la santé publique (eaux destinées à la consommation humaine)",
+   "Analyse d'eau de type D1 au sens de la réglementation"
+  ],
+  "pour_devis": "Permet d'ajouter au lot 03 un poste distinct de mise en service / désinfection du réseau d'eau (rinçage + désinfection + rinçage terminal), avec son périmètre, les produits et la norme NF DTU 60.1 comme justification, en distinguant le rinçage obligatoire de la désinfection optionnelle sur demande."
+ },
+ {
+  "titre": "L'installation des appareils de salles de bains remise à niveau (NF DTU 60.1 P1-1-3)",
+  "pertinence": "moyenne",
+  "sous_poste": "Pose et fixation des appareils sanitaires (WC suspendu sur bâti-support, lavabo, bidet, receveur de douche, baignoire)",
+  "perimetre": [
+   "INCLUS : pose/fixation des appareils sanitaires posés (cuvettes WC, bidets, éviers à encastrer) et suspendus (WC, lavabos)",
+   "INCLUS : mise en oeuvre de bâti-supports métalliques pour appareils suspendus et de réservoirs de chasse indépendants",
+   "INCLUS : traitement des contacts appareil/paroi par joints préformés, feuilles résilientes ou mastic sanitaire",
+   "INCLUS : maintien des receveurs de douche et baignoires avec respect de l'espace libre périphérique (fond de joint + mastic sanitaire)",
+   "EXCLU implicite : l'étanchéité du support et le carrelage relèvent d'autres postes/lots"
+  ],
+  "facteurs_prix": [
+   "Type de pose : appareil posé (au sol) vs appareil suspendu sur bâti-support (plus coûteux : structure + reprise des fixations)",
+   "Nature de la paroi support : cloison (chevilles interdites sauf cas particulier) vs maçonnerie, conditionne le mode et le coût de fixation",
+   "Présence d'un réservoir de chasse indépendant à fixer (mêmes règles que le bâti-support)",
+   "Nombre et type d'appareils (WC, lavabo, bidet, receveur, baignoire)",
+   "Traitement des interfaces (joints préformés / feuilles résilientes / mastic) pour éviter poinçonnement et contact métal"
+  ],
+  "regles_metre": [
+   "Hauteur de pose lavabo : entre 85 et 95 cm",
+   "Hauteur de pose cuvettes WC et bidets : entre 38 et 50 cm",
+   "Espace libre à réserver de 5 mm entre les bords des receveurs de douche / baignoires et les parois périphériques (scellement contre ou dans la paroi interdit)",
+   "Diamètre minimal des fixations : 8 mm"
+  ],
+  "points_vigilance": [
+   "Sur cloison, les chevilles sont interdites sauf en présence de carreaux de plâtre plein de plus de 7 cm d'épaisseur",
+   "Une colonne de lavabo ou un cache-siphon ne constitue pas un support porteur",
+   "L'espace de 5 mm en périphérie des receveurs/baignoires évite les contraintes et fissurations et facilite le remplacement futur ; il se comble par un fond de joint recouvert de mastic sanitaire",
+   "Éviter tout poinçonnement ou contact direct entre l'appareil et les parois ou tiges métalliques (interposer joint préformé, feuille résiliente ou mastic)",
+   "Les règles de fixation des bâti-supports s'appliquent aussi aux réservoirs de chasse indépendants"
+  ],
+  "materiaux": [
+   "Bâti-support métallique pour appareils suspendus",
+   "Réservoir de chasse indépendant",
+   "Chevilles de fixation (diamètre mini 8 mm)",
+   "Joints préformés",
+   "Feuilles résilientes",
+   "Mastic sanitaire",
+   "Fond de joint"
+  ],
+  "normes": [
+   "NF DTU 60.1 (partie P1-1-3) - plomberie sanitaire, publiée en décembre 2012"
+  ],
+  "pour_devis": "Permet de cadrer le sous-poste pose d'appareils sanitaires d'une SDB rénovée en distinguant pose suspendue (bâti-support, fixations Ø 8 mm mini, cloison sensible) et pose au sol, avec hauteurs normalisées et l'espace libre de 5 mm autour des receveurs/baignoires qui justifie la fourniture de mastic sanitaire et fond de joint."
+ },
+ {
+  "titre": "Installer une station de relevage",
+  "pertinence": "moyenne",
+  "sous_poste": "Relevage / refoulement des eaux usées (poste de relevage)",
+  "perimetre": [
+   "INCLUS : cuve de collecte des eaux usées avec pompe immergée et détecteur de niveau",
+   "INCLUS : conduite de refoulement pour remonter les effluents jusqu'au niveau de l'égout/assainissement",
+   "INCLUS : clapet anti-retour (anti-reflux) sur la conduite de refoulement",
+   "INCLUS : vanne d'arrêt côté arrivée et côté refoulement (en aval du dispositif anti-retour), sauf dérogation selon norme/diamètre",
+   "INCLUS : raccordement des canalisations d'évacuation amont au poste",
+   "INCLUS (eaux vannes) : ventilation de la cuve jusqu'à l'air libre au-dessus du toit",
+   "À PRÉVOIR : alimentation électrique de la pompe",
+   "EXCLU implicite : le réseau collecteur/égout aval auquel la conduite de refoulement se raccorde"
+  ],
+  "facteurs_prix": [
+   "Hauteur de refoulement à vaincre (dénivelé entre le point bas et la cote de rejet)",
+   "Débit de pointe à évacuer",
+   "Nature de l'eau refoulée : eaux claires / eaux usées domestiques / eaux vannes (avec matières fécales) -> matériel et diamètre différents",
+   "Implantation de la cuve : enterrée vs posée dans un local du bâtiment",
+   "Présence d'eaux vannes -> exige une ventilation jusqu'au-dessus du toit (poste supplémentaire)",
+   "Caractéristiques de l'alimentation électrique à amener",
+   "Nombre et type de vannes d'arrêt et clapet anti-retour à poser"
+  ],
+  "regles_metre": [
+   "Si cuve en local : réserver une zone de travail/dégagement d'au moins 60 cm tout autour de la cuve pour l'entretien (à intégrer dans l'emprise au sol)",
+   "Pente minimale des collecteurs amont avant raccordement au poste : au moins 1 %",
+   "Diamètre nominal de la conduite de refoulement : au moins 80 mm pour eaux usées avec eaux vannes ; au moins 32 mm si eaux usées domestiques sans eaux vannes",
+   "Ventilation à mener jusqu'au-dessus de la toiture quand il y a des eaux vannes (longueur de conduite à chiffrer en conséquence)"
+  ],
+  "points_vigilance": [
+   "Cuve recevant des eaux vannes : ne pas la solidariser à la structure du bâtiment, seulement la poser",
+   "Tous les raccordements de conduites doivent rester flexibles pour limiter la transmission du bruit",
+   "La conduite de refoulement ne se raccorde pas à une conduite forcée d'eaux résiduaires mais toujours à des canalisations ventilées ou aux collecteurs",
+   "Vanne d'arrêt non obligatoire pour effluents conformes NF EN 12050-2 ou 12050-3 si diamètre de refoulement inférieur à 80 mm",
+   "Un poste de relevage n'est requis que lorsque le niveau d'évacuation est en contrebas du réseau de collecte (vérifier la cote avant de chiffrer)"
+  ],
+  "materiaux": [
+   "Cuve de collecte des eaux usées",
+   "Pompe immergée avec détecteur de niveau",
+   "Conduite de refoulement",
+   "Clapet anti-retour / anti-reflux",
+   "Vanne(s) d'arrêt",
+   "Raccordements flexibles (anti-bruit)",
+   "Canalisation de ventilation (pour eaux vannes)"
+  ],
+  "normes": [
+   "NF EN 12056-4",
+   "NF DTU 60.1",
+   "NF DTU 60.11",
+   "NF EN 12050-2",
+   "NF EN 12050-3"
+  ],
+  "pour_devis": "Permet de créer un poste 'fourniture et pose d'un poste de relevage' chiffré selon le type d'effluent (domestique sans/avec eaux vannes), le dénivelé et le débit, avec les sous-prestations associées (clapet, vannes, raccordements flexibles, ventilation toiture pour eaux vannes) et les contraintes de diamètre/pente à respecter."
+ },
+ {
+  "titre": "La salle de bain",
+  "pertinence": "moyenne",
+  "sous_poste": "Pose d'appareils sanitaires (receveurs de douche et baignoires)",
+  "perimetre": [
+   "INCLUS : pose et calage du receveur de douche (céramique ou acrylique) ou de la baignoire",
+   "INCLUS : raccordement alimentation et évacuation de l'appareil",
+   "INCLUS : réalisation des joints d'étanchéité et de finition au mastic sanitaire en périphérie de l'appareil",
+   "INCLUS (acrylique) : mise en place du support périphérique sur tous les côtés (profilés imputrescibles fixés à la paroi + joint d'appui mousse)",
+   "EXCLU : étanchéité de surface du sol/murs de la zone douche (relève d'un autre poste, lot étanchéité/carrelage)",
+   "EXCLU : fourniture et pose du revêtement mural et du carrelage"
+  ],
+  "facteurs_prix": [
+   "Nature du receveur : céramique vs acrylique (l'acrylique impose un support périphérique sur tous les côtés, plus de main d'oeuvre)",
+   "Type d'appareil : receveur de douche vs baignoire",
+   "Nécessité de profilés imputrescibles et de joints d'appui mousse pour les bords côté paroi (receveur acrylique)",
+   "Complexité du raccordement alimentation/évacuation selon la configuration de la pièce",
+   "Configuration de la douche (à l'italienne / encastrée vs receveur posé)"
+  ],
+  "regles_metre": [],
+  "points_vigilance": [
+   "Ménager un espace libre d'au moins 5 mm entre le receveur et la paroi pour absorber les mouvements relatifs des équipements",
+   "Réaliser le mastic sanitaire de finition de façon continue, sans interruption, sur tout le pourtour",
+   "Receveur acrylique : il doit être supporté en périphérie sur tous les côtés (pas seulement calé ponctuellement)",
+   "Utiliser des profilés imputrescibles côté paroi verticale pour éviter toute dégradation à l'humidité",
+   "Intercaler un joint d'appui en mousse entre le support et le receveur"
+  ],
+  "materiaux": [
+   "Mastic sanitaire d'étanchéité",
+   "Mastic sanitaire de finition",
+   "Profilés imputrescibles (supports de bords côté paroi)",
+   "Joint d'appui en mousse",
+   "Receveur de douche céramique ou acrylique"
+  ],
+  "normes": [
+   "NF DTU 60.1 (Plomberie sanitaire pour bâtiments), partie CCT relative aux appareils sanitaires et de production d'eau chaude sanitaire"
+  ],
+  "pour_devis": "Cet article cadre le poste « pose de receveur de douche / baignoire » : il permet de distinguer une pose céramique d'une pose acrylique (support périphérique en plus), de chiffrer les fournitures de calage/étanchéité (mastic, profilés imputrescibles, joint mousse) et de justifier la prestation par le NF DTU 60.1."
+ },
+ {
+  "titre": "Les conditions de raccordement à une station de relevage pour l'évacuation des eaux",
+  "pertinence": "moyenne",
+  "sous_poste": "Station / poste de relevage des eaux usées ou pluviales",
+  "perimetre": [
+   "INCLUS : fourniture et pose d'une cuve étanche (à l'eau et à l'air) destinée à recevoir les eaux, plastique ou béton",
+   "INCLUS : aération de la cuve pour mise à la pression atmosphérique et extraction des gaz",
+   "INCLUS : pompe submersible avec détecteurs/flotteurs de niveau",
+   "INCLUS : conduite de refoulement, pouvant comporter un clapet anti-retour",
+   "INCLUS : raccordements de conduites souples (flexibles) pour limiter la transmission du bruit",
+   "INCLUS : alimentation électrique de la pompe (déclenchement automatique sur flotteur)",
+   "CONTEXTE : poste installé quand le niveau d'évacuation est en contrebas du réseau de collecte (égout public ou assainissement autonome)",
+   "DISTINCTION : eaux de surface extérieures sous le niveau de reflux refoulées séparément des eaux domestiques, par une station extérieure dédiée"
+  ],
+  "facteurs_prix": [
+   "Hauteur de refoulement de la pompe",
+   "Débit de pointe à évacuer",
+   "Nature de l'eau refoulée : eaux claires vs eaux chargées (eaux vannes contenant matières fécales)",
+   "Matériau et volume de la cuve (plastique ou béton)",
+   "Implantation : cuve enterrée vs installée dans un local du bâtiment",
+   "Aménagement du local (éclairage, aération/ventilation) quand la cuve est intérieure",
+   "Présence d'un clapet anti-retour sur le refoulement",
+   "Nombre de réseaux à traiter séparément (eaux domestiques vs eaux de surface extérieures)"
+  ],
+  "regles_metre": [
+   "Prévoir une zone de travail libre d'au moins 60 cm (en hauteur et en largeur) autour de la station pour l'entretien, lorsque la cuve est installée dans un local intérieur"
+  ],
+  "points_vigilance": [
+   "Cuve à poser de façon à éviter tout risque de basculement",
+   "Raccordements de conduites suffisamment flexibles pour éviter la propagation du bruit",
+   "Cuve pour eaux vannes (matières fécales) NON solidarisée à la structure du bâtiment, simplement posée",
+   "Local intérieur à prévoir éclairé, bien aéré et ventilé",
+   "Eaux de surface extérieures sous le niveau de reflux à refouler séparément des eaux domestiques (station extérieure distincte)",
+   "Ne laisser aucun obstacle entraver la circulation autour de l'installation"
+  ],
+  "materiaux": [
+   "Cuve étanche en plastique ou en béton",
+   "Pompe submersible de relevage",
+   "Détecteurs / flotteurs de niveau",
+   "Conduite de refoulement",
+   "Clapet anti-retour",
+   "Raccords flexibles",
+   "Dispositif d'aération de cuve"
+  ],
+  "normes": [
+   "NF EN 12056-4 (conception, fonctionnement, entretien des stations de relevage des eaux usées ou pluviales à l'intérieur des bâtiments et sur terrains, et raccordement aux canalisations collectrices)"
+  ],
+  "pour_devis": "Permet de cadrer un poste « station de relevage » en rénovation (évacuation en contrebas du réseau) avec ses composants à chiffrer — cuve, pompe submersible, refoulement avec clapet anti-retour, raccords flexibles — et les sujétions de pose (zone d'entretien 60 cm, cuve non solidarisée pour eaux vannes, local ventilé) qui font varier le déboursé."
+ }
+]

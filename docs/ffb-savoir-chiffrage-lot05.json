@@ -1,0 +1,87 @@
+[
+ {
+  "titre": "Sécurité électrique en salle d'eau : la norme NF C 15-100 (amendement 5) reste la référence",
+  "pertinence": "moyenne",
+  "sous_poste": "Électricité en pièce humide (salle d'eau / salle de bains) : appareillage et protection par volumes",
+  "perimetre": [
+   "INCLUS : installation de l'appareillage électrique en salle d'eau conforme aux volumes de sécurité (luminaires, prises, chauffe-serviettes, ventilation, chauffe-eau, etc.)",
+   "INCLUS : mise en oeuvre d'une protection différentielle 30 mA en tête des circuits concernés (chauffe-eau notamment)",
+   "INCLUS implicite : liaison équipotentielle des équipements (évoquée par l'article comme exigence de la norme)",
+   "À distinguer du lot plomberie/maçonnerie : la définition des volumes dépend des parois fixes pérennes, donc dépend de la configuration de la douche/baignoire réalisée par d'autres lots"
+  ],
+  "facteurs_prix": [
+   "Type de douche : douche à l'italienne / de plain-pied sans receveur modifie la définition des volumes 0 et 1 (donc le placement autorisé de l'appareillage)",
+   "Présence d'équipements spécifiques : baignoire de balnéothérapie, spa fixe, baignoire à bulles, pompes (contraintes d'emplacement par volume)",
+   "Dimensions du local : si trop exigu, le chauffe-eau passe de 'hors volume' à volume 2 voire volume 1 (type horizontal), ce qui change l'installation",
+   "Classe du matériel imposée par le volume (classe I, II ou III / TBTS) : oriente le choix des appareils et donc leur coût",
+   "Nombre de circuits à protéger par DDR 30 mA dédié (chauffe-eau, etc.)",
+   "Présence d'un volume caché sous baignoire/douche imposant du matériel TBTS 12 V AC / 30 V DC avec source hors volumes"
+  ],
+  "regles_metre": [
+   "Découper la salle d'eau en 4 volumes fictifs (0, 1, 2 et hors-volume ; le volume 3 a été supprimé, plus de limitation au-delà du volume 2)",
+   "Délimiter les volumes par les seules parois fixes et pérennes jointives au sol dont la hauteur >= celle du volume, en appliquant le contournement horizontal",
+   "Ne PAS compter les parois de douche vitrées ni les portes coulissantes comme parois délimitant les volumes (impact direct sur le nombre de points électriques réalisables à un emplacement donné)",
+   "Prévoir le volume caché (sous baignoire/douche/spa) avec matériel TBTS uniquement et source TBTS placée hors volumes"
+  ],
+  "points_vigilance": [
+   "Volumes 0 et 1 : uniquement matériel alimenté en TBTS (ex. luminaire) ; pas de matériel basse tension dans le volume 1 (sèche-serviettes, ventilation, pompes, baignoires à bulles interdits)",
+   "Volume 2 : seulement matériel de classe II protégé par DDR 30 mA, ou alimenté en TBTS",
+   "Chauffe-eau à accumulation : à installer hors volume si possible ; sinon volume 2, voire volume 1 si horizontal et placé le plus haut possible ; DDR <= 30 mA obligatoire à l'origine du circuit dans tous les cas",
+   "Volume caché : seulement TBTS au plus 12 V en alternatif ou 30 V en continu, source TBTS hors des volumes 0/1/2 et du volume caché",
+   "Risque de non-conformité constatée en fin de chantier : valider l'implantation avant pose pour éviter des reprises",
+   "L'amendement 5 (5 juin 2015) a redéfini volumes et liaison équipotentielle : vérifier que le matériel chiffré respecte la classe autorisée par volume"
+  ],
+  "materiaux": [
+   "Matériels électriques classés selon la protection contre les chocs : classe I, II ou III",
+   "Matériel d'utilisation TBTS (très basse tension de sécurité) avec source TBTS",
+   "Luminaire TBTS (admis volumes 0 et 1)",
+   "Dispositif différentiel à courant résiduel (DDR) 30 mA",
+   "Chauffe-eau à accumulation (vertical ou horizontal selon contrainte de volume)"
+  ],
+  "normes": [
+   "NF C 15-100",
+   "Amendement 5 du 5 juin 2015 (A5) à la NF C 15-100",
+   "Référentiel européen Cenelec (harmonisation, suppression du volume 3)"
+  ],
+  "pour_devis": "Permet de cadrer le chiffrage de l'électricité en salle d'eau en imposant, par volume de sécurité, la classe de matériel et la protection DDR 30 mA, donc le choix et le placement des appareils (luminaires TBTS, chauffe-eau, sèche-serviettes, ventilation) selon la configuration douche/baignoire."
+ },
+ {
+  "titre": "Infrastructures de recharge des véhicules électriques (IRVE)",
+  "pertinence": "moyenne",
+  "sous_poste": "Borne / point de recharge véhicule électrique (IRVE)",
+  "perimetre": [
+   "Fourniture et pose d'un point de recharge pour véhicule électrique ou hybride rechargeable (borne, box ou socle de prise dédié)",
+   "Intervention d'un installateur électricien qualifié IRVE (mention explicite que l'installation par un professionnel compétent est indispensable)",
+   "Choix du matériel adapté : socle de prise 16A+T dédié pour mode 1/2, ou borne/box pour mode 3",
+   "Périmètre situé sur la partie électricité (courant fort) du lot 05 ; à distinguer des prises domestiques classiques de logement/bureau",
+   "Couvre des installations en maison individuelle comme en immeuble collectif (typologies traitées par le guide pratique)"
+  ],
+  "facteurs_prix": [
+   "Mode de charge retenu (mode 1, 2 ou 3) : le mode 3 est dit le plus intelligent, permet le dialogue véhicule/borne et le pilotage de la recharge, donc matériel plus complexe",
+   "Puissance électrique du point de charge (temps de charge de quelques dizaines de minutes à plusieurs heures) : la recharge normale jusqu'à 3,7 kVA est à privilégier, les puissances supérieures répondent à des besoins spécifiques",
+   "Type de bâtiment / typologie de client : maison individuelle vs immeuble collectif, particulier vs professionnel",
+   "Type de matériel : simple socle de prise dédié conforme NF C 61-314 vs borne/box de recharge mode 3",
+   "Fonctions de pilotage / consommation intelligente (minimisation des pointes, gestion de l'impact carbone)"
+  ],
+  "regles_metre": [],
+  "points_vigilance": [
+   "Tout socle de prise 16A+T utilisé pour la charge en mode 1 ou 2 doit être conforme à la norme NF C 61-314 : vigilance sur le choix des produits AVANT installation",
+   "Les prises de recharge diffèrent des prises classiques de logement/bureau et des prises d'aspect domestique des bornes : ne pas chiffrer une prise standard à la place",
+   "Installation réglementairement requise pour les immeubles de bureaux et d'habitation collectifs (obligation à prendre en compte selon le type d'ouvrage)",
+   "Évolution des modèles de prises liée à de nouvelles exigences européennes : vérifier la conformité du modèle au moment du chiffrage",
+   "Recharge en courant continu (mode 4) non traitée par ce dossier ; périmètre limité au courant alternatif"
+  ],
+  "materiaux": [
+   "Socle de prise de courant 16A+T dédié conforme NF C 61-314 (charge mode 1/2)",
+   "Borne ou box de recharge mode 3 (avec pilotage de la recharge)",
+   "Prises de recharge spécifiques (distinctes des prises domestiques)"
+  ],
+  "normes": [
+   "NF C 15-100",
+   "NF C 61-314",
+   "Guide UTE C 15-722 / 17-222 (installations d'alimentation de véhicules électriques ou hybrides rechargeables par socles de prises de courant)",
+   "Fiches d'interprétation relatives aux IRVE"
+  ],
+  "pour_devis": "Permet de créer un poste IRVE distinct dans le lot 05 (borne/box mode 3 ou socle de prise dédié conforme NF C 61-314), avec un prix variant selon le mode de charge, la puissance (recharge normale jusqu'à 3,7 kVA) et la typologie de bâtiment, en signalant la nécessité d'un installateur qualifié et la conformité NF C 15-100 / UTE C 15-722."
+ }
+]

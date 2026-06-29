@@ -1,0 +1,548 @@
+[
+ {
+  "titre": "Nouveau NF DTU 65.14 — Exécution des planchers chauffants (et rafraîchissants) à eau chaude",
+  "pertinence": "moyenne",
+  "sous_poste": "Chauffage — plancher chauffant/rafraîchissant à eau chaude (réseau hydraulique noyé en dalle)",
+  "perimetre": [
+   "INCLUS dans le poste plancher chauffant : pose des canalisations hydrauliques et de leur parcours, isolant sous-dalle, dalle d'enrobage, régulation de température et dispositifs de sécurité",
+   "INCLUS : mise en service (remplissage, purge, première mise en chauffe) avec procès-verbal de mise en chauffe à établir",
+   "PRÉ-REQUIS à la charge des autres lots (exclus du poste mais conditionnent son démarrage) : réservations dans le plancher porteur, travaux de plâtre, mise hors d'eau du bâtiment (portes et fenêtres posées)",
+   "Configuration réversible chauffage + rafraîchissement possible, en dalle désolidarisée isolée"
+  ],
+  "facteurs_prix": [
+   "Position des canalisations par rapport à la dalle d'enrobage et nature de cette dalle : trois configurations distinctes (impacte le mode d'exécution)",
+   "Mode chauffage seul vs réversible chauffage + rafraîchissement (dalle désolidarisée isolée)",
+   "Caractéristiques des isolants retenus",
+   "Travaux de reprise de planéité/horizontalité du support si non conforme au seuil exigé",
+   "Neuf ou existant (rénovation), résidentiel ou tertiaire"
+  ],
+  "regles_metre": [],
+  "points_vigilance": [
+   "Le support (plancher porteur) doit respecter l'horizontalité et la planéité exigées par le NF DTU 52.10 avant pose : tout écart impose une reprise préalable (coût/délai)",
+   "Tolérance d'horizontalité du support : écart de niveau admissible de plus ou moins (0,005 + 0,001 x d) en un point distant de d mètres du point de référence",
+   "Tolérance de planéité du support : 3 mm sous la règle de 2 m et 2 mm sous la règle de 20 cm",
+   "Le bâtiment doit être hors d'eau et hors d'air (portes/fenêtres posées) et les travaux de plâtre faits avant la pose",
+   "Domaine d'emploi limité : locaux intérieurs à faibles sollicitations, sans siphon de sol, bâtiments résidentiels et tertiaires, France métropolitaine",
+   "Première mise en chauffe à formaliser par un procès-verbal (étape contractuelle à ne pas oublier)",
+   "Le DTU étant un référentiel pour les experts d'assurance/judiciaires, le non-respect des règles expose en cas de sinistre"
+  ],
+  "materiaux": [
+   "Canalisations hydrauliques (réseau plancher chauffant à eau chaude)",
+   "Isolant sous-dalle (caractéristiques définies par le DTU)",
+   "Dalle d'enrobage / dalle désolidarisée isolée pour la version réversible",
+   "Régulation de température et dispositifs de sécurité"
+  ],
+  "normes": [
+   "NF DTU 65.14 (Exécution de planchers chauffants à eau chaude, version remplaçant l'édition 2006)",
+   "NF DTU 52.10 (planéité et horizontalité du support)"
+  ],
+  "pour_devis": "Permet de cadrer le poste « plancher chauffant/rafraîchissant à eau chaude » : ce qu'il inclut (canalisations, isolant, dalle, régulation, mise en service avec PV) versus les pré-requis à exclure (réservations, plâtre, mise hors d'eau), avec les seuils de planéité/horizontalité du support qui déterminent un éventuel poste de reprise chiffrable."
+ },
+ {
+  "titre": "Règles professionnelles - Canalisations hydrauliques des installations de chauffage et de conditionnement d'air (métalliques et matériaux de synthèse)",
+  "pertinence": "moyenne",
+  "sous_poste": "Distribution hydraulique chauffage / conditionnement d'air - réseau de canalisations",
+  "perimetre": [
+   "INCLUS : pose des canalisations véhiculant l'eau chaude de chauffage central (additionnée ou non d'antigel) et l'eau froide/glacée de conditionnement d'air",
+   "INCLUS : fourniture et pose des fourreaux associés aux tubes",
+   "INCLUS : façonnage et assemblage des tubes (cintrage, raccords)",
+   "INCLUS : pose selon le mode retenu (support aérien, en incorporé/dissimulé, en vide sanitaire)",
+   "EXCLU de ces règles : réseaux d'alimentation d'eau froide et chaude sanitaire (relèvent du NF DTU 60.1 plomberie sanitaire)",
+   "EXCLU : acier galvanisé (non couvert par ces dispositions pour les tubes métalliques)"
+  ],
+  "facteurs_prix": [
+   "Nature du tube : métallique (acier hors galvanisé, cuivre) vs matériau de synthèse (PE-X, PB, multicouche)",
+   "Conditionnement du tube de synthèse : en couronnes ou en barres (impacte façonnage et calepinage)",
+   "Mode de pose : aérien sur supports, incorporé/dissimulé, en vide sanitaire (main d'oeuvre différente)",
+   "Dimensionnement des tubes (diamètre) et des fourreaux",
+   "Prise en compte de la dilatation/contraction (lyres, points fixes, compensateurs)",
+   "Protection contre le gel pour les portions exposées",
+   "Compatibilité des matériaux entre eux (évite couples galvaniques, peut imposer raccords spécifiques)"
+  ],
+  "regles_metre": [
+   "Métré du réseau au mètre linéaire par diamètre et par nature de tube",
+   "Fourreaux à compterm en linéaire selon les tubes incorporés/dissimulés",
+   "Prévoir les dispositifs de dilatation aux longueurs où la contraction/dilatation l'impose"
+  ],
+  "points_vigilance": [
+   "Vérifier la compatibilité des matériaux entre eux pour éviter la corrosion (assemblages mixtes acier/cuivre/synthèse)",
+   "Respecter les passages et modes de pose interdits définis par les règles",
+   "Prendre en compte la dilatation/contraction des tubes selon le matériau (forte pour les tubes de synthèse)",
+   "Limiter les effets du gel sur les portions exposées",
+   "Température d'eau limite des dispositions : inférieure ou égale à 110 °C pour les tubes métalliques",
+   "Acier galvanisé hors champ : ne pas l'employer sur ces réseaux sans justification"
+  ],
+  "materiaux": [
+   "Tube acier (hors acier galvanisé)",
+   "Tube cuivre",
+   "Tube PE-X (polyéthylène réticulé)",
+   "Tube PB (polybutène)",
+   "Tube multicouche",
+   "Fourreaux",
+   "Fluide : eau additionnée ou non d'antigel"
+  ],
+  "normes": [
+   "Règles professionnelles UMGCCP - Canalisations hydrauliques chauffage et conditionnement d'air (janvier 2022)",
+   "NF DTU 65.10 (annulé en 2017, base de rédaction des règles)",
+   "NF DTU 60.1 (plomberie sanitaire)",
+   "e-Cahier du CSTB n°2808_V2"
+  ],
+  "pour_devis": "Permet de distinguer dans un devis le poste réseau de distribution chauffage/clim (au ml par diamètre et nature de tube, avec mode de pose et dispositifs de dilatation) du réseau d'eau sanitaire, et de justifier les choix de matériaux et de pose face au client."
+ },
+ {
+  "titre": "Planchers chauffants à eau chaude : l'essentiel du NF DTU 65.14 (calepin de chantier FFB)",
+  "pertinence": "moyenne",
+  "sous_poste": "Plancher chauffant hydraulique (chauffage par le sol à eau chaude)",
+  "perimetre": [
+   "INCLUS : pose de la bande périphérique (désolidarisation en pourtour)",
+   "INCLUS : pose de l'isolant sous tubes",
+   "INCLUS : pose et raccordement des tubes du circuit hydraulique",
+   "INCLUS : pose des collecteurs/nourrices et de l'appareillage de répartition",
+   "INCLUS : mise en eau et essai de pression du circuit avant enrobage",
+   "INCLUS : mise en chauffe progressive du plancher après réalisation de la chape d'enrobage",
+   "EN AMONT (à vérifier mais pas forcément exécuté par ce lot) : réception du support et ravoirage de mise à niveau",
+   "L'enrobage des tubes (chape) fait l'objet de précautions spécifiques au sein de la prestation"
+  ],
+  "facteurs_prix": [
+   "État et planéité du support à réceptionner (un support hors tolérances impose un ravoirage/reprise préalable, surcoût)",
+   "Présence et épaisseur du ravoirage de mise à niveau",
+   "Type et épaisseur de l'isolant choisi sous le plancher chauffant",
+   "Nombre de circuits et de collecteurs/nourrices à poser et raccorder",
+   "Configuration des pièces (surface, découpes) influant sur le linéaire de tube",
+   "Contraintes de planning : la mise en chauffe et le séchage de l'enrobage allongent le délai (intervention en plusieurs passages)"
+  ],
+  "regles_metre": [
+   "Le métré se fait à la surface chauffée au sol (m²) ; le linéaire de tube en découle selon le pas de pose",
+   "Prévoir le périmètre des pièces pour la bande périphérique (ml de pourtour)",
+   "Compter le nombre de circuits/collecteurs séparément du métré surfacique"
+  ],
+  "points_vigilance": [
+   "Réception obligatoire du support avant pose : vérifier l'état et le respect des tolérances de planéité (un défaut de planéité doit être corrigé avant pose)",
+   "Essai de mise en eau et de pression du circuit AVANT enrobage des tubes (le circuit doit être en pression pendant le coulage)",
+   "Précautions spécifiques lors de l'enrobage des tubes (chape) pour ne pas endommager le circuit",
+   "Mise en chauffe progressive selon procédure, après durcissement de l'enrobage : impose un délai à intégrer au planning",
+   "Conditions de chantier et de stockage des matériaux à respecter",
+   "Bande périphérique de désolidarisation indispensable en pourtour (dilatation de la chape)",
+   "Plusieurs passages nécessaires (pose, puis enrobage par un autre lot, puis mise en chauffe) : coordination inter-lots"
+  ],
+  "materiaux": [
+   "Tubes pour plancher chauffant à eau chaude",
+   "Isolant sous plancher chauffant",
+   "Bande périphérique de désolidarisation",
+   "Collecteurs / nourrices et appareillage de répartition",
+   "Chape d'enrobage des tubes (lot maçonnerie/chape)",
+   "Ravoirage de mise à niveau du support (le cas échéant)"
+  ],
+  "normes": [
+   "NF DTU 65.14 P1 (P 52-307-1) — exécution des planchers chauffants à eau chaude"
+  ],
+  "pour_devis": "Permet de structurer un poste « plancher chauffant à eau chaude » conforme au NF DTU 65.14 en distinguant les sous-prestations chiffrables (isolant, bande périphérique, tubes, collecteurs, mise en eau/pression, mise en chauffe) et en identifiant les conditions préalables (réception et planéité du support, ravoirage) et les délais (séchage/mise en chauffe) à provisionner."
+ },
+ {
+  "titre": "Abandon des cuves à fioul : que dit le texte de référence ? (arrêté du 1er juillet 2004, art. 28)",
+  "pertinence": "moyenne",
+  "sous_poste": "Dépose / neutralisation de cuve à fioul (abandon installation chauffage fioul)",
+  "perimetre": [
+   "INCLUS quand on modifie l'installation de chauffage fioul : la mise en sécurité de la cuve abandonnée fait partie des travaux de l'entreprise intervenante (responsabilité de l'entreprise qui modifie l'installation).",
+   "Prestation de neutralisation in situ = vidange + dégazage + nettoyage du réservoir, puis comblement (remplissage avec un produit recouvrant toute la surface interne).",
+   "Variante = retrait / enlèvement définitif de la cuve (l'arrêté couvre l'abandon définitif comme provisoire).",
+   "Si l'entreprise ne réalise pas elle-même ces opérations, elle reste tenue de vérifier qu'elles ont été faites conformément à l'article 28 (poste de contrôle/coordination à prévoir).",
+   "EXCLU/à préciser : évacuation et traitement des résidus de fioul vidangés, transport et mise en décharge de la cuve retirée (à chiffrer en complément, non détaillé dans l'extrait)."
+  ],
+  "facteurs_prix": [
+   "Option choisie : neutralisation sur place (comblement) vs retrait définitif de la cuve.",
+   "Type/volume de la cuve et accessibilité (enterrée, en sous-sol, en cave difficile d'accès).",
+   "Volume de fioul résiduel à vidanger et à évacuer.",
+   "Prise en charge directe des opérations par l'entreprise ou recours à un sous-traitant spécialisé (avec mission de vérification de conformité dans ce cas)."
+  ],
+  "regles_metre": [],
+  "points_vigilance": [
+   "Objectif réglementaire prioritaire : éviter tout risque de formation de vapeurs (d'où l'obligation vidange + dégazage + nettoyage avant comblement).",
+   "Les 3 étapes (vidange, dégazage, nettoyage) sont obligatoires avant comblement.",
+   "Responsabilité engagée : l'entreprise qui modifie l'installation de chauffage est responsable de l'abandon de la cuve ; en cas de sous-traitance elle doit s'assurer du respect de l'article 28, sinon sa responsabilité reste engagée.",
+   "Le comblement doit recouvrir toute la surface interne du réservoir."
+  ],
+  "materiaux": [
+   "Produit de comblement/inertage du réservoir (matériau recouvrant l'intégralité de la surface interne de la cuve)."
+  ],
+  "normes": [
+   "Arrêté du 1er juillet 2004, article 28 (abandon définitif ou provisoire d'un réservoir de fioul)"
+  ],
+  "pour_devis": "Permet de créer/justifier un poste « neutralisation ou retrait de cuve à fioul » obligatoire dès qu'un devis de rénovation supprime ou modifie un chauffage au fioul, avec ses sous-prestations chiffrables (vidange, dégazage, nettoyage, comblement OU enlèvement) et la responsabilité associée."
+ },
+ {
+  "titre": "Détalonnage minimum des portes intérieures (passages de transit pour la ventilation)",
+  "pertinence": "moyenne",
+  "sous_poste": "Ventilation / aération du logement — passages de transit (détalonnage des portes intérieures)",
+  "perimetre": [
+   "INCLUS : réalisation du jeu sous porte (détalonnage) lors de la pose ou de la reprise de portes intérieures pour assurer la circulation d'air entre pièces sèches et pièces humides",
+   "INCLUS comme solutions alternatives au détalonnage : rehaussement de l'huisserie pour ménager un passage d'air bas, pose d'une grille de transfert, choix d'un bloc-porte conçu avec passages d'air en périphérie",
+   "Concerne la ventilation dite générale (air neuf entrant par séjour et chambres, extrait par cuisine, salle de bains et WC), en ventilation naturelle ou mécanique (VMC)",
+   "EXCLU / hors périmètre de cet article : dimensionnement et pose du système de VMC lui-même, bouches et conduits (autre poste du lot)"
+  ],
+  "facteurs_prix": [
+   "Type de pièce desservie (la valeur de jeu sous porte diffère selon pièce humide/sèche vs cuisine/séjour)",
+   "Présence d'un appareil à gaz dans la pièce (jeu plus important exigé)",
+   "Solution retenue : simple détalonnage du battant vs rehaussement d'huisserie vs grille de transfert vs bloc-porte à passages d'air intégrés (coûts différents)",
+   "Nombre de portes à traiter dans le logement",
+   "Contrainte de ne pas affaiblir la solidité de la porte par le détalonnage (peut imposer une autre solution, plus coûteuse)"
+  ],
+  "regles_metre": [
+   "Métré à la porte (nombre de portes intérieures concernées par les passages de transit)",
+   "Dimensionner les passages de transit pour que l'écart de pression de part et d'autre de chaque porte fermée reste inférieur à 5 Pa",
+   "Hauteur conventionnelle du jeu battant/sol en ventilation mécanique (VMC) : 1 cm pour salles de bains, WC et chambres ; 2 cm pour cuisines et salles de séjour",
+   "Cas installation gaz : détalonnage de 2 cm pour la porte de la pièce contenant l'appareil à gaz, 1 cm pour les autres portes intérieures"
+  ],
+  "points_vigilance": [
+   "Le détalonnage ne doit pas compromettre la solidité de la porte ; sinon retenir une autre solution (rehaussement d'huisserie, grille de transfert, bloc-porte adapté)",
+   "Avantage du détalonnage par rapport aux grilles : pas de risque d'obturation et rendu plus esthétique, à moindre coût",
+   "Bien distinguer les valeurs selon le contexte : VMC vs installation gaz, et selon le type de pièce",
+   "Vérifier la cohérence avec le revêtement de sol fini (la hauteur réelle du jeu dépend du niveau de sol après pose du revêtement)"
+  ],
+  "materiaux": [
+   "Bloc-porte / porte intérieure",
+   "Huisserie (rehaussable pour ménager un passage d'air bas)",
+   "Grille de transfert",
+   "Bloc-porte avec passages d'air en périphérie (conception spécifique)"
+  ],
+  "normes": [
+   "NF DTU 68.3 P1-1-4 (ventilation mécanique — dimensionnement des passages de transit)",
+   "NF DTU 61.1 P5 (installations de gaz — introduction d'air et détalonnage)"
+  ],
+  "pour_devis": "Permet de prévoir et justifier, à la pose de portes intérieures, le poste « passages de transit » (détalonnage, rehausse d'huisserie, grille de transfert ou bloc-porte à passages d'air) en appliquant les jeux normés selon le type de pièce et la présence éventuelle d'un appareil à gaz."
+ },
+ {
+  "titre": "Rappel des exigences réglementaires (chauffage et ventilation en rénovation)",
+  "pertinence": "moyenne",
+  "sous_poste": "Chauffage hydraulique et régulation - mise en conformité réglementaire (RT Existant par élément)",
+  "perimetre": [
+   "INCLUS : isolation des canalisations d'eau chaude raccordées situées hors du volume chauffe, lors d'une installation ou d'un remplacement d'une installation de chauffage ou d'un chauffe-eau",
+   "INCLUS : pose d'un organe d'equilibrage au pied de chaque colonne, avec etablissement d'un rapport d'equilibrage date et signe par le professionnel",
+   "INCLUS : dispositif d'arret du circulateur lors de son installation ou remplacement",
+   "INCLUS : regulateur de classe IV ou plus pour tout nouveau dispositif de chauffage centralise a combustible liquide ou gazeux",
+   "INCLUS : pour les emetteurs a effet joule (chauffage electrique), regulation avec variation temporelle et option detection de presence ou detection d'ouverture des fenetres",
+   "A DISTINGUER : la RT 'globale' (performance globale du bati) s'applique aux batiments de plus de 1000 m2, pas la RT existant par element"
+  ],
+  "facteurs_prix": [
+   "nature de l'intervention : installation neuve vs remplacement (les exigences se declenchent dans les deux cas)",
+   "longueur des canalisations a calorifuger situees hors du volume chauffe",
+   "nombre de colonnes a equilibrer (un organe d'equilibrage par colonne)",
+   "type de chauffage : centralise a combustible (regulateur classe IV+) vs emetteurs electriques effet joule (regulation avec detection)",
+   "presence ou non d'un circulateur a installer/remplacer (ajout du dispositif d'arret)",
+   "etablissement du rapport d'equilibrage (prestation documentaire a chiffrer en sus de la pose)"
+  ],
+  "regles_metre": [
+   "isolation a metrer au metre lineaire, uniquement sur la partie des canalisations situee HORS du volume chauffe (le calorifuge n'est pas exige a l'interieur du volume chauffe)",
+   "un organe d'equilibrage a compter par pied de colonne",
+   "un dispositif d'arret a compter par circulateur installe ou remplace"
+  ],
+  "points_vigilance": [
+   "l'isolation des reseaux d'eau chaude doit etre au minimum de classe III (niveau d'isolant impose)",
+   "regulation de chauffage centralise : classe IV minimum (classes IV a VIII admises), sauf incompatibilite technique avec le dispositif de chauffage",
+   "le rapport d'equilibrage est une obligation documentaire (date et signe) a ne pas oublier dans le chiffrage du temps passe",
+   "les seuils de la RT existant par element restent en-deca des niveaux requis pour les aides de l'Etat : conformite reglementaire n'equivaut pas a eligibilite aux aides",
+   "cadre issu de l'arrete du 22 mars 2017, en vigueur depuis le 1er janvier (relevement de seuils, pas de changement de fond)"
+  ],
+  "materiaux": [
+   "isolant pour canalisations d'eau chaude (calorifuge) de classe III minimum",
+   "organe d'equilibrage en pied de colonne",
+   "circulateur muni d'un dispositif d'arret",
+   "regulateur de chauffage centralise classe IV ou superieure (classes IV a VIII)",
+   "emetteurs a effet joule (chauffage electrique) avec regulation a variation temporelle et detection de presence / d'ouverture de fenetre"
+  ],
+  "normes": [
+   "Arrete du 22 mars 2017 (revision de la RT 'existant par element')",
+   "RT 'globale' (batiments de plus de 1000 m2)",
+   "Classe d'isolation III (isolation des reseaux d'eau chaude)",
+   "Classes de regulation IV a VIII (communication de la Commission 2014/C 207/02, paragraphe 6.1)",
+   "BBC-renovation (objectif a horizon 2050)"
+  ],
+  "pour_devis": "Permet d'ajouter au lot chauffage les prestations reglementaires souvent oubliees (calorifuge classe III hors volume chauffe, organe d'equilibrage par colonne avec rapport, dispositif d'arret du circulateur, regulateur classe IV+) qui elargissent le perimetre et le prix d'un remplacement de chauffage en renovation."
+ },
+ {
+  "titre": "Plancher chauffant à eau chaude : bonnes pratiques du NF DTU 65.14",
+  "pertinence": "moyenne",
+  "sous_poste": "Plancher chauffant à eau chaude (chauffage par le sol)",
+  "perimetre": [
+   "La pose d'un plancher chauffant mobilise trois corps de metier distincts, ce qui structure le decoupage du devis : maconnerie (reperes EM dans le DTU), chauffagiste (EC) et revetement de sol (ER)",
+   "Le poste chauffagiste couvre la pose des tubes (circuits), le remplissage, l'essai sous pression et la mise en chauffe",
+   "La verification et la reception du support porteur incombent a l'entreprise avant la mise en place du plancher chauffant",
+   "La mise en chauffe avant pose du revetement fait partie de la prestation ; elle est imperative pour certains types de plancher (voir regles de metre)",
+   "Le local doit etre clos et couvert (hors d'eau / hors d'air) avant le demarrage : a verifier au planning, peut conditionner l'intervention",
+   "Reservation a prevoir : aucune autre canalisation ou gaine que les tubes du plancher chauffant ne doit etre noyee dans la dalle d'enrobage ni dans l'isolant — les autres reseaux relevent donc d'un autre poste / passage"
+  ],
+  "facteurs_prix": [
+   "Type de plancher chauffant (type A, type C, type A a revetements scelles desolidarises) : conditionne l'obligation ou non de mise en chauffe prealable, donc un poste de mise en chauffe en plus ou non",
+   "Nature des tubes : synthese (PE-X, PB, PP) ou cuivre — caracteristiques et dimensions differentes",
+   "Diametre des tubes (plage 12 x 1,1 a 25 x 2,3 mm) : influe sur le lineaire/cout matiere",
+   "Coordination de trois corps de metier (maconnerie, chauffage, revetement) : impact sur l'organisation et le planning",
+   "Etat et preparation du support porteur a receptionner avant pose"
+  ],
+  "regles_metre": [
+   "Mise en chauffe prealable a la pose du revetement de sol : OBLIGATOIRE pour les planchers de type A — la prevoir comme prestation chiffree",
+   "Mise en chauffe FACULTATIVE pour les planchers de type C et pour les planchers de type A a revetements scelles desolidarises",
+   "Apres toute reparation d'un tube, une nouvelle epreuve a la pression est a refaire (temps a reprevoir)"
+  ],
+  "points_vigilance": [
+   "Local hors d'eau et hors d'air exige avant le debut des travaux",
+   "Le support porteur doit etre prepare selon les normes applicables et receptionne par l'entreprise avant pose",
+   "Temperature du fluide circulant plafonnee a 50 degres C",
+   "Interdiction de noyer toute canalisation/gaine autre que les tubes du plancher dans la dalle d'enrobage ou dans les isolants",
+   "Les tubes en synthese doivent ben022eficier d'un Avis technique pour l'emploi en plancher chauffant",
+   "Essai sous pression d'eau a realiser apres remplissage, et a renouveler apres reparation",
+   "Usage rare en renovation (marche surtout neuf) : disponibilite et habitude des entreprises a anticiper"
+  ],
+  "materiaux": [
+   "Tubes en materiau de synthese : polyethylene reticule PE-X, polybutene PB, polypropylene PP (dimensions 12 x 1,1 a 25 x 2,3 mm, avec Avis technique plancher chauffant)",
+   "Tubes en cuivre",
+   "Dalle d'enrobage",
+   "Isolant de plancher",
+   "Plancher porteur (support)"
+  ],
+  "normes": [
+   "NF DTU 65.14",
+   "NF EN 1264-4 (articles 4.1, 4.2.1, 4.2.8.5.3)",
+   "NF P 61-203 (article 5)",
+   "NF ISO 15875 (PE-X)",
+   "NF EN ISO 15876 (PB)",
+   "NF EN ISO 15874 (PP)"
+  ],
+  "pour_devis": "Permet de structurer un poste plancher chauffant a eau chaude en trois interventions coordonnees (maconnerie, chauffage, revetement) et de ne pas oublier les prestations chiffrables associees (reception du support, essai sous pression, mise en chauffe obligatoire selon le type de plancher)."
+ },
+ {
+  "titre": "Dimensionnement et mise en oeuvre des pompes à chaleur et chauffe-eau thermodynamiques",
+  "pertinence": "moyenne",
+  "sous_poste": "Pompe à chaleur (PAC) et chauffe-eau thermodynamique (CET)",
+  "perimetre": [
+   "INCLUS : fourniture et pose du générateur (PAC ou CET) avec son appoint",
+   "INCLUS : dimensionnement du générateur en fonction des déperditions thermiques du logement",
+   "INCLUS : production d'eau chaude sanitaire si PAC double service ou CET",
+   "INCLUS : ballon tampon sur la boucle d'eau de chauffage lorsque le volume d'eau de l'installation est insuffisant",
+   "Périmètre couvre les générateurs à compresseur électrique de puissance inférieure à 70 kW",
+   "S'applique aussi bien en construction neuve qu'en rénovation (résidentiel et tertiaire)",
+   "EXCLU comme appoint : inserts et radiateurs électriques (non comptés comme appoint de PAC air-air)"
+  ],
+  "facteurs_prix": [
+   "Type de PAC : aérothermique air-eau ou air-air (gainable ou multi-split)",
+   "Technologie du compresseur : tout-ou-rien vs Inverter (à variation de puissance)",
+   "Présence ou non d'une production d'eau chaude sanitaire (PAC double service / CET)",
+   "Mode de fonctionnement : monovalent (sans appoint) ou bivalent (avec appoint)",
+   "Inertie du bâtiment (légère vs moyenne à très lourde) qui modifie le taux de couverture donc la puissance retenue",
+   "Niveau de déperdition thermique de l'enveloppe (base de calcul de la puissance installée)",
+   "Nécessité d'ajouter un ballon tampon si le volume d'eau du réseau est insuffisant",
+   "Contexte neuf vs rénovation (règles de dimensionnement distinctes pour l'existant)"
+  ],
+  "regles_metre": [
+   "Le dimensionnement se calcule à partir de la déperdition thermique (déperdition de l'enveloppe) du bâtiment, pas à partir de la surface seule",
+   "PAC air-eau tout-ou-rien (neuf) : puissance installée = 70 à 100 % de la déperdition",
+   "PAC air-eau Inverter (neuf) : 70 à 100 % de la déperdition si inertie moyenne à très lourde, sinon 80 à 100 %",
+   "PAC + appoint : puissance totale d'au moins 120 % des déperditions de l'enveloppe",
+   "PAC air-air (tout-ou-rien et Inverter) : puissance d'au moins 120 % des déperditions",
+   "Volume d'eau suffisant exigé sur la boucle de chauffage, sinon installer un ballon tampon",
+   "Pour une PAC double service ou un CET, le besoin d'ECS se définit au cas par cas entre installateur et usager selon les besoins du foyer"
+  ],
+  "points_vigilance": [
+   "Éviter le surdimensionnement : il dégrade le fonctionnement et le rendement en mi-saison (surtout PAC aérothermiques)",
+   "Le ballon tampon / volume d'eau suffisant sert à limiter les marches-arrêts à 5 ou 6 par heure et éviter les courts cycles et le givrage, qui usent le compresseur et dégradent le rendement",
+   "PAC double service : la priorité ECS ne doit pas créer d'inconfort ; réchauffage complet du volume d'ECS exigé en 1,5 h (ou moins de 3 h en cas d'asservissement nocturne)",
+   "Bien distinguer fonctionnement monovalent (sans appoint) et bivalent (avec appoint) pour le dimensionnement",
+   "Ne pas compter inserts ou radiateurs électriques comme appoint d'une PAC air-air",
+   "Référence à l'inertie du bâtiment via l'annexe J du NF DTU 65.16"
+  ],
+  "materiaux": [
+   "Pompe à chaleur air-eau (tout-ou-rien ou Inverter)",
+   "Pompe à chaleur air-air (gainable ou multi-split)",
+   "PAC double service (chauffage + ECS)",
+   "Chauffe-eau thermodynamique (CET) individuel sur air ambiant",
+   "Ballon tampon sur boucle d'eau de chauffage",
+   "Appoint électrique"
+  ],
+  "normes": [
+   "NF DTU 65.16 (3 parties : conception et mise en oeuvre des systèmes de chauffage par PAC à compresseur électrique < 70 kW, avec ou sans ECS ; traite aussi les CET individuels sur air ambiant) — annexe J pour l'inertie",
+   "Recommandations RAGE PAC (2013) et CET (2015)"
+  ],
+  "pour_devis": "Permet de cadrer le poste PAC/CET d'un devis de rénovation en justifiant la puissance retenue par les déperditions (taux de couverture 70-100 % selon technologie + appoint à 120 %) et de chiffrer un éventuel ballon tampon, avec les exigences de performance ECS associées."
+ },
+ {
+  "titre": "Bien concevoir une chaufferie bois",
+  "pertinence": "moyenne",
+  "sous_poste": "Chaudière bois (chaufferie biomasse : chaudière + silo de stockage + régulation)",
+  "perimetre": [
+   "Fourniture et installation de la chaudière bois (type et puissance à déterminer selon le combustible)",
+   "Conception et réalisation de la zone de stockage du combustible (silo)",
+   "Système de régulation (taux de charge, combustion, niveau 3)",
+   "Système d'amenée/livraison du combustible jusqu'à la chaudière (par gravité ou soufflage selon configuration du silo)",
+   "EXCLU/À PART : contrat d'entretien et de maintenance (poste récurrent distinct, non inclus dans la pose initiale)",
+   "EXCLU : approvisionnement du combustible (filière, livraison) — relève du client / cahier des charges d'approvisionnement, pas du devis travaux"
+  ],
+  "facteurs_prix": [
+   "Type de combustible bois retenu : écorces, sciures, plaquettes, broyats, copeaux ou granulés (conditionne le type et le dimensionnement de toute l'installation)",
+   "Puissance de la chaudière (le seuil de 400 kW fait basculer le régime d'entretien réglementaire)",
+   "Configuration du silo : de plain-pied, enterré ou conteneur métallique (impacte le génie civil et le mode de livraison)",
+   "Dimensions du silo, fonction de l'autonomie souhaitée pour l'installation",
+   "Topographie du site et accessibilité pour la livraison du combustible",
+   "Mode de livraison du combustible (gravité ou soufflage) découlant de la configuration du silo",
+   "Niveau de régulation/automatisation (régulation du taux de charge, de la combustion, etc.)"
+  ],
+  "regles_metre": [
+   "Dimensionnement du silo : à calibrer selon l'autonomie voulue de l'installation et le mode de livraison (pas de valeur chiffrée dans l'extrait)",
+   "Le dimensionnement chaudière (type + puissance) découle du combustible choisi"
+  ],
+  "points_vigilance": [
+   "Adopter une vision globale en amont : filière locale d'approvisionnement, livraison, stockage et entretien doivent être cadrés avant le choix des équipements (logique de circuit court)",
+   "Rédiger un cahier des charges d'approvisionnement en combustible définissant essence de bois, granulométrie et taux d'humidité avec une zone de tolérance — pièce à prévoir/conseiller",
+   "Obligation réglementaire d'entretien : entretien annuel obligatoire pour les installations de puissance inférieure à 400 kW",
+   "Installations de plus de 400 kW : contrôle de performance énergétique par un organisme accrédité obligatoire tous les deux ans",
+   "Faciliter et raccourcir la durée de livraison du combustible optimise les coûts d'exploitation (à intégrer dans la conception du silo)",
+   "Régulation indispensable au rendement : maintien d'une température de départ constante et limitation des cycles démarrage/arrêt ; ajustement du mélange air/combustible (teneur en oxygène sur fumées humides constante)"
+  ],
+  "materiaux": [
+   "Combustible bois : écorces, sciures, plaquettes, broyats, copeaux, granulés",
+   "Chaudière bois (biomasse)",
+   "Silo de stockage : de plain-pied, enterré ou conteneur métallique",
+   "Système de régulation/automatisme de chaufferie"
+  ],
+  "normes": [],
+  "pour_devis": "Permet de structurer un poste « chaudière bois » en sous-éléments à chiffrer distinctement (chaudière dimensionnée selon le combustible, silo de stockage selon sa configuration/autonomie, régulation, système de livraison) et d'identifier les facteurs qui font varier fortement le prix ainsi que les obligations d'entretien réglementaires à signaler au client."
+ },
+ {
+  "titre": "Des règles précises sur les points durs (PAC air/air en habitat individuel — Recommandations RAGE)",
+  "pertinence": "moyenne",
+  "sous_poste": "Pompe à chaleur air/air (chauffage / rafraîchissement) — habitat individuel",
+  "perimetre": [
+   "Fourniture et pose d'une PAC air/air (groupe thermodynamique) pour chauffage seul ou avec rafraîchissement, en habitat individuel neuf ou rénové",
+   "Raccordements à prévoir : électriques, hydrauliques et frigorifiques",
+   "Mise en œuvre de l'unité extérieure (échangeur) avec amenée d'air et rejet d'air",
+   "Conduits aérauliques : pose, calorifugeage, étanchéité et protection contre les volatiles",
+   "Gestion des condensats (évacuation) et du dégivrage",
+   "Entretien / maintenance de l'installation (cahier RAGE dédié, neuf ou rénové)",
+   "EXCLU implicite : la prestation s'arrête aux équipements thermodynamiques de puissance calorifique inférieure à 50 kW (limite de domaine des recommandations)"
+  ],
+  "facteurs_prix": [
+   "Puissance calorifique de la PAC (le domaine couvert va jusqu'à moins de 50 kW)",
+   "Fonction : chauffage seul vs chauffage + rafraîchissement",
+   "Neuf ou rénovation (deux jeux de cahiers distincts selon le contexte)",
+   "Dimensionnement issu du calcul de déperditions (parois opaques et vitrées, planchers, toiture, ventilation, ponts thermiques, infiltrations) selon le climat du site",
+   "Implantation de l'unité extérieure : accessibilité des raccordements, espace de maintenance, contraintes acoustiques et esthétiques",
+   "Longueur / dimensionnement des conduits aérauliques et leur calorifugeage",
+   "Contraintes d'urbanisme et de copropriété pouvant imposer une implantation particulière"
+  ],
+  "regles_metre": [
+   "Le dimensionnement de la puissance se calcule en mode chauffage uniquement, à partir de la somme des déperditions de toutes les pièces chauffées rapportées aux conditions climatiques du site",
+   "Sources de déperdition à intégrer au calcul : parois opaques, parois vitrées, planchers, toiture, ventilation, ponts thermiques, infiltrations"
+  ],
+  "points_vigilance": [
+   "Prévoir un emplacement laissant un espace suffisant pour déposer les sous-ensembles lors de la maintenance",
+   "Assurer l'amenée et le rejet d'air corrects au niveau de l'échangeur, le confort de soufflage et le bon dégivrage",
+   "Veiller au débit, à l'étanchéité et au calorifugeage des conduits aérauliques, ainsi qu'à leur protection contre les volatiles",
+   "Prévoir l'évacuation des condensats",
+   "Vérifier en amont la conformité aux règles d'urbanisme et de copropriété avant toute installation",
+   "Respecter les distances minimales aux parois (selon indications du fabricant, ou à défaut celles des cahiers) pour limiter la gêne acoustique",
+   "Implantation de l'unité extérieure à anticiper pour les aspects techniques, acoustiques et esthétiques"
+  ],
+  "materiaux": [
+   "Pompe à chaleur air/air (groupe thermodynamique, unité extérieure + soufflage intérieur)",
+   "Conduits aérauliques calorifugés",
+   "Liaisons frigorifiques",
+   "Raccordements électriques et hydrauliques",
+   "Dispositif d'évacuation des condensats"
+  ],
+  "normes": [
+   "Recommandations RAGE (Règles de l'art Grenelle de l'Environnement) sur les PAC air extérieur / air intérieur, 5 cahiers parus en septembre 2015 (conception, installation, entretien ; neuf et rénové)"
+  ],
+  "pour_devis": "Cet article aide à structurer un poste PAC air/air en rénovation : il rappelle que le prix dépend du dimensionnement par calcul de déperditions, du choix chauffage seul ou réversible, et de l'implantation de l'unité extérieure, et liste les prestations à inclure (raccordements élec/hydrau/frigo, conduits calorifugés, condensats, entretien) à ne pas oublier dans le chiffrage."
+ },
+ {
+  "titre": "Des recommandations RAGE pour compléter le NF DTU 68.3 (VMC double flux)",
+  "pertinence": "moyenne",
+  "sous_poste": "Ventilation - VMC double flux (fourniture et pose unité + réseau)",
+  "perimetre": [
+   "Le poste VMC double flux couvre la conception/dimensionnement, l'installation, la mise en service, puis l'entretien/maintenance (cycle complet à prévoir au chiffrage)",
+   "Unité double flux = ventilateur d'extraction + ventilateur d'insufflation + filtres, avec en option un récupérateur de chaleur (échangeur statique à plaques ou rotatif)",
+   "Variante double flux thermodynamique = ajout d'une pompe à chaleur sur l'air extrait (poste plus cher à isoler)",
+   "Prévoir un bipasse permettant qu'au moins un flux contourne l'échangeur (free-cooling)",
+   "Réseau de soufflage d'air neuf filtré vers les pièces principales + réseau d'extraction d'air vicié dans les pièces de service (cuisine, WC, salle de bains/douche)",
+   "Bouches de soufflage (pièces principales) et bouches d'extraction (pièces de service) à compter et poser",
+   "Mise en service de l'installation à inclure comme prestation distincte de la pose",
+   "Contrat/visite d'entretien et remplacement des filtres relèvent du poste maintenance (peut faire l'objet d'une ligne séparée)"
+  ],
+  "facteurs_prix": [
+   "Type de système : simple récupérateur statique vs récupérateur rotatif vs double flux thermodynamique (PAC sur air extrait) = écarts de prix d'unité importants",
+   "Présence et type d'échangeur de chaleur + bipasse",
+   "Habitat individuel vs habitat collectif (deux fascicules RAGE distincts, dimensionnement et complexité différents)",
+   "Nombre de pièces principales (bouches de soufflage) et de pièces de service (bouches d'extraction) = linéaire de réseau et nombre de bouches",
+   "Niveau d'exigence acoustique à atteindre (traitement/atténuateurs, choix de l'unité)",
+   "Exigence d'étanchéité à l'air du bâtiment (RT 2012) impactant le soin de pose des réseaux",
+   "Filtration (niveau de filtres) influant sur le coût de l'unité et de la maintenance"
+  ],
+  "regles_metre": [
+   "Réseau et bouches dimensionnés sur les débits extraits réglementaires par pièce de service (cuisine, salle de bains/douche, WC) selon l'arrêté du 24 mars 1982 modifié",
+   "Compter une bouche de soufflage par pièce principale et une bouche d'extraction par pièce de service",
+   "Le dimensionnement (débits) conditionne le diamètre/longueur des gaines à métrer"
+  ],
+  "points_vigilance": [
+   "Le NF DTU 68.3 seul ne couvre pas la double flux : se référer aux recommandations RAGE 2012 (reconnues par les assureurs) pour la mise en oeuvre, en attendant l'intégration du cahier VMC double flux au DTU",
+   "Respecter les débits d'air par pièce de service imposés par l'arrêté du 24 mars 1982 modifié",
+   "Respecter les seuils acoustiques de l'arrêté du 30 juin 1999 : 30 dB(A) en pièces principales et 35 dB(A) en pièces de service (position service minimal) - peut imposer un traitement acoustique",
+   "Maîtriser l'humidité intérieure dans la plage 30 % à 75 % (dessèchement / moisissures et dégradation du bâti)",
+   "L'étanchéité à l'air exigée par la RT 2012 impose une pose soignée des réseaux",
+   "Filtration de l'air neuf insufflé à prévoir (filtres à entretenir/remplacer)"
+  ],
+  "materiaux": [
+   "Unité VMC double flux (ventilateur extraction + ventilateur insufflation)",
+   "Filtres",
+   "Récupérateur de chaleur : échangeur statique à plaques ou échangeur rotatif",
+   "Pompe à chaleur sur air extrait (variante double flux thermodynamique)",
+   "Bipasse de l'échangeur",
+   "Bouches de soufflage et bouches d'extraction",
+   "Réseau de gaines de soufflage et d'extraction"
+  ],
+  "normes": [
+   "NF DTU 68.3 (ventilation mécanique)",
+   "Recommandations RAGE 2012 - VMC double flux (fascicules habitat individuel et habitat collectif)",
+   "RT 2012",
+   "Arrêté du 24 mars 1982 modifié (débits d'air par pièce)",
+   "Arrêté du 30 juin 1999 (acoustique des bâtiments d'habitation)"
+  ],
+  "pour_devis": "Permet de structurer un poste VMC double flux complet (unité + réseaux + bouches + mise en service + maintenance) et d'en justifier les variantes de prix (récupérateur statique/rotatif/thermodynamique) et les exigences normatives (débits arrêté 1982, acoustique arrêté 1999, RAGE 2012) à invoquer dans la description."
+ },
+ {
+  "titre": "L'évacuation des produits de combustion des appareils à tirage naturel",
+  "pertinence": "moyenne",
+  "sous_poste": "Raccordement appareil de chauffage type B au conduit de fumées (fumisterie)",
+  "perimetre": [
+   "INCLUS : raccordement d'un appareil à combustion de type B (tirage naturel) au conduit de fumées ou à un autre dispositif d'évacuation des produits de combustion",
+   "INCLUS : mise en place du conduit de raccordement entre l'appareil et le conduit de fumées (partie métallique rigide, flexible non extensible, ou flexible extensible)",
+   "INCLUS : pose du coupe-tirage suivant la notice du fabricant lorsqu'il est fourni avec l'appareil (cas des appareils de type B1)",
+   "À distinguer du conduit de fumées lui-même (poste séparé) : ce périmètre concerne le seul conduit de raccordement appareil-conduit",
+   "Concerne le fonctionnement en tirage naturel ou en extraction mécanique basse pression"
+  ],
+  "facteurs_prix": [
+   "Type d'appareil : type B avec coupe-tirage incorporé (B1) ou non",
+   "Type de conduit de raccordement choisi : métallique rigide, flexible métallique non extensible, ou flexible extensible (mises en œuvre relevant de référentiels différents)",
+   "Débit calorifique nominal de l'appareil (l'article vise les appareils de débit nominal inférieur ou égal à 85 kW)",
+   "Configuration du local et hauteur de pose du coupe-tirage faisant office de sortie d'air de ventilation"
+  ],
+  "regles_metre": [
+   "Longueur du conduit de raccordement entre l'appareil et le conduit de fumées (linéaire)"
+  ],
+  "points_vigilance": [
+   "Si le coupe-tirage sert de sortie d'air de ventilation du local, la partie supérieure de son entrée doit se situer à au moins 1,80 m au-dessus du sol",
+   "Le coupe-tirage d'un appareil de type B1 est obligatoirement incorporé ou fourni avec l'appareil ; sa pose suit la notice du fabricant",
+   "La mise en œuvre des conduits de raccordement métalliques rigides ou flexibles non extensibles suit l'article 13 du NF DTU 24.1 Partie 1, tandis que les flexibles extensibles relèvent des chapitres 5.1 et 5.4 du NF DTU 24.1 Partie 2 : ne pas confondre les référentiels selon le type de conduit",
+   "Le périmètre est limité aux appareils de débit calorifique nominal inférieur ou égal à 85 kW"
+  ],
+  "materiaux": [
+   "Conduit de raccordement métallique rigide",
+   "Conduit de raccordement flexible métallique non extensible",
+   "Conduit de raccordement flexible extensible",
+   "Coupe-tirage (incorporé ou fourni avec l'appareil de type B1)"
+  ],
+  "normes": [
+   "NF DTU 24.1 Partie 1 (article 13 — conduits de raccordement rigides et flexibles non extensibles)",
+   "NF DTU 24.1 Partie 2 (chapitres 5.1 et 5.4 — conduits flexibles extensibles ; spécifications de raccordement des appareils de type B)",
+   "NF DTU 61.1 Partie 6 (cahier des clauses spéciales, paragraphe 4.1 — installation des appareils de type B)"
+  ],
+  "pour_devis": "Cet article aide à cadrer le sous-poste « raccordement d'un appareil de chauffage à tirage naturel au conduit de fumées » : il distingue ce poste du conduit de fumées, liste les types de conduits de raccordement (qui font varier le prix) et fixe les référentiels normatifs à respecter selon le matériau, ce qui permet de justifier la prestation et son chiffrage."
+ }
+]
