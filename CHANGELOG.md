@@ -24,6 +24,13 @@ Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/).
   filtré sur le statut) : promotion vers le registre + mise à jour de l'allowlist de
   `check_dtu_refs.py` **seulement après validation (licence)**.
 
+### Outillage & qualité (suite revue Codex)
+- **`tools/check_dtu_draft.py`** (NOUVEAU) : valide `dtu_rules.draft.yaml` (6 champs, lot 00..12,
+  statut autorisé, source non vide, pas de placeholder) et `--emit` les règles `verifie` prêtes à
+  insérer dans le live (promotion **non destructive**, ne touche pas au fichier commenté).
+- **`docs/ffb-techniques-index.yaml`** restructuré : séparation `lots:` (00..12, lots de devis) /
+  `categories:` (META, REGL, `--` transversales) — un consommateur filtrant par lot ne lit plus que `lots`.
+
 ### Notes
 - Politique **citation seule** maintenue (FFB et DTU : faits paraphrasés, jamais de verbatim).
 - 6 références à ajouter à l'allowlist `check_dtu_refs.py` lors de la promotion :

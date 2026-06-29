@@ -1,14 +1,15 @@
 # ffb-techniques-index.yaml — Répertoire FFB « Techniques du bâtiment » (RÉFÉRENCES SEULES)
-# Source : https://www.ffbatiment.fr/techniques-batiment (accès adhérent). Contenu réservé,
-# protégé : on indexe titre + type + lien, AUCUN texte recopié (politique citation-seule, cf.
-# lot-norms-mapping.yaml › ffb_citation_seule). Collecté 2026-06-29 via moteur de recherche du site.
-# Types : « Calepin de chantier » = guide illustré de l'essentiel d'un NF DTU (le plus utile au chiffrage).
+# Contenu adhérent protégé : titre + type + lien seulement, AUCUN texte recopié (citation seule).
+# Collecté 2026-06-29. « Calepin de chantier » = guide illustré de l'essentiel d'un NF DTU.
+# STRUCTURE : `lots` = lots de devis Maestro (00..12) ; `categories` = familles transversales
+#            HORS lot de devis (META=normalisation, REGL=réglementation, "--"=gros œuvre/enveloppe
+#            lourde/transversal). Un consommateur qui filtre par lot ne doit lire QUE `lots`.
 meta:
   generated: "2026-06-29"
   source: "ffbatiment.fr/techniques-batiment"
   licence: "citation_seule (contenu adhérent protégé — titres/liens seulement)"
   total_documents: 693
-lots:
+lots:   # 00..12 — lots de devis
   "00":
     label: "Installation de chantier"
     n: 17
@@ -1082,6 +1083,7 @@ lots:
       - titre: "Une pratique encore peu connue"
         type: "Dossier"
         url: "https://www.ffbatiment.fr/techniques-batiment/enveloppe-du-batiment/enduits-revetements-de-facade/dossier-bam/une-pratique-encore-peu-connue"
+categories:   # familles transversales hors lot de devis
   "META":
     label: "Normalisation : NF DTU"
     n: 27
