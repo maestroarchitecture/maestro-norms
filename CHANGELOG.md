@@ -31,6 +31,12 @@ Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/).
 - **`docs/ffb-techniques-index.yaml`** restructuré : séparation `lots:` (00..12, lots de devis) /
   `categories:` (META, REGL, `--` transversales) — un consommateur filtrant par lot ne lit plus que `lots`.
 
+### Promu au registre live (validation Namur, 2026-06-29)
+- Les **22 règles** des 5 DTU prioritaires (60.1, 26.2, 25.42, 53.12, 68.3) + 36.2 §6.9 sont passées de
+  brouillon (`a_verifier`) à **`dtu_rules.yaml` (`verifie`)** après validation licence. Brouillon vidé.
+- Garde-fou `maestro-platform/.maestro/ci/check_dtu_refs.py` : allowlist + NF DTU 25.42, 26.2, 53.12, 60.1.
+- Contrôles au vert : `check_dtu_refs.py --strict` OK ; `tools/test_dtu_rules.py` 16 passed.
+
 ### Notes
 - Politique **citation seule** maintenue (FFB et DTU : faits paraphrasés, jamais de verbatim).
 - 6 références à ajouter à l'allowlist `check_dtu_refs.py` lors de la promotion :
