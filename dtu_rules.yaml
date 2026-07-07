@@ -340,6 +340,37 @@ rules:
       statut: verifie
       source: "Reef ALR-1 §1/§7.2/§8/Annexe A — lu verbatim 2026-06-19"
 
+    # --- Ajouts 2026-07-08 (approfondissement expert lot 05) — statut a_valider_namur :
+    #     sourcés sur documents locaux Namur (Guide Schneider oct. 2025, Promotelec 24e),
+    #     PAS sur source primaire Reef → à confirmer avant passage en 'verifie'. ---
+    - exigence: "Espace technique électrique du logement (ETEL) et gaine technique (GTL) : dimensions, emplacement, constitution"
+      seuil: "ETEL dimensions intérieures mini : largeur 600 mm (réductible à largeur GTL + 100 mm après pose), profondeur 250 mm, hauteur du sol fini au plafond ; manettes des protections entre 0,50 m et 1,80 m ; partie du tableau accessible entre 0,50 et 0,90 m"
+      condition: "ETEL dédié à la seule GTL, de préférence au niveau d'accès (entrée/couloir/dégagement) ; INTERDIT en salle de bains ; à défaut de cloison le matérialisant : plus de 10 cm d'une installation gaz, plus de 40 cm d'une source de chaleur non isolée, plus de 60 cm d'un point d'eau"
+      ref: "NF C 15-100 (édition 2024, en vigueur sept. 2025) §10.1.7.1.1 à §10.1.7.2.3"
+      statut: a_valider_namur
+      source: "Guide Schneider NF C 15-100 (oct. 2025, doc local Namur maestro-ref/dtu) p.21 — lu 2026-07-08"
+
+    - exigence: "Section minimale du conducteur de la liaison équipotentielle supplémentaire (locale) de salle d'eau"
+      seuil: "Cuivre isolé : 2,5 mm² si mécaniquement protégé (sous conduit/moulure ou noyé) ; 4 mm² si fixé directement aux parois (non protégé) ; conducteur nu fixé directement : 4 mm². Jamais noyé nu dans la paroi"
+      condition: "Liaison équipotentielle locale reliant canalisations métalliques (eau/chauffage/gaz/vidange), corps métalliques des appareils sanitaires, huisseries et conducteurs de protection. Le 4 mm² posé par le code Batiprix = cas 'non protégé', toujours conforme quel que soit le mode de pose"
+      ref: "NF C 15-100 §544.2 (liaison équipotentielle supplémentaire) + partie 7-701 ; Promotelec Tableau 22"
+      statut: a_valider_namur
+      source: "Promotelec 'Locaux d'habitation — installations électriques privatives' 24e éd. (doc local Namur) p.70-71 Tableau 22 — lu 2026-07-08. NB : édition antérieure à l'amendement A5 (cite encore le volume 3), mais la section 2,5/4 mm² relève du §544.2 général, stable entre éditions"
+
+    - exigence: "Obligation d'un parafoudre à l'origine de l'installation (résidentiel) selon paratonnerre, alimentation BT et niveau kéraunique"
+      seuil: "Paratonnerre → obligatoire (tout Nk) ; alimentation BT (partiellement) aérienne → non obligatoire si Nk inférieur ou égal à 25 (AQ1), obligatoire si Nk supérieur à 25 (AQ2) ; alimentation souterraine → non obligatoire ; indisponibilité touchant la sécurité des personnes → analyse de risque (AQ1) / obligatoire (AQ2). AQ1 = Nk ≤ 25, AQ2 = Nk supérieur à 25, Ng = Nk/10"
+      condition: "Île-de-France = zone jaune de la carte kéraunique (Fig. 10A.1) = AQ1 : parafoudre NON obligatoire en résidentiel, sauf paratonnerre ou cas sécurité des personnes. Conducteur du parafoudre vers la liaison équipotentielle principale : 6 mm² (type 2), 16 mm² (type 1)"
+      ref: "NF C 15-100 partie 10 Tableau 10-1H + Fig. 10A.1 ; NF C 15-100-1 §443.4/§443.5/§534.1.4"
+      statut: a_valider_namur
+      source: "Guide Schneider NF C 15-100 (oct. 2025, doc local Namur) p.18-19 — lu 2026-07-08. Réserve : le niveau kéraunique exact par département n'est pas lisible sur la carte (image trop fine) ; seule la classe (IdF = AQ1) est lisible — à confirmer"
+
+    - exigence: "Délimitation des volumes 0/1/2 de salle d'eau et indices IP minimaux par volume (art. 701)"
+      seuil: "Volume 0 = intérieur baignoire/receveur (10 cm au-dessus du fond pour douche de plain-pied) → IPX7 ; Volume 1 = jusqu'à 2,25 m au-dessus du bord (douche sans receveur : cylindre rayon 1,20 m, hauteur 2,25 m) → IPX4 (IPX5 si jets d'eau) ; Volume 2 = bande de 0,60 m au-delà du volume 1, même hauteur → IPX4 (IPX5 si jets) ; volume caché sous appareil → IPX4"
+      condition: "Parois de douche amovibles ou non toute-hauteur ne délimitent pas les volumes ; matériel à cheval sur plusieurs volumes = volume le plus contraignant ; TBTS 12 Vca/30 Vcc en V0/V1, DDR 30 mA en V2"
+      ref: "NF C 15-100 partie 7-701 + partie 10 §10.1.3.23-26 et §10.1.6.10.2.1 Tableau 10-1C"
+      statut: a_valider_namur
+      source: "Guide Schneider NF C 15-100 (oct. 2025, doc local Namur) p.33 — lu 2026-07-08"
+
   # =====================================================================
   # LOT 06 — Menuiseries intérieures  (NF DTU 36.2 — menuiserie int. bois)
   # SOURCE REEF : AHHV-2 = NF DTU 36.2 P1-1 (CCT, novembre 2025), lu verbatim.
@@ -474,6 +505,61 @@ rules:
       ref: "NF DTU 26.2 P1-1 (avril 2008, Amdt A1) §8.4.1–8.4.3"
       statut: verifie
       source: "Reef ABEW-2 §8.4 — lu 2026-06-29 (validé Namur 2026-06-29)"
+
+    # --- Ajouts 2026-07-08 (approfondissement expert lot 08) — statut a_valider_namur :
+    #     sourcés sur documents PUBLICS SECONDAIRES (synthèses DTU, e-Cahiers CSTB, copies
+    #     tierces), les DTU primaires Reef 52.2/52.1 n'étant pas sur disque cette session.
+    #     À confirmer sur Reef (52.2 = ABQO-3 ; 52.1 à ouvrir) avant passage en 'verifie'.
+    #     NB : la faïence murale collée relève du NF DTU 52.2 (entrées encollage/colle
+    #     ci-dessous) ; le NF DTU 55.2 (pierre mince agrafée) est hors périmètre (Namur 08/07). ---
+    - exigence: "Simple vs double encollage (beurrage) des revêtements céramiques/pierres collés, selon local, format et porosité"
+      seuil: "Murs intérieurs (H ≤ 6 m, neuf) : double encollage dès surface du carreau ≥ 500 cm² (format maxi 3 600 cm² au mortier-colle, 2 200 cm² à l'adhésif en pâte). Murs extérieurs : simple encollage si surface < 50 cm² (plaquettes terre cuite), double encollage dès surface > 50 cm² (format maxi 3 600 cm²). Sols P3 : double encollage obligatoire en extérieur quels que soient porosité/format (sauf ≤ 50 cm²), en intérieur dès surface > 1 200 cm², et entre 500 et 1 200 cm² seulement en faible porosité (absorption < 0,5 % céramique / porosité ouverte < 2 % pierre)"
+      condition: "Pose collée céramique/pierre naturelle, travaux neufs ; S = surface d'un élément. Couvre la faïence murale collée"
+      ref: "NF DTU 52.2 P1-1-1 (murs int.), P1-1-2/A1 Tableau 3 (murs ext.), P1-1-3 (sols) — édition juin 2022"
+      statut: a_valider_namur
+      source: "Synthèse publique points-clés DTU 52.2 (checkmy-house.fr) — lue 2026-07-08. SOURCE SECONDAIRE : § exact à confirmer sur Reef ABQO-3"
+
+    - exigence: "Classe minimale du mortier-colle (NF EN 12004) selon support, format et porosité de l'élément"
+      seuil: "C1 = normal, C2 = amélioré (adhérence renforcée) ; S1 déformable / S2 hautement déformable. Murs int. : C1 (petits formats), C2 (1 200 < S ≤ 2 200 cm²), C2 S1/S2 (2 200 < S ≤ 3 600 cm²). Murs ext. : C2 S1/S2 obligatoire. Sols : pierres naturelles et planchers béton → C2 ; sur chauffage au sol / vide sanitaire → C2 S1/S2 ; extérieur → C2. Masse surfacique du revêtement associé ≤ 40 kg/m²"
+      condition: "Choix = croisement support × nature/format de l'élément × exposition ; pose collée NF DTU 52.2"
+      ref: "NF DTU 52.2 P1-1-1 (murs) et P1-1-3 (sols), édition juin 2022 — tableaux de choix du mortier-colle ; classes NF EN 12004"
+      statut: a_valider_namur
+      source: "Synthèse publique points-clés DTU 52.2 (checkmy-house.fr) — lue 2026-07-08. SOURCE SECONDAIRE : Reef ABQO-3 à confirmer"
+
+    - exigence: "Étanchéité SPEC sous carrelage : classes d'exposition à l'eau des locaux et domaine d'emploi"
+      seuil: "Parois classées EA / EB / EB+ privatif / EB+ collectif / EC. SPEC résine (CPT 3756_V3) et SPEC nattes (CPT 3788) : en sol, locaux P3 E2 au plus sans siphon de sol ; en murs, locaux EC au plus. Zone d'emprise douche/baignoire à protéger = parois à l'aplomb de l'appareil jusqu'à 2 m de haut (tolérance 10 %). SPEC obligatoire/facultatif selon le couple support × classe"
+      condition: "Pièces humides ; le SPEC est un poste distinct du carrelage, posé ensuite en collé NF DTU 52.2"
+      ref: "e-Cahier CSTB 3756_V3 (CPT SPEC résine, juillet 2021) ; e-Cahier CSTB 3567 (classement EA→EC) ; NF DTU 52.2 P1-1-1"
+      statut: a_valider_namur
+      source: "e-Cahier CSTB 3756_V3 (PDF public cstb.fr) + synthèse DTU 52.2 — lus 2026-07-08. CPT 3756_V3 = référence SPEC retenue par Namur (08/07)"
+
+    - exigence: "SPEC/SEL — dispositions de mise en œuvre chiffrées et distinction des référentiels"
+      seuil: "Relevé d'étanchéité sol-mur ≥ 5 cm au-dessus du niveau fini ; espace 5 mm réservé autour des appareils/fourreaux/canalisations (rempli au mastic) ; débord latéral ≥ 20 cm au-delà de l'appareil ; planéité du support avant SPEC 5 mm sous règle de 2 m et 2 mm sous réglet de 0,20 m ; revêtement associé 30 à 40 kg/m². SPEC = technique traditionnelle sous CPT (3756_V3 résine, 3788 nattes) ; SEL = sous Avis Technique (GS13 intérieur, Cahier CSTB 3680 extérieur), domaine plus large. Épaisseur de film sec / consommation = donnée PRODUIT (Avis Technique / QB11), pas un seuil unique du CPT"
+      condition: "Pièces humides ; épaisseurs SEL/SPEC à lire dans l'Avis Technique/QB du produit retenu"
+      ref: "e-Cahier CSTB 3756_V3 §7.2 ; article FFB BAM n°58 (mars 2020) ; Avis Technique GS13 (SEL) ; Cahier CSTB 3680 (SEL extérieur)"
+      statut: a_valider_namur
+      source: "e-Cahier CSTB 3756_V3 + FFB BAM n°58 — lus 2026-07-08"
+
+    - exigence: "Épaisseur nominale du mortier de scellement (pose scellée de sol)"
+      seuil: "Pose intérieure adhérente : 4 cm (sollicitations faibles/modérées, jamais < 3 cm), 5 cm (fortes, jamais < 4 cm). Pose désolidarisée : 4 cm (faibles, ≥ 3) / 5 cm (modérées, ≥ 4) / 6 cm (fortes, ≥ 5). Épaisseur > nominal mais < 8 cm : compactée par couches ≤ 4 cm. Pose flottante (faibles sollicitations) : SC1 → 6 cm (≥ 4,5) ; SC2 sur forme → 4 cm (≥ 3). Épaisseur constante ; encastrement de canalisations interdit"
+      condition: "Pose scellée de sol intérieur ; désolidarisation obligatoire pour les éléments des groupes AIII/BIIa/BIIb/BIII"
+      ref: "NF DTU 52.1 P1-1 (février 2020) §7.3.1 Tableau 7 et §7.3.2 Tableau 8"
+      statut: a_valider_namur
+      source: "Copie tierce NF DTU 52.1 P1-1 lue via web (eurochap33) 2026-07-08. SOURCE SECONDAIRE : à confirmer sur Reef"
+
+    - exigence: "Joints de fractionnement et joints périphériques du revêtement de sol scellé"
+      seuil: "Fractionnement : ~5 mm de large (réservé à la pose) ou ~3 mm (scié, mastic dureté shore A > 60). Intérieur adhérent : tous les 60 m² et ≤ 8 m linéaires. Intérieur désolidarisé/flottant : ~40 m² (couloirs tous les 6 m). Extérieur : ≥ 5 mm, surface ≤ 20 m², longueur ~5 m. Joint périphérique : ≥ 5 mm (cas général et plancher chauffant), supprimable si surface ≤ 7 m², ≥ 1 cm sous étanchéité à protection lourde (NF DTU 43.6)"
+      condition: "Revêtement de sol scellé ; respecter également les joints du support"
+      ref: "NF DTU 52.1 P1-1 (février 2020) §8.3 et §8.4"
+      statut: a_valider_namur
+      source: "Copie tierce NF DTU 52.1 P1-1 lue via web (eurochap33) 2026-07-08. SOURCE SECONDAIRE : à confirmer sur Reef"
+
+    - exigence: "Tolérances de planéité du support et de l'ouvrage fini (pose scellée de sol)"
+      seuil: "Support : pose adhérente ≤ 15 mm sous la règle de 2 m ; pose désolidarisée ≤ 7 mm sous la règle de 2 m et ≤ 2 mm sous le réglet de 0,20 m ; pose flottante → NF DTU 26.2/52.1. Ouvrage fini : flèche ≤ 3 mm sous la règle de 2 m. Rappel : sous 2 % de pente, de légères retenues d'eau restent possibles (tolérances de planéité)"
+      condition: "Réception du support et de l'ouvrage carrelé scellé"
+      ref: "NF DTU 52.1 P1-1 (février 2020) §6.3 et §10.1"
+      statut: a_valider_namur
+      source: "Copie tierce NF DTU 52.1 P1-1 lue via web (eurochap33) 2026-07-08. SOURCE SECONDAIRE : à confirmer sur Reef"
 
   # =====================================================================
   # LOT 09 — Revêtements de sol (parquet)  (NF DTU 51.2 — parquets collés)
