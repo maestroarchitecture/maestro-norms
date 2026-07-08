@@ -492,6 +492,21 @@ rules:
       statut: verifie
       source: "Reef ACJL-1 §9/§10 — lu verbatim 2026-06-19"
 
+    # --- Performance thermique en RÉNOVATION (arbitrage Namur 09/07) : OBLIGATION vs CONDITION D'AIDE ---
+    - exigence: "Performance thermique minimale des fenêtres et portes-fenêtres installées ou remplacées en bâtiment existant — OBLIGATION réglementaire (RT existant « par élément »)"
+      seuil: "Fenêtres (> 0,5 m²) et portes-fenêtres : Uw ≤ 1,9 W/m².K (le tableau de l'article 9 applique la même valeur aux doubles fenêtres et façades rideaux) ; porte d'entrée donnant sur l'extérieur : Ud ≤ 2 W/m².K ; fenêtre < 0,5 m² : vitrage Ug < 1,5 W/m².K. Avec fermeture (volet), l'exigence peut être satisfaite en tenant compte de la résistance thermique additionnelle de la fermeture (coefficient Ujn, annexe III de l'arrêté)"
+      condition: "Installation ou remplacement de parois vitrées dans un bâtiment existant ; en vigueur depuis le 1er janvier 2018. OBLIGATION réglementaire — ne pas confondre avec les seuils d'aides (entrée suivante) ni avec la RE2020 qui vise la construction NEUVE"
+      ref: "Arrêté du 3 mai 2007 (caractéristiques thermiques des bâtiments existants), article 9 — rédaction issue de l'arrêté du 22 mars 2017, article 3-II"
+      statut: a_valider_namur
+      source: "Legifrance https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000034271631 (arrêté du 22/03/2017) et version consolidée https://www.legifrance.gouv.fr/codes/section_lc/JORFTEXT000000822199/LEGISCTA000006108608/ — consulté 2026-07-09"
+
+    - exigence: "Seuils de performance thermique et solaire conditionnant les AIDES au remplacement de fenêtres (CEE fiche BAR-EN-104 ; MaPrimeRénov') — CONDITION D'AIDE, pas une obligation"
+      seuil: "Fenêtres ou portes-fenêtres : Uw ≤ 1,3 W/m².K et Sw ≥ 0,3, OU Uw ≤ 1,7 W/m².K et Sw ≥ 0,36 ; fenêtres de toiture : Uw ≤ 1,5 W/m².K et Sw ≤ 0,36 ; double fenêtre (posée sur une fenêtre simple vitrage existante) : Uw ≤ 1,8 W/m².K et Sw ≥ 0,32. Uw évalué selon NF EN 14351-1+A2, Sw selon NF P 50-777. Conséquence brique : une fenêtre Uw 1,4 n'est éligible que par la voie Uw ≤ 1,7 AVEC Sw ≥ 0,36 (à faire déclarer par le fabricant)"
+      condition: "CEE BAR-EN-104 (v. A54-2, applicable au 01/01/2024) : bâtiment résidentiel existant depuis plus de 2 ans, remplacement d'une menuiserie SIMPLE vitrage uniquement, pose par un professionnel titulaire d'un signe de qualité (RGE, décret n° 2014-812), opérations engagées avant le 01/07/2028. MaPrimeRénov' : mêmes seuils (arrêté du 17/11/2020, article 9)"
+      ref: "Fiche CEE BAR-EN-104 v. A54-2 §3 ; arrêté du 17 novembre 2020 (caractéristiques techniques MaPrimeRénov'), article 9"
+      statut: a_valider_namur
+      source: "ecologie.gouv.fr https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-EN-104%20vA54-2%20%C3%A0%20compter%20du%2001-01-2024_0.pdf (PDF lu intégralement) et Legifrance https://www.legifrance.gouv.fr/loda/id/JORFTEXT000042532442 — consulté 2026-07-09"
+
   # =====================================================================
   # LOT 08 — Carrelage / Faïence  (NF DTU 52.2 — pose collée)
   # =====================================================================
