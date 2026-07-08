@@ -99,6 +99,31 @@ rules:
   # =====================================================================
   # LOT 03 — Plomberie / Sanitaires  (NF DTU 60.11 — règles de calcul)
   # =====================================================================
+
+    # --- Ajouts 2026-07-08 (soir) : postes savoir FFB lot 02 (arbitrage Namur 08/07 « créer
+    # les postes opt-in maintenant ») — source SECONDAIRE (fiche FFB lot02), à confirmer sur
+    # source primaire Reef avant passage en verifie.
+    - exigence: "Plafond suspendu modulaire : domaine d'emploi du NF DTU 58.1"
+      seuil: "Vide de plafond (plénum) ≤ 6 m ; au-delà, hors DTU (étude spécifique)"
+      condition: "Plafonds suspendus démontables (ossature + dalles), locaux au classement d'humidité compatible"
+      ref: "NF DTU 58.1"
+      statut: a_valider_namur
+      source: "ffb-savoir-chiffrage-lot02.md — fiche FFB (secondaire), 2026-07-08"
+
+    - exigence: "Plafond en staff : ouvrage régi par le NF DTU 25.51"
+      seuil: "Variante acoustique (patins + suspentes anti-vibratiles + isolant) sans procès-verbal standardisé : performance à valider au cas par cas"
+      condition: "Plafonds suspendus en plaques de staff fabriquées sur mesure"
+      ref: "NF DTU 25.51"
+      statut: a_valider_namur
+      source: "ffb-savoir-chiffrage-lot02.md — fiche FFB (secondaire), 2026-07-08"
+
+    - exigence: "Isolation de combles perdus par soufflage : conditions du NF DTU 45.11"
+      seuil: "Soufflage INTERDIT si humidité absolue du comble > 5 g/m³ ; piges de hauteur, arrêtoirs aux conduits de fumée, déflecteurs, étiquette signalétique obligatoires"
+      condition: "Combles perdus, isolant en vrac soufflé mécaniquement"
+      ref: "NF DTU 45.11"
+      statut: a_valider_namur
+      source: "ffb-savoir-chiffrage-lot02.md — fiche FFB (secondaire), 2026-07-08"
+
   "03":
     - exigence: "Débits minimaux de calcul et diamètres intérieurs minimum des canalisations d'alimentation par appareil sanitaire"
       seuil: "Évier 0,20 l/s (Ø 12 mm) ; lavabo/bidet 0,20 (Ø 10) ; baignoire 0,33 (Ø 13) ; douche 0,20 (Ø 12) ; WC à réservoir 0,12 (Ø 10) ; lave-mains 0,10 (Ø 10) ; lave-linge 0,20 (Ø 10) ; lave-vaisselle 0,10 (Ø 10)"
