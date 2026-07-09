@@ -1,0 +1,1268 @@
+# normes-par-lot.yaml — SOCLE NORMATIF PAR LOT : catalogue canonique machine
+# ---------------------------------------------------------------------------
+# Consolidation des 4 recensements de groupe du 2026-07-09 :
+#   chantier-gros-oeuvre (lots 00, 01, 12), second-oeuvre-sec (lots 02, 06, 07),
+#   lots-techniques (lots 03, 04, 05), finitions (lots 08, 09, 10, 11).
+# Chaque entrée = MÉTADONNÉES publiques d'un texte (ref, titre, édition, statut,
+# source publique). AUCUN contenu de texte licencié (Reef/AFNOR/CSTB payant)
+# n'est recopié ici. Les seuils chiffrés vivent dans dtu_rules.yaml (registre),
+# après lecture de la source primaire.
+#
+# RÈGLE DE CONSOMMATION : tout agent/outil qui charge le bloc d'un lot DOIT
+# charger AUSSI le bloc `transverse` (textes qui touchent tous les lots).
+# Un texte multi-lots non universel (ex. arrêté du 24 mars 1982) est répété
+# dans chaque lot concerné, avec la MÊME graphie de ref partout.
+
+meta:
+  generated: "2026-07-09"
+  methode: >-
+    Gisements internes lus d'abord (lot-norms-mapping.yaml du 04/06, dtu_rules.yaml,
+    check_dtu_refs.py, KB normes-dtu.md par lot, ffb-techniques-index.yaml,
+    _seuils-reglementaires.md), puis vérification publique de CHAQUE référence
+    retenue (boutiques CSTB/AFNOR, Norm'Info, liste CSTB des DTU en vigueur au
+    9 juillet 2025, Legifrance, BOFiP, ffbatiment.fr, Cegibat-GRDF, ccfat.fr,
+    programmepacte.fr, ameli.fr). Consolidation multi-groupes avec déduplication
+    des graphies de ref et extraction des textes universels vers le bloc transverse.
+  licence: >-
+    Métadonnées publiques seulement ; textes intégraux = Reef (licence Namur),
+    citation seule. Les documents gratuits en plein texte (Legifrance, RAGE/PACTE/
+    PROFEEL, e-Cahiers CSTB publics, règles professionnelles FFB) sont téléchargeables ;
+    les DTU/NF/normes AFNOR restent en citation seule (droit d'auteur).
+  statuts:
+    statut: "en_vigueur = texte applicable à la date de génération (les textes annulés/abrogés/remplacés sont dans refs_perimees, jamais dans les blocs lots)."
+    statut_verif: "confirme_public = édition et vigueur recoupées sur au moins une source publique citée ; edition_a_confirmer = texte identifié mais édition exacte non recoupée cette session."
+    deja_au_registre: "true = le texte a déjà au moins une règle dans dtu_rules.yaml et/ou figure dans l'allowlist check_dtu_refs.py ; false = hors registre et hors allowlist (NE PAS citer en description client avant inscription)."
+    priorite_reef: "haute/moyenne = texte PAYANT dont des seuils chiffrés utiles au chiffrage restent à extraire via le protocole registre (source primaire lue -> statut verifie -> allowlist) ; basse = texte gratuit en plein texte, ou citation d'appui sans seuil propre, ou seuils déjà extraits."
+  registre: "dtu_rules.yaml (racine maestro-norms) — seul endroit où vivent les seuils chiffrés."
+  garde_fou_ci: "check_dtu_refs.py ne détecte que les tokens NF DTU / NF EN / NF C 15-100 / arrêté : les e-Cahiers CSTB et articles de codes cités en description client ne seraient PAS contrôlés."
+
+lots:
+
+  "00":
+    label: "Installation de chantier - Nettoyage"
+    entrees:
+      - ref: "Arrêté du 21 décembre 2004"
+        titre: "Arrêté relatif aux vérifications des échafaudages et modifiant l'annexe de l'arrêté du 22 décembre 2000"
+        edition: "21 décembre 2004, version consolidée en vigueur"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000240930"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Impose examen journalier + vérification trimestrielle + vérification à chaque (re)mise en service de l'échafaudage — cadence et justifie le coût d'un poste échafaudage de longue durée."
+      - ref: "Recommandation R408 (CNAMTS)"
+        titre: "Montage, utilisation et démontage des échafaudages de pied"
+        edition: "Adoptée le 10 juin 2004 (annule et remplace la R279)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.ameli.fr/sites/default/files/Documents/5338/document/recommandation-r408_assurance-maladie.pdf"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Exigence de compétence/formation des monteurs opposable via CARSAT — justifie la sous-traitance du montage d'échafaudage à une entreprise formée R408 (le corpus FFB lot 00 est entièrement consacré aux échafaudages)."
+      - ref: "NF EN 12811-1"
+        titre: "Équipements temporaires de chantiers — Partie 1 : échafaudages — Exigences de performance et étude, en général"
+        edition: "Août 2004"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://norminfo.afnor.org/norme/NF%20EN%2012811-1/equipements-temporaires-de-chantiers-partie-1-echafaudages-exigences-de-performance-et-etude-en-general/74180"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Norme de performance des échafaudages référencée par le cadre réglementaire de 2004 — citation d'appui matériel (classes de charge), sans seuil de chiffrage propre."
+
+  "01":
+    label: "Démolition / Déposes - Évacuation"
+    entrees:
+      - ref: "Décret n° 2021-821 du 25 juin 2021"
+        titre: "Décret relatif au diagnostic portant sur la gestion des produits, équipements, matériaux et des déchets issus de la démolition ou de la rénovation significative de bâtiments (diagnostic PEMD)"
+        edition: "25 juin 2021, applicable depuis le 1er janvier 2022 (modifié — arrêté du 26 mars 2023, application au 1er juillet 2023)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043704853"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Diagnostic PEMD du maître d'ouvrage : seuil surface cumulée > 1 000 m² ou activité à substances dangereuses — généralement HORS périmètre d'une rénovation d'appartement Maestro, à connaître pour ne pas le promettre à tort et le détecter sur les gros immeubles. NB : le socle amiante (RAT) et déchets (tri 7 flux, mentions devis) du lot vit au bloc transverse."
+
+  "02":
+    label: "Plâtrerie - Cloisonnement"
+    entrees:
+      - ref: "NF DTU 25.41"
+        titre: "Travaux de bâtiment — Ouvrages en plaques de plâtre — Plaques à faces cartonnées (P1-1, P1-2, P2)"
+        edition: "Février 2022 (remplace l'édition décembre 2012)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-2541-p11/travaux-de-batiment-ouvrages-en-plaques-de-platre-plaques-a-faces-cartonnee/fa194671/321485"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Texte cœur du lot (cloisons, contre-cloisons, plafonds plaques) ; 6 règles déjà lues verbatim au Reef et vérifiées au registre dtu_rules.yaml."
+      - ref: "NF DTU 25.42"
+        titre: "Travaux de bâtiment — Ouvrages de doublage et habillage en complexes et sandwiches — Plaques de parement en plâtre et isolant"
+        edition: "Décembre 2012 + amendements A1 d'avril 2026 (P1-1 et P1-2 : PSE 140→160 mm, PU 120→140 mm, extension zones très froides/DROM, biseautage en tableau de baie)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.ffbatiment.fr/actualites-batiment/actualite-bam/amendement-nf-dtu-complexes-doublage"
+        deja_au_registre: true
+        priorite_reef: moyenne
+        justification: "Gouverne les doublages collés (poste courant en réno thermique IdF) ; les seuils registre datent de la base 2012, l'A1 2026 élargit les épaisseurs d'isolant — à relire au Reef avant chiffrage de doublages épais."
+      - ref: "NF DTU 25.31"
+        titre: "Travaux de bâtiment — Ouvrages en carreaux de plâtre"
+        edition: "Avril 2017 (remplace NF P 72-202-1, DTU 25.31 d'avril 1994)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.batirama.com/article/2261-nf-dtu-25.31-ouvrages-en-carreaux-de-platre.html"
+        deja_au_registre: false
+        priorite_reef: moyenne
+        justification: "Cloisons en carreaux de plâtre (dont hydrofuges en pièces humides) encore fréquentes en rénovation IdF — absent du mapping 04/06 et du registre, à intégrer."
+      - ref: "NF DTU 25.1"
+        titre: "Travaux de bâtiment — Enduits intérieurs en plâtre"
+        edition: "Novembre 2010 (remplace les DTU 25.1/25.221/25.222/25.232 de mai 1993)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://norminfo.afnor.org/norme/nf-dtu-251-p1-1/travaux-de-batiment-enduits-interieurs-en-platre-partie-1-1-cahier-des-clauses-techniques-types-cct/73963"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Réparations/raccords d'enduits plâtre traditionnels du bâti ancien (haussmannien, plâtre sur lattis) — cas récurrent en rénovation parisienne, hors mapping actuel."
+      - ref: "NF DTU 25.51"
+        titre: "Travaux de bâtiment — Mise en œuvre des ouvrages en staff traditionnel"
+        edition: "Mai 2011 + amendement A1 de mars 2018 (extension aux ouvrages en GRG)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://m.boutique.afnor.org/fr-fr/norme/nf-dtu-2551-p11-a1/travaux-de-batiment-mise-en-oeuvre-des-ouvrages-en-staff-traditionnel-parti/fa191454/80460"
+        deja_au_registre: true
+        priorite_reef: moyenne
+        justification: "Corniches, moulures et plafonds staff du bâti ancien IdF ; entrée registre en a_valider_namur sur source FFB secondaire — lecture Reef primaire à faire avant passage en verifie."
+      - ref: "NF DTU 58.1"
+        titre: "Travaux de bâtiment — Plafonds suspendus modulaires"
+        edition: "Mai 2019 (remplace l'édition décembre 2008)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://boutique.cstb.fr/detail/documents-techniques-unifies/dtu-nf-dtu/58-plafonds-suspendus/nf-dtu-58-1-plafonds-suspendus-modulaires"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Plafonds dalles démontables (surtout tertiaire, ponctuel en résidentiel) ; poste opt-in FFB créé 08/07 en a_valider_namur — la KB citait « juin 2019 », l'édition CSTB est mai 2019."
+      - ref: "NF DTU 45.11"
+        titre: "Travaux de bâtiment — Isolation thermique de combles par soufflage d'isolant en vrac (laines minérales ou ouate de cellulose)"
+        edition: "Novembre 2025 (remplace l'édition mars 2020, applicable avril 2020)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.batirama.com/article/62879-nf-dtu-45.11-isolation-thermique-de-combles-par-soufflage-d-isolant-en-vrac.html"
+        deja_au_registre: true
+        priorite_reef: haute
+        justification: "Poste soufflage combles (opt-in FFB, a_valider_namur) : NOUVELLE édition novembre 2025 non reflétée dans les gisements internes — relire les seuils (humidité 5 g/m³, piges, déflecteurs) sur cette édition au Reef."
+      - ref: "e-Cahier CSTB 3567_V2"
+        titre: "Classement des locaux en fonction de l'exposition à l'humidité des parois (EA / EB / EB+ / EC)"
+        edition: "Version V2 de novembre 2021 (remplace le Cahier 3567 de mai 2006)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.ccfat.fr/groupes-specialises/telecharger/3567-v2-classement-locaux-en-fonction-humidit-9898/"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Pilote le choix plaques hydro/standard par local (croisé avec NF DTU 25.41/58.1) ; la KB lot 02 cite encore l'édition 2006 — la V2 2021 est téléchargeable publiquement sur ccfat.fr (Reef inutile)."
+      - ref: "Arrêté du 3 mai 2007 (modifié par arrêté du 22 mars 2017)"
+        titre: "Arrêté relatif aux caractéristiques thermiques et à la performance énergétique des bâtiments existants (RT existant « par élément »)"
+        edition: "Rédaction issue de l'arrêté du 22 mars 2017, en vigueur depuis le 1er janvier 2018"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000822199/"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Réglementaire transverse du lot : R minimales des parois opaques dès qu'on installe/remplace une isolation (doublages, combles) en bâtiment existant < 1000 m² — au registre seulement côté lot 07 (fenêtres), pas pour les parois opaques ; texte intégral gratuit sur Legifrance."
+      - ref: "Arrêté du 24 décembre 2015"
+        titre: "Arrêté relatif à l'accessibilité aux personnes handicapées des bâtiments d'habitation collectifs et des maisons individuelles lors de leur construction"
+        edition: "En vigueur (permis déposés à compter du 1er avril 2016 ; modifié par arrêté du 11 octobre 2019)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000031692481"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Source du seuil couloir 0,90 m hérité de la saga : texte NEUF uniquement — en rénovation de logement privé existant l'exigence n'est pas opposable de plein droit, à qualifier au cas par cas (alerte de plan, jamais citation client)."
+      - ref: "Guide RAGE — Isolation thermique par l'intérieur (rénovation)"
+        titre: "Guide RAGE « Isolation thermique par l'intérieur » — Rénovation"
+        edition: "Juin 2015 (programme RAGE/PACTE, plein texte gratuit)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.programmepacte.fr/guide-rage-isolation-thermique-interieur-reno-2015-06"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Remplace l'entrée morte du mapping (URL générique AQC) : règles de l'art ITI/doublages en rénovation, gratuit plein texte — complément non normatif du NF DTU 25.42."
+
+  "03":
+    label: "Plomberie - Sanitaires"
+    entrees:
+      - ref: "NF DTU 60.1 (P 40-201)"
+        titre: "Travaux de bâtiment — Plomberie sanitaire pour bâtiments (parties P1-1-1 alimentation EF/ECS, P1-1-2 évacuation EU/EP, P1-1-3 appareils sanitaires, P1-2, P2)"
+        edition: "Décembre 2012 (remplace NF P 40-201 de mai 1993 + A1/A2 ; un amendement A1 existe sur la partie P1-2, date à préciser)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://boutique.cstb.fr/detail/documents-techniques-unifies/dtu-nf-dtu/60-plomberie/nf-dtu-60-1-plomberie-sanitaire-pour-batiments"
+        deja_au_registre: true
+        priorite_reef: moyenne
+        justification: "DTU socle du lot (pose des appareils, alimentation, évacuation) ; le registre couvre P1-1-3 (appareils, lu au Reef) mais pas P1-1-1/P1-1-2 (réseaux), à ouvrir pour compléter ; un Calepin de chantier FFB lui est dédié."
+      - ref: "NF DTU 60.11 (P 40-202)"
+        titre: "Travaux de bâtiment — Règles de calcul des installations de plomberie sanitaire et d'évacuation des eaux pluviales (P1-1 alimentation, P1-2 bouclage ECS, P2 évacuation EU/EV, P3 EP)"
+        edition: "Août 2013 (remplace DTU 60.11 d'octobre 1988)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://boutique.cstb.fr/Detail/Documents-Techniques-Unifies/DTU-NF-DTU/60-Plomberie/NF-DTU-60-11-Regles-de-calcul-des-installations-de"
+        deja_au_registre: true
+        priorite_reef: haute
+        justification: "Règles de dimensionnement du lot ; le registre n'a que le Tableau 1 alimentation (P1-1) — les diamètres d'évacuation par appareil (P2) sont des seuils chiffrés directement utiles au chiffrage, non extraits."
+      - ref: "NF DTU 60.5 (P 41-221)"
+        titre: "Canalisations en cuivre — Distribution d'eau froide et chaude sanitaire, évacuation d'eaux usées, d'eaux pluviales, installations de génie climatique"
+        edition: "Décembre 2007 (prise d'effet janvier 2008 ; remplace l'édition 1993)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://boutique.cstb.fr/Detail/Documents-Techniques-Unifies/DTU-NF-DTU/60-Plomberie/NF-DTU-60-5-Canalisation-en-cuivre-Distribution"
+        deja_au_registre: false
+        priorite_reef: moyenne
+        justification: "Le cuivre reste le matériau de référence des reprises/modifications de réseaux en rénovation IdF ; seuils de mise en œuvre (supports, façonnage, incorporation) utiles aux descriptions techniques."
+      - ref: "NF DTU 60.2 (P 41-220)"
+        titre: "Canalisations en fonte — Évacuations d'eaux usées, d'eaux vannes et d'eaux pluviales"
+        edition: "Octobre 2007 (remplace NF P 41-220 de mai 1993 + A1/A2)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://boutique.cstb.fr/Detail/Documents-Techniques-Unifies/DTU-NF-DTU/60-Plomberie/NF-DTU-60-2-Canalisations-en-fonte-Evacuations-d-e"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Raccordements aux chutes fonte des immeubles collectifs anciens (cas fréquent en réno IdF) ; utile ponctuellement, peu de seuils de chiffrage."
+      - ref: "NF DTU 60.33 (P 41-213)"
+        titre: "Canalisations en polychlorure de vinyle non plastifié — Évacuation d'eaux usées et d'eaux vannes"
+        edition: "Octobre 2007 (confirmée en novembre 2017)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://boutique.cstb.fr/detail/documents-techniques-unifies/dtu-nf-dtu/60-plomberie/nf-dtu-60-33-evacuation-eaux-usees-et-vannes"
+        deja_au_registre: false
+        priorite_reef: moyenne
+        justification: "Le PVC est le matériau standard des évacuations refaites en rénovation ; pentes, ventilation de chute et règles d'assemblage = seuils utiles aux postes évacuation."
+      - ref: "NF DTU 60.32 (P 41-212)"
+        titre: "Canalisations en polychlorure de vinyle non plastifié — Évacuation des eaux pluviales"
+        edition: "Novembre 2007"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.batirama.com/article/27582-nf-dtu-60.32-canalisations-en-pvc-non-plastifie-evacuation-des-ep.html"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Complément EP du 60.33 (le 60.33 interdit les EP) ; concerne les descentes EP en PVC, cas plus rare dans le périmètre logement intérieur."
+      - ref: "Arrêté du 23 juin 1978 (modifié, not. arrêté du 30 novembre 2005)"
+        titre: "Arrêté relatif aux installations fixes destinées au chauffage et à l'alimentation en eau chaude sanitaire des bâtiments d'habitation, de bureaux ou recevant du public"
+        edition: "Version consolidée en vigueur (modification clé : arrêté du 30/11/2005 — ECS ≥ 50 °C en distribution >3 L, limitation 50 °C aux points de puisage des salles de bains / 60 °C ailleurs)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006074117/"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Réglementaire transverse ECS (anti-légionelle + anti-brûlure) touchant tout poste production/distribution ECS du lot 03 (et le chauffage lot 04 via son art. 35, déjà en renvoi au registre) ; texte gratuit sur Legifrance, pas besoin du Reef."
+      - ref: "NF EN 1717"
+        titre: "Protection contre la pollution de l'eau potable dans les réseaux intérieurs et exigences générales des dispositifs de protection contre la pollution par retour"
+        edition: "Mars 2001"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-en-1717/protection-against-pollution-of-potable-water-in-water-installations-and-ge/fa039075/464"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Norme clé citée par le NF DTU 60.1 pour les ensembles de protection (clapets, disconnecteurs, surverses) — justifie les postes de protection des réseaux, sans seuil de chiffrage propre."
+      - ref: "e-Cahier CSTB 2808_V2 (CPT)"
+        titre: "Systèmes de canalisations sous pression à base de tubes en matériaux de synthèse (tubes en couronnes et en barres) — Cahier des prescriptions techniques communes de mise en œuvre"
+        edition: "Novembre 2011 (remplace le cahier 2808 de mai 1995)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.ccfat.fr/groupes-specialises/telecharger/canalisations-tubes-matriaux-de-synthse-1595/"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Référentiel de mise en œuvre du PER et du multicouche (omniprésents en rénovation, hors DTU) — document CSTB public gratuit, complète le domaine traditionnel des DTU 60.x. À citer comme CPT, jamais comme « DTU »."
+
+  "04":
+    label: "Chauffage - Ventilation - Climatisation"
+    entrees:
+      - ref: "NF DTU 68.3 (P 50-413)"
+        titre: "Installations de ventilation mécanique (P1-1-1 règles générales, P1-1-2 VMC simple flux autoréglable, P1-1-3 VMC gaz, P1-1-4 VMC double flux autoréglable, P1-2, P2)"
+        edition: "Juin 2013 (P1-1-1 à P1-1-3, P1-2, P2 — remplace DTU 68.1/68.2) + P1-1-4 d'avril 2017"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://boutique.cstb.fr/detail/documents-techniques-unifies/dtu-nf-dtu/68-ventilation/nf-dtu-68-3-installations-de-ventilation-mecanique"
+        deja_au_registre: true
+        priorite_reef: moyenne
+        justification: "DTU socle de la VMC (poste récurrent des presets pièces humides) ; P1-1-1 déjà lu au Reef, mais P1-1-2 (dimensionnement simple flux) et P1-1-4 (double flux) contiennent des seuils non extraits ; Calepin de chantier FFB dédié."
+      - ref: "Arrêté du 24 mars 1982 (modifié par arrêté du 28 octobre 1983)"
+        titre: "Arrêté relatif à l'aération des logements — débits d'extraction réglementaires par pièce de service"
+        edition: "Version consolidée en vigueur"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000862344"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Source réglementaire FIGÉE des débits mini (arbitrage Namur 08/07) — barème complet déjà au registre en statut verifie, lu verbatim sur Legifrance ; texte gratuit. Rappel : les 75 m³/h SdB+WC des presets = confort Maestro AU-DESSUS du minimum réglementaire, pas un seuil normatif."
+      - ref: "NF DTU 24.1 (P 51-201)"
+        titre: "Travaux de fumisterie — Systèmes d'évacuation des produits de combustion desservant un ou des appareils (P1-1-1 règles générales, P1-1-2 appareils gaz type B, P1-2, P2)"
+        edition: "Septembre 2020 (remplace l'édition février 2006 + amendements déc. 2011 et déc. 2012)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://cegibat.grdf.fr/actualites/travaux-fumisterie-nouveau-nf-dtu-24-1"
+        deja_au_registre: true
+        priorite_reef: moyenne
+        justification: "Référence de tout conduit de fumée / raccordement (poêles, chaudières) ; P1-1-1 déjà lu au Reef (débouché toiture), P1-1-2 (gaz type B) reste à ouvrir si postes gaz."
+      - ref: "NF DTU 24.2 (P 51-202)"
+        titre: "Travaux d'âtrerie (cheminées à foyer ouvert ou fermé, inserts)"
+        edition: "Décembre 2006 + amendement A1 de décembre 2011"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://norminfo.afnor.org/norme/nf-dtu-242/travaux-de-batiment-travaux-datrerie-partie-1-1-cahier-des-clauses-techniques-partie-1-2-criteres-generaux-de-choix/96006"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Complète le 24.1 pour les inserts/foyers fermés rencontrés en rénovation de maisons IdF ; distances de sécurité chiffrées, mais poste peu fréquent chez Maestro."
+      - ref: "NF DTU 65.14 (P 52-307)"
+        titre: "Mise en œuvre des planchers à eau : chauffants et chauffants réversibles"
+        edition: "Juillet 2023 (remplace l'édition juillet 2006, désormais planchers réversibles inclus)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://boutique.cstb.fr/detail/documents-techniques-unifies/dtu-nf-dtu/65-chauffage/dtu-65-14-planchers-chauffants-eau-chaud-ed-07-202"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Édition 2023 déjà lue au Reef (ANVY-1) et seuils clés au registre (28 °C sol, 50/65 °C fluide) ; Calepin de chantier FFB dédié."
+      - ref: "NF DTU 65.16 (P 52-310)"
+        titre: "Installations de pompes à chaleur (chauffage et/ou production d'ECS, neuf et rénovation, résidentiel et tertiaire)"
+        edition: "Juin 2017 (publié novembre 2017)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://boutique.cstb.fr/Detail/Documents-Techniques-Unifies/DTU-NF-DTU/65-Chauffage/NF-DTU-65-16-Installations-de-pompes-a-chaleur"
+        deja_au_registre: false
+        priorite_reef: haute
+        justification: "Les PAC sont le poste de remplacement d'énergie dominant en rénovation (TVA 5,5 % RGE) ; le savoir FFB le cite hors allowlist (annexe J inertie, dimensionnement par déperditions) — seuils à extraire au Reef avant citation client."
+      - ref: "NF DTU 65.12 (P 50-601)"
+        titre: "Installations solaires thermiques avec des capteurs vitrés (chauffage et/ou ECS)"
+        edition: "Décembre 2012 (remplace NF P 50-601-1 / DTU 65.12 de mai 1993 + A1/A2)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://boutique.cstb.fr/Detail/Documents-Techniques-Unifies/DTU-NF-DTU/65-Chauffage/NF-DTU-65-12-Installations-solaires-thermiques"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "CESI/SSC possibles en pavillon IdF mais rares dans les presets Maestro ; un Calepin de chantier FFB lui est dédié (détecteur de DTU applicable), à garder en réserve."
+      - ref: "NF DTU 61.1 (P 45-204)"
+        titre: "Installations de gaz dans les locaux d'habitation (terminologie, clauses techniques, évacuation des produits de combustion, aménagements généraux, règles de calcul — parties 1 à 7)"
+        edition: "Dernière révision : juin 2010 (éditions antérieures selon parties — détail par partie à confirmer sur la boutique AFNOR)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://cegibat.grdf.fr/reglementation/gaz/nf-dtu-61-1-reglementation-installations-gaz-habitation"
+        deja_au_registre: false
+        priorite_reef: moyenne
+        justification: "Règle de l'art de mise en œuvre gaz (détalonnage 2 cm, appareils type B cités par le savoir FFB hors allowlist) ; à lire conjointement avec l'arrêté du 23/02/2018 qui porte désormais les exigences de sécurité."
+      - ref: "Arrêté du 23 février 2018 (modifié)"
+        titre: "Arrêté relatif aux règles techniques et de sécurité applicables aux installations de gaz combustible des bâtiments d'habitation individuelle ou collective, y compris les parties communes"
+        edition: "23 février 2018, en vigueur au 01/01/2020, modifié par l'arrêté du 4 mars 2021 — remplace l'arrêté du 2 août 1977"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000036667631"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Texte réglementaire pilote de tout poste gaz en rénovation (modifications d'installation existante incluses, certificats de conformité gaz) ; gratuit sur Legifrance."
+      - ref: "Règles professionnelles UMGCCP-FFB « Canalisations hydrauliques »"
+        titre: "Canalisations de chauffage et de conditionnement d'air — métalliques et matériaux de synthèse (règles professionnelles acceptées par la C2P/AQC)"
+        edition: "1re édition, décembre 2021 — comble l'annulation du NF DTU 65.10 (2017)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.ffbatiment.fr/-/media/Project/FFB/FFB/Articles/UMGCCP-406/PDF/regles-professionnelles-canalisations-chauffage-conditionnement-air-metalliques-materiaux-synthese.pdf"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Référentiel de remplacement du DTU 65.10 annulé pour les réseaux hydrauliques de chauffage (technique courante assurable) ; PDF public gratuit chez FFB, pas besoin du Reef."
+      - ref: "Arrêté du 3 mai 2007 (modifié par arrêté du 22 mars 2017)"
+        titre: "Arrêté relatif aux caractéristiques thermiques et à la performance énergétique des bâtiments existants (RT existant « par élément »)"
+        edition: "Version consolidée en vigueur (rédaction issue de l'arrêté du 22 mars 2017, applicable depuis le 01/01/2018)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000034271631"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Réglementaire transverse rénovation : calorifuge classe III hors volume chauffé, régulation classe IV, équilibrage par pied de colonne (savoir FFB lot 04) — déjà au registre côté lot 07 (Uw), le volet CVC reste à formaliser ; texte gratuit."
+      - ref: "Arrêté du 30 juin 1999"
+        titre: "Arrêté relatif aux caractéristiques acoustiques des bâtiments d'habitation (bruits des équipements : 30 dB(A) pièces principales / 35 dB(A) cuisines)"
+        edition: "30 juin 1999 (applicable aux permis déposés depuis le 01/01/2000)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000211449"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Cité par le savoir FFB lot 04 (VMC double flux) comme repère acoustique des équipements ; exigence du NEUF, à manier en rénovation comme cible de bonne pratique, pas comme obligation rétroactive."
+      - ref: "Recommandations professionnelles RAGE — VMC simple flux en habitat collectif (rénovation)"
+        titre: "Ventilation mécanique contrôlée simple flux en habitat collectif existant — recommandations professionnelles (programme RAGE)"
+        edition: "Février 2013 (une mise à jour PROFEEL est possible — à vérifier sur programmeprofeel.fr)"
+        statut: en_vigueur
+        statut_verif: edition_a_confirmer
+        source_publique: "https://media.xpair.com/pdf/reglementation/recommandation-pro-rage-vmc-simple-flux-collectif-reno-2013-02.pdf"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Seule référence de mise en œuvre dédiée à la RÉNOVATION de VMC en collectif (le NF DTU 68.3 vise le neuf) ; texte intégral gratuit, reconnu des assureurs — cas type des immeubles IdF."
+      - ref: "Recommandations professionnelles RAGE/PACTE — VMC double flux en habitat collectif"
+        titre: "VMC double flux en habitat collectif — conception et dimensionnement, installation et mise en service, entretien et maintenance"
+        edition: "Édition programme RAGE/PACTE (date exacte à confirmer sur programmepacte.fr)"
+        statut: en_vigueur
+        statut_verif: edition_a_confirmer
+        source_publique: "https://www.programmepacte.fr/vmc-double-flux-en-habitat-collectif-conception-et-dimensionnement-installation-et-mise-en-service"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Le savoir FFB rappelle que le NF DTU 68.3 seul ne couvre pas la double flux collective : ces recommandations gratuites sont le référentiel reconnu des assureurs pour ce poste."
+      - ref: "Code de l'environnement, art. R. 543-75 à R. 543-123"
+        titre: "Fluides frigorigènes utilisés dans les équipements thermodynamiques — attestation de capacité obligatoire pour toute manipulation (climatisation, PAC air/air) — ex-décret n° 2007-737 du 7 mai 2007"
+        edition: "Version consolidée en vigueur"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074220/LEGISCTA000006176997/"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Garde-fou sous-traitance : la pose d'un split/PAC air-air exige une entreprise titulaire de l'attestation de capacité fluides — condition à vérifier avant tout poste climatisation ; texte gratuit."
+
+  "05":
+    label: "Électricité"
+    entrees:
+      - ref: "NF C 15-100 (série 2024)"
+        titre: "Installations électriques à basse tension — série de ~20 normes (dont partie 7-701 salles d'eau, partie 7-722 IRVE, partie 10 / titre habitation)"
+        edition: "Série publiée le 23 août 2024 ; s'applique aux installations neuves et aux modifications/extensions depuis septembre 2025. Nuance réglementaire : l'arrêté du 3 août 2016 vise encore l'édition 2002 + A1 à A5 (titre 10) pour la présomption de conformité, tant qu'il n'est pas mis à jour"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.afnor.org/en/news/efqm-excellence/electrical-installations-nf-c15-100/"
+        deja_au_registre: true
+        priorite_reef: haute
+        justification: "Norme socle du lot (DDR, socles par pièce, sections, volumes salle d'eau, ETEL/GTL, IRVE) ; HORS Reef de Namur — le TODO du registre (DDR type F, DPDA, 7-722, promotion des 4 entrées a_valider_namur du 08/07) exige l'acquisition du texte officiel AFNOR 2024."
+      - ref: "NF C 14-100"
+        titre: "Installations de branchement à basse tension (entre le point de raccordement au réseau et le point de livraison)"
+        edition: "Juillet 2021 (remplace l'édition février 2008 + A1 mars 2011, A2 août 2014, A3 mars 2016)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-c14100/lowvoltage-mains-installations/fa192206/261079"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Frontière amont du lot (branchement, panneau de contrôle) citée par le mapping et par la règle Consuel du registre ; la mise en œuvre relève surtout d'Enedis, peu de seuils de chiffrage Maestro."
+      - ref: "DTU 70.1 (NF P 80-201)"
+        titre: "Installations électriques des bâtiments à usage d'habitation — cahier des clauses spéciales et clauses de marché (réception, attestation Consuel)"
+        edition: "Mai 1998 (P80-201-2 homologuée le 20/04/1998, effet 20/05/1998 ; remplace le CCS de décembre 1980)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-p802012/dtu-701-building-works-private-contracts-electrical-installations-in-housin/fa045804/10986"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Clauses d'exécution/réception du lot (délais Consuel, essais art. 6 NF C 15-100) déjà lues au Reef (ALR-1) et au registre en statut verifie."
+      - ref: "Arrêté du 3 août 2016"
+        titre: "Arrêté portant réglementation des installations électriques des bâtiments d'habitation (abroge l'arrêté du 22 octobre 1969)"
+        edition: "3 août 2016, applicable aux permis/DP déposés depuis le 01/09/2016 — présomption de conformité : NF C 15-100 titre 10 (édition 2002, mise à jour 2005, amendements A1 à A5) et NF C 14-100"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000032975211"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Ancrage réglementaire qui rend la NF C 15-100 opposable en habitation ; à surveiller : sa mise à jour vers la série 2024 fera basculer la référence réglementaire ; texte gratuit."
+      - ref: "Décret n° 72-1120 du 14 décembre 1972 (modifié, + arrêté d'application du 17 octobre 1973)"
+        titre: "Décret relatif au contrôle et à l'attestation de la conformité des installations électriques intérieures aux règlements et normes de sécurité en vigueur (attestation Consuel)"
+        edition: "Version consolidée en vigueur (modifié not. par décret n° 2001-222 du 6 mars 2001)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000696656"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Base légale de l'attestation Consuel exigée en rénovation lourde avec nouvelle mise sous tension — l'arrêté du 17/10/1973 est déjà cité en renvoi dans la règle DTU 70.1 du registre ; texte gratuit."
+      - ref: "Arrêté du 5 février 2013 (+ loi n° 2010-238 du 9 mars 2010 et décret n° 2011-36 du 10 janvier 2011)"
+        titre: "Arrêté relatif à l'application des articles R. 129-12 à R. 129-15 du CCH — installation, entretien et exigences des détecteurs autonomes avertisseurs de fumée (DAAF) dans les logements"
+        edition: "5 février 2013 (JO du 14/03/2013 ; obligation générale d'équipement depuis le 08/03/2015)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000027169390"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Réglementaire transverse du lot 05 : au moins un DAAF conforme NF EN 14604 par logement, de préférence dans la circulation desservant les chambres — poste systématique des rénovations complètes ; texte gratuit."
+      - ref: "NF EN 14604"
+        titre: "Dispositifs d'alarme de fumée (norme produit exigée pour les DAAF)"
+        edition: "Novembre 2005"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.economie.gouv.fr/dgccrf/securite-des-detecteurs-de-fumee"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Norme produit à citer dans la description du poste DAAF (présomption de conformité au règlement produits de construction) ; pas de seuil de mise en œuvre à extraire."
+      - ref: "NF C 16-600 (+ arrêté du 28 septembre 2017)"
+        titre: "État des installations électriques intérieures des immeubles à usage d'habitation (diagnostic électrique obligatoire vente/location)"
+        edition: "Juillet 2017 (remplace FD C 16-600 de juin 2015, elle-même remplaçant XP C 16-600 de février 2011)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://normalisation.afnor.org/actualites/diagnostic-electrique/"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Grille des 6 points de « mise en sécurité » qui cadre le périmètre minimal d'une rénovation électrique partielle (logements > 15 ans, vente/location) — utile au diagnostic amont, pas au chiffrage fin."
+      - ref: "Décret n° 2017-26 du 12 janvier 2017"
+        titre: "Décret relatif aux infrastructures de recharge pour véhicules électriques (IRVE) — qualification obligatoire de l'installateur au-delà de 3,7 kW"
+        edition: "12 janvier 2017, version consolidée en vigueur"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033860620/"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Garde-fou sous-traitance des postes borne de recharge (complément réglementaire de la partie 7-722 déjà au registre) : pose par professionnel qualifié IRVE obligatoire sauf dispositif ≤ 3,7 kW en résidentiel privé ; texte gratuit."
+
+  "06":
+    label: "Menuiseries intérieures - Agencement"
+    entrees:
+      - ref: "NF DTU 36.2"
+        titre: "Travaux de bâtiment — Menuiseries intérieures et agencement, bois et autres matériaux (nouveau périmètre incluant l'agencement)"
+        edition: "Novembre 2025 (remplace l'édition mai 2016, elle-même refonte du DTU 36.1)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.ffbatiment.fr/actualites-batiment/actualite-bam/nf-dtu-36-2-nouvelle-reference-menuiserie-interieure-agencement"
+        deja_au_registre: true
+        priorite_reef: moyenne
+        justification: "Texte cœur du lot (blocs-portes, plinthes, placards, désormais agencement) ; 6 règles verifie au registre sur l'édition nov. 2025 — reste à extraire au Reef la hauteur de détalonnage chiffrée ([à compléter] en KB)."
+      - ref: "NF DTU 36.3"
+        titre: "Travaux de bâtiment — Escaliers en bois et garde-corps associés (P1-1, P1-2, P2, P3)"
+        edition: "Septembre 2014 (annule le volet escaliers du DTU 31.1 de mai 1993)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://norminfo.afnor.org/norme/nf-dtu-363-p1-1/travaux-de-batiment-escaliers-en-bois-et-garde-corps-associes-partie-1-1-cahier-des-clauses-techniques-types-cct/90624"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Escaliers bois en duplex/maisons (cas ponctuel mais réel en réno IdF) ; un Calepin de chantier FFB dédié existe — détecteur de son applicabilité au lot."
+      - ref: "NF DTU 25.41"
+        titre: "Travaux de bâtiment — Ouvrages en plaques de plâtre — Plaques à faces cartonnées (interface plaquiste/menuisier)"
+        edition: "Février 2022"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-2541-p11/travaux-de-batiment-ouvrages-en-plaques-de-platre-plaques-a-faces-cartonnee/fa194671/321485"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Interface plaquiste/menuisier : la pose des huisseries légères « à l'avancement » relève du NF DTU 25.41 (lot 02), la pose « après coup » du NF DTU 36.2 — détermine quel corps d'état porte le poste (fiche FFB lot 06)."
+      - ref: "Arrêté du 24 mars 1982 (modifié par arrêté du 28 octobre 1983)"
+        titre: "Arrêté relatif à l'aération des logements"
+        edition: "Version consolidée en vigueur"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000862344"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Gouverne le détalonnage des portes (transit d'air vers pièces techniques) — règle FIGÉE Namur 08/07 : c'est cet arrêté, pas la NF C 15-100 ni la RT ; texte intégral gratuit sur Legifrance."
+      - ref: "Arrêté du 22 mars 2026"
+        titre: "Arrêté relatif aux performances de résistance au feu des produits, éléments de construction et d'ouvrages"
+        edition: "22 mars 2026 — ABROGE l'arrêté du 22 mars 2004 ; applicable aux demandes d'autorisation déposées à compter du 01/10/2026, le régime 2004 reste valable pour les dossiers antérieurs (les PV délivrés sous l'ancien régime restent valides jusqu'à leur échéance)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053716637"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Cadre réglementaire des PV de résistance au feu (EI 30/EI 60) exigés pour les blocs-portes techniques feu (fiche FFB lot 06) — attention : ne plus citer l'arrêté du 22 mars 2004, abrogé."
+      - ref: "Arrêté du 31 janvier 1986 (modifié)"
+        titre: "Arrêté relatif à la protection contre l'incendie des bâtiments d'habitation"
+        edition: "Version consolidée en vigueur (modifié notamment par arrêté du 19 juin 2015)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000474032"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Fixe l'exigence des blocs-portes palières en collectif (pare-flammes 1/4 h en 2e/3e famille, 1/2 h en 4e famille) — le cas « remplacement de porte palière en copropriété IdF » relève de ce texte, gratuit sur Legifrance."
+      - ref: "Arrêté du 24 décembre 2015"
+        titre: "Arrêté relatif à l'accessibilité aux personnes handicapées des bâtiments d'habitation collectifs et des maisons individuelles lors de leur construction"
+        edition: "En vigueur (permis déposés à compter du 1er avril 2016)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000031692481"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Source du seuil « largeur de porte 0,83 m » hérité de la saga : texte NEUF uniquement — en rénovation privée, applicabilité au cas par cas ; ne pas citer côté client tant que non enregistré (déjà signalé en KB lot 06)."
+
+  "07":
+    label: "Menuiseries extérieures"
+    entrees:
+      - ref: "NF DTU 36.5"
+        titre: "Travaux de bâtiment — Mise en œuvre des fenêtres et portes extérieures (P1-1 CCT, P1-2 CGM, P2)"
+        edition: "Avril 2010 (toujours l'édition en vigueur ; pas d'amendement à cette édition identifié)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://norminfo.afnor.org/norme/nf-dtu-365-p1-1/travaux-de-batiment-mise-en-oeuvre-des-fenetres-et-portes-exterieures-partie-1-1-cahier-des-clauses-techniques-types/81913"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Texte cœur du lot (calage, fixation, calfeutrement) ; 3 règles verifie au registre, lues verbatim au Reef le 19/06."
+      - ref: "FD DTU 36.5 P3"
+        titre: "Travaux de bâtiment — Mise en œuvre des fenêtres et portes extérieures — Partie 3 : mémento de choix en fonction de l'exposition"
+        edition: "Octobre 2010 (remplace le FD P 20-201 de décembre 2001)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/fd-dtu-365-p3/building-works-installation-of-windows-and-exteriors-doors-part-3-memento-o/fa167336/36372"
+        deja_au_registre: true
+        priorite_reef: haute
+        justification: "Tableau 8 = choix des classes AEV région × terrain × hauteur ; la combinaison type Île-de-France reste [à compléter] en KB — à dériver au Reef (ACJL-1) et faire valider Namur avant de figer une classe AEV par défaut."
+      - ref: "NF DTU 39"
+        titre: "Travaux de bâtiment — Travaux de vitrerie-miroiterie (P1-1, P1-2, P2, P3 contraintes thermiques, P4 dimensionnement ; FD P5 mémento sécurité)"
+        edition: "Octobre 2006 (+ amendements) ; FD DTU 39 P5 : juillet 2017 (remplace juillet 2012)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.batirama.com/article/12893-nf-dtu-39-travaux-de-vitrerie-miroiterie.html"
+        deja_au_registre: false
+        priorite_reef: moyenne
+        justification: "Vitrages : épaisseurs (P4) et vitrages de sécurité selon situation (P5 — allèges basses, portes vitrées) utiles au chiffrage remplacement fenêtres/portes-fenêtres ; jamais lu, hors allowlist."
+      - ref: "NF DTU 34.4"
+        titre: "Travaux de bâtiment — Mise en œuvre des fermetures et stores (P1-1, P1-2, P2 ; FD P3 mémento de choix)"
+        edition: "Septembre 2013 ; FD DTU 34.4 P3 : juillet 2015"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.batirama.com/article/12880-nf-dtu-34.4-mise-en-uvre-des-fermetures-et-stores.html"
+        deja_au_registre: false
+        priorite_reef: moyenne
+        justification: "Volets roulants/battants et stores, postes fréquents du lot en réno IdF ; cité par la fiche FFB motorisation mais HORS allowlist — à faire entrer au registre avant citation client (déjà signalé en KB)."
+      - ref: "NF DTU 34.1"
+        titre: "Travaux de bâtiment — Mise en œuvre des portes et portails industriels, commerciaux et résidentiels"
+        edition: "Août 2014 (remplace NF P 25-201-1/-2 de mai 1993 et A1 de juin 1994)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://m.boutique.afnor.org/norme/nf-dtu-341/travaux-de-batiment-mise-en-oeuvre-des-portes-et-portails-industriels-commerciaux-et-residentiels-partie-1-1-cahier-des-c/article/820472/fa185724"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Portes de garage et portails résidentiels (pavillons — cas Gautier/Pavillons-sous-Bois) ; un Calepin FFB dédié existe pour le lot 07."
+      - ref: "NF EN 14351-1+A2"
+        titre: "Fenêtres et portes — Norme produit, caractéristiques de performance — Partie 1 : fenêtres et blocs portes extérieurs pour piétons"
+        edition: "Novembre 2016 (publiée le 19/11/2016 ; réexamen prévu 11/2026)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://norminfo.afnor.org/norme/nf-en-14351-1a2/fenetres-et-portes-norme-produit-caracteristiques-de-performance-partie-1-fenetres-et-blocs-portes-exterieurs-pour-pietons/117081"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Norme produit harmonisée (marquage CE, déclaration des performances Uw/Sw/AEV) — base des exigences déclaratives au sourcing fourniture ; les valeurs viennent du fabricant, pas d'une lecture Reef."
+      - ref: "NF EN 12207"
+        titre: "Fenêtres et portes — Perméabilité à l'air — Classification"
+        edition: "Mars 2017 (remplace l'édition 2000)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.bureauveritas.fr/magazine/nouvelle-permeabilite-lair-des-fenetres-et-portes-nf-en-12207-mars-2017"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Classification A* du triptyque AEV citée dans les descriptions client (allowlistée) ; seuils d'usage déjà portés par le FD DTU 36.5 P3 au registre."
+      - ref: "NF EN 12208"
+        titre: "Fenêtres et portes — Perméabilité à l'eau (étanchéité à l'eau) — Classification"
+        edition: "Mai 2000 (édition en vigueur)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-en-12208/windows-and-doors-watertightness-classification/fa041917/17190"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Classification E* du triptyque AEV (allowlistée, citée au registre) ; l'exigence chiffrée par exposition est déjà au registre via le FD P3."
+      - ref: "NF EN 12210"
+        titre: "Fenêtres et portes — Résistance au vent — Classification"
+        edition: "Mai 2016 (remplace l'édition 2000)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-en-12210/windows-and-doors-resistance-to-wind-load-classification/fa173804/57292"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Classification V* du triptyque AEV (allowlistée) ; seuils d'usage portés par le FD P3 au registre."
+      - ref: "NF EN 1991-1-4 (+ NA)"
+        titre: "Eurocode 1 : actions sur les structures — Partie 1-4 : actions générales — Actions du vent (+ Annexe nationale NF EN 1991-1-4/NA et ses amendements)"
+        edition: "Novembre 2005 + A1 octobre 2010 ; Annexe nationale française P06-114-1/NA (amendée NA/A1, NA/A2)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/fr-fr/norme/nf-en-199114/eurocode-1-actions-sur-les-structures-partie-14-actions-generales-actions-d/fa104153/25897"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Support du calcul des pressions de vent derrière la classe V* (cité au registre) — sert la justification, jamais un chiffrage direct en résidentiel courant."
+      - ref: "Arrêté du 3 mai 2007 (modifié par arrêté du 22 mars 2017)"
+        titre: "Arrêté relatif aux caractéristiques thermiques et à la performance énergétique des bâtiments existants (RT existant « par élément ») — article 9 : Uw ≤ 1,9 W/m².K fenêtres remplacées, Ud ≤ 2 portes"
+        edition: "Rédaction issue de l'arrêté du 22 mars 2017 (art. 3-II), en vigueur depuis le 1er janvier 2018"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000822199/"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "OBLIGATION réglementaire de tout remplacement de menuiserie en existant (le standard brique Uw 1,4 est conforme avec marge) ; déjà sourcé Legifrance le 09/07, entrée registre en a_valider_namur."
+      - ref: "Fiche CEE BAR-EN-104 (v. A54-2)"
+        titre: "Fiche d'opération standardisée CEE BAR-EN-104 « Fenêtre ou porte-fenêtre complète avec vitrage isolant »"
+        edition: "Version A54-2, applicable aux opérations engagées à compter du 01/01/2024 (jusqu'au 01/07/2028)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-EN-104%20vA54-2%20%C3%A0%20compter%20du%2001-01-2024_0.pdf"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "CONDITION D'AIDE (pas une obligation) : Uw ≤ 1,3 et Sw ≥ 0,3 OU Uw ≤ 1,7 et Sw ≥ 0,36 — impose d'exiger la déclaration Sw au sourcing dès que le client vise CEE/MaPrimeRénov' ; PDF officiel déjà lu le 09/07."
+      - ref: "Arrêté du 17 novembre 2020 (art. 9)"
+        titre: "Arrêté relatif aux caractéristiques techniques et modalités de réalisation des travaux et prestations éligibles à MaPrimeRénov'"
+        edition: "En vigueur (mêmes seuils fenêtres que BAR-EN-104)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000042532442"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Pendant MaPrimeRénov' des seuils d'aide fenêtres — déjà sourcé Legifrance le 09/07, entrée registre en a_valider_namur ; ne pas citer côté client avant validation."
+      - ref: "Arrêté du 13 avril 2017"
+        titre: "Arrêté relatif aux caractéristiques acoustiques des bâtiments existants lors de travaux de rénovation importants"
+        edition: "En vigueur depuis le 1er juillet 2017"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000034443646"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "ABSENT de tous les gisements internes alors que très pertinent en IdF : le remplacement de fenêtres en zone de bruit (PGS aéroports, cartes « c » routes/fer) déclenche des exigences d'isolement acoustique — point de vigilance diagnostic à créer, texte gratuit sur Legifrance."
+      - ref: "Arrêté du 24 mars 1982 (modifié par arrêté du 28 octobre 1983)"
+        titre: "Arrêté relatif à l'aération des logements"
+        edition: "Version consolidée en vigueur"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000862344"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Le remplacement de menuiseries étanchéifie le logement : entrées d'air à intégrer aux menuiseries des pièces principales en ventilation par extraction ([à compléter] en KB — le texte public suffit, pas besoin du Reef)."
+      - ref: "Recommandations professionnelles RAGE — Menuiseries extérieures avec ITE"
+        titre: "Menuiseries extérieures avec une isolation thermique par l'extérieur — Mise en œuvre — Neuf et rénovation"
+        edition: "Novembre 2014 (programme RAGE, plein texte gratuit)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.programmepacte.fr/sites/default/files/pdf/guide-rage-menuiseries-exterieures-ite-2014-11_0.pdf"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Comble le silence du NF DTU 36.5 (2010) sur l'interface menuiserie/ITE (4 configurations de pose, membranes, bavettes) — référence citée par la fiche FFB lot 07, PDF direct vérifié."
+      - ref: "Recommandations professionnelles RAGE — Doubles fenêtres"
+        titre: "Doubles fenêtres — Prescription et mise en œuvre en rénovation de logements"
+        edition: "Avril 2014 (+ calepin de chantier PACTE, décembre 2018)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.programmepacte.fr/doubles-fenetres-renovation"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Solution type des bâtiments patrimoniaux/ABF (fréquent à Paris) où le remplacement de la fenêtre d'origine est refusé — la voie « double fenêtre » a en outre son propre seuil d'aide (Uw ≤ 1,8, Sw ≥ 0,32)."
+      - ref: "Cahier CSTB 3709_V2"
+        titre: "Systèmes d'isolation thermique extérieure par enduit sur isolant — Principe de mise en œuvre autour des baies en liaison avec les fenêtres et portes extérieures"
+        edition: "V2 de juin 2015 (remplace le Cahier 3709 de mai 2012)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.ccfat.fr/groupes-specialises/telecharger/principe-mise-en-oeuvre-autour-des-baies-liaison-1704/"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Complément CPT de l'interface baie/ITE (recouvrements d'isolant 25/40 mm) cité par la fiche FFB — la V2 2015 est téléchargeable publiquement sur ccfat.fr, la KB citait le 3709 sans version."
+      - ref: "NF P 01-012"
+        titre: "Dimensions des garde-corps — Règles de sécurité relatives aux dimensions des garde-corps et rampes d'escalier"
+        edition: "Révision publiée le 22 novembre 2024 (remplace l'édition de juillet 1988)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://france.apave.com/Actualites/News/Revision-norme-NF-P01-012-garde-corps-dans-les-batiments"
+        deja_au_registre: false
+        priorite_reef: moyenne
+        justification: "Point de contrôle chiffrage : fenêtre remplacée avec allège basse (< 0,90 m) = garde-corps ou barre d'appui à prévoir — la révision 2024 est récente, seuils à relire avant toute règle ferme."
+
+  "08":
+    label: "Carrelage - Faïence (étanchéité incluse)"
+    entrees:
+      - ref: "NF DTU 52.2"
+        titre: "Travaux de bâtiment — Pose collée des revêtements céramiques et assimilés — Pierres naturelles"
+        edition: "Juin 2022 (P1-1-1 murs int., P1-1-2 murs ext., P1-1-3 sols, nouvelle P1-1-4 SPEC ; remplace l'éd. nov. 2009 + A1 2014)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-dtu-522/building-works-ceramic-and-similar-tiles-fixing-with-adhesives-natural-ston/fa205480/327544"
+        deja_au_registre: true
+        priorite_reef: haute
+        justification: "Socle de la pose collée sol/mur, faïence murale comprise ; les entrées encollage/classes de colle du registre sont en a_valider_namur sur sources secondaires, et la nouvelle partie P1-1-4 (éd. 2022) intègre une partie des SPEC — lecture Reef nécessaire (code ABQO-3)."
+      - ref: "NF DTU 52.1"
+        titre: "Travaux de bâtiment — Revêtements de sol scellés"
+        edition: "Février 2020"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-dtu-521-p11/building-works-sealed-flooring-part-11-contract-bill-of-technical-model-cla/fa164840/335982"
+        deja_au_registre: true
+        priorite_reef: haute
+        justification: "Pose scellée (rénovation ancienne) ; la révision 2020 exclut la pose désolidarisée/flottante en plancher intermédiaire de logement collectif ; les seuils du registre (épaisseurs, joints, tolérances) sont sourcés sur copie tierce — à confirmer au Reef."
+      - ref: "NF DTU 26.2"
+        titre: "Travaux de bâtiment — Chapes et dalles à base de liants hydrauliques"
+        edition: "Avril 2008 + Amendement A1 (mai 2015) ; révision en cours (PR NF DTU 26.2 P2 chez AFNOR)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-dtu-262/building-works-screeds-and-slabs-with-a-base-of-hydraulic-binders-part-11-c/fa132752/31039"
+        deja_au_registre: true
+        priorite_reef: moyenne
+        justification: "Chapes support du carrelage : épaisseurs, pente d'écoulement et fractionnement déjà verifie au registre — préciser la date de l'A1 (mai 2015) et surveiller la révision."
+      - ref: "NF DTU 52.10"
+        titre: "Travaux de bâtiment — Mise en œuvre de sous-couches isolantes sous chape ou dalle flottantes et sous carrelage scellé"
+        edition: "Juin 2013 (remplace NF P 61-203 de décembre 2003)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-dtu-5210-p11/building-works-implementation-of-insulating-undercoats-under-floating-scree/fa174051/41455"
+        deja_au_registre: false
+        priorite_reef: moyenne
+        justification: "Sous-couches acoustiques/thermiques sous chape flottante — enjeu acoustique copropriété IdF ; la KB lot 08 le cite sous la coquille « NF DTU 52.11 » (à corriger)."
+      - ref: "e-Cahier CSTB 3756_V3"
+        titre: "Système de Protection à l'Eau sous Carrelage (SPEC) Résine — Cahier des Prescriptions Techniques d'exécution (QB11)"
+        edition: "Juillet 2021 (V3)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.cstb.fr/getmedia/22c2c09c-ab05-48a4-b775-8faeb76ac83c/qb11-cahier-CSTB-3756-v3-CPT-systeme-protection-eau-carrelage-resine-0721.pdf"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Référence SPEC résine retenue par Namur (08/07) : domaine d'emploi (sols P3 E2 max sans siphon, murs EC max) et mise en œuvre — plein texte PUBLIC et gratuit sur cstb.fr, le Reef est inutile ici."
+      - ref: "e-Cahier CSTB 3788"
+        titre: "Système de Protection à l'Eau sous Carrelage (SPEC) Natte — Cahier des Prescriptions Techniques d'exécution"
+        edition: "Août 2017"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.ffbatiment.fr/techniques-batiment/amenagement-finitions/carrelage-chapes/dossier-bam/spec-en-les-sous-carrelage-un-nouveau-cpt"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Variante nattes/lés du SPEC (déjà citée par les entrées SPEC du registre) — CPT CSTB public."
+      - ref: "e-Cahier CSTB 3567_V2"
+        titre: "Classement des locaux en fonction de l'exposition à l'eau/l'humidité des parois (EA / EB / EB+ privatif / EB+ collectif / EC)"
+        edition: "Version V2 de novembre 2021 (remplace le Cahier 3567 de mai 2006)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.ccfat.fr/groupes-specialises/telecharger/3567-v2-classement-locaux-en-fonction-humidit-9898/"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Définit les classes EA/EB/EB+/EC — le déclencheur du SPEC obligatoire ou facultatif selon le couple support × local. ATTENTION : le registre et la KB lot 08 citent encore l'édition mai 2006 — aligner les citations sur la V2 (novembre 2021), téléchargeable publiquement sur ccfat.fr."
+      - ref: "e-Cahier CSTB 3782_V2"
+        titre: "Notice sur le classement UPEC et Classement UPEC des locaux"
+        edition: "Juin 2018 (remplace le 3782 d'octobre 2017 ; applicable au 01/07/2018)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://evaluation.cstb.fr/doc/classement/upec/e-cahier-3782-v2.pdf"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Choix du carreau/revêtement selon l'usage du local (U/P/E/C) — cohérent avec les désignations Batiprix ; PDF public gratuit."
+      - ref: "Cahier CSTB 3529_V5"
+        titre: "Revêtements de sol céramiques collés au moyen de mortiers-colles dans les locaux P3 au plus — en RÉNOVATION — CPT d'exécution (QB11)"
+        edition: "Octobre 2023 (V5)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.cstb.fr/getmedia/4246fba8-d91a-4602-9d8d-eb8d13c18f41/qb11-cahier-CSTB-3529-v5-CPT-revetement-ceramique-sol-P3-renovation-1023.pdf"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "LA référence de la pose collée sur support existant (cœur de métier Maestro) avec diagnostic préalable obligatoire — la fiche FFB lot 08 la cite sans numéro ni date ; PDF public gratuit."
+      - ref: "Cahier CSTB 3666_V4"
+        titre: "Revêtements de sols intérieurs en carreaux céramiques de grand format et de format oblong, collés au moyen de mortiers-colles, dans les locaux P3 au plus (travaux neufs) — CPT (QB11)"
+        edition: "Avril 2021 (V4)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://evaluation.cstb.fr/doc/certification/certificats/qb11-01/qb11-01-cpt-sols-grands-formats-travaux-neufs-010421.pdf"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Grands formats au-delà des limites du NF DTU 52.2 (sols jusqu'à 10 000 cm²), courants en rénovation contemporaine ; la KB lot 08 le date « 05/07/2021 » — la version en vigueur est la V4 d'avril 2021."
+      - ref: "NF EN 12004-1"
+        titre: "Colles à carrelage — Partie 1 : exigences, évaluation et vérification de la constance des performances, classification et marquage"
+        edition: "Avril 2017"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-en-120041/adhesives-for-ceramic-tiles-part-1-requirements-assessment-and-verification/fa187702/59336"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Norme produit des mortiers-colles (classes C1/C2, S1/S2) citée par l'entrée « classe de colle » du registre et par les descriptions de postes — le choix applicatif vit dans le NF DTU 52.2, pas ici."
+
+  "09":
+    label: "Revêtements de sols"
+    entrees:
+      - ref: "NF DTU 53.12"
+        titre: "Travaux de bâtiment — Préparation du support et revêtements de sol souples"
+        edition: "Décembre 2020 (annule et remplace NF DTU 53.1 P1-1 de nov. 2016 et NF DTU 53.2 P1-1 d'avril 2007 ; intègre le linoléum)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-dtu-5312-p111/building-works-surface-preparation-and-flexible-floor-coverings-part-111-pr/fa191456/323168"
+        deja_au_registre: true
+        priorite_reef: haute
+        justification: "DTU unique des sols souples (PVC, textile, lino) : 3 seuils support déjà verifie au registre, MAIS les presets/l'allowlist citent encore les 53.1/53.2 annulés — migrer les citations, et compléter au Reef les tolérances de planéité et conditions de pose par famille."
+      - ref: "NF DTU 51.2"
+        titre: "Travaux de bâtiment — Parquets collés"
+        edition: "Mars 2023 (3e édition ; remplace l'éd. mai 2020, la P1-2 remplace celle de mai 2009)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-512-p12/travaux-de-batiments-parquets-colles-partie-12-criteres-generaux-de-choix-d/fa189961/323046"
+        deja_au_registre: true
+        priorite_reef: moyenne
+        justification: "Parquet collé : le seuil humidité support (≤ 3 %) est déjà verifie au registre sur l'édition mars 2023 — le Reef ne servirait qu'à compléter (tolérances, supports chauffants)."
+      - ref: "NF DTU 51.11"
+        titre: "Parquets et revêtements de sol — Pose flottante des parquets contrecollés et revêtements de sol à placage bois"   # NOTA (P1 vérif 09/07) : les sols STRATIFIÉS sont HORS CHAMP (couche d'usure bois >= 2,5 mm exigée, placages non bois exclus) — stratifié = prescriptions fabricant / NF EN 13329 ; citation client des presets corrigée le 09/07
+        edition: "Mai 2024 (révisé)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.ffbatiment.fr/actualites-batiment/actualite-bam/parquets-flottants-publication-du-nf-dtu-51-11-revise"
+        deja_au_registre: true   # présent en allowlist CI SANS seuil au registre — anomalie tracée en liste de courses
+        priorite_reef: haute
+        justification: "Pose PAR DÉFAUT des presets (parquet_contrecolle, sol_stratifie) : dans l'allowlist CI mais AUCUN seuil au registre — le seuil d'humidité en pose flottante est un [à compléter] explicite de la KB, et l'édition récente (mai 2024) impose de sourcer avant toute citation de valeur."
+      - ref: "NF DTU 51.1"
+        titre: "Parquets — Pose des parquets à clouer"
+        edition: "Décembre 2010 (homologuée le 17/11/2010, prise d'effet 17/12/2010)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-dtu-511/parquet-parquet-to-be-nailed-part-11-contract-bill-of-technical-specificati/fa171472/36801"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Cité par le mapping ; aucun preset ne pose de massif cloué, mais reprises de parquets haussmanniens en sur-mesure à Paris — à garder en réserve, sans seuil au registre. NB : la dépose de sols anciens (dalles vinyle-amiante, colles noires) relève du RAT amiante — voir bloc transverse."
+
+  "10":
+    label: "Peinture"
+    entrees:
+      - ref: "NF DTU 59.1"
+        titre: "Travaux de bâtiment — Revêtements de peinture en feuil mince, semi-épais ou épais"
+        edition: "Juin 2013"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-dtu-591-p11/building-works-thin-semithick-thick-paint-coatings-part-11-contract-bill-of/fa170291/41498"
+        deja_au_registre: true
+        priorite_reef: haute
+        justification: "DTU socle du lot (1 seule règle verifie au registre : conditions hygrothermiques §7.1) — à ouvrir au Reef pour les définitions normatives des états de finition A/B/C, le nombre maximal de teintes et les rechampis : trois [à compléter] explicites de la KB, directement utiles au chiffrage."
+      - ref: "DTU 59.4 (NF P 74-204)"
+        titre: "Travaux de bâtiment — Mise en œuvre des papiers peints et des revêtements muraux"
+        edition: "Février 1998 (toujours en vigueur ; révision en cours : PR NF DTU 59.4 chez AFNOR)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://boutique.cstb.fr/Detail/Documents-Techniques-Unifies/DTU-NF-DTU/59-Revetements-minces/DTU-59-4-Mise-en-ouvre-des-papiers-peints-et-des-r"
+        deja_au_registre: false
+        priorite_reef: moyenne
+        justification: "Toile de verre et revêtements muraux collés (codes Batiprix 55 19) : recensé au mapping mais zéro seuil au registre ; texte de 1998 — surveiller la parution de la révision avant d'investir le Reef."
+      - ref: "NF DTU 59.3"
+        titre: "Travaux de bâtiment — Peinture de sols"
+        edition: "Mars 2023 (révisé)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.batirama.com/article/20809-nf-dtu-59.3-peinture-de-sols.html"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Repéré par un Calepin FFB du lot ; usage résidentiel ponctuel (caves, garages, buanderies) — à garder en réserve, révision récente mars 2023. Rien à voir avec le SPEC (la mention « XP DTU 59.3 + ISO 11414 » héritée de dtu-sdb.json est écartée)."
+      - ref: "NF DTU 42.1"
+        titre: "Travaux de bâtiment — Réfection de façades en service par revêtements d'imperméabilité à base de polymères"
+        edition: "Novembre 2007"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-dtu-421-p11/building-works-repair-of-existing-facades-using-polymer-based-impermeable-c/fa154690/323075"
+        deja_au_registre: false
+        priorite_reef: moyenne
+        justification: "Ravalements peints IdF (déjà cité sur le devis réel ESPARON, sans entrée au registre) : classes I1-I4 et préparation des supports — la KB demande de sourcer sur texte primaire avant réutilisation normative."
+      - ref: "NF EN 1062-1"
+        titre: "Peintures et vernis — Produits de peinture et systèmes de revêtements pour maçonnerie et béton extérieurs — Partie 1 : classification"
+        edition: "Octobre 2004"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-en-10621/paints-and-varnishes-coating-materials-and-coating-systems-for-exterior-mas/fa112877/23902"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Classement G/E/S/V/W/A/C des peintures de façade (les classes W/V/A citées au devis façade en viennent) — norme de désignation produit, pas de mise en œuvre."
+      - ref: "Code de la santé publique, art. L1334-9 et R1334-1 à R1334-13 (plomb)"
+        titre: "Lutte contre la présence de plomb — CREP, information des intervenants et mesures dans les logements antérieurs au 1er janvier 1949"
+        edition: "Codifié, en vigueur (version consolidée Legifrance)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072665/LEGISCTA000006191044/"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Réglementaire transverse qui touche le lot en plein : le parc IdF < 1949 impose de traiter le risque plomb avant ponçage/décapage de peintures anciennes (protections, méthodes, surcoût devis) ; texte gratuit sur Legifrance. NB : le poste échafaudage du ravalement s'appuie sur le Code du travail R4323-58 — voir bloc transverse."
+
+  "11":
+    label: "Cuisine (méta-lot, TVA mixte)"
+    entrees:
+      - ref: "Article 279-0 bis du CGI"
+        titre: "TVA à taux réduit 10 % sur les travaux d'amélioration, transformation, aménagement et entretien des locaux d'habitation achevés depuis plus de 2 ans (fourniture d'équipements ménagers/mobiliers et gros équipements EXCLUS → 20 %)"
+        edition: "Version consolidée en vigueur ; doctrine BOFiP BOI-TVA-LIQ-30-20-90 (mise à jour du 22/10/2025)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051215062"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "SEULE règle de droit propre au méta-lot (TVA MIXTE 10/20 + attestation signée avant facturation) — vit dans le contrat interne tva.md, hors registre dtu_rules (référence fiscale, hors garde-fou normes) ; l'arbitrage mobilier fourni-posé 10 ou 20 % reste ouvert côté Namur. Voir aussi bloc transverse (TVA 10 % générale)."
+      - ref: "Arrêté du 23 février 2018 (modifié)"
+        titre: "Règles techniques et de sécurité applicables aux installations de gaz combustible des bâtiments d'habitation individuelle ou collective (remplace l'arrêté du 2 août 1977)"
+        edition: "23 février 2018, en vigueur au 01/01/2020, modifié par l'arrêté du 4 mars 2021"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000036667631"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "À citer uniquement si le devis cuisine touche au gaz (raccordement plaque/table gaz, organes de coupure) — texte gratuit Legifrance ; sinon la cuisine reste sans norme propre."
+      - ref: "NF C 15-100 (série 2024)"
+        titre: "Installations électriques à basse tension — RENVOI lot servant 05 (partie 10, locaux d'habitation : 6 socles cuisine > 4 m², circuits spécialisés 32 A plaque / 20 A four et lave-vaisselle)"
+        edition: "Série publiée le 23 août 2024, applicable depuis le 1er septembre 2025 (remplace l'éd. 2002 amendée)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/les-normes-C15-100-et-offres-associ%C3%A9es"
+        deja_au_registre: true
+        priorite_reef: moyenne
+        justification: "Lot servant 05 : les seuils cuisine sont déjà verifie au registre — le corpus complet relève du lot 05, pas du méta-lot 11."
+      - ref: "Arrêté du 24 mars 1982 (modifié par arrêté du 28 octobre 1983)"
+        titre: "Arrêté relatif à l'aération des logements — RENVOI lot servant 04 (débit d'extraction cuisine 75 à 135 m³/h selon le nombre de pièces principales)"
+        edition: "Version consolidée en vigueur"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000862344"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Lot servant 04, déjà lu verbatim sur Legifrance au registre — le preset cuisine n'émet pas de lot 04 (hypothèse « ventilation existante conservée » écrite dans l'objet du devis)."
+      - ref: "NF DTU 60.11 (P 40-202)"
+        titre: "Travaux de bâtiment — Règles de calcul des installations de plomberie sanitaire et d'eaux pluviales — RENVOI lot servant 03"
+        edition: "Août 2013 (remplace le DTU 60.11 / P 40-202 d'octobre 1988)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://boutique.cstb.fr/Detail/Documents-Techniques-Unifies/DTU-NF-DTU/60-Plomberie/NF-DTU-60-11-Regles-de-calcul-des-installations-de"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Lot servant 03 : débits/diamètres évier et lave-vaisselle cités au poste réseau du preset cuisine — déjà verifie au registre (Tableau 1)."
+      - ref: "NF EN IEC 60335-1"
+        titre: "Appareils électrodomestiques et analogues — Sécurité — Partie 1 : exigences générales (sécurité produit de l'électroménager, déclinée en parties -2-x par appareil)"
+        edition: "Décembre 2023 (nouvelle édition ; l'éd. mai 2013 + amendements A1/A2/A11/A13/A14/A15 circule encore en compilation)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-en-iec-603351/household-and-similar-electrical-appliances-safety-part-1-general-requireme/fa202850/356203"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Sécurité de l'électroménager = norme PRODUIT à la charge du fabricant (marquage CE) : aucune exigence de mise en œuvre chiffrable — NE PAS la citer en devis (convention catalogue : « ne jamais agrafer une norme pour faire joli »)."
+
+  "12":
+    label: "Maçonnerie - Gros œuvre - Structure"
+    entrees:
+      - ref: "NF DTU 20.1"
+        titre: "Travaux de bâtiment — Ouvrages en maçonnerie de petits éléments — Parois et murs"
+        edition: "Juillet 2020 (P1-1, P1-2, P2, P3 — le calcul ex-P4 est intégré à la P3 avec règles simplifiées Eurocode 6) ; remplace l'édition octobre 2008"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.cstb.fr/getmedia/5542e179-4a99-4f1d-a385-e0df07e0cc7f/Liste-DTU-en-vigueur-9-juillet-2025"
+        deja_au_registre: false
+        priorite_reef: haute
+        justification: "DTU maître du lot (murs porteurs, épaisseurs minimales, chaînages, mortiers) — ATTENTION : la piste KB visait implicitement l'édition 2008, remplacée en 2020 ; seuils chiffrés à extraire au Reef pour ouvrir le bloc « 12 » du registre."
+      - ref: "NF DTU 20.13"
+        titre: "Cloisons en maçonnerie de petits éléments"
+        edition: "Octobre 2008 + Amendement A1 (juin/juillet 2016 selon les parties)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.cstb.fr/getmedia/5542e179-4a99-4f1d-a385-e0df07e0cc7f/Liste-DTU-en-vigueur-9-juillet-2025"
+        deja_au_registre: false
+        priorite_reef: moyenne
+        justification: "Gouverne les cloisons maçonnées (briques, carreaux de terre cuite) fréquentes dans le bâti ancien IdF — complément du 20.1 côté cloisons non porteuses, repéré via le Calepin FFB « l'essentiel des NF DTU 20.1 et 20.13 »."
+      - ref: "NF DTU 21"
+        titre: "Exécution des ouvrages en béton"
+        edition: "Juin 2017 (P1-1 2e tirage juillet 2017, P1-2, P2) ; remplace NF P 18-201 (mars 2004)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.cstb.fr/getmedia/5542e179-4a99-4f1d-a385-e0df07e0cc7f/Liste-DTU-en-vigueur-9-juillet-2025"
+        deja_au_registre: false
+        priorite_reef: moyenne
+        justification: "Exécution des petits ouvrages béton de rénovation (linteaux, poteaux, dalles, reprises) : tolérances, coffrage, bétonnage — la piste « DTU 21 béton » de la KB est confirmée, édition 2017."
+      - ref: "NF DTU 13.1"
+        titre: "Fondations superficielles"
+        edition: "Septembre 2019 (P1-1, P1-2, P2) ; annule et remplace DTU 13.11 (mars 1988 + A1 juin 1997) et DTU 13.12 (mars 1988 — le calcul est repris par les Eurocodes)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.cstb.fr/getmedia/5542e179-4a99-4f1d-a385-e0df07e0cc7f/Liste-DTU-en-vigueur-9-juillet-2025"
+        deja_au_registre: false
+        priorite_reef: haute
+        justification: "Fondations superficielles et semi-profondes (extension, reprise en sous-œuvre) — la piste KB « 13.x fondations » pointait les DTU 13.11/13.12 ANNULÉS ; c'est ici que se re-sourcent les ordres de grandeur du Mémo AQC (hors gel, dimensions de semelles) avant tout usage client."
+      - ref: "NF DTU 13.3"
+        titre: "Travaux de dallages — Conception, calcul et exécution"
+        edition: "Décembre 2021 (P1-1-1 tous ouvrages, P1-1-2 maisons individuelles, P1-2, P2) ; remplace l'édition 2005"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.cstb.fr/getmedia/5542e179-4a99-4f1d-a385-e0df07e0cc7f/Liste-DTU-en-vigueur-9-juillet-2025"
+        deja_au_registre: false
+        priorite_reef: moyenne
+        justification: "Dallages béton (partie 1-1-2 dédiée aux maisons individuelles — épaisseurs, interfaces) : utile pour les reprises de dallage en pavillon IdF, fiche AQC A05 « affaissement de dallage » déjà au corpus."
+      - ref: "NF DTU 26.1"
+        titre: "Travaux d'enduits de mortiers"
+        edition: "Avril 2008 (P1-1, P1-2, P2) ; remplace NF P 15-201 (mai 1993)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.cstb.fr/getmedia/5542e179-4a99-4f1d-a385-e0df07e0cc7f/Liste-DTU-en-vigueur-9-juillet-2025"
+        deja_au_registre: false
+        priorite_reef: haute
+        justification: "Enduits au mortier (ciment, chaux, monocouche NF EN 998-1) sur maçonnerie neuve ou ancienne — seuils très utiles au chiffrage (épaisseurs, nombre de passes, délais entre couches, préparation des supports meulière/moellon typiques IdF)."
+      - ref: "NF DTU 26.2"
+        titre: "Chapes et dalles à base de liants hydrauliques"
+        edition: "Avril 2008 + Amendement A1 (mai 2015)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.cstb.fr/getmedia/5542e179-4a99-4f1d-a385-e0df07e0cc7f/Liste-DTU-en-vigueur-9-juillet-2025"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "DÉJÀ au registre (dtu_rules.yaml bloc « 08 », statut verifie, allowlist) avec les seuils chape adhérente ≥ 3 cm / dalle ≥ 5 cm, pente, fractionnement — à citer tel quel quand le lot 12 coule une chape, sans doublonner."
+      - ref: "NF EN 1991 (série)"
+        titre: "Eurocode 1 — Actions sur les structures"
+        edition: "Série multi-parties (P1-1 charges d'exploitation, etc.) — pas d'édition unique"
+        statut: en_vigueur
+        statut_verif: edition_a_confirmer
+        source_publique: "https://normalisation.afnor.org/thematiques/eurocodes/"
+        deja_au_registre: true
+        priorite_reef: basse
+        justification: "Déjà dans l'allowlist check_dtu_refs — renvoi générique « charges d'exploitation » admissible en description de poste, sans citer de valeur non sourcée (le BE dimensionne)."
+      - ref: "NF EN 1996-1-1+A1"
+        titre: "Eurocode 6 — Calcul des ouvrages en maçonnerie — Partie 1-1 : règles générales pour ouvrages en maçonnerie armée et non armée"
+        edition: "Juin 2013 (+A1) ; l'édition mars 2006 est annulée depuis le 04/12/2015 ; révision prA1 en cours (nouvelle génération Eurocodes)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://norminfo.afnor.org/norme/nf-en-1996-1-1a1/eurocode-6-calcul-des-ouvrages-en-maconnerie-partie-1-1-regles-generales-pour-ouvrages-en-maconnerie-armee-et-non-armee/95179"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Base de calcul maçonnerie — en pratique inutile d'ouvrir : le NF DTU 20.1 P3 (2020) intègre des règles simplifiées EC6 pour les ouvrages courants ; la mention « sur étude bureau d'études » reste la règle Maestro."
+      - ref: "NF EN 1997-1"
+        titre: "Eurocode 7 — Calcul géotechnique — Partie 1 : règles générales"
+        edition: "Fiche Norm'Info : publication du 4 août 2011, en vigueur (nouvelle génération EN 1997:2024-2025 publiée, bascule européenne prévue vers 2027)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://norminfo.afnor.org/norme/nf-en-1997-1/eurocode-7-calcul-geotechnique-partie-1-regles-generales/73201"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Base de calcul géotechnique référencée par le NF DTU 13.1 (qui a absorbé l'ex-DTU 13.12 calcul) — citation d'appui seulement, le dimensionnement appartient au BE géotechnique. Ne pas réécrire « juin 2005 » de mémoire : la fiche Norm'Info date la publication au 04-08-2011."
+      - ref: "NF P 94-500"
+        titre: "Missions d'ingénierie géotechnique — Classification et spécifications"
+        edition: "Novembre 2013 ; remplace l'édition 2006 (projet de révision PR NF P94-500 au programme AFNOR)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.boutique.afnor.org/en-gb/standard/nf-p94500/geotechnical-engineering-missions-classification-and-specifications/fa177810/1408"
+        deja_au_registre: false
+        priorite_reef: moyenne
+        justification: "Classification G1→G5 des missions géotechniques : lève le [à compléter] de la KB lot 12 (règle dure n°1 « étude de sol / BE avant tout ouvrage structurel ») — à citer pour cadrer la mission à provisionner avant fondation/reprise en sous-œuvre (RGA IdF)."
+      - ref: "Loi n° 65-557 du 10 juillet 1965, art. 25 b"
+        titre: "Statut de la copropriété des immeubles bâtis — autorisation d'assemblée générale (majorité absolue) pour les travaux affectant les parties communes ou l'aspect extérieur"
+        edition: "Version en vigueur (art. 25 modifié en dernier lieu par la loi ELAN/ord. 2019)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039313590"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Lève le [à compléter] copropriété de la KB lot 12 (règle Namur 09/07) : murs porteurs/planchers/façades = parties communes → autorisation d'AG à majorité de l'art. 25 AVANT tout percement de mur porteur en appartement."
+      - ref: "Arrêté du 22 octobre 2010 (modifié)"
+        titre: "Arrêté relatif à la classification et aux règles de construction parasismique applicables aux bâtiments de la classe dite « à risque normal »"
+        edition: "22 octobre 2010, modifié (2012, 2014, 2020, 2021, 2022), en vigueur"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000022941755"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "À connaître pour l'ÉCARTER proprement : l'Île-de-France est en zone de sismicité 1 (très faible) → pas d'exigence parasismique en résidentiel courant ; les fiches AQC PS-MI du corpus ne s'imposent pas en IdF (déjà noté dans la KB lot 12)."
+      - ref: "NF DTU 23.5"
+        titre: "Planchers à poutrelles en béton"
+        edition: "Mai 2019 (P1-1, P1-2, P2)"
+        statut: en_vigueur
+        statut_verif: confirme_public
+        source_publique: "https://www.cstb.fr/getmedia/5542e179-4a99-4f1d-a385-e0df07e0cc7f/Liste-DTU-en-vigueur-9-juillet-2025"
+        deja_au_registre: false
+        priorite_reef: basse
+        justification: "Planchers poutrelles-entrevous, mode constructif courant des pavillons IdF d'après-guerre (fiches PROFEEL RénoStandard du corpus) — utile en extension/reprise de plancher, en second rideau derrière 20.1/21/13.1."
+
+transverse:
+  label: "Transverse — textes touchant TOUS les lots (déchets, amiante RAT, sécurité chantier, TVA)"
+  note: "Tout consommateur du catalogue charge ce bloc EN PLUS de son bloc lot. lots_concernes = lots où le texte a un rôle opérationnel identifié dans les recensements (liste indicative : le texte s'applique à tout devis/chantier)."
+  entrees:
+    - ref: "Décret n° 2020-1817 du 29 décembre 2020"
+      titre: "Décret portant sur les informations des devis relatives à l'enlèvement et la gestion des déchets générés par des travaux de construction, de rénovation, de démolition de bâtiments et de jardinage et des bordereaux de dépôt de déchets"
+      edition: "29 décembre 2020, en vigueur depuis le 1er juillet 2021"
+      statut: en_vigueur
+      statut_verif: confirme_public
+      source_publique: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042841880"
+      deja_au_registre: false
+      priorite_reef: basse
+      lots_concernes: ["tous"]
+      justification: "Impose des mentions déchets OBLIGATOIRES sur tout devis de travaux (coûts d'enlèvement/gestion, installations de dépôt) — touche directement le GABARIT DE DEVIS Maestro, au-delà du seul lot 00 ; vaut aussi pour les postes d'évacuation du lot 01. PRIORITÉ MÉTIER : conformité du gabarit à vérifier et texte à inscrire au registre."
+    - ref: "Décret n° 2021-950 du 16 juillet 2021"
+      titre: "Décret relatif au tri des déchets de papier, de métal, de plastique, de verre, de textiles, de bois, de fraction minérale et de plâtre (« tri 7 flux »)"
+      edition: "16 juillet 2021, en vigueur (volet textiles au 1er janvier 2025)"
+      statut: en_vigueur
+      statut_verif: confirme_public
+      source_publique: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043799891"
+      deja_au_registre: false
+      priorite_reef: basse
+      lots_concernes: ["00", "01"]
+      justification: "Fonde réglementairement la distinction filière inertes (fraction minérale) / tri-valorisation (bois, plâtre…) que gravats.py applique déjà pour choisir le poste d'évacuation — la KB lot 00/01 notait « aucun texte cité » : c'est celui-ci. Vaut pour tout lot producteur de gravats."
+    - ref: "Code du travail, art. R4412-97 à R4412-97-6"
+      titre: "Repérage de l'amiante avant certaines opérations (obligation du donneur d'ordre) — issus du décret n° 2017-899 du 9 mai 2017"
+      edition: "Décret du 9 mai 2017, application au plus tard le 1er octobre 2018"
+      statut: en_vigueur
+      statut_verif: confirme_public
+      source_publique: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000034670083"
+      deja_au_registre: false
+      priorite_reef: basse
+      lots_concernes: ["01", "09", "10"]
+      justification: "Texte exact du RAT que la KB lot 01 laissait [à compléter] : obligation du donneur d'ordre de faire rechercher l'amiante avant toute opération exposante — préalable bloquant déjà pratiqué sur le chantier « mise aux normes » (maison 1955). PRIORITÉ MÉTIER : à inscrire au registre. Concerne toute opération exposante en bâti d'avant 1997, quel que soit le lot."
+    - ref: "Arrêté du 16 juillet 2019 (RAT amiante)"
+      titre: "Arrêté relatif au repérage de l'amiante avant certaines opérations réalisées dans les immeubles bâtis"
+      edition: "16 juillet 2019, en vigueur depuis le 19 juillet 2019 (modifié par l'arrêté du 23 janvier 2020)"
+      statut: en_vigueur
+      statut_verif: confirme_public
+      source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000038777498"
+      deja_au_registre: false
+      priorite_reef: basse
+      lots_concernes: ["01", "09", "10"]
+      justification: "Modalités opérationnelles du RAT dans les immeubles bâtis (opérateur certifié, rapport, conclusion présence/absence) — c'est lui qui exige l'« opérateur certifié » mentionné dans les conditions techniques des devis réels. Impact direct lot 09 : dépose de sols anciens (dalles vinyle-amiante, colles noires, ragréages) dans les logements d'avant 1997."
+    - ref: "NF X 46-020"
+      titre: "Repérage amiante — Repérage des matériaux et produits contenant de l'amiante dans les immeubles bâtis — Mission et méthodologie"
+      edition: "Août 2017"
+      statut: en_vigueur
+      statut_verif: confirme_public
+      source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000038777498 (norme citée par l'arrêté du 16/07/2019 avec présomption de conformité)"
+      deja_au_registre: false
+      priorite_reef: basse
+      lots_concernes: ["01", "09", "10"]
+      justification: "Norme méthodologique du RAT (présomption de conformité à l'arrêté, sauf art. 4, 7, 11 et 14) — à citer en appui du préalable amiante ; le repérage lui-même est sous-traité à l'opérateur certifié, pas de seuil de chiffrage à extraire."
+    - ref: "Code du travail, art. R4323-58 (à R4323-90)"
+      titre: "Dispositions particulières applicables à l'exécution de travaux temporaires en hauteur et à certains équipements de travail utilisés à cette fin"
+      edition: "En vigueur depuis le 1er mai 2008 (décret n° 2008-244 du 7 mars 2008)"
+      statut: en_vigueur
+      statut_verif: confirme_public
+      source_publique: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018531397"
+      deja_au_registre: false
+      priorite_reef: basse
+      lots_concernes: ["00", "10"]
+      justification: "Fonde la mention « protection collective obligatoire au-delà de 3 m » déjà citée au poste échafaudage du chantier façades (devis réel ravalement) mais HORS allowlist — texte gratuit sur Legifrance. PRIORITÉ MÉTIER : à inscrire au registre pour RÉGULARISER la citation existante avant toute réutilisation client. Vaut pour tout travail en hauteur, quel que soit le lot."
+    - ref: "Article 279-0 bis du CGI"
+      titre: "TVA à taux réduit 10 % sur les travaux d'amélioration, transformation, aménagement et entretien des locaux d'habitation achevés depuis plus de 2 ans"
+      edition: "Version consolidée en vigueur ; doctrine BOFiP BOI-TVA-LIQ-30-20-90 (mise à jour du 22/10/2025)"
+      statut: en_vigueur
+      statut_verif: confirme_public
+      source_publique: "https://bofip.impots.gouv.fr/bofip/1642-PGP.html/identifiant=BOI-TVA-LIQ-30-20-90-10-20251022"
+      deja_au_registre: false
+      priorite_reef: basse
+      lots_concernes: ["tous"]
+      justification: "Base légale du taux 10 % appliqué à tout devis Maestro (logement > 2 ans) + attestation signée avant facturation — référence fiscale qui vit dans le contrat interne tva.md, hors registre dtu_rules. Cas particulier TVA mixte (mobilier/électroménager 20 %) : voir lot 11."
+
+# Références mortes, périmées ou mal rangées — consolidation des 4 groupes.
+# À traiter lors de la régénération du mapping et du nettoyage allowlist/KB.
+refs_perimees:
+  - ref: "DTU 13.11 / DTU 13.12 (mars 1988)"
+    probleme: "ANNULÉS-REMPLACÉS par le NF DTU 13.1 (septembre 2019) ; la piste KB lot 12 « DTU 13.x fondations » les recouvre encore."
+    action: "Ne plus jamais citer 13.11/13.12 ; re-sourcer les ordres de grandeur AQC sur le NF DTU 13.1."
+  - ref: "DTU 36.1"
+    probleme: "ANNULÉ-REMPLACÉ par le NF DTU 36.2 (refonte mai 2016, édition en vigueur novembre 2025) ; encore cité au mapping lot 06."
+    action: "Référence historique, ne plus citer (déjà signalé en KB lot 06)."
+  - ref: "DTU 53.1"
+    probleme: "ANNULÉ-REMPLACÉ par le NF DTU 53.12 (décembre 2020) ; encore cité dans l'allowlist check_dtu_refs.py et dans catalogue.py (poste moquette)."
+    action: "Migrer les citations client vers NF DTU 53.12 puis retirer de l'allowlist."
+  - ref: "DTU 53.2"
+    probleme: "ANNULÉ-REMPLACÉ par le NF DTU 53.12 (décembre 2020) ; encore cité dans l'allowlist et catalogue.py (poste sol_pvc)."
+    action: "Même migration que DTU 53.1."
+  - ref: "DTU 65.10"
+    probleme: "ANNULÉ en 2017 par l'AFNOR ; encore en dtu_refs du mapping lot 04, et la reco « Chauffage & ECS en habitat individuel » y est rattachée."
+    action: "Remplacer par les Règles professionnelles UMGCCP-FFB « Canalisations hydrauliques » (décembre 2021, acceptées C2P) ; re-ancrer la reco RAGE. Repointer aussi les rattachements vagues « DTU 65.x » (PAC, CESI) vers NF DTU 65.16 et NF DTU 65.12."
+  - ref: "Arrêté du 22 mars 2004 (résistance au feu)"
+    probleme: "ABROGÉ par l'arrêté du 22 mars 2026 (Legifrance JORFTEXT000053716637) ; cité en creux par la fiche FFB lot 06 (PV feu blocs-portes)."
+    action: "Pour les demandes déposées à compter du 01/10/2026, citer l'arrêté du 22 mars 2026 ; dossiers antérieurs = régime 2004 encore applicable ; les PV antérieurs restent valides jusqu'à échéance."
+  - ref: "NF DTU 55.2"
+    probleme: "Pas annulé mais HORS PÉRIMÈTRE et mal rattaché au mapping lot 08 : vise la pierre mince ATTACHÉE (agrafage mécanique), pas la faïence collée (NF DTU 52.2)."
+    action: "Retirer du mapping lot 08 (décision Namur 08/07 déjà actée en KB)."
+  - ref: "« NF DTU 52.11 » (KB lot 08, via ffb-savoir-chiffrage-lot08)"
+    probleme: "COQUILLE : ce libellé n'existe pas ; la référence exacte est NF DTU 52.10 (juin 2013, remplace NF P 61-203)."
+    action: "Corriger la KB lot 08."
+  - ref: "« XP DTU 59.3 + ISO 11414 » (héritée de dtu-sdb.json, lot 08)"
+    probleme: "Écartée par Namur (08/07), jamais recoupée ; le NF DTU 59.3 réel (peinture de sols, mars 2023) n'a rien à voir avec le SPEC."
+    action: "Ne doit pas réapparaître."
+  - ref: "« DTU 20.1 » sans édition (bloc transversal_enveloppe du mapping)"
+    probleme: "Renvoi implicitement périmé : l'édition en vigueur est juillet 2020 (P1-1/P1-2/P2/P3) ; l'édition octobre 2008 est remplacée et l'ex-partie P4 (calcul) n'existe plus (intégrée à la P3)."
+    action: "Épingler l'édition juillet 2020."
+  - ref: "« NF C 15-100 » sans édition (mapping lot 05)"
+    probleme: "L'édition courante est la SÉRIE 2024 (publiée 23/08/2024, applicable sept. 2025) ; MAIS l'édition 2002+A1-A5 reste la référence de l'arrêté du 3 août 2016 (présomption de conformité) tant que l'arrêté n'est pas mis à jour."
+    action: "Le mapping doit porter cette double lecture."
+  - ref: "« NF C 14-100 » sans édition (mapping lot 05)"
+    probleme: "L'édition février 2008 (+A1/A2/A3) est remplacée par l'édition de juillet 2021."
+    action: "Épingler l'édition juillet 2021."
+  - ref: "DTU 36.5 rangé au lot 06 du mapping"
+    probleme: "Mal rangé — texte du lot 07 (menuiseries extérieures) ; le mapping 04/06 précède la taxonomie 13 lots."
+    action: "Déplacer au lot 07 lors de la régénération."
+  - ref: "Mapping lot « 12 » = « Nettoyage fin de chantier » (lot-norms-mapping.yaml:183-187)"
+    probleme: "PÉRIMÉ — la taxonomie §8 réattribue le numéro 12 à « Maçonnerie - Gros œuvre - Structure » (arbitrage Namur 08/07) ; le nettoyage vit au lot 00."
+    action: "Régénérer le mapping sur les 13 lots."
+  - ref: "Mapping lot « 11 » = « Cuisine / Salle de bain (forfaits) »"
+    probleme: "PÉRIMÉ vs taxonomie §8 : 11 = Cuisine méta-lot seul (SdB = preset pièce, lots servants)."
+    action: "Régénérer le mapping."
+  - ref: "Lots 00 et 01 du mapping : dtu_refs [] « pratique_pro »"
+    probleme: "Pas faux mais INCOMPLET : tout le réglementaire transverse vérifié (échafaudage R4323-58/arrêté 2004/R408, RAT amiante 2017-899/arrêté 2019, décrets déchets 2020-1817 et 2021-950) en est absent."
+    action: "Compléter via le présent catalogue (blocs 00, 01 et transverse)."
+  - ref: "Reco RAGE « Verrières 2013-09 » (mapping lot 07)"
+    probleme: "URL morte (host reglesdelart-grenelle-environnement-2012.fr parqué) — seule URL déclarée indisponible du mapping."
+    action: "Récupérable via programmepacte/miroir ; cas marginal en résidentiel, non retenu au corpus essentiel."
+  - ref: "Reco « Maçonnerie — recommandations 2014 » (bloc transversal_enveloppe, recommandation-pro-rage-maconnerie2.pdf)"
+    probleme: "Mal rangée désormais — document orienté NEUF (maçonneries isolantes ITI/répartie), URL media.xpair.com, déjà présent au corpus local maestro-norms/corpus/rage/."
+    action: "Rattacher au lot 12 lors de la régénération du mapping."
+  - ref: "Reco pro ITI lot 02 (URL générique qualiteconstruction.com)"
+    probleme: "URL = page d'accueil AQC, pas un document."
+    action: "Remplacer par le Guide RAGE « Isolation thermique par l'intérieur » rénovation, juin 2015 (programmepacte.fr, vérifié)."
+  - ref: "Recos lot 07 « Menuiseries extérieures avec ITE » et « Doubles fenêtres » (URLs indirectes)"
+    probleme: "URLs = pages ressource AQC/CAPEB, pas les documents."
+    action: "Pointer le PDF direct programmepacte.fr (ITE 2014-11) et la page document programmepacte.fr/doubles-fenetres-renovation."
+  - ref: "DTU 59.4 (février 1998)"
+    probleme: "Pas mort mais VIEILLISSANT : révision PR NF DTU 59.4 en cours chez AFNOR (Norm'Info)."
+    action: "Surveiller la parution avant d'investir le Reef."
