@@ -33,7 +33,7 @@
 | 09 | Revêtements de sol | DTU 51.1/51.2 · 53.1/53.2 | — | DTU citation |
 | 10 | Peinture / Rev. muraux | NF DTU 59.1 · 59.4 | — | DTU citation |
 | 11 | Cuisine / SdB (forfaits) | — | — | forfait |
-| 12 | Nettoyage fin de chantier | — | — | pratique pro |
+| 12 | Maçonnerie - Gros œuvre - Structure (réattribué 08/07 ; ex-Nettoyage, désormais lot 00) | NF DTU 20.1, 13.x, 26.1… (candidats — bloc registre à ouvrir via Reef) | RAGE maçonnerie | KB 12-maconnerie-gros-oeuvre |
 
 **Lecture :**
 - **4 lots** justifiables par Reco Pro **gratuite** : **02, 04, 05, 07** — le **lot 04** est de loin le mieux couvert.
