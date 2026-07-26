@@ -117,6 +117,12 @@ Il ne manque que la VALIDATION NAMUR (arbitrage obligation vs condition d'aide d
   Registre : 1 seule regle verifiee (conditions hygrothermiques §7.1).
 
 ### Lot 12 — Maconnerie - Gros oeuvre - Structure (registre a alimenter apres lecture)
+- Mise a jour R1 du 26/07/2026 : huit candidats de controles d'execution ont ete
+  documentes dans `maestro-platform/docs/audits/2026-07-26-experts-metier/08-preuves/R1-lot12-maconnerie.yaml`.
+  Ils proviennent de guides publics locaux RAGE/AQC et restent `a_valider_namur` :
+  ils ne constituent ni une lecture primaire des editions ci-dessous ni une autorisation
+  de promotion. Au Reef, controler en priorite les renvois P1-1/P1-2/P4 et les clauses
+  indiquees dans le fichier de preuve ; conserver les gardes BET avant toute reutilisation.
 - NF DTU 20.1 (juillet 2020) — chercher « NF DTU 20.1 » (verifier P1-1 + P3).
   Extraire : epaisseurs minimales des murs selon exposition, regles de chainages, mortiers de montage — socle du nouveau bloc 12.
   Registre : absent.

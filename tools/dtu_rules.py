@@ -65,18 +65,28 @@ def resolve_lot(lot: str) -> str | None:
 
 
 def rules_for_lot(lot_id: str) -> List[dict]:
-    """Règles ``{exigence, seuil, condition, ref}`` du lot (liste, éventuellement vide).
+    """Règles vérifiées ``{exigence, seuil, condition, ref}`` du lot.
 
     Lenient : un lot inconnu renvoie ``[]`` (pas d'exception). Accepte un mot-clé
-    métier (``"electricite"``) ou un id de lot (``"05"``).
+    métier (``"electricite"``) ou un id de lot (``"05"``). Les entrées
+    ``a_valider_namur`` restent visibles dans le YAML d'authoring mais ne sont
+    jamais exposées par le lookup consommable.
     """
     lid = resolve_lot(lot_id) or str(lot_id)
-    return list((_load().get("rules") or {}).get(lid, []))
+    return [
+        rule
+        for rule in (_load().get("rules") or {}).get(lid, [])
+        if rule.get("statut") == "verifie"
+    ]
 
 
 def lots_with_rules() -> List[str]:
-    """Lots disposant d'au moins une règle étage 0."""
-    return sorted((_load().get("rules") or {}).keys())
+    """Lots disposant d'au moins une règle vérifiée et consommable."""
+    return sorted(
+        lot_id
+        for lot_id in (_load().get("rules") or {})
+        if rules_for_lot(lot_id)
+    )
 
 
 def justification_rows_for_lot(lot_id: str) -> List[dict]:

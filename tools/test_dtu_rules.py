@@ -103,5 +103,20 @@ def test_live_registry_ne_contient_aucun_brouillon_a_verifier():
     )
 
 
+def test_lookup_n_expose_que_les_regles_verifiees():
+    """Le YAML peut conserver des candidates Namur, jamais la sortie servable."""
+    for lot_id in dtu_rules.lots_with_rules():
+        rules = dtu_rules.rules_for_lot(lot_id)
+        assert rules
+        assert all(rule.get("statut") == "verifie" for rule in rules)
+
+    data = yaml.safe_load(open(dtu_rules._RULES_PATH, encoding="utf-8")) or {}
+    assert any(
+        rule.get("statut") == "a_valider_namur"
+        for rules in (data.get("rules") or {}).values()
+        for rule in rules
+    ), "fixture attendue : le registre contient des candidates non servables"
+
+
 if __name__ == "__main__":
     raise SystemExit(pytest.main([__file__, "-q"]))
