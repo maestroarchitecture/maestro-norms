@@ -119,7 +119,7 @@ def test_lookup_n_expose_que_les_regles_verifiees():
     ), "fixture attendue : le registre contient des candidates non servables"
 
 
-def test_registre_courant_reste_fail_closed_jusqu_a_revue_tracee():
+def test_registre_courant_expose_exactement_les_26_regles_revue_tracee():
     authored = [
         rule
         for rules in (dtu_rules._load().get("rules") or {}).values()
@@ -127,7 +127,30 @@ def test_registre_courant_reste_fail_closed_jusqu_a_revue_tracee():
         if rule.get("statut") == "verifie"
     ]
     assert len(authored) == 50
-    assert dtu_rules.lots_with_rules() == []
+    assert dtu_rules.lots_with_rules() == ["02", "03", "04", "06", "08", "09"]
+    assert {
+        lot_id: len(dtu_rules.rules_for_lot(lot_id))
+        for lot_id in dtu_rules.lots_with_rules()
+    } == {"02": 3, "03": 7, "04": 7, "06": 2, "08": 4, "09": 3}
+    assert sum(
+        len(dtu_rules.rules_for_lot(lot_id))
+        for lot_id in dtu_rules.lots_with_rules()
+    ) == 26
+    assert all(
+        rule.get("reviewed_by") == "Namur"
+        for lot_id in dtu_rules.lots_with_rules()
+        for rule in dtu_rules.rules_for_lot(lot_id)
+    )
+
+
+def test_regle_ventilation_sdb_ne_melange_plus_norme_et_confort_maestro():
+    rules = dtu_rules.rules_for_lot("04")
+    sdb = next(
+        rule for rule in rules
+        if rule.get("exigence") == "Débit d'air extrait minimal en salle de bains ou de douches"
+    )
+    assert "75 m³/h" not in sdb["condition"]
+    assert "confort" not in sdb["condition"].lower()
 
 
 def test_provenance_verifiee_est_fail_closed():

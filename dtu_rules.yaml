@@ -96,6 +96,11 @@ rules:
       ref: "NF DTU 25.42 P1-1 (décembre 2012, Amdt A1) §6.2.2.1, §6.3.1"
       statut: verifie
       source: "Reef AETD-2 §6.2.2/§6.3.1 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "décembre 2012, amendement A1"
+      localisateur: "Reef AETD-2 §6.2.2.1/§6.3.1"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "Jeux de pose du complexe de doublage collé"
       seuil: "Complexe buté en tête sous le plafond ; espace en pied d'environ 10 mm (selon hauteur hors-tout du complexe et précision de la hauteur sous plafond) ; jeu d'environ 10 mm entre le dernier panneau et le gros œuvre ; affleurement achevé par chocs à la règle"
@@ -103,6 +108,11 @@ rules:
       ref: "NF DTU 25.42 P1-1 (décembre 2012) §6.3.2"
       statut: verifie
       source: "Reef AETD-2 §6.3.2 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "décembre 2012"
+      localisateur: "Reef AETD-2 §6.3.2"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "État du support pour la pose collée d'un doublage"
       seuil: "Support sain (sans poussière, graisse, huile), ne ressuant pas d'humidité ; régularité permettant le collage (désaffleurements/irrégularités admissibles selon le type de colle). Supports anciens : reconnaissance préalable (cohésion, adhérence), fissures importantes rebouchées au préalable"
@@ -110,6 +120,11 @@ rules:
       ref: "NF DTU 25.42 P1-1 (décembre 2012) §6.2.2"
       statut: verifie
       source: "Reef AETD-2 §6.2.2 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "décembre 2012"
+      localisateur: "Reef AETD-2 §6.2.2"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
   # =====================================================================
   # LOT 03 — Plomberie / Sanitaires  (NF DTU 60.11 — règles de calcul)
@@ -153,6 +168,11 @@ rules:
       ref: "NF DTU 60.1 P1-1-3 (décembre 2012) §4.2.1"
       statut: verifie
       source: "Reef AESM-1 §4.2.1 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "décembre 2012"
+      localisateur: "Reef AESM-1 §4.2.1"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "Fixation des lavabos suspendus"
       seuil: "Goujons / tiges filetées métalliques de Ø ≥ 8 mm ; colonne ou cache-siphon NON comptés comme support ; contact lavabo / parties métalliques proscrit ; appui via mastic sanitaire ou joint préformé / feuille résiliente"
@@ -160,6 +180,11 @@ rules:
       ref: "NF DTU 60.1 P1-1-3 (décembre 2012) §4.2.1 (Tableau 1)"
       statut: verifie
       source: "Reef AESM-1 §4.2.1 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "décembre 2012"
+      localisateur: "Reef AESM-1 §4.2.1, Tableau 1"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "Hauteur de pose des cuvettes de WC suspendues"
       seuil: "38 à 50 cm du sol fini (sauf précision des DPM) ; WC à réservoir de moins de 6 L non visés (étude de conception spécifique)"
@@ -167,6 +192,11 @@ rules:
       ref: "NF DTU 60.1 P1-1-3 (décembre 2012) §4.2.5"
       statut: verifie
       source: "Reef AESM-1 §4.2.5 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "décembre 2012"
+      localisateur: "Reef AESM-1 §4.2.5"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "Fixation et habillage des cuvettes de WC suspendues sur bâti-support"
       seuil: "Tiges filetées métalliques de Ø ≥ 10 mm ; habillage ne permettant pas le poinçonnement par l'appareil (ex. BA13 hydrofuge carrelé ou panneau médium 16 mm) ; contact WC / parties métalliques proscrit ; appui via mastic sanitaire ou joint préformé / feuille résiliente"
@@ -174,6 +204,11 @@ rules:
       ref: "NF DTU 60.1 P1-1-3 (décembre 2012) §4.2.5"
       statut: verifie
       source: "Reef AESM-1 §4.2.5 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "décembre 2012"
+      localisateur: "Reef AESM-1 §4.2.5, Tableau 1"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "Calage du fond des receveurs de douche en céramique"
       seuil: "Au moins 4 supports rigides d'environ 10 × 10 cm répartis uniformément sous le fond ; ≥ 5 supports si une dimension du receveur ≥ 90 cm ; supports maçonnés scellés sur chape/dalle ; mortier maigre uniquement (contact d'un liant à base de plâtre proscrit) ; niveau des bords ajusté au calage"
@@ -181,6 +216,11 @@ rules:
       ref: "NF DTU 60.1 P1-1-3 (décembre 2012) §4.2.9.1"
       statut: verifie
       source: "Reef AESM-1 §4.2.9.1 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "décembre 2012"
+      localisateur: "Reef AESM-1 §4.2.9.1"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "Jeu périphérique (mouvements relatifs) des receveurs de douche et baignoires par rapport aux parois"
       seuil: "Espace libre d'au moins 5 mm entre les bords de l'appareil et les parois ; étanchéité par mastic sanitaire (fond de joint mousse possible) ; scellement de l'appareil contre ou dans les parois proscrit ; liaison revêtement/appareil par mastic sanitaire de finition réalisé sans interruption (matériau à base de ciment proscrit)"
@@ -188,6 +228,11 @@ rules:
       ref: "NF DTU 60.1 P1-1-3 (décembre 2012) §4.2.9.2/.3, §4.2.10.4, §4.2.11.3, §4.2.12"
       statut: verifie
       source: "Reef AESM-1 §4.2.9–4.2.12 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "décembre 2012"
+      localisateur: "Reef AESM-1 §4.2.9.2/§4.2.9.3/§4.2.10.4/§4.2.11.3/§4.2.12"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "Supportage des receveurs de douche et baignoires en acrylique (appareils non autoportants)"
       seuil: "Supportage du fond ET de la périphérie. Fond : piètement fourni, ou ≥ 4 supports rigides (brique/parpaing/béton cellulaire) d'environ 10 × 10 cm pour un receveur de 80 × 80 cm (davantage au-delà), scellés au mortier adhésif. Périphérie sur TOUS les côtés : côté parois = profilé imputrescible fixé au mur OU maçonnerie hydrofuge (carreau de plâtre hydro, béton cellulaire) avec joint d'appui mousse intercalé ; bords libres = maçonnerie hydrofuge. Trappe(s) de visite pour l'accès robinetterie/vidage ; tous les pieds en contact avec le sol"
@@ -195,6 +240,11 @@ rules:
       ref: "NF DTU 60.1 P1-1-3 (décembre 2012) §4.2.10, §4.2.11"
       statut: verifie
       source: "Reef AESM-1 §4.2.10/§4.2.11 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "décembre 2012"
+      localisateur: "Reef AESM-1 §4.2.10/§4.2.11"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
   # =====================================================================
   # LOT 04 — Chauffage / VMC  (débits réglementaires + DTU fumisterie + PCBT)
@@ -215,6 +265,11 @@ rules:
       ref: "Arrêté du 24 mars 1982, art. 3 (débits repris par le NF DTU 68.3)"
       statut: verifie
       source: "Legifrance LEGIARTI000006830557 (art. 3) — tableau lu verbatim 2026-06-18"
+      source_type: primaire
+      edition: "version consolidée en vigueur depuis le 27/03/1982"
+      localisateur: "Legifrance LEGIARTI000006830557, article 3, tableau"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-07-26"
       # check : seuil contextualisable au nb de pièces principales (étage 0 — éval déterministe)
       check:
         type: ventilation_debit
@@ -224,10 +279,15 @@ rules:
 
     - exigence: "Débit d'air extrait minimal en salle de bains ou de douches"
       seuil: "15 m³/h (logement de 1 à 2 pièces principales) ; 30 m³/h (3 pièces et plus) — salle de bains ou de douches, commune ou non avec un cabinet d'aisances"
-      condition: "Autre salle d'eau : 15 m³/h quel que soit le nombre de pièces. Ce sont des MINIMA réglementaires : un débit supérieur retenu par un chiffrage Maestro (par exemple 75 m³/h en salle de bains) est un choix de confort, jamais un minimum réglementaire"
+      condition: "Autre salle d'eau : 15 m³/h quel que soit le nombre de pièces"
       ref: "Arrêté du 24 mars 1982, art. 3"
       statut: verifie
       source: "Legifrance LEGIARTI000006830557 (art. 3) — tableau lu verbatim 2026-06-18"
+      source_type: primaire
+      edition: "version consolidée en vigueur depuis le 27/03/1982"
+      localisateur: "Legifrance LEGIARTI000006830557, article 3, tableau"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-07-26"
       check:
         type: ventilation_debit
         piece: sdb
@@ -240,6 +300,11 @@ rules:
       ref: "Arrêté du 24 mars 1982, art. 3"
       statut: verifie
       source: "Legifrance LEGIARTI000006830557 (art. 3) — tableau lu verbatim 2026-06-18"
+      source_type: primaire
+      edition: "version consolidée en vigueur depuis le 27/03/1982"
+      localisateur: "Legifrance LEGIARTI000006830557, article 3, tableau et alinéa suivant"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-07-26"
       # PAS de check : le débit WC dépend du nombre de WC (unique 15→30 / multiple 15),
       # non déductible du seul nb de pièces principales → reste générique « à vérifier »
       # (revue Codex GitHub, P2 — éviter de surestimer sur les plans multi-WC).
@@ -250,6 +315,11 @@ rules:
       ref: "Arrêté du 24 mars 1982, art. 4 (modifié par arrêté du 28 oct. 1983)"
       statut: verifie
       source: "Legifrance LEGIARTI000006830558 (art. 4) — tableaux lus verbatim 2026-06-18"
+      source_type: primaire
+      edition: "version consolidée en vigueur depuis le 15/11/1983"
+      localisateur: "Legifrance LEGIARTI000006830558, article 4, tableaux"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-07-26"
 
     # --- Fumisterie : conduit de fumée bois/granulés (NF DTU 24.1, source primaire) ---
     - exigence: "Position du débouché du conduit de fumée au-dessus de la toiture (poêle/chaudière bois ou granulés)"
@@ -280,6 +350,11 @@ rules:
       ref: "NF DTU 68.3 P1-1-1 (juin 2013) §6.4.1"
       statut: verifie
       source: "Reef AEZJ-2 §6.4.1 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "juin 2013"
+      localisateur: "Reef AEZJ-2 §6.4.1"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "Trappes de visite pour l'entretien des réseaux (habitat collectif)"
       seuil: "Implantation conforme à la NF EN 12097 : typologie et dimensions des ouvertures selon le conduit, emplacement et nombre de panneaux d'accès pour le réseau, nettoyabilité ; panneaux ouvrables/refermables à plusieurs reprises sans couper ni endommager le conduit"
@@ -287,6 +362,11 @@ rules:
       ref: "NF DTU 68.3 P1-1-1 (juin 2013) §6.4.2"
       statut: verifie
       source: "Reef AEZJ-2 §6.4.2 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "juin 2013"
+      localisateur: "Reef AEZJ-2 §6.4.2"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "Alarme de défaillance des installations collectives de ventilation"
       seuil: "Système d'alarme fonctionnant automatiquement en cas d'arrêt de l'extracteur (un seul système pour des extracteurs fonctionnant simultanément dans un même logement) ; soit télétransmise dans un local de fonction, soit visible et lumineuse"
@@ -294,6 +374,11 @@ rules:
       ref: "NF DTU 68.3 P1-1-1 (juin 2013) §6.4.3"
       statut: verifie
       source: "Reef AEZJ-2 §6.4.3 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "juin 2013"
+      localisateur: "Reef AEZJ-2 §6.4.3"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
   # =====================================================================
   # LOT 05 — Électricité  (NF C 15-100, partie 7-771 « Locaux d'habitation » — hors Reef)
@@ -461,6 +546,11 @@ rules:
       ref: "NF DTU 36.2 P1-1 (novembre 2025) §6.9.3.1"
       statut: verifie
       source: "Reef AHHV-2 §6.9.3.1 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "novembre 2025"
+      localisateur: "Reef AHHV-2 §6.9.3.1"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "Position de l'arrêt de porte sur la largeur du vantail"
       seuil: "Arrêt de porte placé au-delà du 2e tiers de la largeur du vantail, mesuré depuis l'axe de rotation (évite l'effet de bras de levier qui détériore le bloc-porte)"
@@ -468,6 +558,11 @@ rules:
       ref: "NF DTU 36.2 P1-1 (novembre 2025) §6.9.4"
       statut: verifie
       source: "Reef AHHV-2 §6.9.4 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "novembre 2025"
+      localisateur: "Reef AHHV-2 §6.9.4"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
   # =====================================================================
   # LOT 07 — Menuiseries extérieures  (NF DTU 36.5 — pose fenêtres/portes ext.)
@@ -550,6 +645,11 @@ rules:
       ref: "NF DTU 26.2 P1-1 (avril 2008) §7.3.2"
       statut: verifie
       source: "Reef ABEW-2 §7.3.2 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "avril 2008"
+      localisateur: "Reef ABEW-2 §7.3.2"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "Pente d'écoulement des chapes/dalles en locaux avec évacuation d'eau"
       seuil: "Pente minimale de 1 cm/m dans les locaux intérieurs munis d'un dispositif d'évacuation (siphon, caniveau). NOTE : sous 2 cm/m, de légères retenues d'eau sont possibles du fait des tolérances de planéité"
@@ -557,6 +657,11 @@ rules:
       ref: "NF DTU 26.2 P1-1 (avril 2008) §7.2"
       statut: verifie
       source: "Reef ABEW-2 §7.2 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "avril 2008"
+      localisateur: "Reef ABEW-2 §7.2"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "Domaine d'emploi des chapes/dalles désolidarisées et flottantes"
       seuil: "Désolidarisées : locaux à sollicitations faibles et modérées + cuisines collectives, SAUF locaux avec étanchéité prévue. Flottantes : uniquement locaux à sollicitations faibles"
@@ -564,6 +669,11 @@ rules:
       ref: "NF DTU 26.2 P1-1 (avril 2008, Amdt A1) §7.4"
       statut: verifie
       source: "Reef ABEW-2 §7.4 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "avril 2008, amendement A1 de mai 2015"
+      localisateur: "Reef ABEW-2 §7.4"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "Joints de fractionnement des chapes et dalles"
       seuil: "Réalisés sur au moins 2/3 de la hauteur de la chape/dalle. Adhérentes : tous les 25 m² et au plus tous les 8 m linéaires (surface nue ou peinte), ou tous les 60 m² et ≤ 8 m linéaires (sous revêtement). Désolidarisées/flottantes : tous les 40 m² et au plus tous les 8 m linéaires. + joints secs aux reprises de coulage"
@@ -571,6 +681,11 @@ rules:
       ref: "NF DTU 26.2 P1-1 (avril 2008, Amdt A1) §8.4.1–8.4.3"
       statut: verifie
       source: "Reef ABEW-2 §8.4 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "avril 2008, amendement A1 de mai 2015"
+      localisateur: "Reef ABEW-2 §8.4.1/§8.4.2/§8.4.3"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     # --- Ajouts 2026-07-08 (approfondissement expert lot 08) — statut a_valider_namur :
     #     sourcés sur documents PUBLICS SECONDAIRES (synthèses DTU, e-Cahiers CSTB, copies
@@ -644,6 +759,11 @@ rules:
       ref: "NF DTU 53.12 P1-1-1 §6.1.5.1"
       statut: verifie
       source: "Reef ALWL-1 §6.1.5.1 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "décembre 2020"
+      localisateur: "Reef ALWL-1 §6.1.5.1"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "Fissures admissibles du support avant pose d'un sol souple"
       seuil: "Pose possible uniquement en l'absence de fissures de largeur > 0,3 mm. Fissures ≤ 0,3 mm : pas de traitement particulier. Fissures de 0,3 à 0,8 mm : traitement requis (§9.1.1.2). Fissures > 0,8 mm : hors domaine du DTU"
@@ -651,6 +771,11 @@ rules:
       ref: "NF DTU 53.12 P1-1-1 §6.1.5.3"
       statut: verifie
       source: "Reef ALWL-1 §6.1.5.3 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "décembre 2020"
+      localisateur: "Reef ALWL-1 §6.1.5.3"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
     - exigence: "Cohésion de surface minimale du support avant pose d'un sol souple"
       seuil: "Cohésion de surface ≥ 0,5 MPa ; en deçà, la pose d'un enduit de sol et d'un revêtement collé ou tendu n'est pas possible (traitement du support à commander)"
@@ -658,6 +783,11 @@ rules:
       ref: "NF DTU 53.12 P1-1-1 §6.1.5.4"
       statut: verifie
       source: "Reef ALWL-1 §6.1.5.4 — lu 2026-06-29 (validé Namur 2026-06-29)"
+      source_type: primaire
+      edition: "décembre 2020"
+      localisateur: "Reef ALWL-1 §6.1.5.4"
+      reviewed_by: "Namur"
+      reviewed_at: "2026-06-29"
 
   # =====================================================================
   # LOT 10 — Peinture / Revêtements muraux  (NF DTU 59.1)
