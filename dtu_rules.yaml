@@ -3,12 +3,13 @@
 # Lookup ~0 token (cf. tools/dtu_rules.py). Chaque règle = un FAIT paraphrasé
 # {exigence, seuil, condition, ref} — JAMAIS le texte verbatim du DTU/NF (droit
 # d'auteur). La `ref` est une CITATION (on cite la clause, on ne recopie pas sa
-# prose). Champs additionnels d'audit : `statut` (verifie | a_valider_namur) et
-# `source` (URL + clause lue) — non consommés par le devis (justification_rows
-# n'émet que les 4 champs), mais permettent de re-vérifier chaque seuil.
+# prose). Champs additionnels d'audit : `statut` (verifie | a_valider_namur), `source`
+# et la provenance structurée. Une règle `verifie` exige `source_type: primaire`,
+# `edition`, `localisateur`, `reviewed_by` et `reviewed_at`; sans l'un de ces
+# champs, elle est fail-closed et n'est ni servie ni exportée.
 #
 # GARDE-FOU : ne JAMAIS sortir un seuil de mémoire (risque client). Seules les
-# règles `statut: verifie` (source primaire lue + recoupée) portent un seuil chiffré.
+# règles `statut: verifie` (source primaire lue + revue tracée) portent un seuil chiffré.
 #
 # STATUTS EMPLOYÉS (convention du fichier, à respecter à la lettre) :
 #   verifie          = source PRIMAIRE lue et recoupée → seuil chiffré autorisé, citable client.
@@ -16,7 +17,7 @@
 #                      confirmation sur source primaire ou d'arbitrage Namur → NE PAS citer
 #                      côté client avant validation.
 # Les références encore `a_verifier` restent dans `normes-par-lot.yaml` ou dans
-# `dtu_rules.draft.yaml` : le lecteur de ce registre vivant ne filtre PAS le statut.
+# `dtu_rules.draft.yaml` : le lecteur fail-closed ne sert que les règles à provenance complète.
 
 meta:
   generated: "2026-06-19"
@@ -24,9 +25,9 @@ meta:
   licence: "Faits/seuils paraphrasés — AUCUN texte DTU/NF verbatim. ref = citation seule."
   statuts_autorises: ["verifie", "a_valider_namur"]
   garde_fou_statut: >-
-    Le lookup ne filtre pas le statut : aucune entrée `a_verifier` ne doit vivre dans ce
-    registre. Les candidats non lus restent dans normes-par-lot.yaml ou dtu_rules.draft.yaml.
-    Un document client doit ne retenir que les entrées `statut: verifie`.
+    Le lookup fail-closed : une entrée `verifie` sans provenance primaire complète est
+    exclue. Les candidats non lus restent dans normes-par-lot.yaml ou dtu_rules.draft.yaml.
+    Un document client ne retient que les entrées `verifie` satisfaisant ce contrat.
   verification: >-
     Lot 04 : sources PRIMAIRES lues verbatim — Arrêté du 24 mars 1982 (Legifrance,
     réglementaire, art. 3 et 4) pour les débits de ventilation ; NF DTU 24.1 P1-1-1
@@ -312,49 +313,49 @@ rules:
       seuil: "DDR ≤ 30 mA ; au moins 2 interrupteurs différentiels ; au plus 8 circuits protégés par différentiel"
       condition: "Type A exigé pour cuisson, lave-linge et IRVE ; type AC minimum pour les autres circuits"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; règle issue de l'amendement A5 de 2015, reconduite pour le résidentiel)"
-      statut: verifie
+      statut: a_valider_namur
       source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.12-13 — lu verbatim 2026-06-19"
 
     - exigence: "Nombre minimal de socles de prise de courant 16 A dans le séjour"
       seuil: "1 socle par tranche de 4 m², minimum 5 (séjour ≤ 28 m²) ; minimum 7 au-delà de 28 m²"
       condition: "Pièce principale 'séjour' ; socles non commandés"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
-      statut: verifie
+      statut: a_valider_namur
       source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.24-25 — lu verbatim 2026-06-19"
 
     - exigence: "Nombre minimal de socles de prise de courant 16 A par chambre"
       seuil: "3 socles minimum par chambre"
       condition: "Chambre (pièce principale)"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
-      statut: verifie
+      statut: a_valider_namur
       source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.16-25 — lu verbatim 2026-06-19"
 
     - exigence: "Socles de prise de courant non spécialisés en cuisine"
       seuil: "6 socles (dont 4 répartis au-dessus du plan de travail) sur circuit dédié ; 3 socles si cuisine ≤ 4 m²"
       condition: "Cuisine > 4 m² ; les 6 socles non spécialisés disposent d'un circuit dédié"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
-      statut: verifie
+      statut: a_valider_namur
       source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.24-25 — lu verbatim 2026-06-19"
 
     - exigence: "Circuit d'éclairage : section des conducteurs cuivre et calibre de protection"
       seuil: "1,5 mm² ; protection ≤ 16 A ; au plus 8 points lumineux par circuit"
       condition: "Au moins 2 circuits d'éclairage par logement (hors studio)"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
-      statut: verifie
+      statut: a_valider_namur
       source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.16-25 — lu verbatim 2026-06-19"
 
     - exigence: "Circuit de prises de courant 16 A : section et calibre selon le nombre de socles"
       seuil: "1,5 mm² → 16 A → 8 socles max ; ou 2,5 mm² → 20 A → 12 socles max"
       condition: "Prises 16 A non spécialisées ; comptage 1 socle = 1 prise"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
-      statut: verifie
+      statut: a_valider_namur
       source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.16-17/24-25 — lu verbatim 2026-06-19"
 
     - exigence: "Circuits spécialisés dédiés (gros électroménager) : section et calibre"
       seuil: "Lave-linge, lave-vaisselle, four : 2,5 mm² / 20 A, 1 circuit dédié chacun ; plaque de cuisson : 6 mm² / 32 A (monophasé)"
       condition: "Un circuit dédié par appareil ; conducteurs cuivre"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025 ; valeurs résidentielles partie 10 issues de l'amendement A5)"
-      statut: verifie
+      statut: a_valider_namur
       source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.16-25 — lu verbatim 2026-06-19"
 
     # --- Nouveautés de l'édition 2024 (recoupées ≥3 sources autoritaires, 2026-06-19) ---
@@ -362,21 +363,21 @@ rules:
       seuil: "DDR 30 mA de TYPE F en tête des circuits monophasés alimentant pompe à chaleur, climatisation, pompe de piscine et prises renforcées (équipements à variateur de vitesse monophasé) ; TYPE B (30 mA) pour ces mêmes usages en triphasé"
       condition: "Nouveauté édition 2024 ; le type F protège au moins comme le type A et résiste mieux aux déclenchements intempestifs"
       ref: "NF C 15-100 (édition 2024, en vigueur depuis sept. 2025)"
-      statut: verifie
+      statut: a_valider_namur
       source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.12-13 — lu verbatim 2026-06-19"
 
     - exigence: "Dispositif de protection contre les défauts d'arc (DPDA / AFDD) — RECOMMANDÉ, non obligatoire"
       seuil: "Recommandé (non imposé) en tête des circuits 'prises de courant' de : locaux à sommeil HORS logement (foyers, EHPAD, hôtels) ; bâtiments patrimoniaux/historiques et biens irremplaçables (musées) ; locaux de stockage de matières inflammables (scieries, silos, ateliers) ; + circuits alimentant des équipements fonctionnant en permanence et d'accès difficile (VMC, pompes)"
       condition: "Édition 2024 ; recommandation. NB : vise les locaux à sommeil HORS logement — PAS les chambres d'un logement (correction vs 1re version web)"
       ref: "NF C 15-100 (édition 2024) — protection contre les arcs électriques"
-      statut: verifie
+      statut: a_valider_namur
       source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.10-11 — lu verbatim 2026-06-19"
 
     - exigence: "Point de recharge de véhicule électrique (IRVE) : circuit dédié et protection (partie 7-722)"
       seuil: "Circuit spécialisé dédié (aucun autre appareil) + DDR 30 mA dédié. Monophasé : type A ou F + détection 6 mA DC (souvent intégrée à la borne). Triphasé : type B obligatoire. Dimensionnement : prise renforcée 3,7 kW → 16 A / 2,5 mm² / disj 20 A ; borne 7,4 kW → 32 A / 6 mm² (<15 m) / disj 40 A (monophasé) ; 22 kW → 32 A/phase / 10 mm² / disj 40 A tétrapolaire (triphasé)"
       condition: "NF C 15-100 partie 7-722 en vigueur depuis le 1er sept. 2025 ; sections à majorer selon la longueur (chute de tension)"
       ref: "NF C 15-100 partie 7-722 (édition 2024 ; applicable 01/09/2025)"
-      statut: verifie
+      statut: a_valider_namur
       source: "Guide Legrand NF C 15-100 (rév. 23 août 2024, doc local Namur) p.12-13 [circuit dédié, types A/F+6 mA DC / B, prise Green'up] + voltwork.fr [dimensionnement bornes 7,4/22 kW] — 2026-06-19"
 
     # --- Clauses de marché / exécution du lot Électricité (DTU 70.1 — SOURCE REEF, lu verbatim) ---
@@ -386,6 +387,9 @@ rules:
       ref: "DTU 70.1 (NF P80-201-2, mai 1998) §1, §7.2, §8.1–8.2 et Annexe A (renvoi arrêté du 17 oct. 1973)"
       statut: verifie
       source: "Reef ALR-1 §1/§7.2/§8/Annexe A — lu verbatim 2026-06-19"
+      source_type: primaire
+      edition: "mai 1998"
+      localisateur: "Reef ALR-1 §1/§7.2/§8/Annexe A"
 
     # --- Ajouts 2026-07-08 (approfondissement expert lot 05) — statut a_valider_namur :
     #     sourcés sur documents locaux Namur (Guide Schneider oct. 2025, Promotelec 24e),

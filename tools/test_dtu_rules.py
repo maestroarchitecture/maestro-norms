@@ -20,6 +20,7 @@ import dtu_rules  # noqa: E402
 
 VALID_LOTS = {f"{i:02d}" for i in range(0, 13)}
 FIELDS = ("exigence", "seuil", "condition", "ref")
+PROVENANCE_FIELDS = ("source_type", "edition", "localisateur", "reviewed_by", "reviewed_at")
 
 # Tant que dtu_rules.yaml n'est pas créé (authoring + vérification, cf. HANDOFF),
 # on skippe proprement au lieu d'échouer la collecte.
@@ -29,21 +30,21 @@ pytestmark = pytest.mark.skipif(
 )
 
 
-def _safe_lots():
+def _authored_lots():
     try:
-        return dtu_rules.lots_with_rules()
+        return sorted((dtu_rules._load().get("rules") or {}).keys())
     except FileNotFoundError:
         return []
 
 
 def test_yaml_present_and_has_rules():
-    assert dtu_rules.lots_with_rules(), "dtu_rules.yaml ne contient aucun lot avec règles"
+    assert dtu_rules._load().get("rules"), "dtu_rules.yaml ne contient aucun lot avec règles"
 
 
-@pytest.mark.parametrize("lot_id", _safe_lots())
+@pytest.mark.parametrize("lot_id", _authored_lots())
 def test_every_rule_has_four_non_empty_fields(lot_id):
-    rules = dtu_rules.rules_for_lot(lot_id)
-    assert rules, f"lot {lot_id} listé mais sans règle"
+    rules = (dtu_rules._load().get("rules") or {}).get(lot_id, [])
+    assert rules, f"lot {lot_id} déclaré mais sans règle d'authoring"
     for i, r in enumerate(rules):
         for f in FIELDS:
             assert r.get(f) and str(r[f]).strip(), f"lot {lot_id} règle #{i} : champ '{f}' vide"
@@ -65,7 +66,7 @@ def test_business_keyword_aliases_resolve():
 def test_rules_for_lot_accepts_keyword_and_id():
     by_id = dtu_rules.rules_for_lot("05")
     by_kw = dtu_rules.rules_for_lot("electricite")
-    assert by_id == by_kw and by_id, "alias mot-clé ≠ id pour le lot 05"
+    assert by_id == by_kw, "alias mot-clé ≠ id pour le lot 05"
 
 
 def test_unknown_lot_is_lenient():
@@ -116,6 +117,43 @@ def test_lookup_n_expose_que_les_regles_verifiees():
         for rules in (data.get("rules") or {}).values()
         for rule in rules
     ), "fixture attendue : le registre contient des candidates non servables"
+
+
+def test_registre_courant_reste_fail_closed_jusqu_a_revue_tracee():
+    authored = [
+        rule
+        for rules in (dtu_rules._load().get("rules") or {}).values()
+        for rule in rules
+        if rule.get("statut") == "verifie"
+    ]
+    assert len(authored) == 50
+    assert dtu_rules.lots_with_rules() == []
+
+
+def test_provenance_verifiee_est_fail_closed():
+    complete = {
+        "statut": "verifie", "source_type": "primaire", "edition": "mai 1998",
+        "localisateur": "§7.2", "reviewed_by": "Namur", "reviewed_at": "2026-06-19",
+    }
+    assert dtu_rules.is_verified_rule(complete)
+    for field in PROVENANCE_FIELDS:
+        mutated = dict(complete)
+        mutated.pop(field)
+        assert not dtu_rules.is_verified_rule(mutated), field
+
+
+@pytest.mark.parametrize("source_type", ["secondaire", "notice", ""])
+def test_provenance_secondaire_ou_notice_ne_peut_pas_etre_verifiee(source_type):
+    rule = {
+        "statut": "verifie", "source_type": source_type, "edition": "mai 1998",
+        "localisateur": "§7.2", "reviewed_by": "Namur", "reviewed_at": "2026-06-19",
+    }
+    assert not dtu_rules.is_verified_rule(rule)
+
+
+def test_lot_05_ne_sert_que_la_regle_consuel_reef_tracee():
+    rules = dtu_rules.rules_for_lot("05")
+    assert rules == []
 
 
 if __name__ == "__main__":

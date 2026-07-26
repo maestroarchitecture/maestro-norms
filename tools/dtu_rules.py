@@ -47,6 +47,14 @@ _LOT_ALIASES = {
 }
 
 _FIELDS = ("exigence", "seuil", "condition", "ref")
+_VERIFIED_PROVENANCE_FIELDS = (
+    "source_type",
+    "edition",
+    "localisateur",
+    "reviewed_by",
+    "reviewed_at",
+)
+_PRIMARY_SOURCE_TYPE = "primaire"
 
 
 def _load() -> dict:
@@ -64,6 +72,24 @@ def resolve_lot(lot: str) -> str | None:
     return _LOT_ALIASES.get(s)
 
 
+def provenance_errors(rule: dict) -> List[str]:
+    """Retourne les violations du contrat de provenance d'une règle vérifiée."""
+    if rule.get("statut") != "verifie":
+        return []
+    errors = []
+    if rule.get("source_type") != _PRIMARY_SOURCE_TYPE:
+        errors.append("source_type doit être 'primaire'")
+    for field in _VERIFIED_PROVENANCE_FIELDS[1:]:
+        if not str(rule.get(field, "")).strip():
+            errors.append(f"{field} manquant")
+    return errors
+
+
+def is_verified_rule(rule: dict) -> bool:
+    """Vrai uniquement pour une règle vérifiée avec provenance complète."""
+    return rule.get("statut") == "verifie" and not provenance_errors(rule)
+
+
 def rules_for_lot(lot_id: str) -> List[dict]:
     """Règles vérifiées ``{exigence, seuil, condition, ref}`` du lot.
 
@@ -76,7 +102,7 @@ def rules_for_lot(lot_id: str) -> List[dict]:
     return [
         rule
         for rule in (_load().get("rules") or {}).get(lid, [])
-        if rule.get("statut") == "verifie"
+        if is_verified_rule(rule)
     ]
 
 
