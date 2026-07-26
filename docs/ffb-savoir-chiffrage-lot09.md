@@ -2,6 +2,8 @@
 
 > **Note de méthode.** Tout le contenu ci-dessous est **reformulé** à partir de la documentation technique FFB (NF DTU et Règles professionnelles citées en référence) : **aucun verbatim**, seules les références normatives sont nommées. **Aucun seuil chiffré n'est inventé** — quand la source mentionne une valeur (écartement entre lames, nombre d'usages des tableaux de charge, classement d'usage du local), elle est désignée « selon la norme / selon les tableaux » sans chiffre. Le document reste strictement fidèle aux extractions : il ne couvre que les sous-postes réellement documentés (platelage bois extérieur, sols souples/textiles, sols coulés résine). Le parquet intérieur, bien que figurant dans l'intitulé du lot, n'apparaît dans aucune extraction et n'est donc pas traité ici.
 
+> **Avertissement de mise à jour — 26/07/2026. Les NF DTU 53.1 et 53.2 sont annulés.** Ce document a été rédigé à partir de calepins FFB dont l'un décrivait encore le **NF DTU 53.1** (revêtements de sol textiles, édition révisée de novembre 2016) et le **NF DTU 53.2** (revêtements de sol PVC, édition d'avril 2007) comme des référentiels courants. **Ils ne le sont plus** : depuis **décembre 2020**, le **NF DTU 53.12** les annule et les remplace tous les deux, et couvre à lui seul les sols souples PVC, textiles et linoléum. Ce qui suit conserve le détail de métier issu de ces calepins parce qu'il reste utile au chiffrage, mais **la norme à citer dans un devis est le NF DTU 53.12**. Toute mention des 53.1 et 53.2 ci-dessous est un **repère historique**, signalé comme tel. *Fait vérifié le 26/07/2026 : la fiche publique de la boutique AFNOR du NF DTU 53.12 P1-1-1 donne l'édition de décembre 2020 et déclare annuler et remplacer le NF DTU 53.1 P1-1 (novembre 2016) et le NF DTU 53.2 P1-1 (avril 2007). Seules ces métadonnées ont été lues : le texte du 53.12 n'a pas été ouvert et aucun de ses seuils n'est repris ici.*
+
 ---
 
 ## 1. Platelage bois extérieur
@@ -81,7 +83,7 @@ Deux cas distincts, à ne pas confondre car ils renvoient à des référentiels 
 
 ## 2. Sols souples et textiles
 
-Deux référentiels voisins. Garder visibles les normes distinctes et les sujétions propres à chacun (douche PVC : spécifique au 53.12 ; diagnostic d'humidité à la bombe à carbure : spécifique au 53.1).
+**Un seul référentiel en vigueur : le NF DTU 53.12 (décembre 2020)**, qui couvre les revêtements souples PVC, textiles et linoléum. Les deux sections ci-dessous viennent de deux calepins FFB différents : la première décrit le 53.12, la seconde décrit l'ancien NF DTU 53.1 des revêtements textiles, **annulé et remplacé** par le 53.12. On garde les deux parce que le second apporte du détail de métier utile (diagnostic d'humidité, supports à risque de remontées) que le premier ne détaillait pas — mais **c'est bien le 53.12 qui gouverne les deux**, et c'est lui seul qu'on cite dans un devis.
 
 ### 2.A — Revêtements de sol souples : PVC, linoléum, textile (NF DTU 53.12)
 
@@ -124,7 +126,9 @@ Deux référentiels voisins. Garder visibles les normes distinctes et les sujét
 **Normes**
 - NF DTU 53.12 (P62-207), décembre 2020.
 
-### 2.B — Revêtements de sol textiles : moquette en lés ou dalles (NF DTU 53.1)
+### 2.B — Revêtements de sol textiles : moquette en lés ou dalles
+
+> **Référentiel applicable : NF DTU 53.12 (décembre 2020).** Cette section a été rédigée à partir d'un calepin FFB consacré au **NF DTU 53.1 révisé de novembre 2016**, aujourd'hui **annulé et remplacé**. Son contenu de métier reste exploitable pour cadrer un poste moquette, mais **le NF DTU 53.1 ne doit plus être cité comme norme applicable**, ni dans un devis, ni dans un argumentaire client.
 
 **Périmètre du poste**
 - Pose de revêtements textiles en lés par collage ou par tension.
@@ -148,7 +152,7 @@ Deux référentiels voisins. Garder visibles les normes distinctes et les sujét
 
 **Points de vigilance**
 - En rénovation, reconnaître et accepter l'ancien support **avant** de chiffrer : l'état conditionne les travaux préparatoires.
-- Mesure du taux d'humidité du support : seule la méthode à la bombe à carbure est requise par la norme.
+- Mesure du taux d'humidité du support : la méthode à la bombe à carbure était la seule admise par le NF DTU 53.1 (aujourd'hui annulé). À revérifier dans le NF DTU 53.12, qui l'a remplacé, avant d'en faire une exigence opposable — non vérifié à ce jour.
 - Critères de reconnaissance des supports neufs base liants hydrauliques : humidité, microfissures, fissures, cohésion de surface, porosité, planéité, cure, marches d'escalier (nez et fond de marche).
 - Risques de remontées d'humidité sur dallages : prévoir des dispositions spécifiques.
 - Nouveauté : planchers sur bacs aciers collaborants pour lés collés également concernés par les remontées d'humidité.
@@ -160,8 +164,10 @@ Deux référentiels voisins. Garder visibles les normes distinctes et les sujét
 - Enduit de sol (ragréage) ; primaire d'accrochage associé à l'enduit ; colle pour pose collée.
 
 **Normes**
-- NF DTU 53.1 (révisé, publié novembre 2016) — Revêtements de sol textiles, neuf et rénovation, 3 parties dont partie 1-2 CGM.
-- NF DTU 53.2 (2007) — Revêtements de sol PVC (référence pour les dispositions remontées d'humidité).
+- **Norme applicable aujourd'hui : NF DTU 53.12, décembre 2020** (indice de classement P 62-207 ; la partie P1-1-1 porte l'indice P 62-207-1-1-1) — préparation du support et revêtements de sol souples : PVC, textiles et linoléum réunis dans un texte unique. *Fait vérifié le 26/07/2026 : la fiche publique de la boutique AFNOR du NF DTU 53.12 P1-1-1 indique décembre 2020 et déclare annuler et remplacer le NF DTU 53.1 P1-1 de novembre 2016 et le NF DTU 53.2 P1-1 d'avril 2007. Métadonnées seules : le texte n'a pas été lu, aucun de ses seuils n'est repris ici.*
+- *Repères historiques, à ne plus citer comme normes applicables :*
+  - *NF DTU 53.1 (édition révisée de novembre 2016) — revêtements de sol textiles, neuf et rénovation, 3 parties dont une partie « critères généraux de choix des matériaux ». **ANNULÉ, remplacé par le NF DTU 53.12.** C'est le texte dont ce calepin FFB décrivait les nouveautés.*
+  - *NF DTU 53.2 (édition d'avril 2007) — revêtements de sol PVC. **ANNULÉ, remplacé par le NF DTU 53.12.** Il servait ici de référence aux dispositions sur les remontées d'humidité, qui relèvent désormais du 53.12.*
 - Classement UPEC (usage des locaux).
 - Référentiels BBC (Bâtiment basse consommation) et Bepos (Bâtiment à énergie positive).
 
@@ -210,7 +216,7 @@ Deux référentiels voisins. Garder visibles les normes distinctes et les sujét
 
 - **Toujours chiffrer la préparation de support séparément du revêtement** (primaire + enduit de lissage / ragréage au m²) sur les sols souples et textiles — c'est un poste à part entière, pas un compris implicite.
 - **Sortir les sujétions en lignes distinctes** : remontées en plinthe (ml), traversées de canalisations (unité), marches d'escalier (unité ou ml), système douche PVC — au lieu de les noyer dans le m² de sol.
-- **En rénovation, conditionner l'offre à la reconnaissance et l'acceptation de l'ancien support** ; intégrer le **diagnostic d'humidité à la bombe à carbure** (méthode exigée par le NF DTU 53.1) comme étape chiffrée, l'état du support pilotant les travaux préparatoires.
+- **En rénovation, conditionner l'offre à la reconnaissance et l'acceptation de l'ancien support** ; intégrer le **diagnostic d'humidité à la bombe à carbure** comme étape chiffrée, l'état du support pilotant les travaux préparatoires. *(Cette méthode de mesure était exigée par le NF DTU 53.1, aujourd'hui annulé et remplacé par le NF DTU 53.12 : c'est ce dernier qu'on cite, et il faut vérifier dans son texte la méthode de mesure qu'il retient avant de l'affirmer côté client — non vérifié à ce jour, le texte n'ayant pas été lu.)*
 - **Créer un sous-poste « protection contre remontées d'humidité »** activable sur support à risque (dallage, plancher sur bac acier collaborant), distinct du revêtement.
 - **Distinguer deux niveaux de platelage bois extérieur** : terrasse sur sol/plots (NF DTU 51.4, deux niveaux de conception courante/élaborée, pose vissée visible uniquement) vs platelage sur toiture-terrasse étanchée (Règles pro CSFE 2017, hors 51.4) — référentiels et périmètres non interchangeables, l'étanchéité restant exclue (lot étanchéité).
 - **Pour les sols résine, prévoir la variante antistatique comme surcoût explicite** (carbure de silicium + mise à la terre) et vérifier la version normative applicable (NF DTU 54.1 neuf vs CPT 3716 rénovation).

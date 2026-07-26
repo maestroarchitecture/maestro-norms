@@ -3,16 +3,30 @@
 # Lookup ~0 token (cf. tools/dtu_rules.py). Chaque règle = un FAIT paraphrasé
 # {exigence, seuil, condition, ref} — JAMAIS le texte verbatim du DTU/NF (droit
 # d'auteur). La `ref` est une CITATION (on cite la clause, on ne recopie pas sa
-# prose). Champs additionnels d'audit : `statut` (verifie | a_verifier) et
+# prose). Champs additionnels d'audit : `statut` (verifie | a_valider_namur) et
 # `source` (URL + clause lue) — non consommés par le devis (justification_rows
 # n'émet que les 4 champs), mais permettent de re-vérifier chaque seuil.
 #
 # GARDE-FOU : ne JAMAIS sortir un seuil de mémoire (risque client). Seules les
-# règles `statut: verifie` (source primaire lue + recoupée) figurent ici.
+# règles `statut: verifie` (source primaire lue + recoupée) portent un seuil chiffré.
+#
+# STATUTS EMPLOYÉS (convention du fichier, à respecter à la lettre) :
+#   verifie          = source PRIMAIRE lue et recoupée → seuil chiffré autorisé, citable client.
+#   a_valider_namur  = seuil rédigé depuis une source SECONDAIRE fiable, en attente de
+#                      confirmation sur source primaire ou d'arbitrage Namur → NE PAS citer
+#                      côté client avant validation.
+# Les références encore `a_verifier` restent dans `normes-par-lot.yaml` ou dans
+# `dtu_rules.draft.yaml` : le lecteur de ce registre vivant ne filtre PAS le statut.
 
 meta:
   generated: "2026-06-19"
+  revise: "2026-07-26 — correction des sources ventilation ; candidats du lot 12 conservés hors registre vivant."
   licence: "Faits/seuils paraphrasés — AUCUN texte DTU/NF verbatim. ref = citation seule."
+  statuts_autorises: ["verifie", "a_valider_namur"]
+  garde_fou_statut: >-
+    Le lookup ne filtre pas le statut : aucune entrée `a_verifier` ne doit vivre dans ce
+    registre. Les candidats non lus restent dans normes-par-lot.yaml ou dtu_rules.draft.yaml.
+    Un document client doit ne retenir que les entrées `statut: verifie`.
   verification: >-
     Lot 04 : sources PRIMAIRES lues verbatim — Arrêté du 24 mars 1982 (Legifrance,
     réglementaire, art. 3 et 4) pour les débits de ventilation ; NF DTU 24.1 P1-1-1
@@ -183,6 +197,14 @@ rules:
 
   # =====================================================================
   # LOT 04 — Chauffage / VMC  (débits réglementaires + DTU fumisterie + PCBT)
+  # ---------------------------------------------------------------------
+  # SOURCE UNIQUE DES DÉBITS D'AIR (rappel du 2026-07-26) : les débits de ventilation des
+  # logements viennent de l'ARRÊTÉ DU 24 MARS 1982, articles 3 et 4, et d'aucun autre texte.
+  # Ni la NF C 15-100 (norme électrique) ni la « RT2020 » (texte inexistant — la
+  # réglementation de la construction neuve s'appelle RE2020) ne fixent de débit d'air :
+  # leur attribuer un débit est une erreur à corriger partout où on la rencontre.
+  # Le barème est STRATIFIÉ selon le nombre de pièces principales : ne jamais réduire la
+  # cuisine ou la salle de bains à une valeur unique.
   # =====================================================================
   "04":
     # --- Ventilation : débits d'extraction (Arrêté 24/03/1982, source primaire) ---
@@ -200,8 +222,8 @@ rules:
         min_by_pieces: { "1": 75, "2": 90, "3": 105, "4": 120, "5+": 135 }
 
     - exigence: "Débit d'air extrait minimal en salle de bains ou de douches"
-      seuil: "15 m³/h (logement de 1 à 2 pièces principales) ; 30 m³/h (3 pièces et plus)"
-      condition: "Autre salle d'eau : 15 m³/h quel que soit le nombre de pièces"
+      seuil: "15 m³/h (logement de 1 à 2 pièces principales) ; 30 m³/h (3 pièces et plus) — salle de bains ou de douches, commune ou non avec un cabinet d'aisances"
+      condition: "Autre salle d'eau : 15 m³/h quel que soit le nombre de pièces. Ce sont des MINIMA réglementaires : un débit supérieur retenu par un chiffrage Maestro (par exemple 75 m³/h en salle de bains) est un choix de confort, jamais un minimum réglementaire"
       ref: "Arrêté du 24 mars 1982, art. 3"
       statut: verifie
       source: "Legifrance LEGIARTI000006830557 (art. 3) — tableau lu verbatim 2026-06-18"
@@ -645,13 +667,15 @@ rules:
       source: "Reef AEZO-2 §7.1 — lu verbatim 2026-06-18"
 
   # =====================================================================
-  # LOTS SANS RÈGLE ÉTAGE 0 (vérifié 2026-06-19) — lots organisationnels / méta, pas de
-  # DTU ni de seuil chiffré normatif à inscrire (rules_for_lot renvoie [] proprement) :
-  #   00 — Installation de chantier (préparation, protections, manutention)
+  # LOTS SANS RÈGLE ÉTAGE 0 (vérifié 2026-06-19, revu 2026-07-26) — lots organisationnels
+  # / méta, pas de DTU ni de seuil chiffré normatif à inscrire (rules_for_lot renvoie []
+  # proprement) :
+  #   00 — Installation de chantier - Nettoyage (préparation, protections, manutention,
+  #        nettoyage de fin de chantier ; l'échafaudage et le travail en hauteur relèvent
+  #        du Code du travail, catalogué au bloc transverse du catalogue des normes)
   #   01 — Démolition / Dépose / Curage (les déposes restent dans les lots métier)
   #   11 — Cuisine / Salle de bain (forfaits) — LOT MÉTA (agrège d'autres lots)
-  #   (l'ancien « 12 — Nettoyage fin de chantier » est CADUC : le numéro 12 = Maçonnerie -
-  #   Gros œuvre - Structure depuis l'arbitrage Namur 08/07 ; bloc "12" à ouvrir depuis la
-  #   source primaire Reef — candidats DTU listés dans la KB 12-maconnerie-gros-oeuvre)
   # → étage 0 couvre les lots à seuils chiffrés : 02,03,04,05,06,07,08,09,10.
+  # Le lot 12 est actif dans la taxonomie, mais ses candidats restent catalogués dans
+  # normes-par-lot.yaml tant que les sources primaires n'ont pas été lues au Reef.
   # =====================================================================

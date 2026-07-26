@@ -81,9 +81,10 @@
   ],
   "normes": [
    "NF DTU 52.1 (P61-202), février 2020 — revêtements de sols scellés",
-   "NF DTU 52.11 (P61-203), juin 2013 — sous-couches isolantes sous chape ou dalle"
+   "NF DTU 52.10 (indice de classement P 61-203), juin 2013 — Mise en œuvre de sous-couches isolantes sous chape ou dalle flottantes et sous carrelage scellé (remplace NF P 61-203 de décembre 2003)"
   ],
-  "pour_devis": "Sert de check-list de périmètre pour un poste « pose scellée » : rappelle d'inclure sous-couche isolante, plinthes, joints, réservation des canalisations, et de prévoir des variantes de prix selon intérieur/extérieur, plancher chauffant et pierre naturelle, le tout adossé aux NF DTU 52.1 et 52.11."
+  "correction_2026_07_26": "La référence « NF DTU 52.11 » figurait ici : elle n'existe pas. Coquille corrigée en NF DTU 52.10 (juin 2013). Fait vérifié le 26/07/2026 : les fiches publiques de la boutique AFNOR des parties P1-1 et P1-2 donnent l'édition de juin 2013 et les indices de classement P 61-203-1-1 et P 61-203-1-2, et déclarent remplacer la NF P 61-203 de décembre 2003. Seules ces métadonnées ont été lues : le texte du DTU n'a pas été ouvert et aucun de ses seuils n'est repris ici. Si « NF DTU 52.11 » apparaît ailleurs, c'est faux : à corriger.",
+  "pour_devis": "Sert de check-list de périmètre pour un poste « pose scellée » : rappelle d'inclure sous-couche isolante, plinthes, joints, réservation des canalisations, et de prévoir des variantes de prix selon intérieur/extérieur, plancher chauffant et pierre naturelle, le tout adossé aux NF DTU 52.1 et 52.10."
  },
  {
   "titre": "Chapes et dalles à base de liants hydrauliques : le NF DTU 26.2 illustré",

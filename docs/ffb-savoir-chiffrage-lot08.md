@@ -2,6 +2,8 @@
 
 > **Cadre.** Tout ce document est **reformulé** à partir de la documentation technique de la FFB (calepins de chantier, NF DTU, Cahiers des Prescriptions Techniques). Seules les **références** sont citées : aucun verbatim n'est repris. **Aucun seuil chiffré n'a été inventé** — les valeurs présentes (épaisseurs, pentes, classements, dosages…) proviennent directement des sources et sont conservées telles quelles. Document destiné à enrichir la construction des devis Maestro ; il reste strictement fidèle aux extractions et n'ajoute aucune donnée qui n'y figure pas.
 >
+> **Corrections apportées le 26/07/2026.** La référence « NF DTU 52.11 » citée au sous-poste de pose scellée **n'existe pas** : c'était une coquille, corrigée en **NF DTU 52.10, juin 2013, indice de classement P 61-203** (sous-couches isolantes sous chape ou dalle flottantes et sous carrelage scellé). C'est ce document qui était la source de la coquille : elle s'est propagée de là vers la base de connaissance du lot. Aucun autre contenu n'a été modifié, aucun seuil n'a été touché.
+>
 > **Périmètre couvert.** 5 familles de sous-postes : pose collée au sol, pose scellée au sol, chapes et supports rapportés, étanchéité sous carrelage (SPEC), carrelage sur plots en extérieur. La faïence murale, la douche « zéro ressaut » et le plancher chauffant en tant que poste autonome **ne sont pas couverts** : les sources ne les traitent pas comme tels (ils n'apparaissent que comme facteur ou comme exclusion de domaine).
 
 ---
@@ -135,7 +137,8 @@ Deux apports de la source : le **périmètre complet** d'un poste scellé (avec 
 
 **Normes**
 - NF DTU 52.1 (P61-202), février 2020 — revêtements de sols scellés.
-- NF DTU 52.11 (P61-203), juin 2013 — sous-couches isolantes sous chape ou dalle.
+- NF DTU 52.10 (indice de classement P 61-203), juin 2013 — Travaux de bâtiment — Mise en œuvre de sous-couches isolantes sous chape ou dalle flottantes et sous carrelage scellé (remplace NF P 61-203 de décembre 2003). *Fait vérifié le 26/07/2026 : les fiches publiques de la boutique AFNOR des parties P1-1 et P1-2 donnent l'édition de juin 2013 et les indices de classement P 61-203-1-1 et P 61-203-1-2, et déclarent remplacer la NF P 61-203 de décembre 2003. Seules ces métadonnées ont été lues : le texte du DTU n'a pas été ouvert et aucun de ses seuils n'est repris ici.*
+  > **Correction du 26/07/2026.** Cette ligne portait « NF DTU 52.11 » : **cette référence n'existe pas**. C'était une coquille, et c'est d'ici qu'elle s'est propagée dans le reste du savoir du lot. La bonne référence est **NF DTU 52.10**. Si vous rencontrez « NF DTU 52.11 » ailleurs, c'est faux : corrigez-la.
 
 ---
 

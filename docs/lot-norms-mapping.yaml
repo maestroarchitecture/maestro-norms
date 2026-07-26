@@ -17,6 +17,15 @@
 
 meta:
   generated: "2026-06-04"
+  revise: >-
+    2026-07-26 — corrections de fond, sans régénération complète : lot 12 renommé
+    « Maçonnerie - Gros œuvre - Structure » et pourvu de ses textes de référence ; nettoyage
+    de fin de chantier déplacé au lot 00 ; lot 09 : NF DTU 53.1 et 53.2 sortis des références
+    gouvernantes (annulés, remplacés par le NF DTU 53.12 de décembre 2020) et conservés dans
+    un champ historique explicite. RESTENT à traiter lors de la régénération : lot 06
+    (NF DTU 36.1 annulé, remplacé par le NF DTU 36.2 ; NF DTU 36.5 mal rangé, il relève du
+    lot 07), lot 08 (NF DTU 55.2 hors périmètre), lot 04 (DTU 65.10 annulé en 2017),
+    lots 00 et 01 (réglementaire transverse absent) et lot 11 (intitulé périmé).
   lots_source: "expert_travaux/knowledge.yaml"
   download_done: false          # choix utilisateur : mapping/plan d'abord
   licence:
@@ -30,7 +39,13 @@ meta:
 
 lots:
   "00":
-    name: "Installation de chantier"
+    name: "Installation de chantier - Nettoyage de fin de chantier"
+    note: >-
+      Le NETTOYAGE DE FIN DE CHANTIER vit ici depuis l'arbitrage Namur du 08/07/2026
+      (il occupait auparavant le numéro 12, réattribué à la maçonnerie et au gros œuvre).
+      dtu_refs reste vide : ce lot n'est gouverné par aucun NF DTU, mais il l'est par du
+      réglementaire (travail en hauteur et vérifications d'échafaudage) recensé au catalogue
+      canonique, bloc transverse — à reprendre ici lors de la régénération du mapping.
     dtu_refs: []
     justification: pratique_pro
     reco_pro: []
@@ -165,7 +180,19 @@ lots:
 
   "09":
     name: "Revêtements de sol (hors carrelage)"
-    dtu_refs: ["DTU 51.1", "DTU 51.2", "DTU 53.1", "DTU 53.2"]
+    note: >-
+      CORRIGÉ le 2026-07-26 : les NF DTU 53.1 (revêtements de sol textiles) et NF DTU 53.2
+      (revêtements de sol PVC) sont ANNULÉS et REMPLACÉS par le NF DTU 53.12 de décembre
+      2020, qui couvre à lui seul les sols souples PVC, textiles et linoléum. Ils ne
+      gouvernent plus aucun ouvrage et ne doivent plus être cités comme référentiel courant.
+    dtu_refs: ["NF DTU 51.1", "NF DTU 51.2", "NF DTU 53.12"]
+    dtu_refs_historiques:
+      - ref: "NF DTU 53.1"
+        statut: annule_remplace
+        remplace_par: "NF DTU 53.12 (décembre 2020)"
+      - ref: "NF DTU 53.2"
+        statut: annule_remplace
+        remplace_par: "NF DTU 53.12 (décembre 2020)"
     justification: dtu_citation_seule
     reco_pro: []
 
@@ -182,13 +209,45 @@ lots:
     reco_pro: []
 
   "12":
-    name: "Nettoyage fin de chantier"
-    dtu_refs: []
-    justification: pratique_pro
-    reco_pro: []
+    name: "Maçonnerie - Gros œuvre - Structure"
+    note: >-
+      CORRIGÉ le 2026-07-26. Le numéro 12 désigne la maçonnerie, le gros œuvre et la
+      structure depuis l'arbitrage Namur du 08/07/2026 ; le NETTOYAGE DE FIN DE CHANTIER,
+      qui portait ce numéro auparavant, est déplacé au lot 00. Lot ACTIF : ne plus le
+      décrire comme un lot à venir. Les textes ci-dessous sont cités par leur RÉFÉRENCE
+      seulement : aucun seuil chiffré n'est disponible tant que les sources primaires
+      (payantes) n'ont pas été lues. L'expert ne dimensionne jamais une structure à
+      distance — toute reprise de charge ou ouverture dans un mur porteur passe par un
+      bureau d'études.
+    dtu_refs:
+      - "NF DTU 20.1"
+      - "NF DTU 20.13"
+      - "NF DTU 21"
+      - "NF DTU 13.1"
+      - "NF DTU 13.3"
+      - "NF DTU 26.1"
+      - "NF DTU 23.5"
+      - "NF EN 1991 (Eurocode 1)"
+      - "NF EN 1996-1-1+A1 (Eurocode 6)"
+      - "NF EN 1997-1 (Eurocode 7)"
+      - "NF P 94-500"
+    justification: reco_pro_gratuit
+    reco_pro:
+      - titre: "Maçonnerie — recommandations professionnelles RAGE 2014"
+        type: reco_pro
+        dtu: "NF DTU 20.1"
+        url: "https://media.xpair.com/pdf/basse-consommation/recommandation-pro-rage-maconnerie2.pdf"
+        statut: liste
+        note: >-
+          Rattachée au lot 12 le 2026-07-26 (elle vivait au bloc transversal_enveloppe).
+          ATTENTION : document orienté construction NEUVE (maçonneries isolantes), à ne pas
+          transposer tel quel en rénovation.
 
 # Enveloppe / ITE / maçonnerie — guides RAGE existants mais SANS lot finition dédié
 # (lots 00-12 = rénovation/finition ; gros œuvre & façade = transversal).
+# NOTA 2026-07-26 : la reco « Maçonnerie — recommandations 2014 » a été rattachée au lot 12
+# (désormais Maçonnerie - Gros œuvre - Structure) ; elle est conservée ci-dessous le temps de
+# la régénération complète du mapping, mais le lot 12 en est le rattachement de référence.
 transversal_enveloppe:
   note: "À rattacher si un lot 'isolation/façade/gros œuvre' est ajouté au pilote."
   reco_pro:

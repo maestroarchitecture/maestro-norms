@@ -15,6 +15,16 @@
 
 meta:
   generated: "2026-07-09"
+  revise: >-
+    2026-07-26 — passe de correction de fond. (1) Travail en hauteur : l'entrée unique
+    « R4323-58 » est éclatée en trois entrées correspondant au contenu réel des articles
+    R4323-58, R4323-59 et R4323-60, lus sur Legifrance ce jour ; la formule « protection
+    collective obligatoire au-delà de 3 m » est déclarée FAUSSE et la consigne de
+    « régularisation » est remplacée par une consigne de correction. L'arrêté du 21 décembre
+    2004 (vérifications d'échafaudage) et la recommandation R408 sont répétés au bloc
+    transverse. (2) Lot 12 : note d'état ajoutée, le lot est ACTIF et n'est plus décrit comme
+    à ouvrir. (3) NF DTU 52.10 : indice de classement vérifié et inscrit. (4) NF DTU 53.1 et
+    53.2 : statut d'annulation durci et actions de correction mises à jour.
   methode: >-
     Gisements internes lus d'abord (lot-norms-mapping.yaml du 04/06, dtu_rules.yaml,
     check_dtu_refs.py, KB normes-dtu.md par lot, ffb-techniques-index.yaml,
@@ -31,7 +41,7 @@ meta:
   statuts:
     statut: "en_vigueur = texte applicable à la date de génération (les textes annulés/abrogés/remplacés sont dans refs_perimees, jamais dans les blocs lots)."
     statut_verif: "confirme_public = édition et vigueur recoupées sur au moins une source publique citée ; edition_a_confirmer = texte identifié mais édition exacte non recoupée cette session."
-    deja_au_registre: "true = le texte a déjà au moins une règle dans dtu_rules.yaml et/ou figure dans l'allowlist check_dtu_refs.py ; false = hors registre et hors allowlist (NE PAS citer en description client avant inscription)."
+    deja_au_registre: "true = le texte a déjà au moins une RÈGLE CHIFFRÉE au registre des seuils et/ou figure dans l'allowlist de contrôle ; false = pas de règle chiffrée et hors allowlist (NE PAS citer en description client avant inscription). Les références candidates du lot 12 restent dans ce catalogue : aucune entrée à vérifier ne vit dans dtu_rules.yaml, dont le lecteur ne filtre pas le statut."
     priorite_reef: "haute/moyenne = texte PAYANT dont des seuils chiffrés utiles au chiffrage restent à extraire via le protocole registre (source primaire lue -> statut verifie -> allowlist) ; basse = texte gratuit en plein texte, ou citation d'appui sans seuil propre, ou seuils déjà extraits."
   registre: "dtu_rules.yaml (racine maestro-norms) — seul endroit où vivent les seuils chiffrés."
   garde_fou_ci: "check_dtu_refs.py ne détecte que les tokens NF DTU / NF EN / NF C 15-100 / arrêté : les e-Cahiers CSTB et articles de codes cités en description client ne seraient PAS contrôlés."
@@ -768,6 +778,7 @@ lots:
         justification: "Chapes support du carrelage : épaisseurs, pente d'écoulement et fractionnement déjà verifie au registre — préciser la date de l'A1 (mai 2015) et surveiller la révision."
       - ref: "NF DTU 52.10"
         titre: "Travaux de bâtiment — Mise en œuvre de sous-couches isolantes sous chape ou dalle flottantes et sous carrelage scellé"
+        indice_classement: "P 61-203 (partie P1-1 = P 61-203-1-1 ; partie P1-2 = P 61-203-1-2) — FAIT VÉRIFIÉ le 2026-07-26 sur les fiches publiques de la boutique AFNOR des deux parties (références de fiche fa174051 et fa174050), qui donnent aussi l'édition de juin 2013 et le remplacement de la NF P 61-203 de décembre 2003. Métadonnées seules : le texte du DTU n'a pas été lu."
         edition: "Juin 2013 (remplace NF P 61-203 de décembre 2003)"
         statut: en_vigueur
         statut_verif: confirme_public
@@ -935,7 +946,7 @@ lots:
         source_publique: "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072665/LEGISCTA000006191044/"
         deja_au_registre: false
         priorite_reef: basse
-        justification: "Réglementaire transverse qui touche le lot en plein : le parc IdF < 1949 impose de traiter le risque plomb avant ponçage/décapage de peintures anciennes (protections, méthodes, surcoût devis) ; texte gratuit sur Legifrance. NB : le poste échafaudage du ravalement s'appuie sur le Code du travail R4323-58 — voir bloc transverse."
+        justification: "Réglementaire transverse qui touche le lot en plein : le parc IdF < 1949 impose de traiter le risque plomb avant ponçage/décapage de peintures anciennes (protections, méthodes, surcoût devis) ; texte gratuit sur Legifrance. NB : le poste échafaudage du ravalement s'appuie sur le Code du travail — articles R4323-58 (plan de travail sûr, SANS seuil de hauteur), R4323-59 (garde-corps, solution de référence) et R4323-60 (dispositif de recueil souple : chute limitée à 3 m au maximum, quand le garde-corps est impossible) ; détail au bloc transverse. Ne pas réécrire « protection collective obligatoire au-delà de 3 m » : cette formule est fausse."
 
   "11":
     label: "Cuisine (méta-lot, TVA mixte)"
@@ -997,6 +1008,15 @@ lots:
 
   "12":
     label: "Maçonnerie - Gros œuvre - Structure"
+    note: >-
+      Lot ACTIF depuis l'arbitrage Namur du 08/07/2026 — ce n'est ni un lot « à venir », ni
+      « Nettoyage fin de chantier » (le nettoyage de fin de chantier appartient au lot 00).
+      ÉTAT DU REGISTRE au 2026-07-26 : aucun bloc « 12 » ne vit dans dtu_rules.yaml.
+      Les références candidates restent dans le présent catalogue, sans valeur chiffrée,
+      parce qu'aucune source primaire n'a encore été lue. Conséquence pratique : ces textes
+      ne peuvent fonder aucun chiffre ni aucune description client. RÈGLE MÉTIER MAINTENUE : l'expert ne dimensionne
+      JAMAIS une structure à distance — toute épaisseur, semelle, reprise de charge ou
+      ouverture dans un mur porteur passe par un bureau d'études.
     entrees:
       - ref: "NF DTU 20.1"
         titre: "Travaux de bâtiment — Ouvrages en maçonnerie de petits éléments — Parois et murs"
@@ -1006,7 +1026,7 @@ lots:
         source_publique: "https://www.cstb.fr/getmedia/5542e179-4a99-4f1d-a385-e0df07e0cc7f/Liste-DTU-en-vigueur-9-juillet-2025"
         deja_au_registre: false
         priorite_reef: haute
-        justification: "DTU maître du lot (murs porteurs, épaisseurs minimales, chaînages, mortiers) — ATTENTION : la piste KB visait implicitement l'édition 2008, remplacée en 2020 ; seuils chiffrés à extraire au Reef pour ouvrir le bloc « 12 » du registre."
+        justification: "DTU maître du lot (murs porteurs, épaisseurs minimales, chaînages, mortiers) — ATTENTION : la piste KB visait implicitement l'édition 2008, remplacée en 2020. Cette référence reste hors du registre vivant ; les valeurs chiffrées sont à extraire au Reef avant tout usage client."
       - ref: "NF DTU 20.13"
         titre: "Cloisons en maçonnerie de petits éléments"
         edition: "Octobre 2008 + Amendement A1 (juin/juillet 2016 selon les parties)"
@@ -1179,8 +1199,8 @@ transverse:
       priorite_reef: basse
       lots_concernes: ["01", "09", "10"]
       justification: "Norme méthodologique du RAT (présomption de conformité à l'arrêté, sauf art. 4, 7, 11 et 14) — à citer en appui du préalable amiante ; le repérage lui-même est sous-traité à l'opérateur certifié, pas de seuil de chiffrage à extraire."
-    - ref: "Code du travail, art. R4323-58 (à R4323-90)"
-      titre: "Dispositions particulières applicables à l'exécution de travaux temporaires en hauteur et à certains équipements de travail utilisés à cette fin"
+    - ref: "Code du travail, art. R4323-58"
+      titre: "Travaux temporaires en hauteur réalisés à partir d'un plan de travail — obligation générale de conception, d'installation et d'équipement préservant la santé et la sécurité, dans des conditions ergonomiques"
       edition: "En vigueur depuis le 1er mai 2008 (décret n° 2008-244 du 7 mars 2008)"
       statut: en_vigueur
       statut_verif: confirme_public
@@ -1188,7 +1208,50 @@ transverse:
       deja_au_registre: false
       priorite_reef: basse
       lots_concernes: ["00", "10"]
-      justification: "Fonde la mention « protection collective obligatoire au-delà de 3 m » déjà citée au poste échafaudage du chantier façades (devis réel ravalement) mais HORS allowlist — texte gratuit sur Legifrance. PRIORITÉ MÉTIER : à inscrire au registre pour RÉGULARISER la citation existante avant toute réutilisation client. Vaut pour tout travail en hauteur, quel que soit le lot."
+      contenu_reel: "FAIT VÉRIFIÉ (source primaire lue sur Legifrance le 2026-07-26) : l'article impose que les travaux temporaires en hauteur soient réalisés à partir d'un plan de travail conçu, installé ou équipé de manière à préserver la santé et la sécurité des travailleurs, le poste permettant l'exécution dans des conditions ergonomiques. Il NE FIXE AUCUN SEUIL DE HAUTEUR."
+      justification: "CORRECTION DU 2026-07-26 (remplace la consigne de « régularisation » précédente). La mention « protection collective obligatoire au-delà de 3 m », citée au poste échafaudage d'un devis de ravalement réel, N'EST PAS FONDÉE sur cet article : elle lui prête un seuil qu'il ne contient pas. Il n'y a donc rien à régulariser, il y a une citation FAUSSE à CORRIGER partout où elle apparaît, avant toute réutilisation client. La règle exacte se lit sur trois articles distincts — voir les deux entrées suivantes (R4323-59 et R4323-60). Texte gratuit sur Legifrance ; vaut pour tout travail en hauteur, quel que soit le lot."
+    - ref: "Code du travail, art. R4323-59"
+      titre: "Prévention des chutes de hauteur depuis un plan de travail — garde-corps ou tout autre moyen d'une sécurité équivalente"
+      edition: "En vigueur depuis le 1er mai 2008 (décret n° 2008-244 du 7 mars 2008)"
+      statut: en_vigueur
+      statut_verif: confirme_public
+      source_publique: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018531395"
+      deja_au_registre: false
+      priorite_reef: basse
+      lots_concernes: ["00", "10"]
+      contenu_reel: "FAIT VÉRIFIÉ (source primaire lue sur Legifrance le 2026-07-26) : la prévention des chutes depuis un plan de travail est assurée par des garde-corps intégrés ou fixés de manière sûre, rigides et de résistance appropriée, placés à une hauteur comprise entre 1 m et 1,10 m, comportant une plinthe de butée de 10 à 15 cm selon la hauteur retenue, une main courante et une lisse intermédiaire à mi-hauteur — ou par tout autre moyen assurant une sécurité équivalente. Cet article ne fixe pas non plus de hauteur de chantier à partir de laquelle il s'appliquerait."
+      justification: "C'est ICI que vit l'exigence de protection collective (garde-corps), et elle est PREMIÈRE : c'est la solution de référence, sans condition de hauteur minimale de travail. Le remplacement par un autre dispositif n'est admis que s'il assure une sécurité équivalente. À citer à la place de la formule fausse « protection collective obligatoire au-delà de 3 m »."
+    - ref: "Code du travail, art. R4323-60"
+      titre: "Impossibilité du garde-corps — dispositifs de recueil souples limitant la hauteur de chute"
+      edition: "En vigueur depuis le 1er mai 2008 (décret n° 2008-244 du 7 mars 2008)"
+      statut: en_vigueur
+      statut_verif: confirme_public
+      source_publique: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018531393"
+      deja_au_registre: false
+      priorite_reef: basse
+      lots_concernes: ["00", "10"]
+      contenu_reel: "FAIT VÉRIFIÉ (source primaire lue sur Legifrance le 2026-07-26) : lorsque les dispositions de l'article R4323-59 ne peuvent pas être mises en œuvre, des dispositifs de recueil souples sont installés et positionnés de manière à éviter une chute de plus de trois mètres."
+      justification: "SEULE origine réelle du « 3 m » dans ce corpus : ce n'est PAS une hauteur à partir de laquelle une protection deviendrait obligatoire, c'est la hauteur de chute MAXIMALE à ne pas dépasser quand on se rabat sur un filet ou un autre dispositif de recueil souple, faute de pouvoir installer un garde-corps. Attribuer ce seuil à l'article R4323-58, ou en faire un déclencheur d'obligation, est une erreur — à ne jamais réintroduire en description de poste ni en argumentaire client."
+    - ref: "Arrêté du 21 décembre 2004"
+      titre: "Arrêté relatif aux vérifications des échafaudages et modifiant l'annexe de l'arrêté du 22 décembre 2000"
+      edition: "21 décembre 2004, version consolidée en vigueur"
+      statut: en_vigueur
+      statut_verif: confirme_public
+      source_publique: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000240930"
+      deja_au_registre: false
+      priorite_reef: basse
+      lots_concernes: ["00", "10"]
+      justification: "Répété ici depuis le bloc lot 00 (même graphie de ref) parce qu'il complète le socle « travail en hauteur » : il cadence les vérifications d'échafaudage (examen d'adéquation, examen de montage et d'installation, vérification de l'état de conservation) et justifie le coût d'un poste échafaudage de longue durée. Texte gratuit sur Legifrance. SOURCE SECONDAIRE à ce stade pour le détail des cadences : le contenu chiffré n'a pas été relu article par article — ne pas énoncer de périodicité chiffrée sans lecture."
+    - ref: "Recommandation R408 (CNAMTS)"
+      titre: "Montage, utilisation et démontage des échafaudages de pied"
+      edition: "Adoptée le 10 juin 2004 (annule et remplace la R279)"
+      statut: en_vigueur
+      statut_verif: confirme_public
+      source_publique: "https://www.ameli.fr/sites/default/files/Documents/5338/document/recommandation-r408_assurance-maladie.pdf"
+      deja_au_registre: false
+      priorite_reef: basse
+      lots_concernes: ["00", "10"]
+      justification: "Répétée ici depuis le bloc lot 00 (même graphie de ref) : exigence de compétence et de formation des monteurs, opposable via les CARSAT — c'est ce qui justifie de sous-traiter le montage d'échafaudage à une entreprise formée. Ce n'est PAS un texte réglementaire au sens strict : c'est une recommandation d'organisme de sécurité sociale, à présenter comme telle et non comme une obligation du Code du travail. PDF public gratuit."
     - ref: "Article 279-0 bis du CGI"
       titre: "TVA à taux réduit 10 % sur les travaux d'amélioration, transformation, aménagement et entretien des locaux d'habitation achevés depuis plus de 2 ans"
       edition: "Version consolidée en vigueur ; doctrine BOFiP BOI-TVA-LIQ-30-20-90 (mise à jour du 22/10/2025)"
@@ -1209,12 +1272,12 @@ refs_perimees:
   - ref: "DTU 36.1"
     probleme: "ANNULÉ-REMPLACÉ par le NF DTU 36.2 (refonte mai 2016, édition en vigueur novembre 2025) ; encore cité au mapping lot 06."
     action: "Référence historique, ne plus citer (déjà signalé en KB lot 06)."
-  - ref: "DTU 53.1"
-    probleme: "ANNULÉ-REMPLACÉ par le NF DTU 53.12 (décembre 2020) ; encore cité dans l'allowlist check_dtu_refs.py et dans catalogue.py (poste moquette)."
-    action: "Migrer les citations client vers NF DTU 53.12 puis retirer de l'allowlist."
-  - ref: "DTU 53.2"
-    probleme: "ANNULÉ-REMPLACÉ par le NF DTU 53.12 (décembre 2020) ; encore cité dans l'allowlist et catalogue.py (poste sol_pvc)."
-    action: "Même migration que DTU 53.1."
+  - ref: "NF DTU 53.1 (édition révisée de novembre 2016)"
+    probleme: "ANNULÉ-REMPLACÉ par le NF DTU 53.12 (décembre 2020). Ne gouverne plus aucun ouvrage : c'est une référence HISTORIQUE. Il restait présenté comme référentiel courant des revêtements textiles dans le savoir de chiffrage du lot 09, et il est encore cité dans l'allowlist de contrôle et au catalogue de postes du moteur (poste moquette)."
+    action: "CORRIGÉ le 2026-07-26 dans le savoir de chiffrage du lot 09 (version lisible et version machine) : gouvernance transférée au NF DTU 53.12, le 53.1 ne subsiste que comme repère historique explicitement étiqueté. RESTE À FAIRE hors périmètre normes : migrer les citations client du moteur vers NF DTU 53.12, puis retirer 53.1 de l'allowlist."
+  - ref: "NF DTU 53.2 (édition d'avril 2007)"
+    probleme: "ANNULÉ-REMPLACÉ par le NF DTU 53.12 (décembre 2020). Même situation que le 53.1 : référence HISTORIQUE, encore citée dans l'allowlist et au catalogue de postes du moteur (poste sol PVC)."
+    action: "Même traitement que le NF DTU 53.1 : corrigé le 2026-07-26 dans le savoir de chiffrage du lot 09 ; migration des citations moteur et purge de l'allowlist restant à faire hors périmètre normes."
   - ref: "DTU 65.10"
     probleme: "ANNULÉ en 2017 par l'AFNOR ; encore en dtu_refs du mapping lot 04, et la reco « Chauffage & ECS en habitat individuel » y est rattachée."
     action: "Remplacer par les Règles professionnelles UMGCCP-FFB « Canalisations hydrauliques » (décembre 2021, acceptées C2P) ; re-ancrer la reco RAGE. Repointer aussi les rattachements vagues « DTU 65.x » (PAC, CESI) vers NF DTU 65.16 et NF DTU 65.12."
@@ -1224,9 +1287,9 @@ refs_perimees:
   - ref: "NF DTU 55.2"
     probleme: "Pas annulé mais HORS PÉRIMÈTRE et mal rattaché au mapping lot 08 : vise la pierre mince ATTACHÉE (agrafage mécanique), pas la faïence collée (NF DTU 52.2)."
     action: "Retirer du mapping lot 08 (décision Namur 08/07 déjà actée en KB)."
-  - ref: "« NF DTU 52.11 » (KB lot 08, via ffb-savoir-chiffrage-lot08)"
-    probleme: "COQUILLE : ce libellé n'existe pas ; la référence exacte est NF DTU 52.10 (juin 2013, remplace NF P 61-203)."
-    action: "Corriger la KB lot 08."
+  - ref: "« NF DTU 52.11 »"
+    probleme: "COQUILLE À LA SOURCE : ce libellé n'existe pas. La référence exacte est NF DTU 52.10, juin 2013, indice de classement P 61-203, « Mise en œuvre de sous-couches isolantes sous chape ou dalle flottantes et sous carrelage scellé » (remplace NF P 61-203 de décembre 2003). La coquille venait du savoir de chiffrage du lot 08 et s'est propagée de là vers la base de connaissance du lot."
+    action: "CORRIGÉ le 2026-07-26 dans les deux fichiers de savoir de chiffrage du lot 08 (version lisible et version machine) : « 52.11 » remplacé par « NF DTU 52.10 (indice de classement P 61-203), juin 2013 ». RESTE À FAIRE hors périmètre normes : purger toute occurrence de « 52.11 » dans la base de connaissance du lot 08 côté moteur."
   - ref: "« XP DTU 59.3 + ISO 11414 » (héritée de dtu-sdb.json, lot 08)"
     probleme: "Écartée par Namur (08/07), jamais recoupée ; le NF DTU 59.3 réel (peinture de sols, mars 2023) n'a rien à voir avec le SPEC."
     action: "Ne doit pas réapparaître."
@@ -1242,15 +1305,15 @@ refs_perimees:
   - ref: "DTU 36.5 rangé au lot 06 du mapping"
     probleme: "Mal rangé — texte du lot 07 (menuiseries extérieures) ; le mapping 04/06 précède la taxonomie 13 lots."
     action: "Déplacer au lot 07 lors de la régénération."
-  - ref: "Mapping lot « 12 » = « Nettoyage fin de chantier » (lot-norms-mapping.yaml:183-187)"
+  - ref: "Mapping lot « 12 » = « Nettoyage fin de chantier »"
     probleme: "PÉRIMÉ — la taxonomie §8 réattribue le numéro 12 à « Maçonnerie - Gros œuvre - Structure » (arbitrage Namur 08/07) ; le nettoyage vit au lot 00."
-    action: "Régénérer le mapping sur les 13 lots."
+    action: "CORRIGÉ le 2026-07-26 dans le mapping (lot 12 renommé, textes maçonnerie rattachés, nettoyage déplacé au lot 00). Reste à régénérer le mapping complet sur les 13 lots."
   - ref: "Mapping lot « 11 » = « Cuisine / Salle de bain (forfaits) »"
     probleme: "PÉRIMÉ vs taxonomie §8 : 11 = Cuisine méta-lot seul (SdB = preset pièce, lots servants)."
     action: "Régénérer le mapping."
   - ref: "Lots 00 et 01 du mapping : dtu_refs [] « pratique_pro »"
-    probleme: "Pas faux mais INCOMPLET : tout le réglementaire transverse vérifié (échafaudage R4323-58/arrêté 2004/R408, RAT amiante 2017-899/arrêté 2019, décrets déchets 2020-1817 et 2021-950) en est absent."
-    action: "Compléter via le présent catalogue (blocs 00, 01 et transverse)."
+    probleme: "Pas faux mais INCOMPLET : tout le réglementaire transverse vérifié (travail en hauteur R4323-58/59/60, arrêté du 21 décembre 2004, recommandation R408, RAT amiante 2017-899/arrêté 2019, décrets déchets 2020-1817 et 2021-950) en est absent."
+    action: "Compléter via le présent catalogue (blocs 00, 01 et transverse). ATTENTION en propageant le travail en hauteur : reprendre les TROIS articles distincts tels que décrits au bloc transverse, et surtout PAS la formule fausse « protection collective obligatoire au-delà de 3 m » — l'article R4323-58 ne contient aucun seuil de hauteur ; les 3 m sont la hauteur de chute maximale de l'article R4323-60 (dispositif de recueil souple)."
   - ref: "Reco RAGE « Verrières 2013-09 » (mapping lot 07)"
     probleme: "URL morte (host reglesdelart-grenelle-environnement-2012.fr parqué) — seule URL déclarée indisponible du mapping."
     action: "Récupérable via programmepacte/miroir ; cas marginal en résidentiel, non retenu au corpus essentiel."

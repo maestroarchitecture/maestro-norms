@@ -21,8 +21,8 @@
 
 | Lot | Intitulé | DTU/NF (citation) | Reco Pro RAGE (gratuit) | Justification |
 |---|---|---|---|---|
-| 00 | Installation de chantier | — | — | pratique pro |
-| 01 | Démolition / Dépose | — | — | pratique pro |
+| 00 | Installation de chantier **+ nettoyage de fin de chantier** | — (aucun NF DTU, mais du réglementaire : travail en hauteur et échafaudages, voir note ci-dessous) | — | pratique pro |
+| 01 | Démolition / Dépose | — (réglementaire amiante et déchets, voir note ci-dessous) | — | pratique pro |
 | 02 | Plâtrerie / Cloisons | DTU 25.41 · 25.42 | ITI (doublage) | **reco pro** |
 | 03 | Plomberie / Sanitaires | DTU 60.1 · 60.11 | — | DTU citation |
 | 04 | **Chauffage / VMC** | DTU 65.10 · 65.14 · NF DTU 68.3 | **11 guides** (VMC, PAC, ECS, solaire, granulés, planchers) | **reco pro ✓✓** |
@@ -30,16 +30,47 @@
 | 06 | Menuiseries intérieures | DTU 36.1 · 36.5 | — | DTU citation |
 | 07 | **Menuiseries extérieures** | DTU 36.5 · 39 | ITE menuiseries, doubles fenêtres, verrières | **reco pro** |
 | 08 | Carrelage / Faïence | DTU 52.1 · 52.2 · NF DTU 55.2 | — | DTU citation |
-| 09 | Revêtements de sol | DTU 51.1/51.2 · 53.1/53.2 | — | DTU citation |
+| 09 | Revêtements de sol | NF DTU 51.1 / 51.2 · **NF DTU 53.12** (les NF DTU 53.1 et 53.2 sont **annulés**, voir note) | — | DTU citation |
 | 10 | Peinture / Rev. muraux | NF DTU 59.1 · 59.4 | — | DTU citation |
 | 11 | Cuisine / SdB (forfaits) | — | — | forfait |
-| 12 | Maçonnerie - Gros œuvre - Structure (réattribué 08/07 ; ex-Nettoyage, désormais lot 00) | NF DTU 20.1, 13.x, 26.1… (candidats — bloc registre à ouvrir via Reef) | RAGE maçonnerie | KB 12-maconnerie-gros-oeuvre |
+| 12 | **Maçonnerie - Gros œuvre - Structure** (lot ACTIF ; réattribué le 08/07/2026 — le nettoyage de fin de chantier est passé au lot 00) | NF DTU 20.1 · 20.13 · 21 · 13.1 · 13.3 · 26.1 · 23.5 · Eurocodes 1/6/7 · NF P 94‑500 | RAGE maçonnerie 2014 | **reco pro** + DTU citation |
 
 **Lecture :**
-- **4 lots** justifiables par Reco Pro **gratuite** : **02, 04, 05, 07** — le **lot 04** est de loin le mieux couvert.
+- **5 lots** justifiables par Reco Pro **gratuite** : **02, 04, 05, 07, 12** — le **lot 04** est de loin le mieux couvert.
 - **5 lots** en **DTU citation seule** (pas de Reco Pro RAGE dédiée) : 03, 06, 08, 09, 10.
-- **4 lots** pratique pro / forfait : 00, 01, 11, 12.
-- **Enveloppe / ITE / maçonnerie** : guides RAGE existants mais **sans lot finition dédié** (gros œuvre/façade hors lots 00‑12) → bloc `transversal_enveloppe` du YAML.
+- **3 lots** pratique pro / forfait : 00, 01, 11.
+- **Enveloppe / ITE** : guides RAGE existants mais **sans lot finition dédié** → bloc `transversal_enveloppe` du YAML. La reco **maçonnerie** en a été sortie : elle appartient désormais au **lot 12**.
+
+### Notes de correction (2026‑07‑26)
+
+- **Lot 12 — c'est un lot actif, pas un lot à venir.** Il porte la maçonnerie, le gros œuvre et la
+  structure depuis l'arbitrage Namur du 08/07/2026. Ses textes sont cités **par leur référence
+  seulement** : aucun seuil chiffré n'est disponible tant que les sources primaires (payantes)
+  n'ont pas été lues. **L'expert ne dimensionne jamais une structure à distance** — toute reprise
+  de charge ou ouverture dans un mur porteur passe par un bureau d'études.
+- **Lot 09 — NF DTU 53.1 et NF DTU 53.2 sont annulés.** Ils sont remplacés depuis **décembre 2020**
+  par le **NF DTU 53.12**, qui couvre à lui seul les sols souples PVC, textiles et linoléum. Ils ne
+  subsistent qu'à titre **historique** et ne doivent plus être cités comme référentiel courant.
+- **Lot 00 — travail en hauteur : trois articles distincts, pas un seuil unique.** L'article
+  **R4323‑58** du Code du travail impose un plan de travail préservant la santé et la sécurité,
+  dans des conditions ergonomiques : **il ne fixe aucune hauteur**. L'article **R4323‑59** porte
+  l'exigence de **garde‑corps** (protection collective), placés entre 1 m et 1,10 m, avec plinthe
+  de 10 à 15 cm, main courante et lisse intermédiaire — ou tout autre moyen d'une sécurité
+  équivalente. L'article **R4323‑60** n'intervient que **si le garde‑corps est impossible** : on
+  installe alors un dispositif de recueil souple positionné de façon à éviter une chute de plus de
+  **3 mètres**. **La formule « protection collective obligatoire au‑delà de 3 m » est fausse** et
+  ne doit être reprise nulle part. S'y ajoutent, pour les échafaudages, l'**arrêté du 21 décembre
+  2004** (vérifications) et la **recommandation R408** de la Caisse nationale d'assurance maladie
+  (compétence des monteurs) — cette dernière est une recommandation d'organisme de sécurité
+  sociale, pas une obligation du Code du travail.
+- **Lot 04 — les débits d'air ne viennent que d'un seul texte :** l'**arrêté du 24 mars 1982**,
+  article 3. Ni la NF C 15‑100 (norme électrique) ni une prétendue « RT2020 » (texte inexistant :
+  la réglementation du neuf s'appelle RE2020) ne fixent de débit de ventilation.
+- **Restent à corriger** lors de la régénération complète : lot 06 (**NF DTU 36.1 annulé**,
+  remplacé par le NF DTU 36.2 ; **NF DTU 36.5 mal rangé**, il relève du lot 07), lot 08
+  (**NF DTU 55.2 hors périmètre** : pierre mince attachée, pas faïence collée), lot 04
+  (**DTU 65.10 annulé** en 2017), lot 11 (intitulé périmé), et l'ajout du réglementaire transverse
+  aux lots 00 et 01.
 
 ## Détail des lots couverts par Reco Pro
 

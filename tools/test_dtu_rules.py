@@ -13,6 +13,7 @@ import os
 import sys
 
 import pytest
+import yaml
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import dtu_rules  # noqa: E402
@@ -85,6 +86,21 @@ def test_meta_declares_licence_and_verification():
     for lot_id in dtu_rules.lots_with_rules():
         for r in dtu_rules.rules_for_lot(lot_id):
             assert len(str(r["exigence"])) <= 240, "exigence trop longue (risque de verbatim)"
+
+
+def test_live_registry_ne_contient_aucun_brouillon_a_verifier():
+    """Le loader ne filtre pas les statuts : un brouillon doit rester dans le
+    fichier draft ou le catalogue, jamais dans le registre consommable."""
+    data = yaml.safe_load(open(dtu_rules._RULES_PATH, encoding="utf-8")) or {}
+    fautifs = []
+    for lot_id, rules in (data.get("rules") or {}).items():
+        for index, rule in enumerate(rules or []):
+            if rule.get("statut") == "a_verifier":
+                fautifs.append(f"lot {lot_id}, règle {index + 1}: {rule.get('ref', '?')}")
+    assert not fautifs, (
+        "entrée a_verifier dans le registre vivant ; déplacer vers "
+        "dtu_rules.draft.yaml ou normes-par-lot.yaml :\n  " + "\n  ".join(fautifs)
+    )
 
 
 if __name__ == "__main__":

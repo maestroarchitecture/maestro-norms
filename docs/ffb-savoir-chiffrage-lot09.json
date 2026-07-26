@@ -133,8 +133,10 @@
   "pour_devis": "Ce calepin sert de cadre normatif pour structurer un poste « sol souple » : il rappelle qu'un devis doit distinguer la préparation du support (primaire + enduit) du revêtement lui-même, et chiffrer à part les sujétions (plinthes, escaliers, traversées, douche PVC) ainsi qu'une éventuelle protection contre l'humidité, sans fournir de prix ni de seuils chiffrés."
  },
  {
-  "titre": "Le NF DTU 53.1 révisé (revêtements de sol textiles)",
+  "titre": "Revêtements de sol textiles (moquette en lés ou dalles) — savoir issu du calepin sur l'ex-NF DTU 53.1, norme aujourd'hui annulée",
   "pertinence": "moyenne",
+  "norme_applicable": "NF DTU 53.12 (indice de classement P 62-207 ; partie P1-1-1 = P 62-207-1-1-1), décembre 2020 — il annule et remplace le NF DTU 53.1 P1-1 (novembre 2016) et le NF DTU 53.2 P1-1 (avril 2007), et couvre à lui seul les sols souples PVC, textiles et linoléum.",
+  "avertissement_2026_07_26": "Le contenu de cette fiche vient d'un calepin FFB décrivant le NF DTU 53.1 révisé de novembre 2016, ANNULÉ et REMPLACÉ par le NF DTU 53.12 depuis décembre 2020. Le détail de métier reste utile au chiffrage, mais la norme à citer dans un devis ou dans un argumentaire client est le NF DTU 53.12, jamais le 53.1 ni le 53.2. Statut : fait vérifié le 26/07/2026 — la fiche publique de la boutique AFNOR du NF DTU 53.12 P1-1-1 donne l'édition de décembre 2020 et déclare annuler et remplacer les deux textes précités. Seules ces métadonnées ont été lues : le texte du 53.12 n'a pas été ouvert et aucun de ses seuils n'est repris ici.",
   "sous_poste": "Revêtement de sol textile (moquette en lés ou dalles)",
   "perimetre": [
    "Pose de revêtements textiles en lés par collage ou par tension",
@@ -157,7 +159,7 @@
   "regles_metre": [],
   "points_vigilance": [
    "En rénovation, reconnaître et accepter l'ancien support AVANT de chiffrer: l'état conditionne les travaux préparatoires",
-   "Mesure du taux d'humidité du support: seule la méthode à la bombe à carbure est requise par la norme",
+   "Mesure du taux d'humidité du support: la méthode à la bombe à carbure était la seule admise par le NF DTU 53.1, aujourd'hui annulé. À revérifier dans le NF DTU 53.12 qui l'a remplacé avant d'en faire une exigence opposable — non vérifié à ce jour",
    "Critères de reconnaissance des supports neufs base liants hydrauliques: humidité, microfissures, fissures, cohésion de surface, porosité, planéité, cure, marches d'escalier (nez et fond de marche)",
    "Risques de remontées d'humidité sur dallages: prévoir des dispositions spécifiques",
    "Nouveauté: planchers sur bacs aciers collaborants pour lés collés également concernés par les remontées d'humidité",
@@ -174,12 +176,15 @@
    "Colle pour pose collée"
   ],
   "normes": [
-   "NF DTU 53.1 (révisé, publié novembre 2016) - Revêtements de sol textiles, neuf et rénovation, 3 parties dont partie 1-2 CGM",
-   "NF DTU 53.2 (2007) - Revêtements de sol PVC (référence pour les dispositions remontées d'humidité)",
+   "NF DTU 53.12 (indice de classement P 62-207), décembre 2020 - NORME APPLICABLE : préparation du support et revêtements de sol souples (PVC, textiles, linoléum)",
    "Classement UPEC (usage des locaux, ex. E2)",
    "Référentiels BBC (Bâtiment basse consommation) et Bepos (Bâtiment à énergie positive)"
   ],
-  "pour_devis": "Permet de cadrer un poste 'revêtement de sol textile' en distinguant le mode de pose (lés collés/tendus, dalles, DPA) et en intégrant systématiquement la préparation du support (enduit de sol + primaire) et le diagnostic d'humidité (bombe à carbure) dans le chiffrage, surtout en rénovation où l'état du support ancien conditionne les travaux préparatoires."
+  "normes_historiques_ne_plus_citer": [
+   "NF DTU 53.1 (édition révisée de novembre 2016) - Revêtements de sol textiles, neuf et rénovation, 3 parties dont partie 1-2 CGM. ANNULÉ, remplacé par le NF DTU 53.12 (décembre 2020) - c'est le texte que décrivait le calepin d'origine",
+   "NF DTU 53.2 (édition d'avril 2007) - Revêtements de sol PVC, qui servait de référence aux dispositions sur les remontées d'humidité. ANNULÉ, remplacé par le NF DTU 53.12 (décembre 2020)"
+  ],
+  "pour_devis": "Permet de cadrer un poste 'revêtement de sol textile' en distinguant le mode de pose (lés collés/tendus, dalles, DPA) et en intégrant systématiquement la préparation du support (enduit de sol + primaire) et le diagnostic d'humidité dans le chiffrage, surtout en rénovation où l'état du support ancien conditionne les travaux préparatoires. La norme à citer est le NF DTU 53.12 (décembre 2020) : ni le 53.1 ni le 53.2, tous deux annulés."
  },
  {
   "titre": "La solution des sols coulés en résine",

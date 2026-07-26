@@ -4,11 +4,31 @@ Generee le 2026-07-09 a partir du catalogue canonique `maestro-norms/normes-par-
 (consolidation des 4 recensements de groupe) et du registre `maestro-norms/dtu_rules.yaml`.
 
 Objectif de la session : lire les sources PRIMAIRES au Reef (citation seule, jamais de
-copie de prose), promouvoir les entrees `a_valider_namur` en `verifie`, et ouvrir les
-nouveaux blocs du registre (notamment le bloc « 12 »).
+copie de prose), promouvoir les entrees `a_valider_namur` en `verifie`, et lire les
+references candidates du lot 12 avant toute inscription dans le registre vivant.
 
 Rappel protocole registre : source primaire lue verbatim -> fait paraphrase
 {exigence, seuil, condition, ref} -> statut `verifie` -> allowlist `check_dtu_refs.py`.
+
+Deux statuts vivent dans le registre, a ne pas confondre :
+- `verifie`         : source PRIMAIRE lue et recoupee -> seuil chiffre autorise, citable client.
+- `a_valider_namur` : seuil ecrit depuis une source SECONDAIRE, en attente de confirmation.
+Les references `a_verifier` restent dans `normes-par-lot.yaml` ou
+`dtu_rules.draft.yaml` : le lecteur du registre vivant ne filtre pas le statut.
+
+MISE A JOUR DU 26/07/2026 — travaux hors Reef DEJA FAITS, a ne pas refaire :
+- Lot 12 catalogue : 10 references candidates recensees sans un seul chiffre
+  (NF DTU 20.1, 20.13, 21, 13.1, 13.3, 26.1, Eurocodes 1/6/7, NF P 94-500).
+  Elles restent HORS du registre vivant jusqu'a lecture de la source primaire.
+- Coquille « NF DTU 52.11 » corrigee A LA SOURCE (savoir de chiffrage du lot 08, version
+  lisible et version machine) : la reference exacte est NF DTU 52.10, juin 2013, indice de
+  classement P 61-203, verifie sur les fiches publiques de la boutique AFNOR.
+- NF DTU 53.1 et 53.2 marques ANNULES-REMPLACES par le NF DTU 53.12 (decembre 2020) dans le
+  savoir de chiffrage du lot 09 et dans le mapping ; ils ne subsistent qu'en repere historique.
+- Travail en hauteur : la formule « protection collective obligatoire au-dela de 3 m » est
+  FAUSSE et a ete retiree du catalogue. Les trois articles R4323-58, R4323-59 et R4323-60 y
+  sont desormais decrits pour ce qu'ils disent reellement (lus sur Legifrance le 26/07/2026).
+  Aucune lecture Reef n'est necessaire : ces textes sont gratuits sur Legifrance.
 
 ---
 
@@ -96,7 +116,7 @@ Il ne manque que la VALIDATION NAMUR (arbitrage obligation vs condition d'aide d
   Extraire : definitions normatives des etats de finition A/B/C, nombre maximal de teintes sans plus-value, regles de rechampis — les trois [a completer] de la KB.
   Registre : 1 seule regle verifiee (conditions hygrothermiques §7.1).
 
-### Lot 12 — Maconnerie - Gros oeuvre - Structure (bloc registre « 12 » a OUVRIR)
+### Lot 12 — Maconnerie - Gros oeuvre - Structure (registre a alimenter apres lecture)
 - NF DTU 20.1 (juillet 2020) — chercher « NF DTU 20.1 » (verifier P1-1 + P3).
   Extraire : epaisseurs minimales des murs selon exposition, regles de chainages, mortiers de montage — socle du nouveau bloc 12.
   Registre : absent.
@@ -136,20 +156,28 @@ Il ne manque que la VALIDATION NAMUR (arbitrage obligation vs condition d'aide d
 
 ### Lot 08 — Carrelage - Faience
 - NF DTU 26.2 A1 (mai 2015) — verifier que l'A1 ne modifie pas les seuils chapes deja verifies et dater l'A1 au registre. Registre : verifie (base avril 2008, Reef ABEW-2).
-- NF DTU 52.10 (juin 2013) — extraire les regles sous-couches isolantes sous chape flottante (acoustique copropriete). Registre : absent (+ corriger la coquille « 52.11 » en KB).
+- NF DTU 52.10 (juin 2013, indice de classement P 61-203) — extraire les regles sous-couches isolantes sous chape ou dalle flottantes et sous carrelage scelle (acoustique copropriete). Registre : absent. Coquille « 52.11 » : CORRIGEE A LA SOURCE le 26/07/2026 dans le savoir de chiffrage du lot 08 (versions lisible et machine) ; reste a purger toute occurrence de « 52.11 » dans la base de connaissance du lot 08 cote moteur.
 
 ### Lot 09 — Revetements de sols
 - NF DTU 51.2 (mars 2023) — completer tolerances et regles supports chauffants du parquet colle. Registre : verifie partiel (humidite <= 3 %).
+- NF DTU 53.12 (decembre 2020) — POINT PRECIS A VERIFIER, ajoute le 26/07/2026 : quelle METHODE DE MESURE de l'humidite du support le 53.12 retient-il ? Le savoir de chiffrage du lot 09 tenait de l'ex-NF DTU 53.1 (annule) que « seule la bombe a carbure » etait admise ; cette affirmation est desormais etiquetee NON VERIFIEE et ne doit pas etre presentee comme opposable avant lecture du 53.12.
 
 ### Lot 10 — Peinture
 - DTU 59.4 (fevrier 1998) — extraire preparation des supports et conditions de pose toile de verre/revetements muraux ; ATTENTION revision en cours (PR NF DTU 59.4) : verifier avant d'investir. Registre : absent.
 - NF DTU 42.1 (novembre 2007) — extraire classes d'impermeabilite I1-I4 et preparation des supports (regulariser la citation du devis ESPARON). Registre : absent.
 
 ### Lot 12 — Maconnerie - Gros oeuvre - Structure
+Depuis le 26/07/2026 ces textes sont catalogues dans `normes-par-lot.yaml`, mais restent
+absents du registre vivant. La lecture Reef sert a produire une regle paraphrasee avec
+clause exacte et source, directement au statut `verifie`.
 - NF DTU 20.13 (oct. 2008 + A1 2016) — extraire hauteurs/epaisseurs limites des cloisons maconnees. Registre : absent.
 - NF DTU 21 (juin 2017) — extraire tolerances d'execution des petits ouvrages beton (linteaux, reprises). Registre : absent.
 - NF DTU 13.3 (dec. 2021) — extraire epaisseurs minimales de dallage maison individuelle (P1-1-2). Registre : absent.
-- NF P 94-500 (nov. 2013) — extraire la definition des missions G1-G5 pour cadrer la provision etude de sol (RGA IdF). Registre : absent.
+- NF P 94-500 (nov. 2013) — confirmer le routage G1-G5 depuis un exemplaire licite et tracable. Registre : absent.
+- NF DTU 23.5 (mai 2019, planchers a poutrelles) — present au catalogue et au mapping du lot 12, PAS au registre : a ajouter si un chantier plancher se presente.
+RAPPEL BLOQUANT : aucune entree du lot 12 ne rejoint le registre avant lecture primaire.
+On n'ecrit de memoire AUCUN chiffre — ni epaisseur, ni profondeur hors gel, ni dimension de semelle, ni dosage. Et la
+regle metier ne bouge pas : l'expert ne dimensionne jamais une structure a distance.
 
 ---
 
@@ -158,4 +186,19 @@ Il ne manque que la VALIDATION NAMUR (arbitrage obligation vs condition d'aide d
 - Citation seule : on paraphrase des FAITS chiffres {exigence, seuil, condition, ref}, jamais la prose du texte.
 - Chaque lecture -> entree `dtu_rules.yaml` avec `source` (code Reef + clause + date de lecture) -> puis extension de l'allowlist `check_dtu_refs.py` AVANT toute citation en description client.
 - Textes GRATUITS (Legifrance, RAGE/PACTE, e-Cahiers CSTB publics, regles pro FFB) : ne pas consommer de temps Reef dessus — voir `normes-par-lot.yaml` (priorite_reef: basse).
-- Nettoyages a faire dans la foulee (hors Reef) : migration allowlist 53.1/53.2 -> 53.12 ; coquille « NF DTU 52.11 » -> 52.10 ; e-Cahier 3567 -> 3567_V2 (nov. 2021) ; ne plus citer l'arrete du 22 mars 2004 (feu, abroge par l'arrete du 22 mars 2026).
+- Le registre ne filtre PAS le statut a la lecture : tout ce qui y figure peut etre repris tel
+  quel dans un document. Une entree `a_verifier` reste donc obligatoirement hors du registre
+  vivant. Un outil client ne doit retenir que les entrees `verifie`.
+- Nettoyages hors Reef — ETAT AU 26/07/2026 :
+  - FAIT : coquille « NF DTU 52.11 » -> NF DTU 52.10 (savoir de chiffrage lot 08, 2 fichiers).
+  - FAIT : NF DTU 53.1 / 53.2 declares annules-remplaces par le 53.12 (savoir lot 09 + mapping).
+  - FAIT : mapping — lot 12 renomme « Maconnerie - Gros oeuvre - Structure », nettoyage de fin
+    de chantier deplace au lot 00.
+  - FAIT : travail en hauteur — R4323-58/59/60 decrits exactement, formule des « 3 m » corrigee.
+  - FAIT : migration de l'allowlist, du catalogue et des presets actifs 53.1/53.2 -> 53.12 ;
+    purge des occurrences actives de « 52.11 » dans la base de connaissance du lot 08.
+  - RESTE : e-Cahier 3567 -> 3567_V2 (nov. 2021) ; ne plus citer l'arrete du 22 mars 2004 (feu, abroge
+    par l'arrete du 22 mars 2026) ; regeneration complete du mapping sur les 13 lots (lot 06 :
+    NF DTU 36.1 annule et NF DTU 36.5 mal range ; lot 08 : NF DTU 55.2 hors perimetre ;
+    lot 04 : DTU 65.10 annule ; lot 11 : intitule perime ; lots 00 et 01 : reglementaire
+    transverse absent).
