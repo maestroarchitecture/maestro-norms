@@ -1,0 +1,622 @@
+{
+  "lots": {
+    "02": {
+      "authored_verified": 9,
+      "exported": 0,
+      "rejected": 9,
+      "rejections": [
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 25.41 P1-1 (février 2022) §6.6.2.1",
+          "rule_index": 1
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 25.41 P1-1 (février 2022) §6.6.2.2 et §6.6.2.3",
+          "rule_index": 2
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 25.41 P1-1 (février 2022) §6.2.2.4 / §6.2.4.1",
+          "rule_index": 3
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 25.41 P1-1 (février 2022) §6.3.2, §6.4, §6.3.2.3",
+          "rule_index": 4
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 25.41 P1-1 (février 2022) §6.1.3.1-6.1.3.2, §6.3.11.2 (Tableau 14)",
+          "rule_index": 5
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 25.41 P1-1 (février 2022) §6.1.4.2, §6.1.3.3",
+          "rule_index": 6
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 25.42 P1-1 (décembre 2012, Amdt A1) §6.2.2.1, §6.3.1",
+          "rule_index": 7
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 25.42 P1-1 (décembre 2012) §6.3.2",
+          "rule_index": 8
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 25.42 P1-1 (décembre 2012) §6.2.2",
+          "rule_index": 9
+        }
+      ]
+    },
+    "03": {
+      "authored_verified": 8,
+      "exported": 0,
+      "rejected": 8,
+      "rejections": [
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 60.11 P1-1 (août 2013) §3.2.1, Tableau 1",
+          "rule_index": 1
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 60.1 P1-1-3 (décembre 2012) §4.2.1",
+          "rule_index": 2
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 60.1 P1-1-3 (décembre 2012) §4.2.1 (Tableau 1)",
+          "rule_index": 3
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 60.1 P1-1-3 (décembre 2012) §4.2.5",
+          "rule_index": 4
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 60.1 P1-1-3 (décembre 2012) §4.2.5",
+          "rule_index": 5
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 60.1 P1-1-3 (décembre 2012) §4.2.9.1",
+          "rule_index": 6
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 60.1 P1-1-3 (décembre 2012) §4.2.9.2/.3, §4.2.10.4, §4.2.11.3, §4.2.12",
+          "rule_index": 7
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 60.1 P1-1-3 (décembre 2012) §4.2.10, §4.2.11",
+          "rule_index": 8
+        }
+      ]
+    },
+    "04": {
+      "authored_verified": 10,
+      "exported": 0,
+      "rejected": 10,
+      "rejections": [
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "Arrêté du 24 mars 1982, art. 3 (débits repris par le NF DTU 68.3)",
+          "rule_index": 1
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "Arrêté du 24 mars 1982, art. 3",
+          "rule_index": 2
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "Arrêté du 24 mars 1982, art. 3",
+          "rule_index": 3
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "Arrêté du 24 mars 1982, art. 4 (modifié par arrêté du 28 oct. 1983)",
+          "rule_index": 4
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 24.1 P1-1-1 (sept. 2020) §5.4.6 (renvoi arrêté 22 oct. 1969, art. 18)",
+          "rule_index": 5
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 65.14 P1-1-1 (juil. 2023) §7.5.1 (renvoi arrêté 23 juin 1978, art. 35)",
+          "rule_index": 6
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 65.14 P1-1-1 (juil. 2023) §7.1.1 et §7.2.1",
+          "rule_index": 7
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 68.3 P1-1-1 (juin 2013) §6.4.1",
+          "rule_index": 8
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 68.3 P1-1-1 (juin 2013) §6.4.2",
+          "rule_index": 9
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 68.3 P1-1-1 (juin 2013) §6.4.3",
+          "rule_index": 10
+        }
+      ]
+    },
+    "05": {
+      "authored_verified": 1,
+      "exported": 0,
+      "rejected": 1,
+      "rejections": [
+        {
+          "reasons": [
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "DTU 70.1 (NF P80-201-2, mai 1998) §1, §7.2, §8.1–8.2 et Annexe A (renvoi arrêté du 17 oct. 1973)",
+          "rule_index": 11
+        }
+      ]
+    },
+    "06": {
+      "authored_verified": 6,
+      "exported": 0,
+      "rejected": 6,
+      "rejections": [
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 36.2 P1-1 (novembre 2025) §5.4",
+          "rule_index": 1
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 36.2 P1-1 (novembre 2025) §6.8.1",
+          "rule_index": 2
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 36.2 P1-1 (novembre 2025) §6.8.2",
+          "rule_index": 3
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 36.2 P1-1 (novembre 2025) §6.1.1",
+          "rule_index": 4
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 36.2 P1-1 (novembre 2025) §6.9.3.1",
+          "rule_index": 5
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 36.2 P1-1 (novembre 2025) §6.9.4",
+          "rule_index": 6
+        }
+      ]
+    },
+    "07": {
+      "authored_verified": 6,
+      "exported": 0,
+      "rejected": 6,
+      "rejections": [
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 36.5 P1-1 (avril 2010) §5.2–5.3",
+          "rule_index": 1
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 36.5 P1-1 (avril 2010) §5.9",
+          "rule_index": 2
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 36.5 P1-2 (avril 2010) §4.1.1-4.1.2 ; FD DTU 36.5 P3 (octobre 2010) §6 et §10 (Tableau 8)",
+          "rule_index": 3
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "FD DTU 36.5 P3 (octobre 2010) §7 et Tableau 8 ; NF EN 12210 ; NF EN 1991-1-4/NA",
+          "rule_index": 4
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "FD DTU 36.5 P3 (octobre 2010) §8 et Tableau 8 ; NF EN 12207",
+          "rule_index": 5
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "FD DTU 36.5 P3 (octobre 2010) §9 et Tableau 8 ; NF EN 12208",
+          "rule_index": 6
+        }
+      ]
+    },
+    "08": {
+      "authored_verified": 5,
+      "exported": 0,
+      "rejected": 5,
+      "rejections": [
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 52.2 P1-1-1 (juin 2022) §7.3.5",
+          "rule_index": 1
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 26.2 P1-1 (avril 2008) §7.3.2",
+          "rule_index": 2
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 26.2 P1-1 (avril 2008) §7.2",
+          "rule_index": 3
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 26.2 P1-1 (avril 2008, Amdt A1) §7.4",
+          "rule_index": 4
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 26.2 P1-1 (avril 2008, Amdt A1) §8.4.1–8.4.3",
+          "rule_index": 5
+        }
+      ]
+    },
+    "09": {
+      "authored_verified": 4,
+      "exported": 0,
+      "rejected": 4,
+      "rejections": [
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 51.2 P1-1 (mars 2023) §5.2.6.6",
+          "rule_index": 1
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 53.12 P1-1-1 §6.1.5.1",
+          "rule_index": 2
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 53.12 P1-1-1 §6.1.5.3",
+          "rule_index": 3
+        },
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 53.12 P1-1-1 §6.1.5.4",
+          "rule_index": 4
+        }
+      ]
+    },
+    "10": {
+      "authored_verified": 1,
+      "exported": 0,
+      "rejected": 1,
+      "rejections": [
+        {
+          "reasons": [
+            "source_type doit être 'primaire'",
+            "edition manquant",
+            "localisateur manquant",
+            "reviewed_by manquant",
+            "reviewed_at manquant"
+          ],
+          "ref": "NF DTU 59.1 P1-1 (juin 2013) §7.1",
+          "rule_index": 1
+        }
+      ]
+    }
+  },
+  "schema_version": "1",
+  "source_commit": "28f90afb7720d972da5f2e160acbeb2fa9597ed9",
+  "source_sha256": "5fcc34be7b2c990ba543d9cbd76abcc0a87770ee53578ea79c117bd0cced3771",
+  "totals": {
+    "authored_verified": 50,
+    "exported": 0,
+    "rejected": 50
+  }
+}
